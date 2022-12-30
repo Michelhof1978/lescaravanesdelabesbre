@@ -24,7 +24,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse row justify-content-end custom-line" id="navbarNav">
-      <ul class="navbar-nav col-5">
+      <ul class="navbar-nav col-5 p">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Accueil</a>
         </li>

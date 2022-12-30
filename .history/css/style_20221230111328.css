@@ -25,7 +25,7 @@ small{
 	
 
 	.navbar-nav a:hover{
-		color: orangered;
+		color: orangered !important;
 	}
 
 	.menu{

@@ -25,11 +25,11 @@ small{
 	
 
 	.navbar-nav a:hover{
-		color: orangered;
+		color: orangered !important;
 	}
 
 	.menu{
-		text-align: end !important;
+		text-align: end !;
 	}
 	
 /* end navbar */

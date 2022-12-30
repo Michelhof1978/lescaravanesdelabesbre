@@ -14,35 +14,44 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-light ">
   
-  <div class="container-fluid">
-  <div class="">  <img src="../images/logo.png" alt="Logo" width="150" height="130" class="d-inline-block align-text-top"></div>
-  <a class="navbar-brand fs-2 pb-4" href="#">Les Caravanes De La Besbre <span class="orange">.</span></a>
+    <div class="container-fluid">
 
+    <div class="row">
+      
+    <div class="col-2">  <img src="../images/logo.png" alt="Logo" width="150" height="130" class="d-inline-block align-text-top"></div>
+     <div class="navbar-brand pb-5 fs-2 col-5">Les Caravanes De La Besbre<span class="orange">.</span></div>
+
+     
+    <div class="col-5">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse row justify-content-end custom-line" id="navbarNav">
-      <ul class="navbar-nav col-5">
+     </button>
+
+    
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Eco-Tourisme</a>
+          <a class="nav-link" href="#">Tourisme</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Logements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contact</a>
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
+    </div>
+    
+  </div>
+  </div>
   </div>
 </nav>
-
-
 
 <header class="text-center p-5" style="background-image:url(../images/banner.png); background-size:cover; background-position:center; width:100%; height: 350px;">
  

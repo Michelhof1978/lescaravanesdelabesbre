@@ -25,11 +25,7 @@ small{
 	
 
 	.navbar-nav a:hover{
-		color: orangered;
-	}
-
-	.menu{
-		text-align: end !important;
+		color: orangered !important;
 	}
 	
 /* end navbar */
@@ -640,4 +636,10 @@ article h4{
 }
 
 /* dompierre logo tourisme.php */
-
+.dompierre {
+   
+}
+.dompierre1 {
+   
+    
+}
