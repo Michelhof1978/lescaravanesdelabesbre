@@ -17,14 +17,14 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   
   <div class="container-fluid">
-  <div class="row">  <img src="../images/logo.png" alt="Logo" width="150" height="130" class="d-inline-block align-text-top"></div>
-  <a class="navbar-brand fs-2 pb-4 col-4 " href="#">Les Caravanes De La Besbre <span class="orange">.</span></a>
+  <div class="">  <img src="../images/logo.png" alt="Logo" width="150" height="130" class="d-inline-block align-text-top"></div>
+  <a class="navbar-brand fs-2 pb-4" href="#">Les Caravanes De La Besbre <span class="orange">.</span></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end custom-line sticky-bottom " id="navbarNav">
-      <ul class="navbar-nav col-7 fs-5 justify-content-between  ">
+    <div class="collapse navbar-collapse row justify-content-end custom-line " id="navbarNav">
+      <ul class="navbar-nav col-6 fs-5 justify-content-between position : absolute">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Accueil</a>
         </li>
@@ -32,7 +32,7 @@
           <a class="nav-link" href="#">Eco-Tourisme</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Logements</a
+          <a class="nav-link" href="#">Logements</a>
         </li>
         <li class="nav-item">
           <a class="nav-link">Contact</a>

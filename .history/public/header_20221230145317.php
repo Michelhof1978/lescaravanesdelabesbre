@@ -18,7 +18,7 @@
   
   <div class="container-fluid">
   <div class="row">  <img src="../images/logo.png" alt="Logo" width="150" height="130" class="d-inline-block align-text-top"></div>
-  <a class="navbar-brand fs-2 pb-4 col-4 " href="#">Les Caravanes De La Besbre <span class="orange">.</span></a>
+  <a class="navbar-brand fs-2 pb-4 col-4 @media (min-width: 576px) { ... }" href="#">Les Caravanes De La Besbre <span class="orange">.</span></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
