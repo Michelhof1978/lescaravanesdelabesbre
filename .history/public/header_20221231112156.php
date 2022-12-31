@@ -22,18 +22,18 @@
     <div class=" col-3 p-0"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
   <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   </div>
+  </div>
   
-  <div>
   <!-- Création hamburger en responsive -->
-    <div class="navbar-toggler  position-relative py-4 px-4 text-bg-grey border border-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon position-absolute  translate-middle "></span>
+    <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </div>
 
-    
-    <div class="collapse navbar-collapse  custom-line mx-5 " id="navbarNav"><!-- id appel la fonction hamburger de boostrap aria-controls -->
-      <ul class="navbar-nav fs-5">
+    <div class="row">
+    <div class="collapse navbar-collapse justify-content-end custom-line sticky-bottom " id="navbarNav"><!-- id appel la fonction hambuerger de boostrap -->
+      <ul class="navbar-nav fs-5 justify-content-between col-12">
         <li class="nav-item">
-          <a class="nav-link" href="#">Accueil</a>
+          <a class="nav-link" aria-current="page" href="#">Accueil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Tourisme</a>
@@ -49,7 +49,7 @@
     </div>
     </div>
   
-    </div>
+  
 </nav>
 
 

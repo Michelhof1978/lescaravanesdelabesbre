@@ -23,10 +23,10 @@
   <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   </div>
   
-  <div>
+  <DIV></DIV>
   <!-- Création hamburger en responsive -->
-    <div class="navbar-toggler  position-relative py-4 px-4 text-bg-grey border border-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon position-absolute  translate-middle "></span>
+    <div class="navbar-toggler col-12 position-relative py-3 px-4 text-bg-grey border border-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon position-absolute top-100 start-100 translate-middle "></span>
     </div>
 
     
@@ -46,7 +46,7 @@
         </li>
       </ul>
     </div>
-    </div>
+    
     </div>
   
     </div>

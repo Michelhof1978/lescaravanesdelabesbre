@@ -23,7 +23,7 @@
   <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   </div>
   
-  <div>
+  <div class="col">
   <!-- Création hamburger en responsive -->
     <div class="navbar-toggler  position-relative py-4 px-4 text-bg-grey border border-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon position-absolute  translate-middle "></span>
