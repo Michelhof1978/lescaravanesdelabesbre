@@ -14,53 +14,45 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   
   
-<div class="container-fluid ">
-
-   <div class="row">
-
-    <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class=" col-6 ps-4 pt-6 navbar-brand fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+<div class="container-fluid">
+  <div class="row">  
+    <div class=" col-3 p-0"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
+  <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+  </div>
   
-
-  
-  
+  <div>
   <!-- Création hamburger en responsive -->
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler  position-relative py-4 px-4 text-bg-grey border border-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon position-absolute  translate-middle pull-right"></span>
     </button>
-  <!-- Fin Création hamburger en responsive -->
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
-
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+    
+    <div class="collapse navbar-collapse  custom-line mx-5 " id="navbarNav"><!-- id appel la fonction hamburger de boostrap aria-controls -->
+      <ul class="navbar-nav fs-5">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Accueil</a>
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tourisme</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Logements</a>
         </li>
-        
         <li class="nav-item">
-          <a class="nav-link " href="#">Tourisme</a>
+          <a class="nav-link">Contact</a>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-
       </ul>
     </div>
     </div>
-    
-</nav>
-</div>
-
+    </div>
   
+    </div>
+</nav>
+
+
 
 <header class="text-center p-5" style="background-image:url(../images/banner.png); background-size:cover; background-position:center; width:100%; height: 350px;">
  

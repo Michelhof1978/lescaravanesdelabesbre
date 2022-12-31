@@ -22,7 +22,7 @@
    <div class="row">
 
     <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class=" col-6 ps-4 pt-6 navbar-brand fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+  <div class=" col-6 p-4 pt-6 navbar-brand fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   
 
   

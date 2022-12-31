@@ -14,27 +14,25 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   
   
-<div class="container-fluid ">
+<div class="container-fluid row">
 
-   <div class="row">
-
-    <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class=" col-6 ps-4 pt-6 navbar-brand fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+   
+    <div class="col  p-0"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
+  <div class=" col navbar-brand fs-2 ps-3 " href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   
 
   
   
   <!-- Création hamburger en responsive -->
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler col" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon col"></span>
     </button>
-  <!-- Fin Création hamburger en responsive -->
 
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <div class="collapse navbar-collapse col" id="navbarSupportedContent">
 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
@@ -52,10 +50,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
         </li>
-
       </ul>
     </div>
-    </div>
+  
     
 </nav>
 </div>
