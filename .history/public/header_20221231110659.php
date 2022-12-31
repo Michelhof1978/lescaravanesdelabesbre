@@ -14,13 +14,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
   
   
 
   <div class="row">  
     <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+  <div class="navbar-brand p-3 fs-2  col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   
   </div>
   

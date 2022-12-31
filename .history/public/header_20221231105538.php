@@ -19,8 +19,8 @@
   
 
   <div class="row">  
-    <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+    <div><img src="../images/logo.png" alt="Logo" width="150" height="130" "></div>
+  <div class="navbar-brand pb-3 fs-2  col " href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   
   </div>
   
@@ -28,9 +28,8 @@
       <span class="navbar-toggler-icon"></span>
     </div>
 
-    <div class="row">
-    <div class="collapse navbar-collapse justify-content-end custom-line sticky-bottom " id="navbarNav">
-      <ul class="navbar-nav fs-5 justify-content-between col-12">
+    <div class="collapse navbar-collapse justify-content-end custom-line sticky-bottom row " id="navbarNav">
+      <ul class="navbar-nav fs-5 justify-content-between  col-8">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Accueil</a>
         </li>
@@ -45,7 +44,7 @@
         </li>
       </ul>
     </div>
-    </div>
+
     </div>
   
   

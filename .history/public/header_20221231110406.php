@@ -19,8 +19,8 @@
   
 
   <div class="row">  
-    <div class=" col-3"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-  <div class="navbar-brand fs-2 ps-3 col-6" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+    <div class=" col-8"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
+  <div class="navbar-brand pb-3 fs-2  col-4" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
   
   </div>
   

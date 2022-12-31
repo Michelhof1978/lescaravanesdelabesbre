@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
   
   
 
