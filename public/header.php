@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-light">
   
 
   
@@ -22,7 +22,7 @@
 
    
 <div class=" row  d-flex align-items-start">
-    <div class="col-3  p-0"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
+    <div class="col-3  p-0"><img src="../images/logo.png" alt="Logo" width="150" height="auto" ></div>
     <div class=" col-4 navbar-brand pt-0 fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
 </div>
 
@@ -33,9 +33,9 @@
   <!-- Fin Création hamburger en responsive -->
   
 
-     <div class="d-flex align-self-end  ">
+     <div class="d-flex align-self-end  m-0">
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav  mb-2 fs-5 px-5 ">
+<ul class="navbar-nav fs-5 px-5 ">
 
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="#">Accueil</a>
@@ -61,15 +61,11 @@
 
   
 
-<header class="text-center p-5 img-fluid" style="background-image:url(../images/banner3.png); background-size:cover; background-position:center; max-width: 100%; height: auto; width:1500px">
- 
-            <p style="color:white; font-size:40px;">Bienvenue sur le site de réservation<br>
-            <strong>Les Caravanes de la Besbre</strong> 
-            </p>
+<header class=" p-0 img-fluid bg-image justify-content-center align-items-center" style="background-image:url(../images/banner3.png); background-size:cover; background-position:center; width:100%; height: 100vh">
 
        <!--<div> <button class="styled" type="button">Réservez ! </button></div>-->
 
-          <div><img src="../images/lePal.png" class="" alt="logo Pal"> </div> 
+          
 </header>
 
 
