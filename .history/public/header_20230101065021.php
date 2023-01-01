@@ -16,19 +16,23 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary ">
   
-
   
 <div class="container-fluid ">
 
    
-<div class=" d-flex align-items-start">
-    <div class="  "><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-    <div class=" navbar-brand  fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+<div class="row d-flex align-items-start">
+    <div class=" col "><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
+    <div class=" navbar-brand col fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
 </div>
 
-  
+  <!-- Création hamburger en responsive -->
 
-    <div class="d-flex align-items-end">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <!-- Fin Création hamburger en responsive -->
+
+    
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
 <ul class="navbar-nav  mb-2 fs-4">
 
@@ -47,13 +51,7 @@
 
 </ul>
 </div>
-</div>
 
-<!-- Création hamburger en responsive -->
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <!-- Fin Création hamburger en responsive -->
   </div>
     
     </div>

@@ -28,7 +28,7 @@
 
   
 
-    <div class="d-flex align-items-end">
+    <div class="d-flex align-items-start">
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
 <ul class="navbar-nav  mb-2 fs-4">
 

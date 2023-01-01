@@ -21,14 +21,14 @@
 <div class="container-fluid ">
 
    
-<div class=" d-flex align-items-start">
+<div class=" -flex adlign-items-start">
     <div class="  "><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
     <div class=" navbar-brand  fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
 </div>
 
   
 
-    <div class="d-flex align-items-end">
+    <div class="">
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
 <ul class="navbar-nav  mb-2 fs-4">
 

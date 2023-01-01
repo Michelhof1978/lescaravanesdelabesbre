@@ -28,7 +28,7 @@
 
   
 
-    <div class="d-flex align-items-end">
+    <div>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
 <ul class="navbar-nav  mb-2 fs-4">
 
@@ -47,7 +47,7 @@
 
 </ul>
 </div>
-</div>
+
 
 <!-- Création hamburger en responsive -->
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

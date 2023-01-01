@@ -28,8 +28,8 @@
 
   
 
-    <div class="d-flex align-items-end">
-    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+    <div class="collapse navbar-collapse d-flex align-items-end" id="navbarSupportedContent">
 <ul class="navbar-nav  mb-2 fs-4">
 
   <li class="nav-item">
@@ -46,7 +46,6 @@
   </li>
 
 </ul>
-</div>
 </div>
 
 <!-- Création hamburger en responsive -->
