@@ -23,19 +23,14 @@
    
 <div class=" row  d-flex align-items-start">
     <div class="col-3  p-0"><img src="../images/logo.png" alt="Logo" width="150" height="130" ></div>
-    <div class=" col-4 navbar-brand pt-0 fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
+    <div class=" col-3 navbar-brand pt-3 fs-2" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
 </div>
 
-<!-- Création hamburger en responsive -->
-<button class="navbar-toggler col-12" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <!-- Fin Création hamburger en responsive -->
-  
 
-     <div class="d-flex align-self-end  ">
-    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav  mb-2 fs-5 px-4 ">
+
+     <div class="d-flex align-self-end ">
+    <div class=" collapse navbar-collapse " id="navbarSupportedContent">
+<ul class="navbar-nav  mb-2 fs-4">
 
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="#">Accueil</a>
@@ -54,7 +49,12 @@
 </div>
 </div> 
 
-
+<!-- Création hamburger en responsive -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <!-- Fin Création hamburger en responsive -->
+  </d>
     
     </div>
     
