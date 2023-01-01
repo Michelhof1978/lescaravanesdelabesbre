@@ -61,7 +61,7 @@
 
   
 
-<header class="text-center p-5 img-fluid" style="background-image:url(../images/banner3.png); background-size:cover; background-position:center; max-width: 100%; height: auto; width:1500px">
+<header class="text-center p-5 img-fluid" style="background-image:url(../images/banner2.png); background-size:cover; background-position:center; max-width: 100%; height: auto; width:5">
  
             <p style="color:white; font-size:40px;">Bienvenue sur le site de réservation<br>
             <strong>Les Caravanes de la Besbre</strong> 

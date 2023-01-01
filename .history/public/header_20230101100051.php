@@ -35,7 +35,7 @@
 
      <div class="d-flex align-self-end  ">
     <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav  mb-2 fs-5 px-5 ">
+<ul class="navbar-nav  mb-2 fs-5 px-4 ">
 
   <li class="nav-item">
     <a class="nav-link" aria-current="page" href="#">Accueil</a>
@@ -61,13 +61,13 @@
 
   
 
-<header class="text-center p-5 img-fluid" style="background-image:url(../images/banner3.png); background-size:cover; background-position:center; max-width: 100%; height: auto; width:1500px">
+<header class="text-center p-5" style="background-image:url(../images/banner.png); background-size:cover; background-position:center; width:100%; height: 350px;">
  
             <p style="color:white; font-size:40px;">Bienvenue sur le site de réservation<br>
             <strong>Les Caravanes de la Besbre</strong> 
             </p>
 
-       <!--<div> <button class="styled" type="button">Réservez ! </button></div>-->
+       <--<div> <button class="styled" type="button">Réservez ! </button></div>-->
 
           <div><img src="../images/lePal.png" class="" alt="logo Pal"> </div> 
 </header>
