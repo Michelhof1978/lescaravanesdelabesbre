@@ -42,15 +42,13 @@ small{
  .achatBillet{
 	font-size: 25px;
 	width: 300px;
-	transition: transform .5s;/*zoom survol souris*/
-	
+	transition: transform .5s;
 
  }
  .achatBillet:hover{/*zoom survol souris*/
 	-ms-transform: scale(1.5); /* IE 9 */
 	-webkit-transform: scale(1.5); /* Safari 3-8 */
 	transform: scale(1.5);
-	
 	}
 
 .videoPal1{

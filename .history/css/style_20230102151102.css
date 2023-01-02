@@ -43,7 +43,6 @@ small{
 	font-size: 25px;
 	width: 300px;
 	transition: transform .5s;/*zoom survol souris*/
-	
 
  }
  .achatBillet:hover{/*zoom survol souris*/

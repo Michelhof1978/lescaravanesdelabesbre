@@ -39,27 +39,11 @@ small{
 
 /* end banner */
 
- .achatBillet{
-	font-size: 25px;
-	width: 300px;
-	transition: transform .5s;/*zoom survol souris*/
-	
-
- }
- .achatBillet:hover{/*zoom survol souris*/
-	-ms-transform: scale(1.5); /* IE 9 */
-	-webkit-transform: scale(1.5); /* Safari 3-8 */
-	transform: scale(1.5);
-	
-	}
-
+ 
 .videoPal1{
    
     
     
-    
-	
-	padding: 15px;
 	
 	border: 1px solid #ddd;
 	background: #FFF;
@@ -91,8 +75,7 @@ small{
 
 .videoPal2{
     
-    
-    padding: 15px;
+   
 	
 	border: 1px solid #ddd;
 	background: #FFF;

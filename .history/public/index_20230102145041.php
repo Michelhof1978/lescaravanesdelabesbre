@@ -11,8 +11,8 @@
       <section>
         <div class="row">
           <div class="col-md-6 gx-5  pe-5 ">
-            <div class="bg-image  ripple shadow-2-strong rounded-5 " data-mdb-ripple-color="light">
-              <img src="../images/banner3.png" class="img-fluid h-350 w-250 bg-image hover-zoom" />
+            <div class="bg-image  ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+              <img src="../images/banner3.png" class="img-fluid h-350 w-250" />
               <a href="#!">
                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
               </a>
@@ -32,10 +32,10 @@
       </section>
       <!--Section: Content-->
 
-      <section class="embed-responsive embed-responsive-21by9 j row">
-<iframe class="embed-responsive-item align-items-center col videoPal1"width="490" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <h3 class="achatBillet col"> <a class="text-dark" href="https://www.lepal.com/">Achetez Vos Billets</a></h3>
-    <iframe class="embed-responsive-item align-items-center col videoPal2 "width="490" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <section class="embed-responsive embed-responsive-21by9  p-10 ">
+<iframe class="embed-responsive-item align-items-center  videoPal1"width="490" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <h3> <a class="text-dark " href="https://www.lepal.com/">Achetez Vos Billets</a></h3>
+    <iframe class="embed-responsive-item align-items-center  videoPal2 "width="490" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 
@@ -45,10 +45,10 @@
         <h4 class="mb-5"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 ">
-            <div class="card ">
-              <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
-                <img src="../images/caravane1.jpg" class="img-fluid " />
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="../images/caravane1.jpg" class="img-fluid" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -65,9 +65,9 @@
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="../images/caravane2.jpg" class="img-fluid" />
+            <div class="card bg-image">
+              <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
+                <img src="../images/caravane2.jpg" class="img-fluid hover-zoom" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
