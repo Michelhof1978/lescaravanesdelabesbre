@@ -108,7 +108,6 @@
       <hr class="my-5" />
 
       <!--Section: Content-->
-      <form>
       <section class="mb-5">
         <h4 class="mb-5 text-center"><strong>NOUS CONTACTER</strong></h4>
 
@@ -120,42 +119,41 @@
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example1" class="form-control"placeholder="Prénom" />
-                    <label class="form-label" for="form3Example1"></label>
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">Prénom</label>
                   </div>
                 </div>
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control"placeholder="Nom" />
-                    <label class="form-label" for="form3Example2"></label>
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Nom</label>
                   </div>
                 </div>
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="tel" id="form3Example3" class="form-control" placeholder="Télèphone" />
-                    <label class="form-label" for="form3Example3"></label>
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Télèphone</label>
                   </div>
                 </div>
               </div>
 
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="form3Example4" class="form-control " placeholder="Email" />
-                <label class="form-label" for="form3Example4"></label>
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email</label>
               </div>
-              
 
               <div class="form-floating ">
-                <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <textarea class="form-control h-ç" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                <label for="floatingTextarea">Commentaires</label>
             </div>
 
               
 
               <!-- Submit button -->
-              <button type="submit" class="btn btn-primary btn-block mb-4 mt-5">
+              <button type="submit" class="btn btn-primary btn-block mb-4">
                 Envoyez
               </button>
 

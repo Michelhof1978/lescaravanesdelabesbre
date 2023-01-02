@@ -127,14 +127,14 @@
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="text" id="form3Example2" class="form-control"placeholder="Nom" />
+                    <input type="text" id="form3Example2" class="form-control"placeholder="Nom />
                     <label class="form-label" for="form3Example2"></label>
                   </div>
                 </div>
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="tel" id="form3Example3" class="form-control" placeholder="Télèphone" />
+                    <input type="tel" id="form3Example3" class="form-control" placeholder="Télèphone />
                     <label class="form-label" for="form3Example3"></label>
                   </div>
                 </div>

@@ -134,7 +134,7 @@
 
                 <div class="col">
                   <div class="form-outline">
-                    <input type="tel" id="form3Example3" class="form-control" placeholder="Télèphone" />
+                    <input type="tel" id="form3Example3" class="form-control" placeholder="Télèphone />
                     <label class="form-label" for="form3Example3"></label>
                   </div>
                 </div>
