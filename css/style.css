@@ -64,19 +64,18 @@ small{
 
 /* end banner */
 
-/* videoPal 
+ 
 .videoPal1{
     float: left;
-     margin-top: -150px;
+    
     margin-left: 50px;
-    position: relative;
-	width: 435px;
-	height: 250px;
+    
+	
 	padding: 15px;
 	
 	border: 1px solid #ddd;
 	background: #FFF;
-	/* CSS3 effects 
+	/*CSS3 effects */
 	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
@@ -105,15 +104,11 @@ small{
 .videoPal2{
     float: right;
     margin-right: 50px;
-    margin-top: -150px;
-    position: relative;
-	width: 435px;
-	height: 250px;
-	padding: 15px;
+    padding: 15px;
 	
 	border: 1px solid #ddd;
 	background: #FFF;
-	/* CSS3 effects 
+	/* CSS3 effects */
 	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
 	border-radius: 2px 2px 2px 2px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
@@ -136,47 +131,7 @@ small{
 }
 /* end videoPal */
 
-.logoPal{
-    text-align: center;
-    margin-top: -190px;
-}
- 
-/* palButton */
-.palButton1{
-    margin: 0 auto;
-    background-color: #d226ac;
-    width: 190px;
-    height: 60px;
-    text-align: center;
-    border-radius: 5px;
-    line-height: 50px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-.palButton1:hover{
-    margin: 0 auto;
-    background-color: #d226ad94;
-    width: 190px;
-    height: 60px;
-    text-align: center;
-    border-radius: 5px;
-    line-height: 50px;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-}
-.palButton2{
-    
-    color: #fff;
-    font-weight: bold;
-}
-
-
-.palButton3{
-    margin-left: -20px;
-}
-/* end palButton */
+/
 
 .img1{
     width: 330px;
@@ -222,10 +177,10 @@ footer{
    box-sizing: border-box;/* pour mettre à niveau espace texte avec image */
 }
 
-
 .clear{
-    clear: both;/* pour espace élément */
-}
+    clear: both;
+} /* pour espace élément /*
+
 
 .offre{
     
@@ -276,7 +231,7 @@ article h4{
 }
 .offre h2{
     color: rgba(0, 0, 0, 0.788);
-}
+}*/
 .campagne {
     color: rgba(0, 0, 0, 0.705);
     text-align: center;
