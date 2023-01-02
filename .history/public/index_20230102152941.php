@@ -32,9 +32,9 @@
       </section>
       <!--Section: Content-->
 
-      <section class="embed-responsive embed-responsive-21by9 row ">
-<iframe class="embed-responsive-item align-items-center col videoPal1"width="490" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <h3 class="achatBillet col"> <a class="text-dark" href="https://www.lepal.com/">Achetez Vos Billets</a></h3>
+      <section class="embed-responsive embed-responsive-21by9 row">
+<iframe class="embed-responsive-item align-items-center col-4 videoPal1"width="490" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <h3 class="achatBillet col "> <a class="text-dark" href="https://www.lepal.com/">Achetez Vos Billets</a></h3>
     <iframe class="embed-responsive-item align-items-center col videoPal2 "width="490" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
