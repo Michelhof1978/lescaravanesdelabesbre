@@ -169,9 +169,15 @@ article h4{
 }
 .offre h2{
     color: rgba(0, 0, 0, 0.788);
-}
+}*
 */
 
+.campagne {
+    color: rgba(0, 0, 0, 0.705);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'crete round', serif;
+}
 /* caroussel index*/
 #slideshow {
 	position: relative;

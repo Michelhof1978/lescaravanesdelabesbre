@@ -38,7 +38,7 @@
 <ul class="navbar-nav fs-5 px-5">
 
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
+    <a class="nav-link" aria-current="page" href="index.">Accueil</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Logements</a>

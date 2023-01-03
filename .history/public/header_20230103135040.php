@@ -38,13 +38,13 @@
 <ul class="navbar-nav fs-5 px-5">
 
   <li class="nav-item">
-    <a class="nav-link" aria-current="page" href="index.php">Accueil</a>
+    <a class="nav-link" aria-current="page" href="#">Accueil</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Logements</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " href="tourisme.php">Tourisme</a>
+    <a class="nav-link " href="public/tourisme.php">Tourisme</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="https://www.lepal.com/">Vente Billets</a>
@@ -72,3 +72,7 @@
 
 
 
+ <!-- BOOTSTRAP JavaScript -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
