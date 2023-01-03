@@ -530,7 +530,6 @@ article h4{
 
 /* dompierre logo tourisme.php */
 
-/* FOOTER */
 .img1{
     width: 330px;
     height: 450px;
@@ -547,7 +546,8 @@ footer{
 .copyright{
     text-align: center;
     color: #fff;
-    font-size: 15px; 
+    font-size: 15px;
+    
     
 }
 .img2{
@@ -559,4 +559,3 @@ footer{
 .img3{
    text-align: center;
 }
-/* END FOOTER */

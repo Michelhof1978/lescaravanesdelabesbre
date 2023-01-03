@@ -181,6 +181,7 @@ article h4{
 /* caroussel index*/
 #slideshow {
 	position: relative;
+	padding-bottom: ;
 	width: 640px;
 	height: 310px;
 	padding: 15px;

@@ -530,33 +530,3 @@ article h4{
 
 /* dompierre logo tourisme.php */
 
-/* FOOTER */
-.img1{
-    width: 330px;
-    height: 450px;
-    margin-top: 50px;
-    margin-left: 50px; 
-} 
-
-footer{
-    height: 250px;
-    background: rgba(230, 122, 22, 0.883);
-   
-    
-}
-.copyright{
-    text-align: center;
-    color: #fff;
-    font-size: 15px; 
-    
-}
-.img2{
-    
-    height: 180px;
-    width:205px;
-    text-align: center;
-}
-.img3{
-   text-align: center;
-}
-/* END FOOTER */

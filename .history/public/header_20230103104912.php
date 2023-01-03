@@ -50,10 +50,10 @@
     <a class="nav-link" href="https://www.lepal.com/">Vente Billets</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#contact">Contact</a>
+    <a class="nav-link"   href="#">#Contact</a>
   </li>
 
-
+</ul>  a href="#contact"><Contact</></a>
 </div>
 
 </div> 

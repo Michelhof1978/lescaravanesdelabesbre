@@ -130,12 +130,10 @@ if ($retour) {
 
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="mb-5 text-center git push --set-upstream origin" id="contact"><strong>NOUS CONTACTER</strong></h4>
-
+        <h4 class="mb-5 text-center git push --set-upstream origin"><abbr</h4><id="contact">
+        <a href="#contact"><strong>NOUS CONTACTER</strong></a>
        
-       
-       
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">str
           <div class="col-md-6">
           <form>
               <!-- 2 column grid layout with text inputs for the first and last names -->
@@ -235,8 +233,8 @@ if ($retour) {
 
         
     </div>-->
-<div class="clear"></div>
-</section class="">
+
+</section class="clear">
 <p class="campagne">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</p>
 
 <span id="sl_play" class="sl_command"></span>

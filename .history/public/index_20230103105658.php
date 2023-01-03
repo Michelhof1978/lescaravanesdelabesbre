@@ -130,7 +130,7 @@ if ($retour) {
 
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="mb-5 text-center git push --set-upstream origin" id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="mb-5 text-center git push --set-upstream origin"><strong>NOUS CONTACTER</strong></h4>
 
        
        
@@ -235,7 +235,7 @@ if ($retour) {
 
         
     </div>-->
-<div class="clear"></div>
+
 </section class="">
 <p class="campagne">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</p>
 

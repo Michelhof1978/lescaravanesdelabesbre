@@ -9,10 +9,6 @@ body{
     margin: 0;
    
 }
-.clear{
-    clear: both;
-} /* pour espace élément /*
-
 /* navbar */
   .orange{
     color: #ff6600;
@@ -40,7 +36,7 @@ body{
 	}
 	/* end Billeterie entre les 2 vidéos  */
 	
-/*vidéos  le pal */
+
 .videoPal1{
 	
 	padding: 15px;
@@ -104,23 +100,60 @@ body{
        display: none;
     }
  }
-/* end vidéos  le pal */
+/* end videoPal */
 
+/
 
+.img1{
+    width: 330px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    
+   
+  
+} 
 
-/*.overlay{
+footer{
+    height: 250px;
+    background: rgba(230, 122, 22, 0.883);
+   
+    
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    
+    
+}
+.img2{
+    
+    height: 180px;
+    width:205px;
+    text-align: center;
+}
+.img3{
+   text-align: center;
+}
+
+.overlay{
    background: rgb(244, 239, 239);
    height: 100%;
    width: 190px;
    padding: 20px;
    border-radius: 10px 0 0 10px;
    text-align: center;
-   box-sizing: border-box;/* pour mettre à niveau espace texte avec image 
-}*/
+   box-sizing: border-box;/* pour mettre à niveau espace texte avec image */
+}
+
+.clear{
+    clear: both;
+} /* pour espace élément /*
 
 
-
-/*.offre{
+.offre{
     
     margin-top: -40px;
     margin-bottom: 30px;
@@ -169,13 +202,13 @@ article h4{
 }
 .offre h2{
     color: rgba(0, 0, 0, 0.788);
-}*
+}*/
 .campagne {
     color: rgba(0, 0, 0, 0.705);
     text-align: center;
     font-size: 40px;
     font-family: 'crete round', serif;
-}*/
+}
 
 
 /* caroussel index*/
@@ -484,6 +517,8 @@ article h4{
 /* fin caroussel index */
 
 /* debut video logo dompierre*/
+
+
 .logoTourisme{
 	width: 80%;
 	height: 300px;}
@@ -530,33 +565,3 @@ article h4{
 
 /* dompierre logo tourisme.php */
 
-/* FOOTER */
-.img1{
-    width: 330px;
-    height: 450px;
-    margin-top: 50px;
-    margin-left: 50px; 
-} 
-
-footer{
-    height: 250px;
-    background: rgba(230, 122, 22, 0.883);
-   
-    
-}
-.copyright{
-    text-align: center;
-    color: #fff;
-    font-size: 15px; 
-    
-}
-.img2{
-    
-    height: 180px;
-    width:205px;
-    text-align: center;
-}
-.img3{
-   text-align: center;
-}
-/* END FOOTER */

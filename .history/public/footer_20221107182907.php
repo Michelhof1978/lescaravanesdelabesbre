@@ -1,5 +1,5 @@
 <footer>
-    <div class="wrapper clear"> 
+    <div class="wrapper"> 
 
    <div class="img3">
     <img class="img2" src="../images/logo.png" /></h2>
