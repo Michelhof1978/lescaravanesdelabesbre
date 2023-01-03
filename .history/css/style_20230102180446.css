@@ -9,19 +9,34 @@ body{
     margin: 0;
    
 }
+
+/* header */
 /* navbar */
   .orange{
     color: #ff6600;
     font-size: 75px;
     }
 
+	
+
 	.navbar-nav a:hover{
 		color: orangered;
 	}
+
+	
+	
 /* end navbar */
+
+/* banner */
+
+
+
+
+/* end banner */
 
  .achatBillet{
 	font-size: 25px;
+	
 	transition: transform .8s;/*zoom survol souris*/
 	text-align: center;
 	padding-top: 110px;
@@ -59,13 +74,16 @@ body{
 	border-radius: 50%;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
 }
-
 #videoPal1:before {
 	left:0;
 	transform: rotate(-4deg);
 }
 
+
+
 .videoPal2{
+    
+    
     padding: 15px;
 	
 	border: 1px solid #ddd;

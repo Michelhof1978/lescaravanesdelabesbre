@@ -18,10 +18,21 @@ body{
 	.navbar-nav a:hover{
 		color: orangered;
 	}
+
+	
+	
 /* end navbar */
+
+/* banner */
+
+
+
+
+/* end banner */
 
  .achatBillet{
 	font-size: 25px;
+	
 	transition: transform .8s;/*zoom survol souris*/
 	text-align: center;
 	padding-top: 110px;

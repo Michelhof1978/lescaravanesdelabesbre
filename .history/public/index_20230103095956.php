@@ -117,8 +117,7 @@ if (isset($_POST["message"])) {
   Nom : ".$_POST["nom"]."
   Téléphone : ".$_POST["Téléphone"]."
   Email : ".$_POST["email"]."
-  Objet : ".$_POST["objet"]."
-  Message : ".$_POST["message"];
+  C : ".$_POST["message"];
 
 $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message,"From:contact@cvmichel-hoffmann.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
@@ -166,11 +165,6 @@ if ($retour) {
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form3Example4" class="form-control " placeholder="Email" />
-                <label class="form-label" for="form3Example4"></label>
-              </div>
-
-              <div class="form-outline mb-4">
-                <input type="objet" id="form3Example4" class="form-control " placeholder="Objet" />
                 <label class="form-label" for="form3Example4"></label>
               </div>
               

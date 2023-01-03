@@ -113,14 +113,12 @@
       <?php 
 if (isset($_POST["message"])) {
   $message = "Message envoye de :
-  Prénom : ".$_POST["Prénom"]."
   Nom : ".$_POST["nom"]."
-  Téléphone : ".$_POST["Téléphone"]."
   Email : ".$_POST["email"]."
   Objet : ".$_POST["objet"]."
   Message : ".$_POST["message"];
 
-$retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message,"From:contact@cvmichel-hoffmann.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+$retour = mail("michel.hof@hotmail.fr", $_POST["objet"], $message,"From:contact@cvmichel-hoffmann.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
 if ($retour) {
   echo "<p>L'email a bien été envoyé</p>";
@@ -166,11 +164,6 @@ if ($retour) {
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="email" id="form3Example4" class="form-control " placeholder="Email" />
-                <label class="form-label" for="form3Example4"></label>
-              </div>
-
-              <div class="form-outline mb-4">
-                <input type="objet" id="form3Example4" class="form-control " placeholder="Objet" />
                 <label class="form-label" for="form3Example4"></label>
               </div>
               
@@ -236,7 +229,7 @@ if ($retour) {
         
     </div>-->
 <div class="clear"></div>
-</section class="">
+</section>
 <p class="campagne">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</p>
 
 <span id="sl_play" class="sl_command"></span>

@@ -49,8 +49,8 @@
   <li class="nav-item">
     <a class="nav-link" href="https://www.lepal.com/">Vente Billets</a>
   </li>
-  <li class="nav-item ">
-    <a class="nav-link"  href="#">Contact</a>
+  <li class="nav-item">
+    <a class="nav-link" id= href="#">Contact</a>
   </li>
 
 </ul>
