@@ -55,7 +55,6 @@ body{
 /* end textIntro */
 
 /* Billeterie entre les 2 vidéos */
-
  .logoPal{
 	transition: transform .8s;/*zoom survol souris*/
 margin-bottom: 20px;
@@ -70,12 +69,12 @@ margin-bottom: 20px;
 
 	.billeterie1{
 		
-        padding-top: 65px;
+        padding-top: 75px;
 	}
 
 	.billeterie2{
-		position: relative;
-        top: -45px;
+		
+        t: 55px;
 	
 	}
 

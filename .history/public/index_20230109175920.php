@@ -37,8 +37,8 @@
         <iframe class="videoPal1 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       
-        <div class=" col text-center d-none d-md-block"> 
-                <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
+        <div class=" col text-center d-none d-lg-block billeterie1 "> 
+                <h3 class= "text-dark ">Billeterie </h3> 
                 <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
               </div>
       

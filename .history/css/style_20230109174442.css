@@ -55,7 +55,9 @@ body{
 /* end textIntro */
 
 /* Billeterie entre les 2 vidéos */
-
+.pal{
+	display: flex;
+}
  .logoPal{
 	transition: transform .8s;/*zoom survol souris*/
 margin-bottom: 20px;
@@ -69,14 +71,18 @@ margin-bottom: 20px;
 	}
 
 	.billeterie1{
-		
-        padding-top: 65px;
+		position: relative;
+        padding-top: 75px;
 	}
 
 	.billeterie2{
 		position: relative;
-        top: -45px;
+        top: -25px;
 	
+	}
+
+	.billeterie{
+		
 	}
 
 	/* end Billeterie entre les 2 vidéos  */

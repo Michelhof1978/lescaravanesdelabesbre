@@ -30,19 +30,19 @@
       
       <!--Section: Content-->
       <section>
-      <div class="container">
-      <div class="row ">
+      <div class="container-fluid ">
+      <div class="row mx-auto">
       
-      <div class="col embed-responsive embed-responsive-16by9 ">
+      <div class="col-5 embed-responsive embed-responsive-16by9 ">
         <iframe class="videoPal1 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       
-        <div class=" col text-center d-none d-md-block"> 
+        <div class=" col-2 text-center billeterie "> 
                 <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
                 <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
               </div>
       
-        <div class="col embed-responsive embed-responsive-16by9 d-none d-lg-block"> 
+        <div class="col-5 embed-responsive embed-responsive-16by9 d-none d-lg-block"> 
           <iframe class=" videoPal2 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
@@ -142,22 +142,22 @@
 		<div class="c_slider"></div>
 		<div class="slider ">
 
-			<figure class="col-xs-8">
+			<figure class="col col-xs-8">
 				<img src="../images/oies.jpg" alt="" width="640" height="310" />
 				<figcaption class="justify-content-center">Ballades au bord des étangs</figcaption>
         </figure><!--
 
-			--><figure class="col-xs-8">
+			--><figure class="col col-xs-8">
 				<img src="../images/tournesol.jpg" alt="" width="640" height="310" />
 				<figcaption class="justify-content-center" >Champs de tournesols</figcaption>
 			</figure><!--
 
-			--><figure class="col-xs-8">
+			--><figure class="col">
 				<img src="../images/poule.jpg" alt="" width="640" height="310" />
 				<figcaption class="justify-content-center">Fermes Pédagogiques</figcaption>
         </figure><!--
 
-			--><figure class="col col-xs-8">
+			--><figure class="col">
 				<img src="../images/nature.jpg" alt="" width="640" height="310" />
 				<figcaption class="justify-content-center">Se promener dans la nature</figcaption>
 			</figure>
