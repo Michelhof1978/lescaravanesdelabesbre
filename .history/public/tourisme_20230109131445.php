@@ -1,6 +1,6 @@
 <?php include("header.php") ?>
 
-<!--EndSlideShow-->
+<!--FormulaireDeContact-->
 <h1 style="text-align:center; font-size: 40px;color: gray;">Loin de tout, proche de l'étientiel</h1>
 
 <div class="clear"></div>
@@ -21,7 +21,6 @@
        </div>
 </div>
 </section>
-<!--EndSlideShow-->
 
 <!--FormulaireDeContact-->
 <?php 

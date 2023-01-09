@@ -42,7 +42,7 @@
                 <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
               </div>
       
-        <div class="col-5 embed-responsive embed-responsive-16by9 d-none d-lg-block"> 
+        <div class="col-5 embed-responsive embed-responsive-16by9 d-none d-md-block"> 
           <iframe class=" videoPal2 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 

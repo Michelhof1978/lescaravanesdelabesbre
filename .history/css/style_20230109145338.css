@@ -37,6 +37,7 @@ body{
 /* textInTro */
 .textIntro {
 	text-align: justify;
+	line-height: ;
 	font-size: 0,5rem;???????????????????????????????????
 }
 
@@ -109,6 +110,12 @@ margin-bottom: 20px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 }
 
+@media screen and (max-width: 900px) {
+    .videoPal2{
+       display: none;
+	  
+    }
+ }
 /* end vidéos  le pal */
 
 

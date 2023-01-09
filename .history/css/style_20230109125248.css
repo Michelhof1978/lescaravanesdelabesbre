@@ -79,13 +79,27 @@ margin-bottom: 20px;
 	}
 
 	.billeterie{
-		
+		positio
 	}
 
+	@media screen and (max-width: 900px) {
+
+		            
+
+		}
+	 
+	 
+	
+
+	@media screen and (max-width: 1050px) {
+		.videoPal1{
+		   
+		
+		}
+	}
 	/* end Billeterie entre les 2 vidéos  */
 	
 /*vidéos  le pal */
-
 .videoPal1 {
 	padding: 15px;
 	border: 1px solid #ddd;
@@ -109,6 +123,12 @@ margin-bottom: 20px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 }
 
+@media screen and (max-width: 900px) {
+    .videoPal2{
+       display: none;
+	  
+    }
+ }
 /* end vidéos  le pal */
 
 

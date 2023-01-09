@@ -9,6 +9,7 @@
     <div class="container">
       <!--Section: Content-->
       <section>
+      
         <div class="row">
 
           <div class="col-md-6 banner3">
@@ -25,24 +26,24 @@
           </div>
           
         </div>
-      
+        </article>
       </section>
       
       <!--Section: Content-->
       <section>
-      <div class="container-fluid ">
-      <div class="row ">
+      <div class="container-fluid clear">
+      <div class="row">
       
       <div class="col-5 embed-responsive embed-responsive-16by9 ">
         <iframe class="videoPal1 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       
-        <div class=" col-2 text-center billeterie "> 
+        <div class=" col-2 text-center billeterie"> 
                 <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
                 <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
               </div>
       
-        <div class="col-5 embed-responsive embed-responsive-16by9 d-none d-lg-block"> 
+        <div class="col-5 embed-responsive embed-responsive-16by9"> 
           <iframe class=" videoPal2 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 

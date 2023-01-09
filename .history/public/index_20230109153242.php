@@ -9,40 +9,40 @@
     <div class="container">
       <!--Section: Content-->
       <section>
+        <article>
         <div class="row">
-
+<aside>
           <div class="col-md-6 banner3">
             <img src="../images/banner3.png" class="img-fluid" />
           </div>
-          
-          
+
           <div class="col-md-6">
             <h4 class="pt-4 text-center"><strong>Facilis consequatur eligendi</strong></h4>
-             <p class="textIntro lead bg-light rounded p-4 shadow p-3 mb-5 bg-white rounded">
+             <p class="textIntro lead bg-light rounded p-4">
             Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. Celles-ci sont en place du 04/07 au 28/08/2022 prévu pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. Epicerie de base fournie (café, sucre, sel, poivre, huile, etc..). 
             Isabelle et son équipe se tiennent à votre disposition pour faire de votre séjour un moment inoubliable.
             </p>
           </div>
           
         </div>
-      
+        </article>
       </section>
       
       <!--Section: Content-->
       <section>
-      <div class="container-fluid ">
-      <div class="row ">
+      <div class="container-fluid clear">
+      <div class="row">
       
       <div class="col-5 embed-responsive embed-responsive-16by9 ">
         <iframe class="videoPal1 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/PWIjFCqQw78" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       
-        <div class=" col-2 text-center billeterie "> 
+        <div class=" col-2 text-center billeterie"> 
                 <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
                 <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
               </div>
       
-        <div class="col-5 embed-responsive embed-responsive-16by9 d-none d-lg-block"> 
+        <div class="col-5 embed-responsive embed-responsive-16by9"> 
           <iframe class=" videoPal2 embed-responsive-item" width="450" height="300" src="https://www.youtube.com/embed/m7PrIAN_Krs" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
