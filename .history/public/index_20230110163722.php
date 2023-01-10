@@ -122,7 +122,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <section class="row ">
 
@@ -199,7 +199,7 @@ if ($retour) {
 <section>
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        

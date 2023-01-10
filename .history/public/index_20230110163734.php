@@ -199,7 +199,7 @@ if ($retour) {
 <section>
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        

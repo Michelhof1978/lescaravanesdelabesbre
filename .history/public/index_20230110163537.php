@@ -11,7 +11,7 @@
     <!--Section: Content INTRO-->
     <h1 class=" pb-2 text-center display-6 border border-3 rounded bg-light"> Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
     <section>
-    <div class="row mt-3">
+    <div class="row mt-5">
 
     <div class="col-md-6">
     <img src="../images/banner3.png" class="img-fluid" />
@@ -39,7 +39,7 @@
           </div>
         
           <div class=" col text-center d-none d-md-block order-2 "> 
-                  <h3 class= "billeterie1 text-dark display-6">Billeterie </h3> 
+                  <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
                   <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
                 </div>
         
@@ -53,7 +53,7 @@
 
       <!--Section: Content PROPOSITION LOGEMENTS-->
       <section class="text-center clear pt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -122,7 +122,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <section class="row ">
 
@@ -199,7 +199,7 @@ if ($retour) {
 <section>
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        

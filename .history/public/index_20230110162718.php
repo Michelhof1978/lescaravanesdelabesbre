@@ -6,20 +6,21 @@
     <section>
     <!--Main layout-->
     <main class="mt-3">
-
-    <div class="container mt-5">
+      
+    <div class="container">
     <!--Section: Content INTRO-->
     <h1 class=" pb-2 text-center display-6 border border-3 rounded bg-light"> Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
     <section>
-    <div class="row mt-3">
+    <div class="row">
 
-    <div class="col-md-6">
+    <div class="col-md-6 banner3">
     <img src="../images/banner3.png" class="img-fluid" />
     </div>
 
 
-    <div class="col-md-6 mt-4">
-<p class="textIntro lead bg-light rounded shadow p-4 mb-5 bg-white rounded">
+    <div class="col-md-6">
+
+    <p class="textIntro lead bg-light rounded p-4 shadow p-3 mb-5 bg-white rounded">
     Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. Celles-ci sont en place du 04/07 au 28/08/2022 prévu pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. Epicerie de base fournie (café, sucre, sel, poivre, huile, etc..). 
     Isabelle et son équipe se tiennent à votre disposition pour faire de votre séjour un moment inoubliable.
     </p>
@@ -39,7 +40,7 @@
           </div>
         
           <div class=" col text-center d-none d-md-block order-2 "> 
-                  <h3 class= "billeterie1 text-dark display-6">Billeterie </h3> 
+                  <h3 class= "billeterie1 text-dark ">Billeterie </h3> 
                   <a href="https://www.lepal.com/"><img src="../images/lePal.png" class="billeterie2 logoPal img-fluid "/></a> 
                 </div>
         
@@ -53,7 +54,7 @@
 
       <!--Section: Content PROPOSITION LOGEMENTS-->
       <section class="text-center clear pt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -122,7 +123,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <section class="row ">
 
@@ -199,7 +200,7 @@ if ($retour) {
 <section>
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        

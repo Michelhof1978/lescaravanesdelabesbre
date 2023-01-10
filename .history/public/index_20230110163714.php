@@ -53,7 +53,7 @@
 
       <!--Section: Content PROPOSITION LOGEMENTS-->
       <section class="text-center clear pt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -122,7 +122,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <section class="row ">
 
@@ -199,7 +199,7 @@ if ($retour) {
 <section>
       <form action="#" method="POST">
       <section class="mb-5">
-        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        
