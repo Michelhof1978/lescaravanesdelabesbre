@@ -53,7 +53,7 @@
 
       <!--Section: Content-->
       <section class="text-center clear pt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">

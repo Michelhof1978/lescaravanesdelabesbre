@@ -8,7 +8,6 @@
   <main class="mt-3">
     <div class="container">
       <!--Section: Content-->
-      <h1 class=" pb-2 text-center display-6 border border-3 rounded"> Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
       <section>
         <div class="row">
 
@@ -16,7 +15,7 @@
             <img src="../images/banner3.png" class="img-fluid" />
           </div>
           
-         
+          
           <div class="col-md-6">
             
              <p class="textIntro lead bg-light rounded p-4 shadow p-3 mb-5 bg-white rounded">
@@ -53,7 +52,7 @@
 
       <!--Section: Content-->
       <section class="text-center clear pt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
+        <h4 class="mb-5"><strong>NOS PROPOSITIONS DE LOGEMENTS</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
