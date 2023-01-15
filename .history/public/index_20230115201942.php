@@ -62,7 +62,7 @@
         
 
       <!--Section: Content PROPOSITION LOGEMENTS-->
-      <section class="text-center clear mt-5 ms-2 me-2">
+      <section class="text-center clear mt-5 m">
         <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>NOS PROPOSITIONS DE LOGEMENTS A PARTIR DE 78€/NUIT</strong></h4>
 
         <div class="row">
@@ -78,7 +78,7 @@
                 <h5 class="card-title">Caravane BIG</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans camping à Dompierre-sur-Besbre  "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....). Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 120/190 environ.Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong></p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez !</a>
               </div>
             </div>
@@ -96,8 +96,7 @@
                 <h5 class="card-title">Caravane FLO</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants)sur un emplacement dans camping à Dompierre-sur-Besbre "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) .Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
-              </p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez !</a>
               </div>
             </div>
@@ -115,8 +114,7 @@
                 <h5 class="card-title">Caravane OLI</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans le camping "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) . Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140. 
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
-              </p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" 
                 class="btn btn-primary">Réservez !</a>
               </div>
@@ -129,59 +127,15 @@
       <hr class="my-5" />
 
       <!--Section: Content-->
-
-    
+      ../images/oies.jpg
+      ../images/tournesol.jpg
+      ../images/poule.jpg
+      ../images/nature.jpg
 <!--Section CAROUSEL-->
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
 
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
- 
-</div>
-
-<div class="carousel-inner ">
-  <div class="carousel-item active ">
-    <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>nnkqndkjldjl</h5>
-      <p>Ballades au bord des étangs</p>
-    </div>
-  </div>
-
-  <div class="carousel-item">
-    <img src="../images/tournesol.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Champs de tournesols</h5>
-      <p>xnkdzkekddjlak</p>
-    </div>
-  </div>
-
-    <div class="carousel-item">
-    <img src=" ../images/poule.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>cdkdnkleejdlklakk</h5>
-      <p>akdjjkahdajdijojddokpodk</p>
-    </div>
-
-  </div>
-</div>
-
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
-
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
-
-</div>
       
 <!--EndCarousel-->
 

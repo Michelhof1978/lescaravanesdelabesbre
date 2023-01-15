@@ -135,18 +135,18 @@
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
+<div id="carouselExampleCaptions" class="carousel slide">
 
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
- 
+  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
 </div>
 
-<div class="carousel-inner ">
-  <div class="carousel-item active ">
-    <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src=" ../images/oies.jpg" class="d-block w-100 h-50" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>nnkqndkjldjl</h5>
       <p>Ballades au bord des étangs</p>
@@ -154,15 +154,22 @@
   </div>
 
   <div class="carousel-item">
-    <img src="../images/tournesol.jpg" class="d-block w-100 " alt="...">
+    <img src="../images/tournesol.jpg" class="d-block w-100 h-50" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Champs de tournesols</h5>
       <p>xnkdzkekddjlak</p>
     </div>
   </div>
 
+  <div class="carousel-item">
+    <img src=" ../images/poule.jpg" class="d-block w-100 h-50" alt="...">
+    <div class="carousel-caption d-none d-md-block">
+      <h5>cdkdnkleejdlklakk</h5>
+      <p>akdjjkahdajdijojddokpodk</p>
+    </div>
+
     <div class="carousel-item">
-    <img src=" ../images/poule.jpg" class="d-block w-100 " alt="...">
+    <img src=" ../images/nature.jpg" class="d-block w-100 h-50" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>cdkdnkleejdlklakk</h5>
       <p>akdjjkahdajdijojddokpodk</p>

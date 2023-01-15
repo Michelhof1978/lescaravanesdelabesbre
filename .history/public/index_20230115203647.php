@@ -78,7 +78,7 @@
                 <h5 class="card-title">Caravane BIG</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans camping à Dompierre-sur-Besbre  "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....). Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 120/190 environ.Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong></p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez !</a>
               </div>
             </div>
@@ -96,8 +96,7 @@
                 <h5 class="card-title">Caravane FLO</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants)sur un emplacement dans camping à Dompierre-sur-Besbre "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) .Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
-              </p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez !</a>
               </div>
             </div>
@@ -115,8 +114,7 @@
                 <h5 class="card-title">Caravane OLI</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans le camping "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) . Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140. 
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
-              </p>
+                </p>
                 <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" 
                 class="btn btn-primary">Réservez !</a>
               </div>
@@ -128,60 +126,66 @@
 
       <hr class="my-5" />
 
-      <!--Section: Content-->
-
-    
+      <!--Section: Content
+      ../images/oies.jpg
+      ../images/tournesol.jpg
+      ../images/poule.jpg
+      ../images/nature.jpg-->
 <!--Section CAROUSEL-->
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
+<section class="pb-5">
 
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+<span id="sl_play" class="sl_command"></span>
+<span id="sl_pause" class="sl_command"></span>
  
-</div>
+<span id="sl_i1" class="sl_command sl_i"></span>
+<span id="sl_i2" class="sl_command sl_i"></span>
+<span id="sl_i3" class="sl_command sl_i"></span>
+<span id="sl_i4" class="sl_command sl_i"></span>
+<section id="slideshow">
 
-<div class="carousel-inner ">
-  <div class="carousel-item active ">
-    <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>nnkqndkjldjl</h5>
-      <p>Ballades au bord des étangs</p>
-    </div>
-  </div>
+    <a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+    <a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
 
-  <div class="carousel-item">
-    <img src="../images/tournesol.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Champs de tournesols</h5>
-      <p>xnkdzkekddjlak</p>
-    </div>
-  </div>
+   
+	<div class="container">
+		<div class="c_slider"></div>
+		<div class="slider">
+			<figure>
+				<img src="../images/oies.jpg" alt="" width="640" height="310" />
+				<figcaption>Ballades au bord des étangs</figcaption>
 
-    <div class="carousel-item">
-    <img src=" ../images/poule.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>cdkdnkleejdlklakk</h5>
-      <p>akdjjkahdajdijojddokpodk</p>
-    </div>
+			</figure><!--
+			--><figure>
+				<img src="../images/tournesol.jpg" alt="" width="640" height="310" />
+				<figcaption>Champs de tournesols</figcaption>
+			</figure><!--
+			--><figure>
+				<img src="../images/poule.jpg" alt="" width="640" height="310" />
+				<figcaption>Fermes Pédagogiques</figcaption>
 
-  </div>
-</div>
+			</figure><!--
+			--><figure>
+				<img src="../images/nature.jpg" alt="" width="640" height="310" />
+				<figcaption>Se promener dans la nature</figcaption>
+			</figure>
+		</div>
+	</div>
+		
+	<span id="timeline"></span>
 
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
+    <ul class="dots_commands"><!--
+	--><li><a title="Afficher la slide 1" href="#sl_i1">Slide 1</a></li><!--
+	--><li><a title="Afficher la slide 2" href="#sl_i2">Slide 2</a></li><!--
+	--><li><a title="Afficher la slide 3" href="#sl_i3">Slide 3</a></li><!--
+	--><li><a title="Afficher la slide 4" href="#sl_i4">Slide 4</a></li>
+</ul>
 
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
+</section>
 
-</div>
       
 <!--EndCarousel-->
 

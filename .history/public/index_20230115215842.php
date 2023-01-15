@@ -135,7 +135,7 @@
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
+<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 round carousel">
 
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

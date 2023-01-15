@@ -135,7 +135,7 @@
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
+<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5">
 
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -144,8 +144,8 @@
  
 </div>
 
-<div class="carousel-inner ">
-  <div class="carousel-item active ">
+<div class="carousel-inner">
+  <div class="carousel-item active w">
     <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>nnkqndkjldjl</h5>

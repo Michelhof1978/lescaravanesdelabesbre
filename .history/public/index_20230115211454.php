@@ -130,58 +130,105 @@
 
       <!--Section: Content-->
 
-    
+      <div id="carouselExampleCaptions" class="carousel slide">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src=" ../images/oies.jpg" class="d-block w-100 h-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>nnkqndkjldjl</h5>
+        <p>dnkajdjlajldjoalkdomkmpakdmp</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../images/tournesol.jpg" class="d-block w-100 h-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>bfzjfkzhjkrzzi</h5>
+        <p>xnkdzkekddjlak</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src=" ../images/poule.jpg" class="d-block w-100 h-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>cdkdnkleejdlklakk</h5>
+        <p>akdjjkahdajdijojddokpodk</p>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
 <!--Section CAROUSEL-->
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
+<section class="row ">
 
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
- 
-</div>
+<span id="sl_play" class="sl_command"></span>
+<span id="sl_pause" class="sl_command"></span>
 
-<div class="carousel-inner ">
-  <div class="carousel-item active ">
-    <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>nnkqndkjldjl</h5>
-      <p>Ballades au bord des étangs</p>
-    </div>
-  </div>
+<span id="sl_i1" class="sl_command sl_i"></span>
+<span id="sl_i2" class="sl_command sl_i"></span>
+<span id="sl_i3" class="sl_command sl_i"></span>
+<span id="sl_i4" class="sl_command sl_i"></span>
+<section id="slideshow">
 
-  <div class="carousel-item">
-    <img src="../images/tournesol.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>Champs de tournesols</h5>
-      <p>xnkdzkekddjlak</p>
-    </div>
-  </div>
+    <a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+    <a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
 
-    <div class="carousel-item">
-    <img src=" ../images/poule.jpg" class="d-block w-100 " alt="...">
-    <div class="carousel-caption d-none d-md-block">
-      <h5>cdkdnkleejdlklakk</h5>
-      <p>akdjjkahdajdijojddokpodk</p>
-    </div>
 
-  </div>
-</div>
+	<div class="container ">
+		<div class="c_slider"></div>
+		<div class="slider ">
 
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Previous</span>
-</button>
+			<figure class="col-xs-8">
+				<img src="../images/oies.jpg" alt="" width="640" height="310" />
+				<figcaption class="justify-content-center"></figcaption>
+        </figure><!--
+			--><figure class="col-xs-8">
+				<img src="../images/tournesol.jpg" alt="" width="640" height="310" />
+				<figcaption class="justify-content-center" >Champs de tournesols</figcaption>
+			</figure><!--
+			--><figure class="col-xs-8">
+				<img src="../images/poule.jpg" alt="" width="640" height="310" />
+				<figcaption class="justify-content-center">Fermes Pédagogiques</figcaption>
+        </figure><!--
+			--><figure class="col col-xs-8">
+				<img src="../images/nature.jpg" alt="" width="640" height="310" />
+				<figcaption class="justify-content-center">Se promener dans la nature</figcaption>
+			</figure>
+		</div>
+	</div>
 
-<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="visually-hidden">Next</span>
-</button>
+	<span id="timeline"></span>
 
-</div>
+    <ul class="dots_commands"><!--
+	--><li><a title="Afficher la slide 1" href="#sl_i1">Slide 1</a></li><!--
+	--><li><a title="Afficher la slide 2" href="#sl_i2">Slide 2</a></li><!--
+	--><li><a title="Afficher la slide 3" href="#sl_i3">Slide 3</a></li><!--
+	--><li><a title="Afficher la slide 4" href="#sl_i4">Slide 4</a></li>
+</ul>
+
+</section>
+
       
 <!--EndCarousel-->
 
