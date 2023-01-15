@@ -37,13 +37,9 @@ iframe {
 /* end navbar */
 
 /* textInTro */
-@media screen and (max-width: 768px) {
-    h1{
-       font-size: 0,5em;
-    }
- }
 .textIntro {
 	text-align: justify;
+	font-size: 0,5rem;???????????????????????????????????
 }
 /* end textIntro */
 
@@ -82,7 +78,11 @@ margin-bottom: 20px;
 }
  
 
-
+@media screen and (max-width: 950px) {
+    .videoPal2{
+       display: none;
+    }
+ }
 
 
 

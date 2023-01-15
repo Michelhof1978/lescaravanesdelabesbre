@@ -38,8 +38,8 @@ iframe {
 
 /* textInTro */
 @media screen and (max-width: 768px) {
-    h1{
-       font-size: 0,5em;
+    .titreH1{
+       font;
     }
  }
 .textIntro {

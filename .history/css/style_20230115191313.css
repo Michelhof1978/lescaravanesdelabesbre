@@ -37,9 +37,9 @@ iframe {
 /* end navbar */
 
 /* textInTro */
-@media screen and (max-width: 768px) {
-    h1{
-       font-size: 0,5em;
+@media screen and (max-width: px) {
+    .videoPal2{
+       display: none;
     }
  }
 .textIntro {

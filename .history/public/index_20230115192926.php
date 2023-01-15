@@ -32,7 +32,7 @@
     </section>
 
       <!--Section: Content VIDEO PAL-->
-      <section class="text-center mt-4 m-2" >
+      <section class="text-center mt-4 m-3" >
       <div class="container ">
         <div class="row g-0">
         

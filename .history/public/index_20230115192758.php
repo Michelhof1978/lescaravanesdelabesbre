@@ -32,7 +32,7 @@
     </section>
 
       <!--Section: Content VIDEO PAL-->
-      <section class="text-center mt-4 m-2" >
+      <section class="text-center mt-4 m-3" >
       <div class="container ">
         <div class="row g-0">
         
@@ -63,7 +63,7 @@
 
       <!--Section: Content PROPOSITION LOGEMENTS-->
       <section class="text-center clear mt-5">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>NOS PROPOSITIONS DE LOGEMENTS A PARTIR DE 78€/NUIT</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col"><strong>NOS PROPOSITIONS DE LOGEMENTS A PARTIR DE 78€/NUIT</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -133,7 +133,7 @@
       ../images/nature.jpg
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 
       

@@ -37,11 +37,7 @@ iframe {
 /* end navbar */
 
 /* textInTro */
-@media screen and (max-width: 768px) {
-    h1{
-       font-size: 0,5em;
-    }
- }
+
 .textIntro {
 	text-align: justify;
 }
