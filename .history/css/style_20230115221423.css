@@ -96,12 +96,14 @@ margin-bottom: 20px;
 
 /*Caroussel*/
 .carousel{
-	width: 100%;
+	width: 50%;
     height: 100%;
     position: absolute;
     top: 0;
 
-	
+	display: flex;
+    justify-content: center;
+    align-items: center;
 
 	padding: 15px;
 	border: 1px solid #ddd;

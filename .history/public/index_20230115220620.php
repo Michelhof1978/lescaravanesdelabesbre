@@ -61,9 +61,9 @@
 
         
 
-      <!--PROPOSITION LOGEMENTS-->
+      <!--Section: Content PROPOSITION LOGEMENTS-->
       <section class="text-center clear mt-5 ms-2 me-2">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>LOCATIONS A PARTIR DE 78€/NUIT</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>NOS PROPOSITIONS DE LOGEMENTS A PARTIR DE 78€/NUIT</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -124,14 +124,18 @@
           </div>
         </div>
       </section>
-       <!-- FIN PROPOSITION LOGEMENTS-->
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
 
     
 <!--Section CAROUSEL-->
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
-<div class="container w-50">
-<div id="carouselExampleCaptions" class="carousel slide mt-5 carousel">
+<div class="container">
+<div id="carouselExampleCaptions" class="carousel slide ms-5 me-5 mt-5 rounded carousel">
 
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

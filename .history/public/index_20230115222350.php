@@ -63,7 +63,7 @@
 
       <!--PROPOSITION LOGEMENTS-->
       <section class="text-center clear mt-5 ms-2 me-2">
-        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>LOCATIONS A PARTIR DE 78€/NUIT</strong></h4>
+        <h4 class="mb-5 border border-3 rounded display-6 p-2 bg-light display-6 col m-2"><strong>NOS PROPOSITIONS DE LOGEMENTS A PARTIR DE 78€/NUIT</strong></h4>
 
         <div class="row">
           <div class="col-lg-4 col-md-12 mb-4 ">
@@ -124,7 +124,7 @@
           </div>
         </div>
       </section>
-       <!-- FIN PROPOSITION LOGEMENTS-->
+       <!--PROPOSITION LOGEMENTS-->
 
     
 <!--Section CAROUSEL-->
