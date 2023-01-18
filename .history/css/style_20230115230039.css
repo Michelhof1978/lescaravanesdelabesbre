@@ -40,8 +40,8 @@ iframe {
 
 /* textInTro */
 @media screen and (max-width: 1200px) {
-    h1{
-       font-size: 5px;
+    .h1{
+       font-size: 45px;
     }
  }
 .textIntro {

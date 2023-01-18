@@ -7,10 +7,9 @@
    
     <section class="mt-3 ">
 
-    < class="container mt-5">
+    <div class="container mt-5">
     <!--Section INTRO-->
-    
-    <h1 class=" pb-2 text-center  border border-3 rounded bg-light m-2"> Location Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
+    <h1 class=" pb-2 text-center display-6 border border-3 rounded bg-light m-2 h"> Location Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
     
    
 

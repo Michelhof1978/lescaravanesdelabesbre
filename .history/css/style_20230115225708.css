@@ -39,9 +39,9 @@ iframe {
 /* end navbar */
 
 /* textInTro */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     h1{
-       font-size: 5px;
+       font-size: 45px;
     }
  }
 .textIntro {

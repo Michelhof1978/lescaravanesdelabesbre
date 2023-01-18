@@ -7,10 +7,9 @@
    
     <section class="mt-3 ">
 
-    < class="container mt-5">
+    <div class="container mt-5">
     <!--Section INTRO-->
-    
-    <h1 class=" pb-2 text-center  border border-3 rounded bg-light m-2"> Location Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
+    <h1 class=" pb-2 text-center display-6 border border-3 rounded bg-light m-2"> Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</h1>
     
    
 
@@ -131,7 +130,7 @@
 <!--Section CAROUSEL-->
 
 <h4 class="mb-4 carouseTitle border border-3 rounded bg-light p-2 display-6 text-center m-2">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
-<div class="container w-75">
+<div class="container w-">
 <div id="carouselExampleCaptions" class="carousel slide mt-5 carousel">
 
 <div class="carousel-indicators">
