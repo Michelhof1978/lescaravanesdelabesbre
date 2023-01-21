@@ -140,15 +140,7 @@ box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 
 /*----------------------------------------------------------------------------------------------------*/
 /* END INFORMATIONS PAGE*/
-.info {
-padding: 10px;
-border: 1px solid #ddd;
-background: #FFF;
-/*CSS3 effects */
-background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-border-radius: 2px 2px 2px 2px;
-box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
-}
+.info
 
 /* END INFORMATIONS PAGE*/
 

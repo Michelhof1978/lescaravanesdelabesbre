@@ -79,7 +79,7 @@
                 <h5 class="card-title">Caravane BIG</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans camping à Dompierre-sur-Besbre  "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....). Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 120/190 environ.Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr <br> ou par téléphone au 06 86 41 31 71</strong></p>
+                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr <br> ou par téléphone au 06 86 41</strong></p>
                 <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez !</a>
               </div>
             </div>
@@ -97,7 +97,7 @@
                 <h5 class="card-title">Caravane FLO</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants)sur un emplacement dans camping à Dompierre-sur-Besbre "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et  de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) .Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140.
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr<br> ou par téléphone au 06 86 41 31 71</strong>
+                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
               </p>
                 <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez !</a>
               </div>
@@ -116,7 +116,7 @@
                 <h5 class="card-title">Caravane OLI</h5>
                 <p class="card-text">
                 Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans le camping "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) . Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140. 
-                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr<br> ou par téléphone au 06 86 41 31 71</strong>
+                <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr</strong>
               </p>
                 <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" 
                 class="btn btn-primary">Réservez !</a>

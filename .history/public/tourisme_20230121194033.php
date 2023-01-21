@@ -4,19 +4,11 @@
 
 <h1 class="pb-2 border border-3 text-center rounded bg-light m-4">Loin de tout, proche de l'étientiel</h1>
 
-<div class="container w-50">
-<div class=" mt-4 slideShow">
+<section class="container w-50">
+<div class=" mt-4 slideShow img-fluid col-sm-12 col-xl-6">
     <video controls><source src="../videos/besbre.mp4" type=video/mp4></video>
 </div>
-</div>
-<!--EndSlideShow-->
 
-<!--Video page tourisme-->
-<div class="container mt-5 row">
-
-<div class="videoPal embed-responsive embed-responsive-16by9 w-50 col-sm-12 col-xl-6">
-    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/GeCGXlwJA4Q" frameborder="0" allowfullscreen></iframe>
-</div>
 
 <div class="col-sm-12 col-xl-6 mt-4 ">
         <p class="textIntro lead bg-light rounded shadow p-4 mb-5 bg-white rounded ms-1 me-1 banner3">
@@ -25,9 +17,14 @@
         </p>
     </div>
 
-</div> 
+    </section>
+<!--EndSlideShow-->
 
-<!--End Video page tourisme-->
+<div class="container mt-5">
+<div class="videoPal embed-responsive embed-responsive-16by9 w-50">
+    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/GeCGXlwJA4Q" frameborder="0" allowfullscreen></iframe>
+</div>
+</div> 
 
 
 <!--FormulaireDeContact-->

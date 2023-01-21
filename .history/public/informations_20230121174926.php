@@ -1,36 +1,13 @@
 <?php include("header.php") ?>
 
-<!--SlideShow-->
 
-<h1 class="pb-2 border border-3 text-center rounded bg-light m-4">Loin de tout, proche de l'étientiel</h1>
-
-<div class="container w-50">
-<div class=" mt-4 slideShow">
-    <video controls><source src="../videos/besbre.mp4" type=video/mp4></video>
-</div>
-</div>
-<!--EndSlideShow-->
-
-<!--Video page tourisme-->
-<div class="container mt-5 row">
-
-<div class="videoPal embed-responsive embed-responsive-16by9 w-50 col-sm-12 col-xl-6">
-    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/GeCGXlwJA4Q" frameborder="0" allowfullscreen></iframe>
+<div>
+<img src=" ../images/informations.png" class="d-block w-100 " alt="...">
 </div>
 
-<div class="col-sm-12 col-xl-6 mt-4 ">
-        <p class="textIntro lead bg-light rounded shadow p-4 mb-5 bg-white rounded ms-1 me-1 banner3">
-    Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. Celles-ci sont en place du 03/07 au 27/08/2023 prévu pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. Epicerie de base fournie (café, sucre, sel, poivre, huile, etc..). 
-    Isabelle et son équipe se tiennent à votre disposition pour faire de votre séjour un moment inoubliable.
-        </p>
-    </div>
-
-</div> 
-
-<!--End Video page tourisme-->
 
 
-<!--FormulaireDeContact-->
+<!--Section FORMULAIRECONTACT-->
 <?php 
 if (isset($_POST["message"])) {
   $message = "Message envoye de :
@@ -48,10 +25,10 @@ if ($retour) {
 }
 }
 ?>
-
+<section>
       <form action="#" method="POST">
-      <section class="m-5">
-        <h4 class="mb-5 text-center git push --set-upstream origin" id="contact"><strong>NOUS CONTACTER</strong></h4>
+      <section class="mb-5 ms-2 me-2">
+        <h4 class="m-5 text-center border border-3 rounded bg-light p-2 display-6" bg-light id="contact"><strong>NOUS CONTACTER</strong></h4>
 
        
        
@@ -94,7 +71,7 @@ if ($retour) {
               
              
               <div class="form-outline mb-4">
-                <label class="form-label" for="form3Example5">Objet:</label>
+                <label class="form-label round" for="form3Example5">Objet :</label>
                    <select class="form-label" name="objet" for="form3Example5" id="objet">
                      <option>Renseignements</option>
                      <option>Résérvation</option>
@@ -118,9 +95,11 @@ if ($retour) {
             </form>
           </div>
         </div>
+        </section>
         <!--EndFormulaireDeContact-->
 
-<div class="text-center">
-    <img class="img-fluid" src="../images/logoTourisme.png" alt="" />
-</div>
+      </section>
+      <!--Section: Content-->
+   
+  <!--Main layout-->
 <?php include("footer.php") ?>

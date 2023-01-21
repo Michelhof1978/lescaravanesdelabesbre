@@ -5,7 +5,7 @@
 <h1 class="pb-2 border border-3 text-center rounded bg-light m-4">Loin de tout, proche de l'étientiel</h1>
 
 <div class="container w-50">
-<div class=" mt-4 slideShow">
+<div class=" mt-4 slideShow img-fluid">
     <video controls><source src="../videos/besbre.mp4" type=video/mp4></video>
 </div>
 </div>
@@ -26,6 +26,8 @@
     </div>
 
 </div> 
+
+
 
 <!--End Video page tourisme-->
 

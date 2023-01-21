@@ -5,14 +5,14 @@
 <h1 class="pb-2 border border-3 text-center rounded bg-light m-4">Loin de tout, proche de l'étientiel</h1>
 
 <div class="container w-50">
-<div class=" mt-4 slideShow">
+<div class=" mt-4 slideShow img-fluid">
     <video controls><source src="../videos/besbre.mp4" type=video/mp4></video>
 </div>
 </div>
 <!--EndSlideShow-->
 
 <!--Video page tourisme-->
-<div class="container mt-5 row">
+<div class="container mt-5 row text-align">
 
 <div class="videoPal embed-responsive embed-responsive-16by9 w-50 col-sm-12 col-xl-6">
     <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/GeCGXlwJA4Q" frameborder="0" allowfullscreen></iframe>
