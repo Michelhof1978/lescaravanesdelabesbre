@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+
+
+
+html{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+	
+
+body{
+	
+    font-family: 'Roboto Slab', serif;
+    background-color: rgba(245, 245, 245, 0.767);
+    margin: 0;
+  
+}
+
+iframe {
+    width: 100%;
+	
+}
+
+video{
+	width: 100%;
+}
+
+.clear{
+    clear: both;
+} 
+
+/*navbar */
+  .orange{
+    color: #ff6600;
+    font-size: 75px;
+    }
+
+	.navbar-nav a:hover{
+		color: orangered;
+	}
+
+	.navbar{
+		font-size: 20px;
+	}
+
+	.textLogo{
+		font-size: 150px;
+	}
+/* end navbar */
+
+/* textInTro */
+@media screen and (max-width: 1200px) {
+    
+       
+ }
+/*----------------------------------------------------------------------------------------------------*/
+                                          /*INDEX PAGE*/
+ /*Intro */
+ .banner3{
+	border: 1px solid #ddd;
+	background: #FFF;
+	/*CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+ }
+
+.textIntro {
+	text-align: justify;
+}
+/* end tIntro */
+
+/* Billeterie entre les 2 vidéos */
+
+ .logoPal{
+	position: relative;
+    top: -75px;
+	transition: transform .8s;/*zoom survol souris*/
+margin-bottom: 20px;
+
+ }
+ .logoPal:hover{/*zoom survol souris*/
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
+	
+	.billeterie{
+		
+        padding-top: 20px;
+	}
+
+	/* end Billeterie entre les 2 vidéos  */
+	
+/*vidéos  le pal */
+
+.videoPal{
+	padding: 15px;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/*CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+}
+ 
+/* end vidéos  le pal */
+
+/*Caroussel*/
+.carousel{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+
+	padding: 15px;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/*CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+    
+}
+
+ 
+/* End caroussel*/
+
+/* END INDEX PAGE*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+                                 /* TOURISME PAGE*/
+/*slideShow */
+.slideShow{ 
+padding: 10px;
+border: 1px solid #ddd;
+background: #FFF;
+/*CSS3 effects */
+background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+border-radius: 2px 2px 2px 2px;
+box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+}
+/* End slideShow*/
+/* END TOURISME PAGE*/
+
+/*----------------------------------------------------------------------------------------------------*/
+
+/* INFORMATIONS PAGE*/
+.info {
+padding: 10px;
+border: 1px solid #ddd;
+background: #FFF;
+/*CSS3 effects */
+background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+border-radius: 2px 2px 2px 2px;
+box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+}
+
+/* END INFORMATIONS PAGE*/
+
+.afficheTourisme {
+	
+	
+
+	padding: 10px;
+	border: 1px solid #ddd;
+	background: #FFF;
+	/*CSS3 effects */
+	background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
+	border-radius: 2px 2px 2px 2px;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
+	
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+
+                                         /* FOOTER */
+
+footer{
+    height: 250px;
+    background: rgba(230, 122, 22, 0.883);
+   
+    
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+    font-size: 15px; 
+    
+}
+.img1{
+    width: 330px;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 50px; 
+} 
+.img2{
+    
+    height: 180px;
+    width:205px;
+    text-align: center;
+}
+.img3{
+   text-align: center;
+}
+/* END FOOTER */
+
+#mainNavigation a {
+	font-family: 'Cabin', sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	text-shadow:1px 1px 2px rgba(0,0,0,0.4)
+  }
+  
+  .nav-item a{
+	color:#111111;
+  }
+  .nav-item a:hover {
+	color: orangered;
+  }
+  .nav-item{
+	min-width:12vw;
+  }
+  #mainNavigation {
+	position:relative;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:123;
+	padding-bottom:120px;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(top,  rgba(240, 235, 235, 0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
+  #navbarNavDropdown.collapsing .navbar-nav,
+  #navbarNavDropdown.show .navbar-nav{
+	background:#f9faf7;
+	padding:12px;
+  }
+
