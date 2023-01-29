@@ -30,12 +30,12 @@
 
       <!--Section: Content VIDEO PAL-->
       <section class="text-center mt-4 m-2" >
-      <div class="container">
+      <div class="container videoPal1">
         <div class="row g-0">
         
         <div class=" col">
         <div class="videoPal  embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item videoPal1 " src="https://www.youtube.com/embed/PWIjFCqQw78" frameborder="0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/PWIjFCqQw78" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>
         
@@ -45,8 +45,8 @@
           </div>
 
           <div class=" col d-none d-xl-block">
-        <div class="videoPal embed-responsive embed-responsive-16by9 ">
-            <iframe class="embed-responsive-item videoPal1"  src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
+        <div class="videoPal embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="760" height="315" src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>
     

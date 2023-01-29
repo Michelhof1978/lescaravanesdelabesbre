@@ -193,7 +193,7 @@ margin-bottom: 20px;
 @media screen and (max-width: 1200px) {
     .videoPal1{
 		width: 100% !important;
-		height: auto !important;
+		height: 100px !;
 	}
        
  }

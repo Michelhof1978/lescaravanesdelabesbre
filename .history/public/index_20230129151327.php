@@ -35,7 +35,7 @@
         
         <div class=" col">
         <div class="videoPal  embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item videoPal1 " src="https://www.youtube.com/embed/PWIjFCqQw78" frameborder="0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item videoPal1 videoPal2" src="https://www.youtube.com/embed/PWIjFCqQw78" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>
         

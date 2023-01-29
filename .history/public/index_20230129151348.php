@@ -34,7 +34,7 @@
         <div class="row g-0">
         
         <div class=" col">
-        <div class="videoPal  embed-responsive embed-responsive-16by9">
+        <div class="videoPal  embed-responsive embed-responsive-16by9 videoPal2">
             <iframe class="embed-responsive-item videoPal1 " src="https://www.youtube.com/embed/PWIjFCqQw78" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>

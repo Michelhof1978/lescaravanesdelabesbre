@@ -184,16 +184,16 @@ margin-bottom: 20px;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.2); 
 }
 
-.videoPal1 {
-	width: 100%!important;
-	height: 300px !important;
+.videoPal1 .videoPal2{
+	width: 760px !important;
+	height: 315px !important;
 	
 }
 
 @media screen and (max-width: 1200px) {
     .videoPal1{
-		width: 100% !important;
-		height: auto !important;
+		width: auto;
+		height: auto;
 	}
        
  }

@@ -46,7 +46,7 @@
 
           <div class=" col d-none d-xl-block">
         <div class="videoPal embed-responsive embed-responsive-16by9 ">
-            <iframe class="embed-responsive-item videoPal1"  src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>
     
