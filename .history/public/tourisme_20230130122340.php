@@ -95,21 +95,21 @@ tous les ingrédients sont réunis pour un weekend des vacances de remise de for
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/villageEtapeLogo.png" alt="">
+                    <img class="img-fluid" src="../images/tourisme9.png" alt="">
                         <h5 class="mb-2">Travel Guide</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/valDeBesbreLogo.png" alt="">
+                    <img class="img-fluid" src="../images/tourisme9.jpg" alt="">
                         <h5 class="mb-2">Ticket Booking</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/DompierreLogo.png" alt="">
+                    <img class="img-fluid" src="../images/tourisme9.jpg" alt="">
                         <h5 class="mb-2">Hotel Booking</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>

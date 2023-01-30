@@ -42,7 +42,7 @@ tous les ingrédients sont réunis pour un weekend des vacances de remise de for
 
 
     <!-- Destination Start -->
-    <div class="container-fluid ">
+    <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination ALLIER</h6>
@@ -51,32 +51,56 @@ tous les ingrédients sont réunis pour un weekend des vacances de remise de for
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme4.jpg" alt="">
+                        <img class="img-fluid" src="../images/.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">United States</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme5.jpg" alt="">
+                        <img class="img-fluid" src="../img/destination-2.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">United Kingdom</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme6.jpg" alt="">
+                        <img class="img-fluid" src="../img/destination-3.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Australia</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme7.jpg" alt="">
+                        <img class="img-fluid" src="../img/destination-4.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">India</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme8.jpg" alt="">
+                        <img class="img-fluid" src="../img/destination-5.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">South Africa</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/tourisme9.jpg" alt="">
+                        <img class="img-fluid" src="../img/destination-6.jpg" alt="">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Indonesia</h5>
+                            <span>100 Cities</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,21 +119,21 @@ tous les ingrédients sont réunis pour un weekend des vacances de remise de for
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/villageEtapeLogo.png" alt="">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
                         <h5 class="mb-2">Travel Guide</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/valDeBesbreLogo.png" alt="">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
                         <h5 class="mb-2">Ticket Booking</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                    <img class="img-fluid" src="../images/DompierreLogo.png" alt="">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
                         <h5 class="mb-2">Hotel Booking</h5>
                         <p class="m-0">Justo sit justo eos amet tempor amet clita amet ipsum eos elitr. Amet lorem est amet labore</p>
                     </div>
