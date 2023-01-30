@@ -100,9 +100,14 @@ tous les ingrédients sont réunis pour un weekend des vacances de remise de for
 </div>
 
 <!--SlideShow-->
-<div class="container w-75">
-<div class=" mt-4 slideShow row">
-    <video class="col" controls><source src="../videos/besbre.mp4" type=video/mp4></video>
+<div class="container videoTourisme ">
+
+<div class=" mt-4 videoTourisme2 row d-flex justify-content-center ">
+  
+  <div class="col-xl-8 ">
+    <video class="" controls><source src="../videos/besbre.mp4" type=video/mp4></video>
+    </div>
+
 </div>
 </div>
 <!--EndSlideShow-->
