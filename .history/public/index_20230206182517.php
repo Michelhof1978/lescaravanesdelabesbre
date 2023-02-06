@@ -15,7 +15,7 @@
             <img src="../images/bannerIntro.png" class="img-fluid " />
         </div>
     <div class="col-sm-12 col-xl-6 ">
-        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 mb-5 bg-white rounded ms-1 me-1 banner3">
     Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. Celles-ci sont en place du 03/07 au 27/08/2023 prévu pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. Epicerie de base fournie (café, sucre, sel, poivre, huile, etc..). 
     Isabelle et son équipe se tiennent à votre disposition pour faire de votre séjour un moment inoubliable.
         </p>
@@ -125,7 +125,7 @@
 
 <h4 class="mb-4  border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
-<div class="container d-flex justify-content-center ">
+<div class="container d-flex justify-content-center w-100">
 <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex ">
 
 <div class="carousel-indicators ">
@@ -137,7 +137,7 @@
 
 <div class="carousel-inner ">
   <div class="carousel-item active ">
-    <img src=" ../images/oies.jpg" class="d-block w-100" alt="...">
+    <img src=" ../images/oies.jpg" class="d-block w-10" alt="...">
     <div class="carousel-caption d-none d-md-block">
       <h5>Ballades au bord des étangs</h5>
       <p>De multiples randonées à faire à pieds ou en vélo</p>

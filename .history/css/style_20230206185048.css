@@ -46,22 +46,6 @@ video{
 .clear{
     clear: both;
 } 
-
-.h4Index{
-	background-color: rgba(17, 150, 239, 0.674) !important;
-	font-family: 'Times New Roman', Times, serif;
-}
-
-@media screen and (max-width: 1200px) {
-    .h4Index{
-		font-size: 15px !important;
-	}
-       
- }
-
-.locationIndex .h4Index{
-	margin-top: -20px !important;
-}
 /*----------------------------------------------------------------------------------------*/
 
                                      /*HEADER */
