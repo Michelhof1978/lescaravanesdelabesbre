@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nous vous proposons des hébergements en locations dans un camping à Dompierre sur Besbre dans le département de  l'Allier à 5 km du par d'attraction le Pal.">
-    <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
+    
    
    
     <title>Location d'Hebergements Proche Du parc D'Attraction Le Pal Dans L'Allier</title>

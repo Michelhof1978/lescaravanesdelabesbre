@@ -33,7 +33,7 @@
 
 <div class="col">
     <div class="form-outline">
-        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required/>
+        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" />
             <label for="phoneNumber" class="form-label"></label>
                 <div class="invalid-feedback">
                      Veuillez saisir votre téléphone.
@@ -47,7 +47,7 @@
 <div class="form-outline mb-4">
     <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input name="email" type="email" id="email" class="form-control " placeholder="Email" required/>
+            <input name="email" type="email" id="email" class="form-control " placeholder="Email" />
                 </div>
                     <label for="email" class="form-label"></label>
                         <div class="invalid-feedback">

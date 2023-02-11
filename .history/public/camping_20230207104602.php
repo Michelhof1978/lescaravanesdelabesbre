@@ -51,7 +51,7 @@
                     <div class="about-text bg-white p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase pt-3" style="letter-spacing: 5px;">A LOUER</h6>
                         <h3 class="mb-3">Possibilité de louer plusieurs caravanes pour familles nombreuses</h3>
-                        <p class="lead">Vous souhaitez organiser un séjour au Parc d'Attractions le PAL et vous êtes  entre 8/12 personnes  et cherchez un lieu adéquat ? Vous êtes bien tombés: possibilité de louer nos 3 caravanes placées côte à côte. Toute notre équipe se met à votre disposition pour faire de votre événement une réussite.</p>
+                        <p class="lead">Vous souhaitez organiser un séjour au Parc d'Attraction le PAL et vous êtes  entre 8/12 personnes  et cherchez un lieu adéquat ? Vous êtes bien tombés: possibilité de louer nos 3 caravanes placées côte à côte. Toute notre équipe se met à votre disposition pour faire de votre événement une réussite.</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="../images/camping.png" alt="">

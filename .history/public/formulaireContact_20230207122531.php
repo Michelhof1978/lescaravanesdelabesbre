@@ -2,7 +2,7 @@
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
-<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
+<form class="needs-validation" id="" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
@@ -13,8 +13,8 @@
 
     <div class="col">
         <div class="form-outline">
-            <input name="firstName" type="text" id="firstName" class="form-control"placeholder="Prénom" required/>
-            <label for="firstName" class="form-label"></label>
+            <input name="firstname" type="text" id="text" class="form-control"placeholder="Prénom" />
+            <label for="firstname" class="form-label"></label>
         <div class="invalid-feedback">
             Veuillez saisir votre prénom.
         </div>
@@ -23,8 +23,8 @@
 
 <div class="col">
     <div class="form-outline">
-        <input name="lastName" type="text" id="lastName" class="form-control"placeholder="Nom" required/>
-            <label for="lastName" class="form-label"></label>
+        <input name="lastName" type="text" id="lastname" class="form-control"placeholder="Nom" />
+            <label for="lastname" class="form-label"></label>
                 <div class="invalid-feedback">
                     Veuillez saisir votre nom.
                 </div>
@@ -33,7 +33,7 @@
 
 <div class="col">
     <div class="form-outline">
-        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required/>
+        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" />
             <label for="phoneNumber" class="form-label"></label>
                 <div class="invalid-feedback">
                      Veuillez saisir votre téléphone.
@@ -47,7 +47,7 @@
 <div class="form-outline mb-4">
     <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input name="email" type="email" id="email" class="form-control " placeholder="Email" required/>
+            <input name="email" type="email" id="email" class="form-control " placeholder="Email" />
                 </div>
                     <label for="email" class="form-label"></label>
                         <div class="invalid-feedback">
@@ -93,8 +93,8 @@
 <?php
 if (isset($_POST["message"])) {
 $message = "Message envoye de :
-Nom : ".$_POST["firstName"]."
-Prenom : ".$_POST["lastName"]."
+Nom : ".$_POST["firstname"]."
+Prenom : ".$_POST["lastname"]."
 Telephone : ".$_POST["phoneNumber"]."
 Email : ".$_POST["email"]."
 Objet : ".$_POST["objet"]."

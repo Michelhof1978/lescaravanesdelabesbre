@@ -47,7 +47,7 @@
 <div class="form-outline mb-4">
     <div class="input-group has-validation">
         <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input name="email" type="email" id="email" class="form-control " placeholder="Email" required/>
+            <input name="email" type="email" id="email" class="form-control " placeholder="Email" />
                 </div>
                     <label for="email" class="form-label"></label>
                         <div class="invalid-feedback">

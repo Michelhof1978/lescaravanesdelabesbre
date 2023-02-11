@@ -164,8 +164,8 @@ function validatePhoneNumber(input) {
             }
             return (true);
         }
-
-         // Validaton de l'input EMAIL
+        
+         // Validaton de l'input NOM
         if (fieldName == "email"){
             if(!validateRequired(input)){
                 return false;

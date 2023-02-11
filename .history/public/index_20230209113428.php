@@ -15,7 +15,7 @@
             <img src="../images/bannerIntro.png" class="img-fluid " />
         </div>
     <div class="col-sm-12 col-xl-6 ">
-        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mt-5">
     Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. 
     A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. 
     Celles-ci sont en place du 03/07 au 27/08/2023 prévues pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. 
@@ -111,7 +111,7 @@
               <div class="card-body">
                 <h5 class="card-title">Caravane OLI</h5>
                 <p class="card-text">
-                Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans le camping "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) . Le lit parental à lattes avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140. 
+                Caravane avec auvent tout confort et toute équipée pour 4 personnes (2 Adultes 2 Enfants) sur un emplacement dans le camping "Les Bords de la Besbre" proche du PARC d'ATTRACTION le PAL et de toutes les commodités. Épicerie de base fournie (café, sucre. Huile, sel, etc.....) . Le lit parental à latte avec matelas de qualité 140/190 + un lit convertible 110/140 environ. Les draps ne sont pas fournis prévoir 2 parures de lit en 140. 
                 <br><strong>Tarif réduit en réservant sur lescaravanesdelabesbre.fr<br> ou par téléphone au 06 86 41 31 71</strong>
               </p>
                 <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" 

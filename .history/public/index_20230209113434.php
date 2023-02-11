@@ -15,7 +15,7 @@
             <img src="../images/bannerIntro.png" class="img-fluid " />
         </div>
     <div class="col-sm-12 col-xl-6 ">
-        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mt-5">
     Goûtez aux plaisirs du Camping sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière à Dompierre-sur-Besbre, proche des commerces. 
     A proximité du Parc d'Attraction *le PAL* à moins de 10 minutes. Laissez-vous enchanter par notre ambiance caravane. 
     Celles-ci sont en place du 03/07 au 27/08/2023 prévues pour 4 personnes (2 adultes, 2 enfants) tout confort et toutes équipées. 

@@ -48,7 +48,7 @@ video{
 } 
 
 .h4Index{
-	background-color:  rgba(17, 150, 239, 0.547) !important;
+	background-color: rgba(17, 150, 239, 0.674) !important;
 	font-family: 'Times New Roman', Times, serif;
 }
 
@@ -144,7 +144,7 @@ video{
                                           /*INDEX PAGE*/
  /*Intro */
 .h1Index{
-	background-color: rgba(17, 150, 239, 0.547);
+	background-color: rgba(17, 150, 239, 0.432);
 	font-family: 'Times New Roman', Times, serif;
 }
 
@@ -157,7 +157,7 @@ video{
 
 .textIntro {
 	text-align: justify;
-	
+	margin-top: 100px;
 }
 
 @media screen and (max-width: 1200px) {
