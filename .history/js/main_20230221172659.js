@@ -7,15 +7,15 @@ $(() => {
     });
 
 $('#send-data').click(function (){//Affichage message quand clic sur bouton
-    $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé !</p>');
+    $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé!</p>');
     
     $(document).ready(() => {//Style pour le message de confirmation
-        $('.confirmation').css({'color':'#72EA8B',
+        $('.confirmation').css({'background-color':'#72EA8B',
+                                'padding':'15px',
                                 'text-align':'center',
                                 'margin-bottom':'30px', 
                                 'font-family': 'Times New Roman, Times, serif',
-                                'font-weight': 'bold',
-                                'font-size': '20px',
+                                width
     });//Dans ce code, les propriétés CSS sont passées sous forme d'objet avec des clés correspondant aux noms de propriétés CSS et des valeurs correspondant aux valeurs que vous souhaitez leur attribuer.
     });
 });

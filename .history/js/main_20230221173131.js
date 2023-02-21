@@ -7,7 +7,7 @@ $(() => {
     });
 
 $('#send-data').click(function (){//Affichage message quand clic sur bouton
-    $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé !</p>');
+    $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé!</p>');
     
     $(document).ready(() => {//Style pour le message de confirmation
         $('.confirmation').css({'color':'#72EA8B',
