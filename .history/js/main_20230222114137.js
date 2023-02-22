@@ -96,17 +96,10 @@ $('#send-data').click(function (){//Affichage message quand clic sur bouton
 }
 });
 
-$('#formulaire').on('click', '.confirmation', function(){
-    $(this).fadeOut(10000, function(){//Durer en millisecondes que le message de confirmation va rester 1000 millisecondes = 1 seconde
-       //le fadeOut est une fonctionnalité pratique de jQuery pour rendre progressivement un élément HTML invisible.
+$('#formulaire').on('click', '.confirmation', function() {
+    $(this).fadeOut(5000, function() {
         $(this).remove();
     });
-});
-
-// $('#formulaire').on('click', '.confirmation', function(){
-   
-//     $(this).remove();//Supprime le message de confirmation en faisant un clic dessus
-// });
 
 });
 //Création événement click sur bouton en jquery

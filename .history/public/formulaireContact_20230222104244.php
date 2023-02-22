@@ -91,16 +91,9 @@
 
 
 <?php
-if (isset($_POST["message"])) {
-$message = "Message envoye de :
-Nom : ".$_POST["firstName"]."
-Prenom : ".$_POST["lastName"]."
-Telephone : ".$_POST["phoneNumber"]."
-Email : ".$_POST["email"]."
-Objet : ".$_POST["objet"]."
-Message : ".$_POST["message"];
+$message = "Message envoyé de :\nNom : " . htmlspecialchars($_POST["firstName"]) . "\nPrénom : " . htmlspecialchars($_POST["lastName"]) . "\nTéléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\nEmail : " . htmlspecialchars($_POST["email"]) . "\nObjet : " . htmlspecialchars($_POST["objet"]) . "\nMessage : " . htmlspecialchars($_POST["message"]);
 
-$retour = mail("isabelle.deschins@sfr.fr ", $_POST["objet"], $message,"From:contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
+$retour = mail("michel.hof@hotmail.fr", $_POST["objet"], $message,"From:contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
 if ($retour) {
 echo "<p></p>";
@@ -108,4 +101,4 @@ echo "<p></p>";
 }
 ?>
 
-
+{# isabelle.deschins@sfr.fr #}

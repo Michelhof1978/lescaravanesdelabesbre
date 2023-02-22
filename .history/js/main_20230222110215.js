@@ -78,11 +78,11 @@ $(() => {
     });
 
 $('#send-data').click(function (){//Affichage message quand clic sur bouton
-
+    
      // Vérification des conditions avant d'afficher le message de confirmation 
-     if (isValidLastName(lastNameInput.value) && isValidFirstName(firstNameInput.value) && isValidPhoneNumber(phoneNumberInput.value) && isValidEmail(emailInput.value) && isValidMessage(messageInput.value)){   
+     if (isValidLastName(lastNameInput.value) && isValidFirstName(firstNameInput.value) && isValidPhoneNumber(phoneNumberInput.value) && isValidEmail(emailInput.value) && isValidMessage(messageInput.value))
    
-        $('#formulaire').prepend("<p class = confirmation>Votre message est envoyé !</p>");
+        $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé !</p>');
     
     $(document).ready(() => {//Style pour le message de confirmation
         $('.confirmation').css({'color':'#72EA8B',
@@ -93,20 +93,12 @@ $('#send-data').click(function (){//Affichage message quand clic sur bouton
                                 'font-size': '20px',
     });//Dans ce code, les propriétés CSS sont passées sous forme d'objet avec des clés correspondant aux noms de propriétés CSS et des valeurs correspondant aux valeurs que vous souhaitez leur attribuer.
     });
-}
 });
 
 $('#formulaire').on('click', '.confirmation', function(){
-    $(this).fadeOut(10000, function(){//Durer en millisecondes que le message de confirmation va rester 1000 millisecondes = 1 seconde
-       //le fadeOut est une fonctionnalité pratique de jQuery pour rendre progressivement un élément HTML invisible.
-        $(this).remove();
-    });
-});
-
-// $('#formulaire').on('click', '.confirmation', function(){
    
-//     $(this).remove();//Supprime le message de confirmation en faisant un clic dessus
-// });
+    $(this).remove();//Supprime le message de confirmation en faisant un clic dessus
+});
 
 });
 //Création événement click sur bouton en jquery

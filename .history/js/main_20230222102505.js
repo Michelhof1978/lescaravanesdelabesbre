@@ -13,31 +13,31 @@ form.addEventListener("submit", (e) => {
     
     if (!isValidLastName(lastNameInput.value)) {
       alert("Le nom doit comporter au moins 3 caractères.");
-      lastNameInput.focus(); 
+      lastName.focus(); 
       return false; 
     }
 
     if (!isValidFirstName(firstNameInput.value)) {
         alert("Le prénom doit comporter au moins 3 caractères.");
-        firstNameInput.focus(); 
+        firstName.focus(); 
         return false; 
       }
 
       if (!isValidPhoneNumber(phoneNumberInput.value)) {
         alert("Le numéro de téléphone doit comporter au moins 10 chiffres");
-        phoneNumberInput.focus(); 
+        phoneNumber.focus(); 
         return false; 
       }
     
     if (!isValidEmail(emailInput.value)) {
       alert("L'email n'est pas valide.");
-      emailInput.focus(); 
+      email.focus(); 
       return false; 
     }
     
     if (!isValidMessage(messageInput.value)) {
       alert("Le message doit comporter au moins 10 caractères.");
-      messageInput.focus(); 
+      message.focus(); 
       return false; 
     }
     
@@ -77,12 +77,9 @@ $(() => {
 
     });
 
+    
 $('#send-data').click(function (){//Affichage message quand clic sur bouton
-
-     // Vérification des conditions avant d'afficher le message de confirmation 
-     if (isValidLastName(lastNameInput.value) && isValidFirstName(firstNameInput.value) && isValidPhoneNumber(phoneNumberInput.value) && isValidEmail(emailInput.value) && isValidMessage(messageInput.value)){   
-   
-        $('#formulaire').prepend("<p class = confirmation>Votre message est envoyé !</p>");
+    $('#formulaire').prepend('<p class = confirmation>Votre message est envoyé !</p>');
     
     $(document).ready(() => {//Style pour le message de confirmation
         $('.confirmation').css({'color':'#72EA8B',
@@ -93,20 +90,14 @@ $('#send-data').click(function (){//Affichage message quand clic sur bouton
                                 'font-size': '20px',
     });//Dans ce code, les propriétés CSS sont passées sous forme d'objet avec des clés correspondant aux noms de propriétés CSS et des valeurs correspondant aux valeurs que vous souhaitez leur attribuer.
     });
-}
 });
 
 $('#formulaire').on('click', '.confirmation', function(){
-    $(this).fadeOut(10000, function(){//Durer en millisecondes que le message de confirmation va rester 1000 millisecondes = 1 seconde
-       //le fadeOut est une fonctionnalité pratique de jQuery pour rendre progressivement un élément HTML invisible.
-        $(this).remove();
-    });
-});
-
-// $('#formulaire').on('click', '.confirmation', function(){
    
-//     $(this).remove();//Supprime le message de confirmation en faisant un clic dessus
-// });
+    
+    console.log('')
+    $(this).remove();//Supprime le message de confirmation en faisant un clic dessus
+});
 
 });
 //Création événement click sur bouton en jquery
