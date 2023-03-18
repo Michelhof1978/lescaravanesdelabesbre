@@ -119,4 +119,3 @@ $('#formulaire').one( '.confirmation', function(){//La méthode one() de jquery 
 
 
 
-

@@ -6,7 +6,7 @@
     <div class="container ">
     <!--Section INTRO-->
     
-    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white"> Location d'Hébergements à proximité Du parc D'Attractions Le Pal Dans L'Allier</h1>
+    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white"> Location d'Hèbergements à proximité Du parc D'Attractions Le Pal Dans L'Allier</h1>
     
    
 

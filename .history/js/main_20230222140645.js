@@ -77,13 +77,10 @@ $(() => {
 
     });
 
-$('#send-data').click(function (){//Affichage message de confirmation quand clic sur bouton
+$('#send-data').click(function (){//Affichage message quand clic sur bouton
 
-     // Vérification des conditions avant d'afficher le message de confirmation, cela permet d empêcher d'envoyer le formulaire si les conditions ne sont pas remplis
-     if (isValidLastName(lastNameInput.value) && isValidFirstName(firstNameInput.value) 
-        && isValidPhoneNumber(phoneNumberInput.value) 
-        && isValidEmail(emailInput.value) 
-        && isValidMessage(messageInput.value)){   
+     // Vérification des conditions avant d'afficher le message de confirmation 
+     if (isValidLastName(lastNameInput.value) && isValidFirstName(firstNameInput.value) && isValidPhoneNumber(phoneNumberInput.value) && isValidEmail(emailInput.value) && isValidMessage(messageInput.value)){   
    
         $('#formulaire').prepend("<p class = confirmation>Votre message est envoyé !</p>");
     
@@ -99,12 +96,10 @@ $('#send-data').click(function (){//Affichage message de confirmation quand clic
 }
 });
 
-$('#formulaire').one( '.confirmation', function(){//La méthode one() de jquery attache un ou plusieurs gestionnaires d'événements pour les éléments sélectionnés et spécifie une fonction à exécuter lorsque l'événement se produit.
-
-    Lors de l'utilisation de la méthode one(), la fonction de gestionnaire d'événements n'est exécutée qu'UNE SEULE FOIS pour chaque élément.
-    $(this).fadeOut(3000, function(){//Durer en millisecondes que le message de confirmation va rester 1000 millisecondes = 1 seconde
+$('#formulaire').on('click', '.confirmation', function(){
+    $(this).fadeOut.delay(000)(function(){//Durer en millisecondes que le message de confirmation va rester 1000 millisecondes = 1 seconde
        //le fadeOut est une fonctionnalité pratique de jQuery pour rendre progressivement un élément HTML invisible.
-        $(this).remove();//Le mot-clé "this" est utilisé pour se référer à l'élément actuel (c'est-à-dire l'élément avec la classe "confirmation" qui a été cliqué).
+        $(this).remove();
     });
 });
 
@@ -116,7 +111,6 @@ $('#formulaire').one( '.confirmation', function(){//La méthode one() de jquery 
 });
 //Création événement click sur bouton en jquery
 //FIN Formulaire de contact
-
 
 
 
