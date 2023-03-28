@@ -26,33 +26,18 @@ imgDiv.appendChild(img);
 document.body.appendChild(imgDiv);
 
 // Affichage de l'alerte après 3 secondes
-setTimeout(function() {
-    alert("Le Pal fête ses 50 Ans !");
+// Créer une image
+let img1 = '<img src="../images/pal50.png">';
 
+
+
+setTimeout(function() {
+    alert("Le Pal fête ses 50 Ans !" + img1);
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
 }, 3000);
 
 
-//POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
-// function openPopup() {
-//   // Spécifiez l'URL de la page à ouvrir dans la popup
-//   var popupUrl = "../images/pal50.png";
-
-//   // Spécifiez les dimensions de la popup
-//   var popupWidth = 270;
-//   var popupHeight = 380;
-
-//   // Calculez la position du centre de la fenêtre
-//   var leftPosition = (window.screen.width - popupWidth) / 2;
-//   var topPosition = (window.screen.height - popupHeight) / 2;
-
-//   // Ouvrir la popup
-//   window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
-// }
-
-// // Appelez la fonction pour ouvrir la popup
-// openPopup();
 
 </script>
 

@@ -26,8 +26,11 @@ imgDiv.appendChild(img);
 document.body.appendChild(imgDiv);
 
 // Affichage de l'alerte après 3 secondes
+// Créer une image
+let img1 = '<img src="../images/pal50.png">';
+
 setTimeout(function() {
-    alert("Le Pal fête ses 50 Ans !");
+    alert("Le Pal fête ses 50 Ans !" + img1);
 
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);

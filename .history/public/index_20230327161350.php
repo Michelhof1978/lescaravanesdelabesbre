@@ -3,21 +3,50 @@
 
 
 <script>
-                               //CREATION POPUP UNIQUEMENT EN JS 
-  // Création de la div pour afficher l'image + position
+  // Création de la div pour afficher l'image
 var imgDiv = document.createElement("div");
 imgDiv.style.position = "fixed";
 imgDiv.style.top = "57%";
 imgDiv.style.left = "50%";
 imgDiv.style.transform = "translate(-50%, -50%)";
-imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout éléments
 
 
 // Création de l'image à afficher
 var img = document.createElement("img");
 img.src = "../images/pal50.png" ;
-img.style.height = '450px';
-img.style.Width = '60 %' ;
+img.style.height = '550px';
+img.style.width = '400px';
+
+---------------------------------------------
+// Sélectionner l'image à rendre responsive
+img.document.querySelector('img');
+
+// Fonction pour rendre l'image responsive
+function makeImageResponsive() {
+  const screenWidth = window.innerWidth; // Obtenir la largeur de l'écran
+  const imageWidth = image.naturalWidth; // Obtenir la largeur d'origine de l'image
+  
+  // Calculer la nouvelle largeur de l'image en fonction de la largeur de l'écran
+  const newImageWidth = screenWidth * 0.8; // Par exemple, 80% de la largeur de l'écran
+  
+  // Modifier la largeur de l'image
+  image.style.width = `${newImageWidth}px`;
+}
+
+// Appeler la fonction pour rendre l'image responsive au chargement de la page
+makeImageResponsive();
+
+// Appeler la fonction à chaque fois que la taille de l'écran change
+window.addEventListener('resize', makeImageResponsive);
+
+
+
+-----------------------------------------------
+
+
+
+
 
 // Ajout de l'image à la div
 imgDiv.appendChild(img);
@@ -25,35 +54,20 @@ imgDiv.appendChild(img);
 // Ajout de la div au body de la page
 document.body.appendChild(imgDiv);
 
+function mettreEnAvant() {
+			var img = document.getElementById("img");
+			img.classList.add("highlight");
+}
+
 // Affichage de l'alerte après 3 secondes
 setTimeout(function() {
     alert("Le Pal fête ses 50 Ans !");
-
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
 }, 3000);
 
 
-//POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
-// function openPopup() {
-//   // Spécifiez l'URL de la page à ouvrir dans la popup
-//   var popupUrl = "../images/pal50.png";
-
-//   // Spécifiez les dimensions de la popup
-//   var popupWidth = 270;
-//   var popupHeight = 380;
-
-//   // Calculez la position du centre de la fenêtre
-//   var leftPosition = (window.screen.width - popupWidth) / 2;
-//   var topPosition = (window.screen.height - popupHeight) / 2;
-
-//   // Ouvrir la popup
-//   window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
-// }
-
-// // Appelez la fonction pour ouvrir la popup
-// openPopup();
-
+window.addEventListener("resize", updateStyles);
 </script>
 
 

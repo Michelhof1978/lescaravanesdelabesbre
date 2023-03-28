@@ -3,14 +3,13 @@
 
 
 <script>
-                               //CREATION POPUP UNIQUEMENT EN JS 
-  // Création de la div pour afficher l'image + position
+  // Création de la div pour afficher l'image
 var imgDiv = document.createElement("div");
 imgDiv.style.position = "fixed";
 imgDiv.style.top = "57%";
 imgDiv.style.left = "50%";
 imgDiv.style.transform = "translate(-50%, -50%)";
-imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout éléments
 
 
 // Création de l'image à afficher
@@ -25,35 +24,22 @@ imgDiv.appendChild(img);
 // Ajout de la div au body de la page
 document.body.appendChild(imgDiv);
 
-// Affichage de l'alerte après 3 secondes
-setTimeout(function() {
-    alert("Le Pal fête ses 50 Ans !");
+function mettreEnAvant() {
+			var img = document.getElementById("img");
+			img.classList.add("highlight");
+}
 
+// Affichage de l'alerte après 3 secondes
+const imgAnniversaire1 = '<img src="../images/pal50.png" alt="">';
+
+setTimeout(function() {
+    alert("Le Pal fête ses 50 Ans !" +);
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
 }, 3000);
 
 
-//POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
-// function openPopup() {
-//   // Spécifiez l'URL de la page à ouvrir dans la popup
-//   var popupUrl = "../images/pal50.png";
-
-//   // Spécifiez les dimensions de la popup
-//   var popupWidth = 270;
-//   var popupHeight = 380;
-
-//   // Calculez la position du centre de la fenêtre
-//   var leftPosition = (window.screen.width - popupWidth) / 2;
-//   var topPosition = (window.screen.height - popupHeight) / 2;
-
-//   // Ouvrir la popup
-//   window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
-// }
-
-// // Appelez la fonction pour ouvrir la popup
-// openPopup();
-
+window.addEventListener("resize", updateStyles);
 </script>
 
 

@@ -26,6 +26,7 @@ imgDiv.appendChild(img);
 document.body.appendChild(imgDiv);
 
 // Affichage de l'alerte après 3 secondes
+
 setTimeout(function() {
     alert("Le Pal fête ses 50 Ans !");
 

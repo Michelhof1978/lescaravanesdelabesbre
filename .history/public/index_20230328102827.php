@@ -3,38 +3,39 @@
 
 
 <script>
-                               //CREATION POPUP UNIQUEMENT EN JS 
-  // Création de la div pour afficher l'image + position
-var imgDiv = document.createElement("div");
-imgDiv.style.position = "fixed";
-imgDiv.style.top = "57%";
-imgDiv.style.left = "50%";
-imgDiv.style.transform = "translate(-50%, -50%)";
-imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+//                                //CREATION POPUP UNIQUEMENT EN JS 
+//   // Création de la div pour afficher l'image + position
+// var imgDiv = document.createElement("div");
+// imgDiv.style.position = "fixed";
+// imgDiv.style.top = "57%";
+// imgDiv.style.left = "50%";
+// imgDiv.style.transform = "translate(-50%, -50%)";
+// imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
 
 
-// Création de l'image à afficher
-var img = document.createElement("img");
-img.src = "../images/pal50.png" ;
-img.style.height = '450px';
-img.style.Width = '60 %' ;
+// // Création de l'image à afficher
+// var img = document.createElement("img");
+// img.src = "../images/pal50.png" ;
+// img.style.height = '450px';
+// img.style.Width = '60 %' ;
 
-// Ajout de l'image à la div
-imgDiv.appendChild(img);
+// // Ajout de l'image à la div
+// imgDiv.appendChild(img);
 
-// Ajout de la div au body de la page
-document.body.appendChild(imgDiv);
+// // Ajout de la div au body de la page
+// document.body.appendChild(imgDiv);
 
-// Affichage de l'alerte après 3 secondes
-setTimeout(function() {
-    alert("Le Pal fête ses 50 Ans !");
+// // Affichage de l'alerte après 3 secondes
+// // Créer une image
+// let img1 = '<img src="../images/pal50.png">';
 
-    // Suppression de la div contenant l'image
-    document.body.removeChild(imgDiv);
-}, 3000);
+// setTimeout(function() {
+//     alert("Le Pal fête ses 50 Ans !" + img1);
 
+//     // Suppression de la div contenant l'image
+//     document.body.removeChild(imgDiv);
+// }, 3000);
 
-//POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
 // function openPopup() {
 //   // Spécifiez l'URL de la page à ouvrir dans la popup
 //   var popupUrl = "../images/pal50.png";

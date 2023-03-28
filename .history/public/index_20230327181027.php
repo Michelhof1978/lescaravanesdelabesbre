@@ -3,59 +3,73 @@
 
 
 <script>
-                               //CREATION POPUP UNIQUEMENT EN JS 
-  // Création de la div pour afficher l'image + position
-var imgDiv = document.createElement("div");
-imgDiv.style.position = "fixed";
-imgDiv.style.top = "57%";
-imgDiv.style.left = "50%";
-imgDiv.style.transform = "translate(-50%, -50%)";
-imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+//                                //CREATION POPUP UNIQUEMENT EN JS 
+//   // Création de la div pour afficher l'image + position
+// var imgDiv = document.createElement("div");
+// imgDiv.style.position = "fixed";
+// imgDiv.style.top = "57%";
+// imgDiv.style.left = "50%";
+// imgDiv.style.transform = "translate(-50%, -50%)";
+// imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
 
 
-// Création de l'image à afficher
-var img = document.createElement("img");
-img.src = "../images/pal50.png" ;
-img.style.height = '450px';
-img.style.Width = '60 %' ;
+// // Création de l'image à afficher
+// var img = document.createElement("img");
+// img.src = "../images/pal50.png" ;
+// img.style.height = '450px';
+// img.style.Width = '60 %' ;
 
-// Ajout de l'image à la div
-imgDiv.appendChild(img);
+// // Ajout de l'image à la div
+// imgDiv.appendChild(img);
 
-// Ajout de la div au body de la page
-document.body.appendChild(imgDiv);
+// // Ajout de la div au body de la page
+// document.body.appendChild(imgDiv);
 
-// Affichage de l'alerte après 3 secondes
-setTimeout(function() {
-    alert("Le Pal fête ses 50 Ans !");
+// // Affichage de l'alerte après 3 secondes
+// // Créer une image
+// let img1 = '<img src="../images/pal50.png">';
 
-    // Suppression de la div contenant l'image
-    document.body.removeChild(imgDiv);
-}, 3000);
+// setTimeout(function() {
+//     alert("Le Pal fête ses 50 Ans !" + img1);
 
+//     // Suppression de la div contenant l'image
+//     document.body.removeChild(imgDiv);
+// }, 3000);
+document.getElementById('modal').style.display = 'block';
 
-//POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
-// function openPopup() {
-//   // Spécifiez l'URL de la page à ouvrir dans la popup
-//   var popupUrl = "../images/pal50.png";
+window.addEventListener('scroll', function(e) {
+  setTimeout( () => {
+    document.getElementById('modal').style.display = 'block'
+  }, 2000 )
+});
 
-//   // Spécifiez les dimensions de la popup
-//   var popupWidth = 270;
-//   var popupHeight = 380;
+document.getElementById('modal-close').addEventListener('click', function(e) {
+  document.getElementById('modal').style.display = 'none'
+})
 
-//   // Calculez la position du centre de la fenêtre
-//   var leftPosition = (window.screen.width - popupWidth) / 2;
-//   var topPosition = (window.screen.height - popupHeight) / 2;
+var confirmExiting = false
 
-//   // Ouvrir la popup
-//   window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
-// }
+document.getElementById('input').addEventListener('input', function(e) {
+  confirmExiting = true
+})
 
-// // Appelez la fonction pour ouvrir la popup
-// openPopup();
+window.addEventListener('beforeunload', function (e) {
+  if( confirmExiting ) {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
 
 </script>
+<div class="modal" id="modal">
+  <div class="modal-back"></div>
+  <div class="modal-container">
+    Modale ici<br />
+    <a href="../images/pal50.png" id="modal-close">[fermer]</a>
+  </div>
+</div>
 
+<input type="text" id="input" />
 
     <section class="index mt-5">
       
