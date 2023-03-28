@@ -96,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pt-2 text-center border-bottom ">
       
       <img id="logo" src="../images/logo.png" alt="" style="height:160px " class="img-fluid logo ">
-      <div class=" navbar-brand fs-2 textLogo" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div> <img id="logo" src="../images/papillons.gif" alt="" style="height:60px " class="img-fluid">
+      <div class=" navbar-brand fs-2 textLogo" href="#">Les Caravanes De La Besbre <span class="orange">.</span>  <img id="logo" src="../images/papillons.gif" alt="" style="height:60px " class="img-fluid"></div>
     </div>
  
   <div class="navbar-expand-md ">

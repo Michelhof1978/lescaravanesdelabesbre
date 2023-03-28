@@ -85,7 +85,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <body>
 
   <script>
-   
+    const stars = document.querySelector('.stars');
+
+window.addEventListener('mousemove', function (e) {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  const star = document.createElement('span');
+  star.style.left = x + 'px';
+  star.style.top = y + 'px';
+
+  const size = Math.random() * 10;
+  star.style.width = 10 + size + 'px';
+  star.style.height = 10 + size + 'px';
+
+  stars.appendChild(star);
+
+  setTimeout(() => {
+    star.remove();
+  }, 500);
+});
 
   </script>
 
@@ -96,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="pt-2 text-center border-bottom ">
       
       <img id="logo" src="../images/logo.png" alt="" style="height:160px " class="img-fluid logo ">
-      <div class=" navbar-brand fs-2 textLogo" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div> <img id="logo" src="../images/papillons.gif" alt="" style="height:60px " class="img-fluid">
+      <div class=" navbar-brand fs-2 textLogo" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div>
     </div>
  
   <div class="navbar-expand-md ">
@@ -144,6 +163,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 </nav>
+
+<div class="stars">
+<img src="../images/anniversaire.png" alt="image" class="banner ">
+</div>
 
 <div class="container-fluid text-center m-0 ">
 <img src="../images/banner3.png" alt="image" class="banner ">
