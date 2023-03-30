@@ -103,10 +103,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">A VISITER</h6>
                         <h1 class="mb-3">Loin de tout, proche de l'éssentiel</h1>
-                        <p class="lead">L'Allier au paradis du tourisme vert ! La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque l'Allier compte plusieurs villes d'eau d'importance, dont la plus connue, Vichy.
-Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus les sites remarquables de l'Allier, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
+                        <p class="lead"><strong>L'Allier au paradis du tourisme vert !</strong> La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque <strong>l'Allier</strong> compte plusieurs villes d'eau d'importance, dont la plus connue, <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>
+Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus <strong>les sites remarquables de l'Allier</strong>, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
   Randonnée, sports de plein air, thalasso et gastronomie, 
-tous les ingrédients sont réunis pour un weekend, de vacance de remise de forme, à grand renfort de bons bols d'air !</p>
+tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong> vacances de remise de forme</strong>, à grand renfort de bons bols d'air !</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="../images/tourisme1.png" alt="Tourisme Auvergne">
