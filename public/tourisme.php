@@ -96,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="../images/tourisme.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100" src="../images/tourisme.png" alt="Ecotourisme Auvergne" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5">
@@ -109,10 +109,10 @@ Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbon
 tous les ingrédients sont réunis pour un weekend, de vacance de remise de forme, à grand renfort de bons bols d'air !</p>
                         <div class="row mb-4">
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme1.jpg" alt="">
+                                <img class="img-fluid" src="../images/tourisme1.png" alt="Tourisme Auvergne">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme3.jpg" alt="">
+                                <img class="img-fluid" src="../images/tourisme3.png" alt="Tourisme Allier">
                             </div>
                         </div>
                        
@@ -137,47 +137,47 @@ tous les ingrédients sont réunis pour un weekend, de vacance de remise de form
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme4.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme4.png" alt="Nature Allier">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme5.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme5.png" alt="Vacance Auvergne">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme6.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme6.png" alt="Vacance Saint pourçain sur besbre">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme7.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme7.png" alt="Vélos Auvergne">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme8.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme8.png" alt="Ballade Auvergne">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme9.jpg" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme9.png" alt="Ballade Allier">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme10.png" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme10.png" alt="Paysages Auvergne">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme11.png" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme11.png" alt="Paysages Allier">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme12.png" alt="">
+                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme12.png" alt="Randonnée Auvergne">
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@ tous les ingrédients sont réunis pour un weekend, de vacance de remise de form
 <a href="https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237"><img src="../images/officeTourismeLogo.png" class="logoPal img-fluid w-25"/></a> 
 </div>
 
-<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.png" alt="" /></div>
+<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.png" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre" /></div>
 <!--End bouton logo-->
 
 <!--logo tourisme-->

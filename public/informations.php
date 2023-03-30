@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Informations Camping Le Pal Dompierre Sur Besbre</h1>
 
 <div class="w-50 img-fluid mt-5 container info img-fluid">
-<img src=" ../images/informations.png" class="d-block w-100 " alt="...">
+<img src=" ../images/informations.png" class="d-block w-100 " alt="Informations camping Dompierre Sur Besbre">
 </div>
 
       </section>

@@ -96,17 +96,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping6.png" alt="">
+                        <img class="img-fluid" src="../images/camping6.png" alt="Camping Le Pal">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping7.png" alt="">
+                        <img class="img-fluid" src="../images/camping7.png" alt="Camping Dompierre sur Besbre">
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping8.png" alt="">
+                        <img class="img-fluid" src="../images/camping8.png" alt="Camping Auvergne">
                     </div>
                 </div>
                 
@@ -126,9 +126,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
                 <div class="col-lg-6" >
                     <div class="position-relative h-100 pt-5">
-                        <img class=" w-100" src="../images/affiche.png" style="object-fit: cover;">
-                        <img class=" w-100 pt-5
-                        " src="../images/oli.png" style="object-fit: cover;">
+                        <img class=" w-100" src="../images/affiche.png" alt="Affiche camping le pal" style="object-fit: cover;">
+                        <img class=" w-100 pt-5" src="../images/oli.png" alt="mascotte camping Dompierre sur besbre" style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-6 pb-lg-5">
@@ -138,26 +137,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="lead">Vous souhaitez organiser un séjour au Parc d'Attractions le PAL et vous êtes  entre 8/12 personnes  et cherchez un lieu adéquat ? Vous êtes bien tombés: possibilité de louer nos 3 caravanes placées côte à côte. Toute notre équipe se met à votre disposition pour faire de votre événement une réussite.</p>
                         <div class="row mb-4">
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping.png" alt="">
+                                <img class="img-fluid" src="../images/camping.png" alt="Caravanes Camping Dompierre sur besbre">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping1.png" alt="">
+                                <img class="img-fluid" src="../images/camping1.png" alt="aravane Camping Dompierre sur besbre">
                             </div> <hr>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping2.png" alt="">
+                                <img class="img-fluid" src="../images/camping2.png" alt="Caravanes Camping Le Pal">
                             </div>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping3.png" alt="">
+                                <img class="img-fluid" src="../images/camping3.png" alt="Location Camping Dompierre sur besbre">
                             </div><hr>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping4.jpeg" alt="">
+                                <img class="img-fluid" src="../images/camping4.png" alt="Hébergement le pal">
                             </div>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping5.png" alt="">
+                                <img class="img-fluid" src="../images/camping5.png" alt="Location Le pal">
                             </div>
 
                             
