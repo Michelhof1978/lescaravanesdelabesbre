@@ -36,10 +36,10 @@ ga('send', 'pageview');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'Allier au paradis du tourisme vert ! La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque l'Allier compte plusieurs villes d'eau d'importance, dont la plus connue, Vichy. ">
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le PAL et vous êtes entre 8/12 personnes et cherchez un lieu adéquat ? Vous êtes bien tombés: possibilité de louer nos 3 caravanes placées côte à côte. Toute notre équipe se met à votre disposition pour faire de votre événement une réussite.">
     <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
     
-    <title>Site Touristique Naturel de l'Allier</title>
+    <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
 
 <meta name="Geography" content="FRANCE">
 <meta name="Category" content="travel">
@@ -84,36 +84,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 </head>
 
+<h4 class="m-5 text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>Camping Dompierre Sur Besbre Proche Du Pal</strong></h4>
 
- <!-- Topbar Start -->
- 
- <h4 class="mb-4 mt-3 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">Site Touristique Naturel de l'Allier</h4>
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5 sectionTourime">
-        <div class="container pt-5">
+<!-- Destination Start -->
+<div class="container-fluid ">
+        <div class="container pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination Nature</h6>
+                <h1>Camping De Dompierre Sur Besbre</h1>
+            </div>
             <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="../images/tourisme.webp" alt="Ecotourisme Auvergne" style="object-fit: cover;">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="../images/camping6.webp" alt="Camping Le Pal">
                     </div>
                 </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">A VISITER</h6>
-                        <h1 class="mb-3">Loin de tout, proche de l'éssentiel</h1>
-                        <p class="lead"><strong>L'Allier au paradis du tourisme vert !</strong> La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque <strong>l'Allier</strong> compte plusieurs villes d'eau d'importance, dont la plus connue, <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>
-Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus <strong>les sites remarquables de l'Allier</strong>, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
-  Randonnée, sports de plein air, thalasso et gastronomie, 
-tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong> vacances de remise de forme</strong>, à grand renfort de bons bols d'air !</p>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="../images/camping7.webp" alt="Camping Dompierre sur Besbre">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class=" position-relative overflow-hidden mb-2">
+                        <img class="img-fluid" src="../images/camping8.webp" alt="Camping Auvergne">
+                    </div>
+                </div>
+                
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+    <h4 class=" text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>NOS CARAVANES</strong></h4>
+
+
+ <!-- About Start -->
+ <div class="container-fluid py-5 sectionTourime">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6" >
+                    <div class="position-relative h-100 pt-5">
+                        <img class=" w-100" src="../images/affiche.webp" alt="Affiche camping le pal" style="object-fit: cover;">
+                        <img class=" w-100 pt-5" src="../images/oli.webp" alt="mascotte camping Dompierre sur besbre" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-lg-5">
+                    <div class="about-text bg-white p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase pt-3" style="letter-spacing: 5px;">A LOUER</h6>
+                        <h3 class="mb-3">Possibilité de louer plusieurs caravanes pour familles nombreuses</h3>
+                        <p class="lead">Vous souhaitez organiser un séjour au <strong><a href="https://www.lepal.com/">Parc d'Attractions Le Pal </a></strong> et vous êtes  entre 8/12 personnes  et cherchez un lieu adéquat? Vous êtes bien tombés: possibilité de louer nos 3 caravanes placées côte à côte. 
+                        Toute notre équipe se met à votre disposition pour faire de votre événement une réussite.</p>
                         <div class="row mb-4">
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme1.webp" alt="Tourisme Auvergne">
+                                <img class="img-fluid" src="../images/camping.webp" alt="Caravanes Camping Dompierre sur besbre">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme3.webp" alt="Tourisme Allier">
+                                <img class="img-fluid" src="../images/camping1.webp" alt="aravane Camping Dompierre sur besbre">
+                            </div> <hr>
+
+                            <div class="col-6">
+                                <img class="img-fluid" src="../images/camping2.webp" alt="Caravanes Camping Le Pal">
                             </div>
+
+                            <div class="col-6">
+                                <img class="img-fluid" src="../images/camping3.png" alt="Location Camping Dompierre sur besbre">
+                            </div><hr>
+
+                            <div class="col-6">
+                                <img class="img-fluid" src="../images/camping4.png" alt="Hébergement le pal">
+                            </div>
+
+                            <div class="col-6">
+                                <img class="img-fluid" src="../images/camping5.png" alt="Location Le pal">
+                            </div>
+
+                            
                         </div>
                        
                     </div>
@@ -124,105 +171,7 @@ tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong>
     <!-- About End -->
 
 
-   
-
-
-    <!-- Destination Start -->
-    <div class="container-fluid ">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination ALLIER</h6>
-                <h1>Nature et air pure</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme4.webp" alt="Nature Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme5.webp" alt="Vacance Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme6.webp" alt="Vacance Saint pourçain sur besbre">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme7.webp" alt="Vélos Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme8.webp" alt="Ballade Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme9.webp" alt="Ballade Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme10.webp" alt="Paysages Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme11.webp" alt="Paysages Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme12.webp" alt="Randonnée Auvergne">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Destination Start -->
-
-<div class="container">
-
-<!--Bouton logo -->
-<div class=" text-center mt-5">
-<a href="https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237"><img src="../images/officeTourismeLogo.webp" class="logoPal img-fluid w-25"/></a> 
-</div>
-
-<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.webp" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre" /></div>
-<!--End bouton logo-->
-
-<!--logo tourisme-->
-
-<!--Fin logoTourisme -->
-
-</div>
-
-<!--SlideShow-->
-<div class="container w-75">
-<div class="slideShow row">
-    <video class="col" controls><source src="../videos/besbre.mp4" type=video/mp4></video>
-</div>
-</div>
-<!--EndSlideShow-->
-
-<!--ZOOM SURVOL SOURIS PHOTOS-->
-<script>
- function zoomIn(img) {
-  img.style.transform = "scale(1.5)"; // agrandir l'image 1.5 fois
-  img.style.transition = "transform 0.5s"; // ajouter une transition de 0.5s pour une animation fluide
-}
-
-function zoomOut(img) {
-  img.style.transform = "scale(1)"; // remettre l'image à sa taille d'origine
-  img.style.transition = "transform 0.5s"; // ajouter une transition de 0.5s pour une animation fluide
-}
-
-</script>
-
 <?php include("formulaireContact.php") ?>
+
 
 <?php include("footer.php") ?>

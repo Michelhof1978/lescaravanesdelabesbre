@@ -20,7 +20,7 @@
     <div class=" text-center  ">
 
        <button class="navbar-toggler w-75  navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-       <img src="../images/hamburger.webp" alt="Hamburger navbar" class="me-2 mt-1" style="height: 30px;"><span class="align-middle mt-1">Menu </span>
+       <img src="../images/hamburger.png" alt="Hamburger navbar" class="me-2 mt-1" style="height: 30px;"><span class="align-middle mt-1">Menu </span>
       </button>
 
     </div>
@@ -63,7 +63,7 @@
 </nav>
 
 <div class="container-fluid text-center m-0 ">
-<img src="../images/banner3.webp" alt="Banner les caravanes de la besbre" class="banner ">
+<img src="../images/banner3.png" alt="Banner les caravanes de la besbre" class="banner ">
 </div>
 
 

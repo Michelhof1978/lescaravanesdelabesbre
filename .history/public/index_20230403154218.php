@@ -66,7 +66,7 @@ ga('send', 'pageview');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="../images/logo.webp" />
+    <link rel="icon" type="image/png" href="../images/logo.web/>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -99,7 +99,7 @@ imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
 
 // Création de l'image à afficher
 var img = document.createElement("img");
-img.src = "../images/pal50.webp" ;
+img.src = "../images/pal50.png" ;
 img.style.height = '450px';
 img.style.Width = '60 %' ;
 
@@ -152,7 +152,7 @@ setTimeout(function() {
 
     <div class="row ">
         <div class="col-sm-12 col-xl-6 ">
-            <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid bannerIntro" />
+            <img src="../images/bannerIntro.png" alt="Le Pal" class="img-fluid bannerIntro" />
         </div>
     <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
@@ -180,7 +180,7 @@ setTimeout(function() {
         
           <div class=" col text-center d-none d-md-block align-self-center"> 
                 <h3 class= "billeterie text-dark display-6">Billeterie </h3> 
-                <a href="https://www.lepal.com/"><img src="../images/lePal.webp" alt="Logo le pal" class="logoPal img-fluid "/></a> 
+                <a href="https://www.lepal.com/"><img src="../images/lePal.png" alt="Logo le pal" class="logoPal img-fluid "/></a> 
           </div>
 
           <div class=" col d-none d-xl-block">
@@ -205,7 +205,7 @@ setTimeout(function() {
           <div class="col-lg-4 col-md-12 mb-4 ">
             <div class="card ">
               <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
-                <img src="../images/caravane1.webp" alt="Hébergement Dompierre Sur Besbre" class="img-fluid " />
+                <img src="../images/caravane1.png" alt="Hébergement Dompierre Sur Besbre" class="img-fluid " />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -223,7 +223,7 @@ setTimeout(function() {
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="../images/caravane2.webp" alt="Hébergements le pal" class="img-fluid" />
+                <img src="../images/caravane2.png" alt="Hébergements le pal" class="img-fluid" />
                 <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810214_%2BUv5dalb9N5%2FDer5">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -242,7 +242,7 @@ setTimeout(function() {
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="../images/caravane3.webp" alt="hôtel le pal" class="img-fluid" />
+                <img src="../images/caravane3.png" alt="hôtel le pal" class="img-fluid" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -279,7 +279,7 @@ setTimeout(function() {
 
 <div class="carousel-inner ">
   <div class="carousel-item active ">
-    <img src=" ../images/oies.webp" class="d-block w-100" alt="Tourisme Auvergne">
+    <img src=" ../images/oies.png" class="d-block w-100" alt="Tourisme Auvergne">
     <div class="carousel-caption d-none d-md-block">
       <h5>Ballades au bord des étangs</h5>
       <p>De multiples randonées à faire à pieds ou en vélo</p>
@@ -287,7 +287,7 @@ setTimeout(function() {
   </div>
 
   <div class="carousel-item">
-    <img src="../images/tournesol.webp" class="d-block w-100 " alt="Vacances Auvergne">
+    <img src="../images/tournesol.png" class="d-block w-100 " alt="Vacances Auvergne">
     <div class="carousel-caption d-none d-md-block">
       <h5>Champs de tournesols</h5>
       <p>Venez découvrir la beauté des paysages</p>
@@ -295,7 +295,7 @@ setTimeout(function() {
   </div>
 
     <div class="carousel-item">
-    <img src=" ../images/poule.webp" class="d-block w-100 " alt="Vacances Allier">
+    <img src=" ../images/poule.png" class="d-block w-100 " alt="Vacances Allier">
     <div class="carousel-caption d-none d-md-block">
       <h5>Fermes Pédagogiques</h5>
       <p>Venez visiter des fermes pour le plaisir des enfants</p>

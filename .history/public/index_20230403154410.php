@@ -242,7 +242,7 @@ setTimeout(function() {
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="../images/caravane3.webp" alt="hôtel le pal" class="img-fluid" />
+                <img src="../images/caravane3.png" alt="hôtel le pal" class="img-fluid" />
                 <a href="#!">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -279,7 +279,7 @@ setTimeout(function() {
 
 <div class="carousel-inner ">
   <div class="carousel-item active ">
-    <img src=" ../images/oies.webp" class="d-block w-100" alt="Tourisme Auvergne">
+    <img src=" ../images/oies.png" class="d-block w-100" alt="Tourisme Auvergne">
     <div class="carousel-caption d-none d-md-block">
       <h5>Ballades au bord des étangs</h5>
       <p>De multiples randonées à faire à pieds ou en vélo</p>
@@ -287,7 +287,7 @@ setTimeout(function() {
   </div>
 
   <div class="carousel-item">
-    <img src="../images/tournesol.webp" class="d-block w-100 " alt="Vacances Auvergne">
+    <img src="../images/tournesol.png" class="d-block w-100 " alt="Vacances Auvergne">
     <div class="carousel-caption d-none d-md-block">
       <h5>Champs de tournesols</h5>
       <p>Venez découvrir la beauté des paysages</p>
@@ -295,7 +295,7 @@ setTimeout(function() {
   </div>
 
     <div class="carousel-item">
-    <img src=" ../images/poule.webp" class="d-block w-100 " alt="Vacances Allier">
+    <img src=" ../images/poule.png" class="d-block w-100 " alt="Vacances Allier">
     <div class="carousel-caption d-none d-md-block">
       <h5>Fermes Pédagogiques</h5>
       <p>Venez visiter des fermes pour le plaisir des enfants</p>

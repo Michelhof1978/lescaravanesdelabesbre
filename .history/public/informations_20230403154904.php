@@ -1,4 +1,3 @@
-
 <?php include("header.php") ?>
 
 <!DOCTYPE html>
@@ -36,10 +35,10 @@ ga('send', 'pageview');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="L'Allier au paradis du tourisme vert ! La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque l'Allier compte plusieurs villes d'eau d'importance, dont la plus connue, Vichy. ">
+    <meta name="description" content="Informations d'arrivée et de sortie Camping Le Pal Dompierre Sur Besbre Allier">
     <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
     
-    <title>Site Touristique Naturel de l'Allier</title>
+    <title>Informations Camping Le Pal Dompierre Sur Besbre</title>
 
 <meta name="Geography" content="FRANCE">
 <meta name="Category" content="travel">
@@ -66,7 +65,7 @@ ga('send', 'pageview');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="../images/logo.webp" />
+    <link rel="icon" type="image/png" href="../images/logo.png" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -85,144 +84,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </head>
 
 
- <!-- Topbar Start -->
- 
- <h4 class="mb-4 mt-3 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">Site Touristique Naturel de l'Allier</h4>
 
+<h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Informations Camping Le Pal Dompierre Sur Besbre</h1>
 
-    <!-- About Start -->
-    <div class="container-fluid py-5 sectionTourime">
-        <div class="container pt-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="../images/tourisme.webp" alt="Ecotourisme Auvergne" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">A VISITER</h6>
-                        <h1 class="mb-3">Loin de tout, proche de l'éssentiel</h1>
-                        <p class="lead"><strong>L'Allier au paradis du tourisme vert !</strong> La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque <strong>l'Allier</strong> compte plusieurs villes d'eau d'importance, dont la plus connue, <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>
-Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus <strong>les sites remarquables de l'Allier</strong>, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
-  Randonnée, sports de plein air, thalasso et gastronomie, 
-tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong> vacances de remise de forme</strong>, à grand renfort de bons bols d'air !</p>
-                        <div class="row mb-4">
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme1.webp" alt="Tourisme Auvergne">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/tourisme3.webp" alt="Tourisme Allier">
-                            </div>
-                        </div>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
+<div class="w-50 img-fluid mt-5 container info img-fluid">
+<img src=" ../images/informations.webp" class="d-block w-100 " alt="Informations camping Dompierre Sur Besbre">
+</div>
 
-
+      </section>
+      <!--Section: Content-->
    
-
-
-    <!-- Destination Start -->
-    <div class="container-fluid ">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination ALLIER</h6>
-                <h1>Nature et air pure</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme4.webp" alt="Nature Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme5.webp" alt="Vacance Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme6.webp" alt="Vacance Saint pourçain sur besbre">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme7.webp" alt="Vélos Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme8.webp" alt="Ballade Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)" src="../images/tourisme9.webp" alt="Ballade Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme10.webp" alt="Paysages Auvergne">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme11.webp" alt="Paysages Allier">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)"src="../images/tourisme12.webp" alt="Randonnée Auvergne">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Destination Start -->
-
-<div class="container">
-
-<!--Bouton logo -->
-<div class=" text-center mt-5">
-<a href="https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237"><img src="../images/officeTourismeLogo.webp" class="logoPal img-fluid w-25"/></a> 
-</div>
-
-<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.webp" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre" /></div>
-<!--End bouton logo-->
-
-<!--logo tourisme-->
-
-<!--Fin logoTourisme -->
-
-</div>
-
-<!--SlideShow-->
-<div class="container w-75">
-<div class="slideShow row">
-    <video class="col" controls><source src="../videos/besbre.mp4" type=video/mp4></video>
-</div>
-</div>
-<!--EndSlideShow-->
-
-<!--ZOOM SURVOL SOURIS PHOTOS-->
-<script>
- function zoomIn(img) {
-  img.style.transform = "scale(1.5)"; // agrandir l'image 1.5 fois
-  img.style.transition = "transform 0.5s"; // ajouter une transition de 0.5s pour une animation fluide
-}
-
-function zoomOut(img) {
-  img.style.transform = "scale(1)"; // remettre l'image à sa taille d'origine
-  img.style.transition = "transform 0.5s"; // ajouter une transition de 0.5s pour une animation fluide
-}
-
-</script>
-
+  <!--Main layout-->
 <?php include("formulaireContact.php") ?>
-
 <?php include("footer.php") ?>

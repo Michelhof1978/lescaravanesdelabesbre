@@ -279,7 +279,7 @@ setTimeout(function() {
 
 <div class="carousel-inner ">
   <div class="carousel-item active ">
-    <img src=" ../images/oies.webp" class="d-block w-100" alt="Tourisme Auvergne">
+    <img src=" ../images/oies.png" class="d-block w-100" alt="Tourisme Auvergne">
     <div class="carousel-caption d-none d-md-block">
       <h5>Ballades au bord des étangs</h5>
       <p>De multiples randonées à faire à pieds ou en vélo</p>
@@ -295,7 +295,7 @@ setTimeout(function() {
   </div>
 
     <div class="carousel-item">
-    <img src=" ../images/poule.webp" class="d-block w-100 " alt="Vacances Allier">
+    <img src=" ../images/poule.png" class="d-block w-100 " alt="Vacances Allier">
     <div class="carousel-caption d-none d-md-block">
       <h5>Fermes Pédagogiques</h5>
       <p>Venez visiter des fermes pour le plaisir des enfants</p>

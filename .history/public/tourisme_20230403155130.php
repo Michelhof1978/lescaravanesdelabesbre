@@ -189,10 +189,10 @@ tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong>
 
 <!--Bouton logo -->
 <div class=" text-center mt-5">
-<a href="https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237"><img src="../images/officeTourismeLogo.webp" class="logoPal img-fluid w-25"/></a> 
+<a href="https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237"><img src="../images/officeTourismeLogo.png" class="logoPal img-fluid w-25"/></a> 
 </div>
 
-<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.webp" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre" /></div>
+<div class="mt-5"><img class="img-fluid imgTourismeLogo" src="../images/logoTourisme.png" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre" /></div>
 <!--End bouton logo-->
 
 <!--logo tourisme-->
