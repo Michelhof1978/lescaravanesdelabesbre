@@ -90,7 +90,7 @@
 </form>
 
 
-{# <a href="https://wa.me/0033686413171" target="_blank">Envoyez-nous un message WhatsApp</a> #}
+<a href="https://wa.me/" target="_blank">Envoyez-nous un message WhatsApp</a>
 
 
 <?php

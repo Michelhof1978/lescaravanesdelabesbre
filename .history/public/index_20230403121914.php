@@ -156,7 +156,7 @@ setTimeout(function() {
         </div>
     <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
-    Goûtez aux plaisirs du <strong> <a href="https://camping.mairie-dsb.fr/">Camping de Dompierre Sur Besbre</a> proche du parc d'attraction <a href="https://www.lepal.com/">Le-Pal</a></strong> sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière et des commerces.
+    Goûtez aux plaisirs du <strong> <a href="https://camping.mairie-dsb.fr/">Camping de Dompierre Sur Besbre</a> proche du parc d'attraction <a href="https://www.lepal.com/">LePal</a></strong> sur un site exceptionnel, pleine nature, dans un cadre ombragé, de verdure et de calme situé au bord d’une rivière et des commerces.
     Laissez-vous enchanter par notre ambiance caravane. 
     Celles-ci sont en place du <strong>03/07/2023 au 27/08/2023</strong> prévues pour 4 personnes pour chaques caravanes (2 adultes, 2 enfants) tout confort et toutes équipées. 
     Epicerie de base fournie (café, sucre, sel, poivre, huile, etc..). 

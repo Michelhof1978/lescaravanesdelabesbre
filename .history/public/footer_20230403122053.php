@@ -5,7 +5,7 @@
         <div class="img3 col-12">
              <img class="img2" src="../images/logo.png" /></h2>
         
-             <p class="copyright">Copyright © 2023 Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a>. <br> Tous droits réservés.</p>
+             <p class="copyright">Copyright © 2023 Site réalisé par  Michel Hoffmann. <br> Tous droits réservés.</p>
         </div>
     </div> 
 </footer> 
