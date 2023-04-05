@@ -168,7 +168,6 @@ ga('send', 'pageview');
   gtag('config', 'G-69SWVM55LB');
 </script>
 
-
 </head>
 
 <!-- Google Tag Manager (noscript) -->

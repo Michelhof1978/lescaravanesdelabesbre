@@ -159,15 +159,15 @@ ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B">
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-69SWVM55LB');
+  gtag('config', 'G-M3CJ6F224B');
 </script>
-
 
 </head>
 

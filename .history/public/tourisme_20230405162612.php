@@ -134,15 +134,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">A VISITER</h6>
                         <h1 class="mb-3">Loin de tout, proche de l'éssentiel</h1>
-                        <p class="lead"><strong>L'Allier</strong> est une destination idéale pour les amateurs de <strong>tourisme vert</strong>, offrant une multitude d'activités de plein air, de séjours à la campagne et de remise en forme. La région compte plusieurs villes d'eau importantes, dont la célèbre <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>, ainsi que de nombreux sites remarquables tels que le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise et la forêt de Tronçais.
-
-Que vous soyez passionné de <strong>randonnée</strong>, adepte de <strong>sports de plein air</strong> ou amateur de gastronomie, l'Allier propose un large éventail d'activités pour tous les goûts. Vous pourrez ainsi profiter de la nature et des paysages variés de la région tout en vous ressourçant lors d'un séjour rural.
-
-Pour un <strong>week-end</strong> ou des <strong>vacances </strong> de remise en forme, l'Allier offre tous les ingrédients pour un séjour réussi : 
-    <strong>randonnées, sports de plein air, thalassothérapie et gastronomie locale</strong>. Venez prendre un bon bol d'air frais dans cette destination incontournable du tourisme vert !</p>
-                       
-
-
+                        <p class="lead"><strong>L'Allier au paradis du tourisme vert !</strong> La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque <strong>l'Allier</strong> compte plusieurs villes d'eau d'importance, dont la plus connue, <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>
+Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus <strong>les sites remarquables de l'Allier</strong>, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
+  Randonnée, sports de plein air, thalasso et gastronomie, 
+tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong> vacances de remise de forme</strong>, à grand renfort de bons bols d'air !</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="../images/tourisme1.webp" alt="Tourisme Auvergne">

@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/webp" href="../images/logo.webp" />
+    <link rel="icon" type="image/" href="../images/logo.webp" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -30,6 +30,10 @@
 </script>
 <!-- Google tag (gtag.js) -->
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
  <!-- Google Tag Manager -->
  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -101,21 +105,18 @@ ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B">
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-69SWVM55LB');
+  gtag('config', 'G-M3CJ6F224B');
 </script>
-
 </head>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
  <!-- Topbar Start -->
  
  <h4 class="mb-4 mt-3 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">Site Touristique Naturel de l'Allier</h4>
@@ -134,15 +135,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">A VISITER</h6>
                         <h1 class="mb-3">Loin de tout, proche de l'éssentiel</h1>
-                        <p class="lead"><strong>L'Allier</strong> est une destination idéale pour les amateurs de <strong>tourisme vert</strong>, offrant une multitude d'activités de plein air, de séjours à la campagne et de remise en forme. La région compte plusieurs villes d'eau importantes, dont la célèbre <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>, ainsi que de nombreux sites remarquables tels que le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise et la forêt de Tronçais.
-
-Que vous soyez passionné de <strong>randonnée</strong>, adepte de <strong>sports de plein air</strong> ou amateur de gastronomie, l'Allier propose un large éventail d'activités pour tous les goûts. Vous pourrez ainsi profiter de la nature et des paysages variés de la région tout en vous ressourçant lors d'un séjour rural.
-
-Pour un <strong>week-end</strong> ou des <strong>vacances </strong> de remise en forme, l'Allier offre tous les ingrédients pour un séjour réussi : 
-    <strong>randonnées, sports de plein air, thalassothérapie et gastronomie locale</strong>. Venez prendre un bon bol d'air frais dans cette destination incontournable du tourisme vert !</p>
-                       
-
-
+                        <p class="lead"><strong>L'Allier au paradis du tourisme vert !</strong> La rando, les sports de plein air, les séjours campagnards... mais aussi de remise en forme, puisque <strong>l'Allier</strong> compte plusieurs villes d'eau d'importance, dont la plus connue, <strong><a href="https://www.ville-vichy.fr/ott">Vichy</a></strong>
+Se mettre au vert : le Val de Cher, la Vallée de la Sioule, la Montagne Bourbonnaise, la Sologne Bourbonnaise, la forêt de Tronçais, etc... on ne compte plus <strong>les sites remarquables de l'Allier</strong>, offrant nature et paysages variés, mais aussi une foule d'activités... la destination idéale pour un séjour rural. 
+  Randonnée, sports de plein air, thalasso et gastronomie, 
+tous les ingrédients sont réunis pour <strong>un weekend</strong>, de <strong> vacances de remise de forme</strong>, à grand renfort de bons bols d'air !</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="../images/tourisme1.webp" alt="Tourisme Auvergne">
