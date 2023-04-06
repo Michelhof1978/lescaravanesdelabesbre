@@ -151,7 +151,7 @@ setTimeout(function() {
     <div class="container ">
     <!--Section INTRO-->
     
-    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
+    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white text-xs text-sm text-md text-lg text-xl text-nowrap"><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
     
    
 

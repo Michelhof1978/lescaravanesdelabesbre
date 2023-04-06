@@ -11,7 +11,7 @@
     <meta name="description" content="Nous vous proposons des hébergements dans un camping à Dompierre sur Besbre dans le département de l'Allier à 5 km du parc d'attractions le Pal.">
     <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
     
-    <title>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</title>
+    <title>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !"</title>
 
 
 
@@ -151,7 +151,7 @@ setTimeout(function() {
     <div class="container ">
     <!--Section INTRO-->
     
-    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
+    <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white"><strong>Location d'Hébergements à proximité Du parc D'Attractions Le Pal Dans L'Allier</strong> </h1>
     
    
 
@@ -161,7 +161,7 @@ setTimeout(function() {
         </div>
     <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
-        Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>. 
+        Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>. 
       Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement. 
 
 Vous serez enchanté par l'ambiance caravane proposée par notre équipe. Des caravanes tout confort et entièrement équipées sont disponibles du <strong>03/07/2023 au 27/08/2023</strong> pour accueillir 4 personnes chacune (2 adultes et 2 enfants). 

@@ -5,15 +5,13 @@
 
     
         <div class="img3 col-12 pt-3">
-             <img class="img2" src="../images/logo.webp" />
-             
-                 <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
-                    
-                 
-                 
-                 <strong><p class="text-white">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
-        </div>
-                
+             <img class="img2" src="../images/logo.webp" /></h2>
+        
+             <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
+        
+             <
+        
+            </div>
     </div> 
 </footer> 
 
@@ -32,28 +30,6 @@
   </footer>
 
  
-  <style>
-.social-btn {
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background-color: #ccc;
-	text-align: center;
-	line-height: 50px;
-	margin-right: 10px;
-  }
-  
-  .social-btn:hover {
-	background-color: #1854d56d; /* Modifier la couleur pour chaque réseau social */
-	color: #fff;
-  }
-  
-  .social-btn i {
-	font-size: 24px;
-	color: #333; /* Changer la couleur de l'icône pour chaque réseau social */
-  }
-</style>
 
 
 

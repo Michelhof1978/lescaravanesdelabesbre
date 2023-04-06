@@ -5,15 +5,26 @@
 
     
         <div class="img3 col-12 pt-3">
-             <img class="img2" src="../images/logo.webp" />
-             
-                 <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
-                    
-                 
-                 
-                 <strong><p class="text-white">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
-        </div>
-                
+             <img class="img2" src="../images/logo.webp" /></h2>
+             <div>    <a href="#" class="social-btn">
+  <i class="fab fa-twitter"></i>
+</a>
+
+<a href="#" class="social-btn">
+  <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#" class="social-btn">
+  <i class="fab fa-instagram"></i>
+</a>
+</div> 
+             <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
+        
+       
+
+             <strong><p class="mb-5">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
+        
+            </div>
     </div> 
 </footer> 
 

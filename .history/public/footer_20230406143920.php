@@ -4,8 +4,32 @@
     <div class="row">
 
     
-        <div class="img3 col-12 pt-3">
+        < class="img3 col-12 pt-3">
              <img class="img2" src="../images/logo.webp" />
+
+             <style>
+.social-button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-button:hover {
+  background-color: #3b5998; /* Couleur de survol de la souris */
+}
+</style>
+
+<a href="https://www.facebook.com/" target="_blank" class="social-button"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/" target="_blank" class="social-button"><i class="fa fa-twitter"></i></a>
+<a href="https://www.instagram.com/" target="_blank" class="social-button"><i class="fa fa-instagram"></i></a>
+
              
                  <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
                     

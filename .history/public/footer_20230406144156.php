@@ -11,7 +11,7 @@
                     
                  
                  
-                 <strong><p class="text-white">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
+                 <strong><p class="text-white CON">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
         </div>
                 
     </div> 

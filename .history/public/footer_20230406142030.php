@@ -5,34 +5,23 @@
 
     
         <div class="img3 col-12 pt-3">
-             <img class="img2" src="../images/logo.webp" />
-             
-                 <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
-                    
-                 
-                 
-                 <strong><p class="text-white">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
-        </div>
-                
-    </div> 
-</footer> 
+             <img class="img2" src="../images/logo.webp" /></h2>
+        
+             <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
+        
+        <div>    <a href="#" class="social-btn">
+  <i class="fab fa-twitter"></i>
+</a>
 
-<div class="container-fluid bg-secondary">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <p class="mb-0 text-white">© 2023 MH DIGITAL Tous droits réservés.</p>
-      </div>
-    </div>
-  </div>
- 
-<!-- COMPTEUR -->
-<div class="text-center mt-3">
-<a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" border="0" /></a>
-</div>
-  </footer>
+<a href="#" class="social-btn">
+  <i class="fab fa-facebook-f"></i>
+</a>
 
- 
-  <style>
+<a href="#" class="social-btn">
+  <i class="fab fa-instagram"></i>
+</a>
+</div> 
+<style>
 .social-btn {
 	display: inline-block;
 	width: 30px;
@@ -54,6 +43,28 @@
 	color: #333; /* Changer la couleur de l'icône pour chaque réseau social */
   }
 </style>
+
+             <strong><p class="mb-5">Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre, France </p></strong>
+        
+            </div>
+    </div> 
+</footer> 
+
+<div class="container-fluid bg-secondary">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <p class="mb-0 text-white">© 2023 MH DIGITAL Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
+ 
+<!-- COMPTEUR -->
+<div class="text-center mt-3">
+<a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" border="0" /></a>
+</div>
+  </footer>
+
+ 
 
 
 

@@ -4,8 +4,10 @@
     <div class="row">
 
     
-        <div class="img3 col-12 pt-3">
+        <di class="img3 col-12 pt-3">
              <img class="img2" src="../images/logo.webp" />
+
+             </di
              
                  <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
                     

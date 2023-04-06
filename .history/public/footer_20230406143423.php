@@ -5,7 +5,7 @@
 
     
         <div class="img3 col-12 pt-3">
-             <img class="img2" src="../images/logo.webp" />
+         <d    <img class="img2" src="../images/logo.webp" />
              
                  <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
                     
