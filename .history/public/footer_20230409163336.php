@@ -84,12 +84,12 @@
     </div> 
 </footer> 
 <div
-         class="text-center p-2"
+         class="text-center p-3"
          style="background-color: rgba(0, 0, 0, 0.2)"
          >
-      © 2023 Copyright:
+      © 202 Copyright:
       <a class="text-dark" href=""
-         >MH DIGITAL Droits réservés</a
+         >MH DIGITAL Tout droits réservés</a
         >
     </div>
     <!-- Copyright -->
