@@ -338,7 +338,7 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <!--AvisClients-->
 
-<div class="container-fluid h-100 avisClients mt-5">
+<div class="container h-100">
   
   <div class="row align-items-center justify-content-center h-100">
     
@@ -354,7 +354,7 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
       </div>
       
       <div id="nouveau" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase">
-        Avis Clients
+        Cliquez Pour Voir 
       </div>
     </div>
     

@@ -1,4 +1,9 @@
-//Formulaire de contact
+
+
+
+
+
+                                //Formulaire de contact
 
 //Restrictions du formulaire de contact
 const form = document.getElementById("formulaire");
@@ -115,6 +120,7 @@ $('#formulaire').one( '.confirmation', function(){//La méthode one() de jquery 
 
 });
 //Création événement click sur bouton en jquery
+
 //FIN Formulaire de contact
 
 

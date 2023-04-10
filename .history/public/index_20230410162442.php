@@ -338,23 +338,23 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <!--AvisClients-->
 
-<div class="container-fluid h-100 avisClients mt-5">
+<div class="container h-100">
   
   <div class="row align-items-center justify-content-center h-100">
     
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">
         <div id="avi" class="text-center">
-        Nous avons passé un excellent séjour chez cet hôte. L'appartement était propre, confortable. L'hôte était également très accueillant et a répondu rapidement à toutes nos questions. Nous recommandons vivement cet endroit. 
+          La vie est un mystère qu'il faut vivre, et non un problème à résoudre.
         </div>
         <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
         <div id="auteur" class="text-center">
-          Shaima
+          Gandhi
         </div>
       </div>
       
       <div id="nouveau" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase">
-        Avis Clients
+        Nouvelle citation
       </div>
     </div>
     
@@ -371,9 +371,9 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
                                       let nombreAleatoire = 0;
                                       let avis = [
                                         ["Notre séjour chez Isabelle a été super ! L'hôte était très accueillant et la caravane était propre, confortable et bien situé. Nous avons vraiment apprécié notre séjour et nous recommandons vivement cet endroit !", "Carole"],
-                                        ["Isabelle était très attentionnée et serviable, nous donnant des conseils sur les meilleurs endroits à visiter dans le coin. Nous avons adoré notre séjour ici et nous y retournerons certainement !", "Bastien"],
+                                        ["Isabelle était très attentionnée et serviable, nous donnant des conseils sur les meilleurs endroits à visiter dans la ville. Nous avons adoré notre séjour ici et nous y retournerons certainement !", "Batien"],
                                         ["Nous avons passé un excellent séjour au caravanes de la besbre! Logement confortable, l'hôte était très serviable et sympathique. Nous avons adoré l'emplacement, qui était proche du PAL. Nous recommandons vivement cet endroit.", "Pauline"],
-                                        ["Nous avons passé un excellent séjour au camping. Tout était parfait, de la propreté de la caravane aux équipements fournis. La communication avec l'hôte était également excellente. Nous recommandons vivement cet endroit !", "Manu"],
+                                        ["Nous avons passé un excellent séjour au camping. Tout était parfait, de la propreté de l'appartement aux équipements fournis. La communication avec l'hôte était également excellente. Nous recommandons vivement cet endroit !", "Manu"],
                                         ["Nous avons été très impressionnés par la qualité du logement et l'hospitalité de l'hôte. Tout était propre et bien entretenu, et l'hôte était très sympathique et serviable. Nous le recommandons vivement.", "Marc"],
                                         
                                       ];

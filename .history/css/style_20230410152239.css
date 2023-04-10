@@ -274,42 +274,7 @@ margin-bottom: 20px;
 }
 /* End caroussel*/
 
-/* AvisClients*/
- .avisClients{
-	background: #27258d71;
-	background: -webkit-linear-gradient(to right, #4389A2, #258b8d58);
-	background: linear-gradient(to right, #4389A2,#258b8d58);
-	
-	
-  }
-   
-  #avi {
-	font-size: 2em;
-	font-family: 'Satisfy', curve;
-	line-height: 1.3em;
-	letter-spacing: 1px;
-  }
-  
-  #avi:before {
-	  content: open-quote;
-  }
-  
-  #avi:after {
-	  content: close-quote;
-  }
-  
-  #auteur {
-	font-size: 1.5em;
-	font-style: italic;
-  }
-  
-  #nouveau {
-	background: #ff9966;
-	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
-	background: linear-gradient(to right, #ff5e62, #ff9966);
-	cursor: pointer;
-  }
-  /* End AvisClients*/
+
 
                                  /* END INDEX PAGE*/
 

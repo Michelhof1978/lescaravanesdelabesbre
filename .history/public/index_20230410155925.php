@@ -338,23 +338,23 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <!--AvisClients-->
 
-<div class="container-fluid h-100 avisClients mt-5">
+<div class="container h-100">
   
   <div class="row align-items-center justify-content-center h-100">
     
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">
-        <div id="avi" class="text-center">
-        Nous avons passé un excellent séjour chez cet hôte. L'appartement était propre, confortable. L'hôte était également très accueillant et a répondu rapidement à toutes nos questions. Nous recommandons vivement cet endroit. 
+        <div id="citation" class="text-center">
+          La vie est un mystère qu'il faut vivre, et non un problème à résoudre.
         </div>
         <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
         <div id="auteur" class="text-center">
-          Shaima
+          Gandhi
         </div>
       </div>
       
       <div id="nouveau" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase">
-        Avis Clients
+        Nouvelle citation
       </div>
     </div>
     
@@ -363,19 +363,34 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 </div>
 
 <script>
-    let nouveau   = document.querySelector('#nouveau');
-                                      let avi  = document.querySelector('#avi');
+   let nouveau   = document.querySelector('#nouveau');
+                                      let citation  = document.querySelector('#citation');
                                       let auteur    = document.querySelector('#auteur');
                                       
                                       let dernier   = 0;
                                       let nombreAleatoire = 0;
-                                      let avis = [
-                                        ["Notre séjour chez Isabelle a été super ! L'hôte était très accueillant et la caravane était propre, confortable et bien situé. Nous avons vraiment apprécié notre séjour et nous recommandons vivement cet endroit !", "Carole"],
-                                        ["Isabelle était très attentionnée et serviable, nous donnant des conseils sur les meilleurs endroits à visiter dans le coin. Nous avons adoré notre séjour ici et nous y retournerons certainement !", "Bastien"],
-                                        ["Nous avons passé un excellent séjour au caravanes de la besbre! Logement confortable, l'hôte était très serviable et sympathique. Nous avons adoré l'emplacement, qui était proche du PAL. Nous recommandons vivement cet endroit.", "Pauline"],
-                                        ["Nous avons passé un excellent séjour au camping. Tout était parfait, de la propreté de la caravane aux équipements fournis. La communication avec l'hôte était également excellente. Nous recommandons vivement cet endroit !", "Manu"],
-                                        ["Nous avons été très impressionnés par la qualité du logement et l'hospitalité de l'hôte. Tout était propre et bien entretenu, et l'hôte était très sympathique et serviable. Nous le recommandons vivement.", "Marc"],
-                                        
+                                      let citations = [
+                                        ["La vie est un mystère qu'il faut vivre, et non un problème à résoudre.", "Gandhi"],
+                                        ["Le plus grand risque est de ne prendre aucun risque.", "Mark Zuckerberg"],
+                                        ["Méritez votre statut de leader chaque jour.", "Mickael Jordan"],
+                                        ["Soyez le changement que vous voulez voir dans le monde.", "Gandhi"],
+                                        ["A chaque fois que vous vous retrouvez du même côté que la majorité, il est temps de prendre du recul, et de réfléchir.", "Mark Twain"],
+                                        ["Seulement ceux qui prendront le risque d’aller trop loin découvriront jusqu’où on peut aller.", "T.S Elliot"],
+                                        ["Le succès c’est tomber sept fois, se relever huit.", "Proverbe japonais"],
+                                        ["Dans vingt ans vous serez plus déçus par les choses que vous n’avez pas faites que par celles que vous avez faites. Alors sortez des sentiers battus. Mettez les voiles. Explorez. Rêvez. Découvrez.", "Mark Twain"],
+                                        ["Si vous attendez pour agir, tout ce que vous gagnerez, avec le temps, c’est de l’âge.", "Brian Tracy"],
+                                        ["Quand on concentre son attention sur un seul projet, l’esprit suggère constamment des idées et des améliorations qui lui échapperaient s’il était occupé avec plusieurs projets en même temps.", "P.T. Barnum"],
+                                        ["Se dédier à faire tout ce que l’on peut pour aider les autres à obtenir ce qu’ils veulent, c’est la clé du succès.", "Brian Sher"],
+                                        ["Si vous pensez que vous êtes trop petit pour avoir de l’impact, essayez d’aller au lit avec un moustique.", "Anita Roddick"],
+                                        ["Ne jugez pas chaque jour sur ce que vous récoltez, mais sur les graines que vous semez.", "Robert Louis Stevenson"],
+                                        ["L’action est la clé fondamentale de tout succès.", "Pablo Picasso"],
+                                        ["Le succès, c’est se promener d’échecs en échecs tout en restant motivé.", "Winston Churchill"],
+                                        ["Votre avenir est créé par ce que vous faîtes aujourd’hui, pas demain.", "Robert T. Kiyosaki"],
+                                        ["Ne vous découragez pas, c’est souvent la dernière clef du trousseau qui ouvre la porte.", "Zig Ziglar"],
+                                        ["Pour gagner votre vie, apprenez à l’école. Pour gagner une fortune, apprenez par vous-même.", "Brian Tracy"],
+                                        ["Les gagnants trouvent des moyens, les perdants des excuses…", "F. D. Roosevelt"],
+                                        ["Vous n’êtes jamais trop vieux pour vous fixer de nouveaux buts, ou rendre vos rêves réalité.", "C.S. Lewis"],
+                                        ["Un pessimiste voit la difficulté dans chaque opportunité. Un optimiste voit une opportunité dans chaque difficulté.", "Winston Churchill"]
                                       ];
                                       
                                       // Fonction permettant de générer un nombre aléatoire
@@ -385,16 +400,15 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
                                       
                                       nouveau.addEventListener('click', () => {
                                         do {
-                                          nombreAleatoire = genererNombreEntier(avis.length);
+                                          nombreAleatoire = genererNombreEntier(citations.length);
                                         } while (nombreAleatoire == dernier)
                                           
-                                        avi.textContent = avis[nombreAleatoire][0];
-                                        auteur.textContent   = avis[nombreAleatoire][1];
+                                        citation.textContent = citations[nombreAleatoire][0];
+                                        auteur.textContent   = citations[nombreAleatoire][1];
                                         dernier              = nombreAleatoire;
                                       });
 </script>
 <!--End Avis Clients-->
-
 
 
 <?php include("formulaireContact.php") ?>
