@@ -340,7 +340,7 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <section class="container-fluid avisClients mt-5">
   
-  <div class="row align-items-center justify-content-center h-100 ">
+  <div class="row align-items-center justify-content-center h-100 container-fluid">
     
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">

@@ -338,9 +338,9 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <!--AvisClients-->
 
-<section class="container-fluid avisClients mt-5">
+<section class="container-fluid h-100 avisClients mt-5">
   
-  <div class="row align-items-center justify-content-center h-100 ">
+  <div class="row align-items-center justify-content-center h-100">
     
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">
@@ -380,10 +380,10 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
                                       
                                       // Fonction permettant de générer un nombre aléatoire
                                       function genererNombreEntier(max) {
-                                        return Math.floor(Math.random() * Math.floor(max));//Random entre 0 et 1 et floor pour arrondir
+                                        return Math.floor(Math.random() * Math.floor(max));
                                       }
                                       
-                                      //Création evenement clic souris
+                                      //Création evenement clic
                                       nouveau.addEventListener('click', () => {
                                         do {
                                           nombreAleatoire = genererNombreEntier(avis.length);

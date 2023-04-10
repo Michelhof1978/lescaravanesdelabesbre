@@ -338,16 +338,16 @@ Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de li
 
 <!--AvisClients-->
 
-<section class="container-fluid avisClients mt-5">
+<section class="container h-100 avisClients mt-5">
   
-  <div class="row align-items-center justify-content-center h-100 ">
+  <div class="row align-items-center justify-content-center h-100">
     
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">
         <div id="avi" class="text-center">
         Nous avons passé un excellent séjour chez cet hôte. L'appartement était propre, confortable. L'hôte était également très accueillant et a répondu rapidement à toutes nos questions. Nous recommandons vivement cet endroit. 
         </div>
-        <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
+        <div class="bg-secondary w-50 mx-auto p-1 my-4"></div>
         <div id="auteur" class="text-center">
           Shaima
         </div>

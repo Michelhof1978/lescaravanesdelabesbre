@@ -279,12 +279,12 @@ margin-bottom: 20px;
 	background: #27258d71;
 	background: -webkit-linear-gradient(to right, #4389A2, #258b8d58);
 	background: linear-gradient(to right, #4389A2,#258b8d58);
-	height: 75% !important;
+	height: ;
 	
   }
    
   #avi {
-	font-size: 1.5em;
+	font-size: 2em;
 	font-family: 'Satisfy', curve;
 	line-height: 1.3em;
 	letter-spacing: 1px;
