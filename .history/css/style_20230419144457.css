@@ -446,6 +446,9 @@ video{
 
 												  
  /*Intro */
+ .bannerIntro{
+	margin-top: 0px !important;
+ }
 
 .h1Index{
 	background-color: rgba(17, 150, 239, 0.547);

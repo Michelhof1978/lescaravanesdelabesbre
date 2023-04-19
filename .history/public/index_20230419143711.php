@@ -181,11 +181,10 @@
     <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
     
 
-    <div class="row ">
-   
 
+    <div class="row ">
       <div class="col-sm-12 col-xl-6 ">
-        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
+        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid bannerIntro" />
       </div>
       <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">

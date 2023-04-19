@@ -185,7 +185,7 @@
    
 
       <div class="col-sm-12 col-xl-6 ">
-        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
+        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid bannerIntro" />
       </div>
       <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">

@@ -67,7 +67,6 @@
 <img src="../images/banner3.webp" alt="Banner les caravanes de la besbre" class="banner ">
 </div>
 
-<?php include("meteo.php") ?>
 
 
 

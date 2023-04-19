@@ -45,7 +45,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 <a href="../images/planPal.pdf "  download>
 <img src="../images/pal50Ans.webp" alt="Plan le pal" title="Plan du Pal" class="logoPal50 img-fluid h-50" /> 
 </a>
-<h3 class="m-3 ps-4 textLogo50">Téléchargez le plan !</h3>
+<h3 class="m-3 ps-4 textLogo50 lead">Téléchargez le plan !</h3>
 </div>
 
 <div class="meteoContainer  col-xl-6 col-md-6 text-center pt-2  ">
@@ -131,7 +131,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
                         }
                         ?>
 
-                        <div class="textLogo50">
+                        <div class="textLogo50 lead">
                             <h2>
                                 <?php echo $temp; ?> °C <br />
                                 <?php echo $speed; ?> Km/h <br /> 

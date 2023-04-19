@@ -6,13 +6,13 @@
 
   <nav role="navigation" >
 
-    <div class="pt-2 text-center border-bottom ">
+    <div class="pt-2 text-center border-bottom container">
       
-      <img id="logo" src="../images/logo.webp" alt="Logo Les caravanes De La Besbre" style="height:160px " class="img-fluid logo ">
+     <div><img id="logo" src="../images/logo.webp" alt="Logo Les caravanes De La Besbre" style="height:160px " class="img-fluid logo "></div> 
 
       <div class=" navbar-brand fs-2 textLogo" href="#">Les Caravanes De La Besbre <span class="orange">.</span></div> 
       
-      <img src="../images/papillons.gif" alt="Papillons" style="height:100px " class="img-fluid">
+      <div></div><img src="../images/papillons.gif" alt="Papillons" style="height:100px " class="img-fluid">
     </div>
 
     
@@ -71,8 +71,8 @@
 
 
 
-
           
+
 
 
 

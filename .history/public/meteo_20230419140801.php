@@ -1,19 +1,5 @@
 
-    
-<!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <!-- Boostrap -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-            <!-- Style -->
-            <link href="../css/style.css" rel="stylesheet">
-            <title>Météo</title>
-        </head>
 
-        
-        <body>
         <?php  
 
 $url = "https://api.openweathermap.org/data/2.5/weather?q=dompierre-sur-besbre&lang=fr&units=metric&appid=a2c110c02e86989d65348566c3ad09ff";
@@ -48,7 +34,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 <h3 class="m-3 ps-4 textLogo50">Téléchargez le plan !</h3>
 </div>
 
-<div class="meteoContainer  col-xl-6 col-md-6 text-center pt-2  ">
+<div class="meteoContainer  col-xl-6 col-md-6 text-center pt-2 ">
 <h2 class="textLogo50">Météo du jour <br> <strong><?php echo $name; ?></strong></h2>
                     <?php 
                         switch($weather)

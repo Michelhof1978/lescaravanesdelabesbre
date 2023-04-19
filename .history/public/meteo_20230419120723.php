@@ -1,5 +1,4 @@
 
-    
 <!DOCTYPE html>
     <html lang="fr">
         <head>
@@ -48,7 +47,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 <h3 class="m-3 ps-4 textLogo50">Téléchargez le plan !</h3>
 </div>
 
-<div class="meteoContainer  col-xl-6 col-md-6 text-center pt-2  ">
+<div class="meteoContainer  col-xl-6 col-md-6 text-center pt-2  w-">
 <h2 class="textLogo50">Météo du jour <br> <strong><?php echo $name; ?></strong></h2>
                     <?php 
                         switch($weather)

@@ -131,7 +131,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
                         }
                         ?>
 
-                        <div class="textLogo50">
+                        <div class="textLogo50 lead">
                             <h2>
                                 <?php echo $temp; ?> °C <br />
                                 <?php echo $speed; ?> Km/h <br /> 
