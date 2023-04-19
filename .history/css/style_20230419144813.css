@@ -141,14 +141,13 @@ video{
  }
 
  /* End banner */
-
 /* Météo + logoPal50*/
  .icon {
 	position: relative;
 	display: inline-block;
 	width: 12em;
 	height: 10em;
-	font-size: 1em; /* taille icone*/
+	font-size: 1em; /* control icon size here */
   }
   
   .cloud {
@@ -215,9 +214,9 @@ video{
 	width: 0.375em;
 	height: 1.125em;
 	margin-left: -0.1875em;
-	background: yellow;
+	background: #fff;
 	border-radius: 0.25em;
-	box-shadow: 0 5.375em yellow;
+	box-shadow: 0 5.375em #fff;
   }
   .rays:before,
   .rays:after {
@@ -230,9 +229,9 @@ video{
 	height: 1.125em;
 	transform: rotate(60deg);
 	transform-origin: 50% 3.25em;
-	background: yellow;
+	background: #fff;
 	border-radius: 0.25em;
-	box-shadow: 0 5.375em yellow;
+	box-shadow: 0 5.375em #fff;
   }
   .rays:before {
 	transform: rotate(120deg);
@@ -421,10 +420,10 @@ video{
 	}
   }
   
-  /* .meteoContainer {
+  .meteoContainer {
   background-color: rgba(241, 21, 21, 0.874);
   border: 5px solid rgb(17, 150, 239);
-  } */
+  }
 
   .logoPal50{
 	position: relative;

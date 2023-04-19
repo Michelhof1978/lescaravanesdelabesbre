@@ -204,7 +204,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 ?>
 
           
-            <div class="container-fluid ">
+            <div class="container-fluid py-5 ">
                 <div class="row ">
 
                 <div class="planPal col-xl-6 col-md-6 text-center mt-5">
@@ -315,8 +315,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 
 
 
-            <div class="container ">
-    <!--Section INTRO-->
+
 
     <div class="row ">
    

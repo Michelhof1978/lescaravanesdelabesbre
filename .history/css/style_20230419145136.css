@@ -148,7 +148,7 @@ video{
 	display: inline-block;
 	width: 12em;
 	height: 10em;
-	font-size: 1em; /* taille icone*/
+	font-size: 1em; /* control icon size here */
   }
   
   .cloud {
@@ -232,7 +232,7 @@ video{
 	transform-origin: 50% 3.25em;
 	background: yellow;
 	border-radius: 0.25em;
-	box-shadow: 0 5.375em yellow;
+	box-shadow: 0 5.375em y;
   }
   .rays:before {
 	transform: rotate(120deg);

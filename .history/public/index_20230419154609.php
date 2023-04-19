@@ -175,7 +175,8 @@
 
 <section class="index mt-5">
 
-  
+  <div class="container ">
+    <!--Section INTRO-->
 
     <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
     
@@ -204,7 +205,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 ?>
 
           
-            <div class="container-fluid ">
+            <div class="container-fluid py-5 ">
                 <div class="row ">
 
                 <div class="planPal col-xl-6 col-md-6 text-center mt-5">
@@ -315,8 +316,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 
 
 
-            <div class="container ">
-    <!--Section INTRO-->
+
 
     <div class="row ">
    
