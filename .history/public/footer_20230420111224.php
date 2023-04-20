@@ -92,10 +92,10 @@
       © <script>
 		function afficherDate() {
 			// Récupérer la date et l'heure actuelles
-			var date = new Date().getFullYear();
+			var date = new Date();
 
 			// Mettre à jour le texte dans le code HTML
-			document.getElementById("date").innerHTML = date.toLocaleString();//Mettre une date en local
+			document.getElementById("date").innerHTML = date.toLocaleString();
 		}
 
 		// Appeler la fonction afficherDate toutes les secondes
@@ -105,7 +105,7 @@
          >MH DIGITAL Droits réservés</a
         >
     </div>
-    <!-- fIN Copyright -->
+    
 
    
  

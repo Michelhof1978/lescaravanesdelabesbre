@@ -95,7 +95,7 @@
 			var date = new Date().getFullYear();
 
 			// Mettre à jour le texte dans le code HTML
-			document.getElementById("date").innerHTML = date.toLocaleString();//Mettre une date en local
+			document.getElementById("date").innerHTML = date.toLocaleString();//
 		}
 
 		// Appeler la fonction afficherDate toutes les secondes
