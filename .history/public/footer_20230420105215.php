@@ -89,25 +89,13 @@
 
 <!-- Copyright -->
 <div class="text-center p-2"style="background-color: rgba(0, 0, 0, 0.2)">
-      © <script>
-		function afficherDate() {
-			// Récupérer la date et l'heure actuelles
-			var date = new Date();
+      <script></script>
+      
 
-			// Mettre à jour le texte dans le code HTML
-			document.getElementById("date").innerHTML = date.toLocaleString();
-		}
-
-		// Appeler la fonction afficherDate toutes les secondes
-		setInterval(afficherDate, 1000);
-	</script> <span id="date">Copyright:</span>    
-      <a class="text-dark" href="https://cvmichel-hoffmann.fr/"
-         >MH DIGITAL Droits réservés</a
-        >
-    </div>
+</div>
     
 
-   
+
  
 <!-- COMPTEUR -->
 <div class="text-center mt-3">

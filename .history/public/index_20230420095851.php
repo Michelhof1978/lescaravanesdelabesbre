@@ -148,7 +148,7 @@
 
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
-  }, 2000);
+  }, 3000);
 
 
   //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
@@ -511,7 +511,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
         </div>
         <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
         <div id="auteur" class="text-center">
-          Louise
+          N
         </div>
       </div>
 

@@ -1,5 +1,4 @@
 
-
 <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 
  <footer class="container-fluid">
@@ -77,7 +76,7 @@
     </section>
             
              <section>
-            <p class="" style="color: white;"><strong>Les Caravanes De La Besbre Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre</strong></p>
+            <p class="" style="color: white;">Les Caravanes De La Besbre <strong> <a href="https://camping.mairie-dsb.fr/">Camping "Les Bords De Besbre"</a></strong> 03 290 Dompierre Sur Besbre</strong></p>
             </section>
             
              
@@ -85,29 +84,18 @@
         </div>
                 
     </div> 
-</footer> 
+</footer>
 
 <!-- Copyright -->
 <div class="text-center p-2"style="background-color: rgba(0, 0, 0, 0.2)">
-      © <script>
-		function afficherDate() {
-			// Récupérer la date et l'heure actuelles
-			var date = new Date();
-
-			// Mettre à jour le texte dans le code HTML
-			document.getElementById("date").innerHTML = date.toLocaleString();
-		}
-
-		// Appeler la fonction afficherDate toutes les secondes
-		setInterval(afficherDate, 1000);
-	</script> <span id="date">Copyright:</span>    
+ © 2023 Copyright:
       <a class="text-dark" href="https://cvmichel-hoffmann.fr/"
          >MH DIGITAL Droits réservés</a
         >
-    </div>
+  </div>
     
 
-   
+
  
 <!-- COMPTEUR -->
 <div class="text-center mt-3">

@@ -148,7 +148,7 @@
 
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
-  }, 2000);
+  }, 000);
 
 
   //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 

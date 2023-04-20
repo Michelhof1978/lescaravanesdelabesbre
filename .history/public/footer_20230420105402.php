@@ -88,26 +88,19 @@
 </footer> 
 
 <!-- Copyright -->
-<div class="text-center p-2"style="background-color: rgba(0, 0, 0, 0.2)">
-      © <script>
-		function afficherDate() {
-			// Récupérer la date et l'heure actuelles
-			var date = new Date();
-
-			// Mettre à jour le texte dans le code HTML
-			document.getElementById("date").innerHTML = date.toLocaleString();
-		}
-
-		// Appeler la fonction afficherDate toutes les secondes
-		setInterval(afficherDate, 1000);
-	</script> <span id="date">Copyright:</span>    
+<div
+         class="text-center p-2"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
       <a class="text-dark" href="https://cvmichel-hoffmann.fr/"
          >MH DIGITAL Droits réservés</a
         >
     </div>
     
 
-   
+    let date = new Date().getFullYear();
+// let copyright = `${date} © Believemy`;
  
 <!-- COMPTEUR -->
 <div class="text-center mt-3">

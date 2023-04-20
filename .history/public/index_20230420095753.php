@@ -148,7 +148,7 @@
 
     // Suppression de la div contenant l'image
     document.body.removeChild(imgDiv);
-  }, 2000);
+  }, 3000);
 
 
   //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
@@ -507,11 +507,11 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
     <div class="col-md-8 col-lg-6 p-3">
       <div class="bg-light shadow p-5">
         <div id="avi" class="text-center">
-          Nous avons passé un excellent séjour chez cet hôte. Le logement était propre, confortable. L'hôte était également très accueillant et a répondu rapidement à toutes nos questions. Nous recommandons vivement cet endroit.
+          Nous avons passé un excellent séjour chez cet hôte. Le était propre, confortable. L'hôte était également très accueillant et a répondu rapidement à toutes nos questions. Nous recommandons vivement cet endroit.
         </div>
         <div class="bg-secondary w-25 mx-auto p-1 my-4"></div>
         <div id="auteur" class="text-center">
-          Louise
+          Shaima
         </div>
       </div>
 
