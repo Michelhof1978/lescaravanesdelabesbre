@@ -77,11 +77,11 @@
     </section>
             
              <section>
-            <p class="" style="color: white;"><strong>Les Caravanes De La Besbre <a href="https://camping.mairie-dsb.fr/">Camping "Les Bords De Besbre" </a> 03 290 Dompierre Sur Besbre</strong></p>
+            <p class="" style="color: white;"><strong>Les Caravanes De La Besbre Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre</strong></p>
             </section>
             
-            
-  
+            <a class="text-dark" href="https://cvmichel-hoffmann.fr/">MH DIGITAL Droits réservés</a>
+    </div>
              
         </div>
                 

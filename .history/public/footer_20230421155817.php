@@ -77,11 +77,10 @@
     </section>
             
              <section>
-            <p class="" style="color: white;"><strong>Les Caravanes De La Besbre <a href="https://camping.mairie-dsb.fr/">Camping "Les Bords De Besbre" </a> 03 290 Dompierre Sur Besbre</strong></p>
+            <p class="" style="color: white;"><strong>Les Caravanes De La Besbre Camping "Les Bords De Besbre" 03 290 Dompierre Sur Besbre</strong></p>
             </section>
             
-            
-  
+             
              
         </div>
                 
@@ -102,7 +101,8 @@
 		// Appeler la fonction afficherDate toutes les secondes
 		setInterval(afficherDate, 1000);
 	</script> <span id="date">Copyright:</span>    
-      <a class="text-dark" href="https://cvmichel-hoffmann.fr/">MH DIGITAL Droits réservés</a>
+      <a class="text-dark" href="https://cvmichel-hoffmann.fr/">MH DIGITAL Droits réservés</a
+        >
     </div>
     <!-- fIN Copyright -->
 
