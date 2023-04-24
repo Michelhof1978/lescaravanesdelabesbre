@@ -192,7 +192,7 @@ video{
 	transform: scale(0.5) translate(6em, -3em);
 	animation: cloud 4s linear infinite;
   }
-  .cloud:nth-child(2):after { background:  #696868; }
+  .cloud:nth-child(2):after { background: #fff; }
   
   .sun {
 	position: absolute;
