@@ -696,4 +696,23 @@ footer{
 	
 	}
 ------------------------------------------
-
+Button {
+    border: 1px;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  * {
+    outline: 0;
+  }
+  
+  .dark {
+    background-color: #112F41;
+    color: #ffffff;
+  }
+  
+  .dark Button {
+    background: #144098;
+    color: #fff;
+  }

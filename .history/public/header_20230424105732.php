@@ -1,7 +1,4 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-</head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 
 <body>
 
@@ -18,7 +15,37 @@
       <img src="../images/papillons.gif" alt="Papillons" style="height:100px " class="img-fluid">
     </div>
 
-    
+    <button id="mode" class="">
+          <i class="fas fa-moon"></i>
+          <span>Thème sombre</span>
+        </button>
+
+   <sr     let button = document.querySelector('#mode');
+let span   = document.querySelector('span');
+
+if(localStorage.getItem('theme')){
+  if(localStorage.getItem('theme') == 'sombre') {
+    modeSombre();
+  }
+}
+
+button.addEventListener('click', () => {
+  if(document.body.classList.contains('dark')) {
+    document.body.className = '';
+    span.textContent = 'Thème sombre';
+    localStorage.setItem('theme', 'clair');
+  }
+  else {
+    modeSombre();
+  }
+});
+
+function modeSombre() {
+  document.body.className = 'dark';
+  span.textContent = 'Thème clair';
+  localStorage.setItem('theme', 'sombre');
+}
+ 
   <div class="navbar-expand-md ">
     <div class=" text-center  ">
 

@@ -1,7 +1,4 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-</head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 
 <body>
 
@@ -18,7 +15,11 @@
       <img src="../images/papillons.gif" alt="Papillons" style="height:100px " class="img-fluid">
     </div>
 
-    
+    <button id="mode" cl>
+          <i class="fas fa-moon"></i>
+          <span>Thème sombre</span>
+        </button>
+ 
   <div class="navbar-expand-md ">
     <div class=" text-center  ">
 
