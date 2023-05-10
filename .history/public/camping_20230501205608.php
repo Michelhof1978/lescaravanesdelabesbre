@@ -22,9 +22,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    
-    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+    <link rel="icon" type="image/png" href="../images/logo.png"><!-- Favicon-->
 
-    
+    <link rel="canonical" href="https://lescaravanesdelabesbre.fr/" />
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>

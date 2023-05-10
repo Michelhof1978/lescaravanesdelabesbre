@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: //Pour mettre des restrictions
