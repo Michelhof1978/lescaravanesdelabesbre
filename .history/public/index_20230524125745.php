@@ -380,7 +380,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 
 <!--PROPOSITION LOGEMENTS-->
 <section class="text-center clear mt-4 ms-2 me-2">
-  <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79€/NUIT</strong></h4>
+  <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATIONS A PARTIR DE 7€/NUIT</strong></h4>
 
   <div class="row locationIndex">
     <div class="col-lg-4 col-md-12 mb-4 ">
@@ -392,7 +392,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Caravane BIG 79€</h5>
+          <h5 class="card-title">Caravane BIG</h5>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
             Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
@@ -412,7 +412,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Caravane FLO 79€</h5>
+          <h5 class="card-title">Caravane FLO</h5>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
             Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
@@ -433,7 +433,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Caravane OLI 79€</h5>
+          <h5 class="card-title">Caravane OLI</h5>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
             Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
