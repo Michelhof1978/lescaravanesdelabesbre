@@ -13,13 +13,15 @@
   <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Accueil Camping Le Pal </title>
-  <link rel="icon" type="image/png" href="../images/logo.png">
+  <title>Camping Le Pal </title>
+
   <link href="../css/style.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
+  <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+
 
   <link rel="canonical" href="https://lescaravanesdelabesbre.fr/" />
 

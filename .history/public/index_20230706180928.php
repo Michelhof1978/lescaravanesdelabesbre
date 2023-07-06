@@ -21,6 +21,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
 
+
+
   <link rel="canonical" href="https://lescaravanesdelabesbre.fr/" />
 
   <!-- Google tag (gtag.js) -->

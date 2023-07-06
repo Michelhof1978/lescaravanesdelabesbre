@@ -524,10 +524,7 @@ margin-bottom: 20px;
 /* end vidéos  le pal */
 
 .tarifs{
-	background-color: rgb(168, 240, 60);
-	font-weight: 400;
-	font-size: 20px;
-	font-family:serif;
+	background-color: rgb(93, 147, 11)!important;
 }
 
 /*Caroussel*/
@@ -659,11 +656,19 @@ box-shadow: 0 0 3px rgba(0,0,0, 0.2);
                                          /* FOOTER */
 
 footer{
-   height: 340px;
+   height: 48%;
     background: rgba(230, 122, 22, 0.883);   
 }
 
-
+/*@media (max-width: 991px) {
+	.footer {
+	  flex-wrap: wrap;
+	}
+	.footer .col-md-6 {
+	  width: 100%;
+	  margin-bottom: 30px;
+	}
+  }*/
 
 .copyright{
     text-align: center;
