@@ -392,7 +392,7 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
           </a>
         </div>
         <div class="card-body">
-          <h5 class="card-title">Caravane BIG <p class="tarifs">79,00€</p></h5>
+          <h5 class="card-title">Caravane BIG <p style="background-color= green">79,00€</p></h5>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
             Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
