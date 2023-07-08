@@ -222,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping12.webp" alt="Location Camping Dompierre sur besbre">
+                                <img class="img-fluid" src="../images/camping3.webp" alt="Location Camping Dompierre sur besbre">
                             </div><hr>
 
                             <div class="col-6">
@@ -233,20 +233,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <img class="img-fluid" src="../images/camping5.webp" alt="Location Le pal">
                             </div>
 
-                            <div class="col-6 pt-3">
+                            <div class="col-6">
                                 <img class="img-fluid" src="../images/camping9.webp" alt="Hébergement le pal">
                             </div>
 
-                            <div class="col-6 p-3">
-                                <img class="img-fluid" src="../images/camping10.webp" alt="Location Le pal">
-                            </div>
-
-                            <div class="col-6 pt-3">
-                                <img class="img-fluid" src="../images/camping11.webp" alt="Hébergement le pal">
-                            </div>
-
-                            <div class="col-6 p-3">
-                                <img class="img-fluid" src="../images/camping3.webp" alt="Location Le pal">
+                            <div class="col-6">
+                                <img class="img-fluid" src="../images/camping5.webp" alt="Location Le pal">
                             </div>
                         </div>
                        

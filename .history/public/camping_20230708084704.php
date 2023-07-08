@@ -222,7 +222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
 
                             <div class="col-6">
-                                <img class="img-fluid" src="../images/camping12.webp" alt="Location Camping Dompierre sur besbre">
+                                <img class="img-fluid" src="../images/camping3.webp" alt="Location Camping Dompierre sur besbre">
                             </div><hr>
 
                             <div class="col-6">
