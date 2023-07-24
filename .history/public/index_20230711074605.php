@@ -116,39 +116,39 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-------------------------------------------------------------------------------------------------------------
+
 <script>
-  // //CREATION POPUP UNIQUEMENT EN JS 
-  // // Création de la div pour afficher l'image + position
-  // var imgDiv = document.createElement("div");
-  // imgDiv.style.position = "fixed";
-  // imgDiv.style.top = "57%";
-  // imgDiv.style.left = "50%";
-  // imgDiv.style.transform = "translate(-50%, -50%)";
-  // imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+  //CREATION POPUP UNIQUEMENT EN JS 
+  // Création de la div pour afficher l'image + position
+  var imgDiv = document.createElement("div");
+  imgDiv.style.position = "fixed";
+  imgDiv.style.top = "57%";
+  imgDiv.style.left = "50%";
+  imgDiv.style.transform = "translate(-50%, -50%)";
+  imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
 
 
-  // // Création de l'image à afficher
-  // var img = document.createElement("img");
-  // img.src = "../images/pal50.webp";
-  // img.style.height = '450px';
-  // img.style.Width = '60 %';
+  // Création de l'image à afficher
+  var img = document.createElement("img");
+  img.src = "../images/pal50.webp";
+  img.style.height = '450px';
+  img.style.Width = '60 %';
 
-  // // Ajout de l'image à la div
-  // imgDiv.appendChild(img);
+  // Ajout de l'image à la div
+  imgDiv.appendChild(img);
 
-  // // Ajout de la div au body de la page
-  // document.body.appendChild(imgDiv);
+  // Ajout de la div au body de la page
+  document.body.appendChild(imgDiv);
 
-  // // Affichage de l'alerte après 3 secondes
-  // setTimeout(function() {
-  //   alert("Le Pal fête ses 50 Ans !");
+  // Affichage de l'alerte après 3 secondes
+  setTimeout(function() {
+    alert("Le Pal fête ses 50 Ans !");
 
-  //   // Suppression de la div contenant l'image
-  //   document.body.removeChild(imgDiv);
-  // }, 2000);
+    // Suppression de la div contenant l'image
+    document.body.removeChild(imgDiv);
+  }, 2000);
 
--------------------------------------------------------------------------------------------------------
+
   //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
   // function openPopup() {
   //   // Spécifiez l'URL de la page à ouvrir dans la popup
@@ -177,81 +177,7 @@
 
     <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
     
-    <!--PROPOSITION LOGEMENTS-->
-<section class="text-center clear mt-4 ms-2 me-2">
-  <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
-
-  <div class="row locationIndex">
-    <div class="col-lg-4 col-md-12 mb-4 ">
-      <div class="card ">
-        <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
-          <img src="../images/caravane1.webp" alt="camping le pal" class="img-fluid " />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Caravane BIG </h5>
-          <p class="tarifs"><strong>79,00 €</strong></p>
-          <p class="card-text">
-            Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Faites des économies en réservant directement sur notre site ! En évitant les frais supplémentaires d'Airbnb, vous pouvez économiser jusqu'à 15 euros sur votre réservation. <br>
-            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong> <br>
-           
-            <a href="resaContact.php" class="btn btn-primary">Réservez !</a>
-           <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez !</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/caravane2.webp" alt="Hébergements le pal" class="img-fluid" />
-          <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810214_%2BUv5dalb9N5%2FDer5">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Caravane FLO</h5>
-          <p class="tarifs"><strong>79,00 €</strong></p>
-          <p class="card-text">
-            Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
-            Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
-            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
-          </p>
-          <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez !</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="card">
-        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-          <img src="../images/caravane3.webp" alt="hôtel le pal" class="img-fluid" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-          </a>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Caravane OLI</h5>
-          <p class="tarifs"><strong>79,00 €</strong></p>
-          <p class="card-text">
-            Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
-            Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
-            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
-          </p>
-          <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" class="btn btn-primary">Réservez !</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- FIN PROPOSITION LOGEMENTS-->
-
-
+    
     <!-- Météo + logoPal50-->
 <?php  
 
@@ -403,7 +329,6 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
       <div class="col-sm-12 col-xl-6 ">
         <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
       </div>
-      
       <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.

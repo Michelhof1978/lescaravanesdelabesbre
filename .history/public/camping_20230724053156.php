@@ -148,7 +148,6 @@ ga('send', 'pageview');
 </script>
 
 </head>
-<?php include("header.php") ?>
 
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P"

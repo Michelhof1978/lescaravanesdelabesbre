@@ -1,5 +1,4 @@
-
-
+<?php include("header.php") ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -148,118 +147,129 @@ ga('send', 'pageview');
 </script>
 
 </head>
-<?php include("header.php") ?>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<h4 class="m-5 text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>Camping Dompierre Sur Besbre Proche Du Pal</strong></h4>
+<div class="row ">
+   
 
-<!-- Destination Start -->
-<div class="container-fluid ">
-        <div class="container pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination Nature</h6>
-                <h1>Camping De Dompierre Sur Besbre</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping6.webp" alt="Camping Le Pal">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping7.webp" alt="Camping Dompierre sur Besbre">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class=" position-relative overflow-hidden mb-2">
-                        <img class="img-fluid" src="../images/camping8.webp" alt="Camping Auvergne">
-                    </div>
-                </div>
-                
-                </div>
-               
-            </div>
-        </div>
+      <div class="col-sm-12 col-xl-6 ">
+        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
+      </div>
+
+      <div class="col-sm-12 col-xl-6 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+          Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
+          Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
+
+          Vous serez enchanté par l'ambiance caravane proposée par notre équipe. Des caravanes tout confort et entièrement équipées sont disponibles du <strong>03/07/2023 au 27/08/2023</strong> pour accueillir 4 personnes chacune (2 adultes et 2 enfants).
+          En outre, une épicerie de base est fournie, comprenant café, sucre, sel, poivre, huile, etc.
+
+          Notre équipe, dirigée par Isabelle, se fera un plaisir de vous aider à rendre votre séjour inoubliable. N'hésitez pas à nous contacter pour plus d'informations ou pour réserver votre séjour dès maintenant.
+        </p>
+      </div>
+      
     </div>
-    <!-- Destination Start -->
-
-    <h4 class=" text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>NOS CARAVANES</strong></h4>
 
 
- <!-- About Start -->
- <div class="container-fluid py-5 sectionTourime">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-6" >
-                    <div class="position-relative h-100 pt-5">
-                        <img class=" w-100" src="../images/affiche.webp" alt="Affiche camping le pal" style="object-fit: cover;">
-                        <img class=" w-100 pt-5" src="../images/oli.webp" alt="mascotte camping Dompierre sur besbre" style="object-fit: cover;">
-                    </div>
+
+  </div>
+
+
+<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
+    <fieldset class="mb-5 ms-2 me-2">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+
+<!-- 2 column grid layout with text inputs for the first and last names -->
+<div class="row mb-4">
+
+    <div class="col">
+        <div class="form-outline">
+            <input name="firstName" type="text" id="firstName" class="form-control"placeholder="Prénom" required/>
+            <label for="firstName" class="form-label"></label>
+        <div class="invalid-feedback">
+            Veuillez saisir votre prénom.
+        </div>
+        </div>
+</div>
+
+<div class="col">
+    <div class="form-outline">
+        <input name="lastName" type="text" id="lastName" class="form-control"placeholder="Nom" required/>
+            <label for="lastName" class="form-label"></label>
+                <div class="invalid-feedback">
+                    Veuillez saisir votre nom.
                 </div>
-                <div class="col-lg-6 pb-lg-5">
-                    <div class="about-text bg-white p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase pt-3" style="letter-spacing: 5px;">A LOUER</h6>
-                        <h3 class="mb-3">Possibilité de louer plusieurs caravanes pour familles nombreuses</h3>
-                        
-                        <p class="lead">Vous êtes une famille nombreuse ou un groupe de 8 à 12 personnes et vous cherchez un endroit confortable pour votre séjour au <strong><a href="https://www.lepal.com/">Parc d'Attractions Le Pal </a></strong>? Nous avons la solution pour vous! 
-                        Nous proposons la location de trois caravanes adjacentes pour répondre à vos besoins. 
-                        Avec notre équipe à votre disposition, nous ferons tout notre possible pour que votre séjour soit une réussite.</p>
-                       
-                        
-                        <div class="row mb-4">
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping.webp" alt="Caravanes Camping Dompierre sur besbre">
-                            </div>
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping1.webp" alt="aravane Camping Dompierre sur besbre">
-                            </div> <hr>
+    </div>
+</div>
 
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping2.webp" alt="Caravanes Camping Le Pal">
-                            </div>
+<div class="col">
+    <div class="form-outline">
+        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required/>
+            <label for="phoneNumber" class="form-label"></label>
+                <div class="invalid-feedback">
+                     Veuillez saisir votre téléphone.
+                </div>
+    </div>
+</div>
 
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping12.webp" alt="Location Camping Dompierre sur besbre">
-                            </div><hr>
+</div>
 
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping4.webp" alt="Hébergement le pal">
-                            </div>
-
-                            <div class="col-6">
-                                <img class="img-fluid" src="../images/camping5.webp" alt="Location Le pal">
-                            </div>
-
-                            <div class="col-6 pt-3">
-                                <img class="img-fluid" src="../images/camping9.webp" alt="Hébergement le pal">
-                            </div>
-
-                            <div class="col-6 p-3">
-                                <img class="img-fluid" src="../images/camping10.webp" alt="Location Le pal">
-                            </div>
-
-                            <div class="col-6 pt-3">
-                                <img class="img-fluid" src="../images/camping11.webp" alt="Hébergement le pal">
-                            </div>
-
-                            <div class="col-6 p-3">
-                                <img class="img-fluid" src="../images/camping3.webp" alt="Location Le pal">
-                            </div>
+<!-- Email input -->
+<div class="form-outline mb-4">
+    <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input name="email" type="email" id="email" class="form-control " placeholder="Email" required/>
+                </div>
+                    <label for="email" class="form-label"></label>
+                        <div class="invalid-feedback">
+                            Veuillez saisir votre Email.
                         </div>
-                       
-                    </div>
                 </div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="objet">Objet :</label>
+        <select class="form-label" name="objet" id="objet">
+            <option>Renseignements</option>
+            <option>Résérvation</option>
+        </select>
+</div>
+
+
+<div class="form-floating ">
+    <textarea name="message" class="form-control " id="message" required></textarea>
+        <label for="message">Message</label>
+            <div class="invalid-feedback">
+                Veuillez saisir votre message.
             </div>
-        </div>
+</div>
+
+<!-- Submit button -->
+<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 mt-5">
+    Envoyez
+</button>
+
+</div>
     </div>
-    <!-- About End -->
+        </fieldset>
+</form>
 
+<?php
+if (isset($_POST["message"])) {
+$message = "Message envoye de :
+Nom : ".$_POST["firstName"]."
+Prenom : ".$_POST["lastName"]."
+Telephone : ".$_POST["phoneNumber"]."
+Email : ".$_POST["email"]."
+Objet : ".$_POST["objet"]."
+Message : ".$_POST["message"];
 
-<?php include("formulaireContact.php") ?>
+$retour = mail("isabelle.deschins@sfr.fr ", $_POST["objet"], $message,"From:contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
 
+if ($retour) {
+echo "<p></p>";
+}
+}
+?>
 
 <?php include("footer.php") ?>

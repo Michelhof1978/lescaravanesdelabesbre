@@ -403,7 +403,6 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
       <div class="col-sm-12 col-xl-6 ">
         <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
       </div>
-      
       <div class="col-sm-12 col-xl-6 ">
         <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
