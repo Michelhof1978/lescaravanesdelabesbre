@@ -178,7 +178,7 @@ ga('send', 'pageview');
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<?php include("header.php") ?>
+
 <h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Informations Camping Le Pal Dompierre Sur Besbre</h1>
 
 <div class="w-50 img-fluid mt-5 container info img-fluid">

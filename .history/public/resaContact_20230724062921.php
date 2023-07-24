@@ -150,29 +150,6 @@ ga('send', 'pageview');
 <?php include("header.php") ?>
 
 
-
-<?php
-if (isset($_POST["message"])) {
-    $message = "Message envoyé de :\n" .
-               "Nom : " . $_POST["firstName"] . "\n" .
-               "Prénom : " . $_POST["lastName"] . "\n" .
-               "Téléphone : " . $_POST["phoneNumber"] . "\n" .
-               "Email : " . $_POST["email"] . "\n" .
-               "Objet : " . $_POST["objet"] . "\n" .
-               "Message : " . $_POST["message"];
-
-    $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
-
-    if ($retour) {
-        // Redirection vers une page de confirmation après la soumission du formulaire
-        echo '<script>window.location.replace("confirmationContact.php");</script>';
-        exit();
-    } else {
-        echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-    }
-}
-?>
-
 <div class="row ">
    
 
@@ -280,6 +257,45 @@ if (isset($_POST["message"])) {
     </div>
         </fieldset>
 </form>
+
+<?php
+if (isset($_POST["message"])) {
+    $message = "Message envoyé de :\n" .
+               "Nom : " . $_POST["firstName"] . "\n" .
+               "Prénom : " . $_POST["lastName"] . "\n" .
+               "Téléphone : " . $_POST["phoneNumber"] . "\n" .
+               "Email : " . $_POST["email"] . "\n" .
+               "Objet : " . $_POST["objet"] . "\n" .
+               "Message : " . $_POST["message"];
+
+    $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
+
+    if ($retour) {
+        // Redirection vers une page de confirmation
+        header("Location: confirmationContact.php");
+        exit();
+    } else {
+        echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <!-- Votre formulaire HTML ici -->
+</body>
+</html>
+Assurez-vous également que vous avez une page confirmationContact.php avec un message de confirmation qui s'affiche après que le formulaire a été envoyé avec succès. Si vous respectez ces étapes, la redirection devrait fonctionner correctement.
+
+
+
+
+
+
 
 
 <?php include("footer.php") ?>

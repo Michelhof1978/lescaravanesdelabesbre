@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <?php
 if (isset($_POST["message"])) {
     $message = "Message envoyé de :\n" .
@@ -13,16 +19,41 @@ if (isset($_POST["message"])) {
     if ($retour) {
         // Redirection vers une page de confirmation
         echo "Formulaire envoyé avec succès !"; // Message de débogage
-        header("confirmationContactRenseignements.php");
+        header("Location: public/confirmationContactResa.php");
         exit();
     } else {
         echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
     }
 }
-
 ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
+<div class="row ">
+   
+
+      <div class="col-sm-12 col-xl-6 ">
+        <img src="../images/camping1.webp" alt="Le Pal" class="img-fluid" />
+      </div>
+
+      <div class="col-sm-12 col-xl-6 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+          Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
+          Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
+
+          Vous serez enchanté par l'ambiance caravane proposée par notre équipe. Des caravanes tout confort et entièrement équipées sont disponibles du <strong>03/07/2023 au 27/08/2023</strong> pour accueillir 4 personnes chacune (2 adultes et 2 enfants).
+          En outre, une épicerie de base est fournie, comprenant café, sucre, sel, poivre, huile, etc.
+
+          Notre équipe, dirigée par Isabelle, se fera un plaisir de vous aider à rendre votre séjour inoubliable. N'hésitez pas à nous contacter pour plus d'informations ou pour réserver votre séjour dès maintenant.
+        </p>
+      </div>
+      
+    </div>
+
+
+
+  </div>
+
+  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RESERVEZ</strong></h4>
+
 
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
@@ -105,5 +136,5 @@ if (isset($_POST["message"])) {
 </form>
 
 
-
+<?php include("footer.php") ?>
 

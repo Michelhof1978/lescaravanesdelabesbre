@@ -116,7 +116,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
+------------------------------------------------------------------------------------------------------------
 <script>
   // //CREATION POPUP UNIQUEMENT EN JS 
   // // Création de la div pour afficher l'image + position
@@ -198,7 +198,7 @@
           Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
             Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
             Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
-            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong> <br><br>
+            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong> <br><br
            
             <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <p><strong>OU</strong></p>
            <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>

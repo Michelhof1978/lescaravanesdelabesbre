@@ -164,8 +164,9 @@ if (isset($_POST["message"])) {
     $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
 
     if ($retour) {
-        // Redirection vers une page de confirmation après la soumission du formulaire
-        echo '<script>window.location.replace("confirmationContact.php");</script>';
+        // Redirection vers une page de confirmation
+        // echo "Formulaire envoyé avec succès !"; // Message de débogage
+        header("Location: public/confirmationContactResa.php");
         exit();
     } else {
         echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -283,4 +284,6 @@ if (isset($_POST["message"])) {
 
 
 <?php include("footer.php") ?>
-
+<script>
+window.location.replace("confirmationContact.php");
+</script>

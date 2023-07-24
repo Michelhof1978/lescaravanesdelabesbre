@@ -1,26 +1,28 @@
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
- 
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informations d'arrivée et de sortie Camping Le Pal Dompierre Sur Besbre Allier">
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
     <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
     
-    <title>Informations Camping Le Pal Dompierre Sur Besbre</title>
+    <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
 
-    
+   
 
     <link href="../css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+   
     <link rel="icon" type="image/x-icon" href="../images/logo.ico">
 
+    
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -33,34 +35,6 @@
 <!-- Google tag (gtag.js) -->
 
 
- <!-- Google Tag Manager -->
- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-59DVV3P');</script>
-<!-- End Google Tag Manager -->
-
-  <!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', '32-930029-2', 'auto');//Id du site par rapport à google analytics, bien mettre à ce format
-ga('send', 'pageview');
-</script>
-
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', '32-930029-2', 'auto');//id du site par rapport à google, toujours le mettre à ce format 
-ga('send', 'pageview');
-</script>
-
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-<!-- End Google Analytics -->
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -161,6 +135,7 @@ ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -169,25 +144,24 @@ ga('send', 'pageview');
 
   gtag('config', 'G-69SWVM55LB');
 </script>
-
-
 </head>
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <?php include("header.php") ?>
-<h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Informations Camping Le Pal Dompierre Sur Besbre</h1>
 
-<div class="w-50 img-fluid mt-5 container info img-fluid">
-<img src=" ../images/informations.webp" class="d-block w-100 " alt="Informations camping Dompierre Sur Besbre">
-</div>
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>MERCI</strong></h4>
 
-      </section>
-      <!--Section: Content-->
+<div class="row ">
    
-  <!--Main layout-->
-<?php include("formulaireContact.php") ?>
+
+      <div class="col-sm-12 col-xl-6 ">
+        <img src="../images/camping1.webp" alt="Le Pal" class="img-fluid" />
+      </div>
+
+      <div class="col-sm-12 col-xl-6 ">
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
+        <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RESERVEZ</strong></h4>
+      </div>
+      
+    </div>
+
 <?php include("footer.php") ?>

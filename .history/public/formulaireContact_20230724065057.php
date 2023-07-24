@@ -1,26 +1,4 @@
-<?php
-if (isset($_POST["message"])) {
-    $message = "Message envoyé de :\n" .
-               "Nom : " . $_POST["firstName"] . "\n" .
-               "Prénom : " . $_POST["lastName"] . "\n" .
-               "Téléphone : " . $_POST["phoneNumber"] . "\n" .
-               "Email : " . $_POST["email"] . "\n" .
-               "Objet : " . $_POST["objet"] . "\n" .
-               "Message : " . $_POST["message"];
 
-    $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
-
-    if ($retour) {
-        // Redirection vers une page de confirmation
-        echo "Formulaire envoyé avec succès !"; // Message de débogage
-        header("confirmationContactRenseignements.php");
-        exit();
-    } else {
-        echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-    }
-}
-
-?>
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 

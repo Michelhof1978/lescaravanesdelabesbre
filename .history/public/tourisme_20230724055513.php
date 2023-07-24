@@ -169,7 +169,6 @@
 <!-- End Google Tag Manager (noscript) -->
 <!-- Topbar Start -->
 
-<?php include("header.php") ?>
 <h4 class="mb-4 mt-3 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">Site Touristique Naturel de l'Allier</h4>
 
 

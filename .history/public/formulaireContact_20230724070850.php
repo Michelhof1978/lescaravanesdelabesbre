@@ -13,7 +13,7 @@ if (isset($_POST["message"])) {
     if ($retour) {
         // Redirection vers une page de confirmation
         echo "Formulaire envoyé avec succès !"; // Message de débogage
-        header("confirmationContactRenseignements.php");
+        header("c.php");
         exit();
     } else {
         echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";

@@ -116,7 +116,7 @@
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
+------------------------------------------------------------------------------------------------------------
 <script>
   // //CREATION POPUP UNIQUEMENT EN JS 
   // // Création de la div pour afficher l'image + position
@@ -148,7 +148,7 @@
   //   document.body.removeChild(imgDiv);
   // }, 2000);
 
-// -------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
   //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
   // function openPopup() {
   //   // Spécifiez l'URL de la page à ouvrir dans la popup
@@ -195,12 +195,11 @@
           <h5 class="card-title">Caravane BIG </h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
-          Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
-            Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
-            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong> <br><br>
+            Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
+            Faites des économies en réservant directement sur notre site ! En évitant les frais supplémentaires d'Airbnb, vous pouvez économiser jusqu'à 15 euros sur votre réservation. <br>
+            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong> <br> <br>
            
-            <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <p><strong>OU</strong></p>
+            <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <p>OU</p>
            <a href="https://www.airbnb.fr/rooms/34618829?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=9da18392-0809-4421-8f7b-23e32304aadb&source_impression_id=p3_1673810175_X9sGQDLRkdBr8tX%2F" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
        
           </div>
@@ -224,8 +223,8 @@
             Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
             <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
           </p>
-          <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a>  <br><br> <p><strong>OU</strong></p>
-          <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
+          <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <p>OU</p>
+          <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez !</a>
         </div>
       </div>
     </div>
@@ -247,10 +246,9 @@
             Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
             <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
           </p>
-
-          <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <br><br> <p><strong>OU</strong></p> 
-          <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
-       
+          
+          <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <p>OU</p>
+          <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" class="btn btn-primary">Réservez !</a>
         </div>
       </div>
     </div>
