@@ -259,7 +259,7 @@
 <!-- FIN PROPOSITION LOGEMENTS-->
 
 <!--ARTICLE JOURNAL-->
-
+<h4 class="mb-4  border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">UN PEU DE LECTURE</h4>
 <div class="text-center">
 <img src="../images/laMontagne.webp" alt="logo journal la montagne"  class=" img-fluid mb-5" /> 
 </div>
@@ -267,7 +267,7 @@
   
 <div class="text-center mb-5">
   
-    <img src="../images/articleLaMontagne.webp" alt="Article journal"  class=" img-fluid videoPal w-75" /> 
+    <img src="../images/articleLaMontagne.webp" alt="Article journal"  class=" img-fluid videoPal w-50" /> 
   </div>
 
  

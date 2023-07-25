@@ -267,7 +267,7 @@
   
 <div class="text-center mb-5">
   
-    <img src="../images/articleLaMontagne.webp" alt="Article journal"  class=" img-fluid videoPal w-75" /> 
+    <img src="../images/articleLaMontagne.webp" alt="Article journal"  class=" img-fluid videoPal w-" /> 
   </div>
 
  
