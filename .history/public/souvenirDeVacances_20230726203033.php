@@ -195,33 +195,30 @@ ga('send', 'pageview');
 <div class="videoPal embed-responsive embed-responsive-16by9 ms-5">
     <video controls class="embed-responsive-item videoPal1" src="../videos/festi01.mp4" frameborder="0"  allowfullscreen></video>
 </div>
+       
 <div class="videoPal embed-responsive embed-responsive-16by9 ms-5 mt-5">
     <video controls class="embed-responsive-item videoPal1" src="../videos/festi04.mp4" frameborder="0" allowfullscreen></video>
-</div>
+        </div>
     </div>
 
 <div class="col-7 text-center">
-        <img src="../images/laMontagne.webp" alt="logo journal la montagne"  class=" img-fluid mb-5" /> 
-
+<img src="../images/laMontagne.webp" alt="logo journal la montagne"  class=" img-fluid mb-5" /> 
 <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
         <p>
-             «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association, avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes ! À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record. On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du festival ! Un anniversaire que l’on veut inoubliable ! » 
-        </p>
-</div>
+        «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association, avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes ! À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record. On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du festival ! Un anniversaire que l’on veut inoubliable ! » 
+         </p>
+        </div>
 
-    <div>
         <img src="../images/festi03.webp" alt="concert festiDomp"  class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-50" /> 
         <img src="../images/festi02.webp" alt="concert festiDomp"  class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-50" /> 
     </div>
 
 </div>
 
-</div>
-
 <div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
         <p class="lead">
-            A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
-        </p>
-</div>
+        A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
+         </p>
+        </div>
 
 <?php include("footer.php") ?>

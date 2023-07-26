@@ -220,7 +220,7 @@ ga('send', 'pageview');
 
 <div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
         <p class="lead">
-            A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
+                 A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
         </p>
 </div>
 

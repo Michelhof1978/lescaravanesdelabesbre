@@ -666,11 +666,10 @@ box-shadow: 0 0 3px rgba(0,0,0, 0.2);
 /* End slideShow*/
                                      /*END TOURISME PAGE*/
 
-									 /*SOUVENIR PAGE*/
 .pageSouvenir{
-	font-weight: bold !important;
+	font-weight-bold
 }
-									 /*FIN SOUVENIR PAGE*/
+
 /*----------------------------------------------------------------------------------------------------*/
 	
                                          /* FOOTER */
