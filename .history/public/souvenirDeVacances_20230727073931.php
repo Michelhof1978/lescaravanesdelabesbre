@@ -226,9 +226,14 @@ ga('send', 'pageview');
                 <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
             </div>
 
-            <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
+            <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
                 <p>
-                   Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
+                    «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association,
+                    avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes !
+                    À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui
+                    est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record.
+                    On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du
+                    festival ! Un anniversaire que l’on veut inoubliable ! »
                 </p>
             </div>
         </div>

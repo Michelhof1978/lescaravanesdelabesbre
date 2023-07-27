@@ -226,9 +226,9 @@ ga('send', 'pageview');
                 <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
             </div>
 
-            <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
+            <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
                 <p>
-                   Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
+                   Et encore BRAVO à FestiDomp
                 </p>
             </div>
         </div>

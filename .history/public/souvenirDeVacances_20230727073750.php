@@ -222,14 +222,8 @@ ga('send', 'pageview');
                 </p>
             </div>
             <div class="ms-lg-5">
-                <img src="../images/festi03.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
-                <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
-            </div>
-
-            <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
-                <p>
-                   Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
-                </p>
+                <img src="../images/festi03.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-3 text-center w-75" />
+                <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb- text-center w-75" />
             </div>
         </div>
     </div>

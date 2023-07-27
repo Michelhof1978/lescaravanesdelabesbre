@@ -195,7 +195,7 @@ ga('send', 'pageview');
         <!-- Bloc festi1 - à gauche -->
         <div class=" col-lg-6 mb-3">
             <div class="text-center">
-                <img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-75 text-center mb-3" />
+                <img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-75 text-center" />
                 <img src="../images/festi01.webp" alt="img concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 img-fluid mb-5 text-center w-75" />
             </div>
             <div class="videoPal embed-responsive embed-responsive-4by3">
@@ -209,7 +209,7 @@ ga('send', 'pageview');
         <!-- Bloc festi2 - à droite -->
         <div class="col-lg-6">
             <div class="">
-                <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-lg-5" />
+                <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
             </div>
             <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
                 <p>
@@ -221,15 +221,9 @@ ga('send', 'pageview');
                     festival ! Un anniversaire que l’on veut inoubliable ! »
                 </p>
             </div>
-            <div class="ms-lg-5">
+            <div class="ms">
                 <img src="../images/festi03.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
                 <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
-            </div>
-
-            <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
-                <p>
-                   Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
-                </p>
             </div>
         </div>
     </div>
@@ -237,7 +231,7 @@ ga('send', 'pageview');
         </div>
 
 
-<div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-3">
+<div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
         <p class="lead">
                  A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
         </p>
