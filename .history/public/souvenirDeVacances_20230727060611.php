@@ -187,48 +187,50 @@ ga('send', 'pageview');
              </p>
         </div>
 
-
-
-        <div class="d-flex align-items-center justify-content-center ">
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <!-- Bloc festi1 - à gauche -->
-        <div class=" col-lg-6 mb-5">
-            <div class="text-center">
-                <img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-75 text-center" />
-                <img src="../images/festi01.webp" alt="img concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 img-fluid mb-5 text-center w-75" />
-            </div>
-            <div class="videoPal embed-responsive embed-responsive-4by3">
-                <video controls class="embed-responsive-item videoPal1" src="../videos/festi01.mp4" frameborder="0" allowfullscreen></video>
-            </div>
-            <div class="videoPal embed-responsive embed-responsive-4by3 mt-5">
-                <video controls class="embed-responsive-item videoPal1" src="../videos/festi04.mp4" frameborder="0" allowfullscreen></video>
-            </div>
-        </div>
-
-        <!-- Bloc festi2 - à droite -->
+<div class="row text-center">
+<container class="mt-5 mb-5 col-">  
+    <div class="text-center row">
         <div class="col-lg-6">
-            <div class="">
-                <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
-            </div>
-            <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
-                <p>
-                    «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association,
-                    avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes !
-                    À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui
-                    est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record.
-                    On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du
-                    festival ! Un anniversaire que l’on veut inoubliable ! »
-                </p>
-            </div>
-            <div>
-                <img src="../images/festi03.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
-                <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
-            </div>
-        </div>
-    </div>
+
+       <img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-50 text-center" /></a>
+       <img src="../images/festi01.webp" alt="img concert festiDomp"  class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-50" /> 
+
+<div class="videoPal embed-responsive  embed-responsive-4by3 ms-5">
+    <video controls class="embed-responsive-item videoPal1" src="../videos/festi01.mp4" frameborder="0"  allowfullscreen></video>
 </div>
-        </div>
+
+<div class="videoPal embed-responsive  embed-responsive-4by3 ms-5 mt-5">
+    <video controls class="embed-responsive-item videoPal1" src="../videos/festi04.mp4" frameborder="0" allowfullscreen></video>
+</div>
+</div>
+</container>
+
+
+<container class="col">
+    <div class="row">
+        <div class="col-lg-6">
+        <img src="../images/laMontagne.webp" alt="logo journal la montagne"  class=" img-fluid mb-5 " /> 
+
+<div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
+        <p>
+             «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association, 
+             avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes !
+              À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui 
+              est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record. 
+              On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du
+               festival ! Un anniversaire que l’on veut inoubliable ! » 
+        </p>
+</div>
+
+    <div>
+        <img src="../images/festi03.webp" alt="concert festiDomp"  class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center " /> 
+        <img src="../images/festi02.webp" alt="concert festiDomp"  class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center " /> 
+    </div>
+
+    </div>
+    </div>
+</container>
+</div>
 
 
 <div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
