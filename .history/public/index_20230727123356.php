@@ -222,7 +222,7 @@
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Le camping est situé à proximité du <strong>parc d'attractions Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
+            Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
             Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
             <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
           </p>
@@ -245,7 +245,7 @@
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
             Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
-            Le camping est situé à proximité du <strong>parc d'attractions Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
+            Le camping est situé à proximité du <strong>parc d'attraction Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
             Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
             <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
           </p>
@@ -598,7 +598,6 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 </script>
 <!--End Avis Clients-->
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <?php include("formulaireContact.php") ?>

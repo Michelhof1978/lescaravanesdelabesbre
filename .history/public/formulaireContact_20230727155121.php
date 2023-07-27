@@ -1,7 +1,7 @@
 <?php
 // Clé privée reCAPTCHA 
-$secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
-
+$secretKey = "";
+6LdRhFwnAAAAAC8en6akFZtl-FFjim8R_i0a66Mt
 if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     // Vérifier le CAPTCHA
     $captchaResponse = $_POST['g-recaptcha-response'];
@@ -24,7 +24,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     $response = json_decode($result, true);
 
     if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
+        // Le CAPTCHA est valide, continuez avec le traitement du formulaire
         $message = "Message envoyé de :\n" .
             "Nom : " . $_POST["firstName"] . "\n" .
             "Prénom : " . $_POST["lastName"] . "\n" .
@@ -37,7 +37,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -48,9 +48,6 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     }
 }
 ?>
-
-
-<!-- Le reste de votre code HTML -->
 
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
@@ -125,10 +122,11 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<!-- Placez cette balise dans votre formulaire -->
+<div class="g-recaptcha" data-sitekey="6LdRhFwnAAAAAAoUQh5kKaQ-fVNytIr91vKqo_5l"></div>
 
 <!-- Submit button -->
-<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
+<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 mt-5">
     Envoyez
 </button>
 
@@ -136,8 +134,3 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </div>
         </fieldset>
 </form>
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
-

@@ -1,54 +1,52 @@
 <?php
-// Clé privée reCAPTCHA 
-$secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
+if (isset($_POST["message"])) {
+    // Vérifier le reCAPTCHA
+    $recaptcha_response = $_POST['g-recaptcha-response'];
+    $secret_key = '6LcJ6VEnAAAAABz5sZfBLrfMI-Kw7v8JTfFzWSLf'; // Remplacez par votre clé secrète reCAPTCHA
 
-if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
-    // Vérifier le CAPTCHA
-    $captchaResponse = $_POST['g-recaptcha-response'];
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
+    $url = 'https://www.google.com/recaptcha/api/siteverify'; 
     $data = array(
-        'secret' => $secretKey,
-        'response' => $captchaResponse,
-        'remoteip' => $ip
+        'secret' => $secret_key,
+        'response' => $recaptcha_response
     );
+
     $options = array(
-        'http' => array(
-            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+        'http' => array (
             'method' => 'POST',
+            'header' => 'Content-Type: application/x-www-form-urlencoded',
             'content' => http_build_query($data)
         )
     );
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $response = json_decode($result, true);
 
-    if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $json = json_decode($result);
+
+    if ($json->success) {
+        // Le reCAPTCHA est validé, traiter le formulaire
         $message = "Message envoyé de :\n" .
-            "Nom : " . $_POST["firstName"] . "\n" .
-            "Prénom : " . $_POST["lastName"] . "\n" .
-            "Téléphone : " . $_POST["phoneNumber"] . "\n" .
-            "Email : " . $_POST["email"] . "\n" .
-            "Objet : " . $_POST["objet"] . "\n" .
-            "Message : " . $_POST["message"];
+                   "Nom : " . $_POST["firstName"] . "\n" .
+                   "Prénom : " . $_POST["lastName"] . "\n" .
+                   "Téléphone : " . $_POST["phoneNumber"] . "\n" .
+                   "Email : " . $_POST["email"] . "\n" .
+                   "Objet : " . $_POST["objet"] . "\n" .
+                   "Message : " . $_POST["message"];
 
         $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
         }
     } else {
-        // Le CAPTCHA est invalide, affichez un message d'erreur
-        echo "CAPTCHA invalide, veuillez réessayer.";
+        // Le reCAPTCHA n'est pas validé
+        echo "Veuillez cocher le reCAPTCHA pour vérifier que vous êtes un être humain.";
     }
 }
 ?>
-
 
 <!-- Le reste de votre code HTML -->
 
@@ -125,10 +123,10 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+
 
 <!-- Submit button -->
-<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
+<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 mt-5">
     Envoyez
 </button>
 

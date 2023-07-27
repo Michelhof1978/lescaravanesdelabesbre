@@ -598,7 +598,6 @@ $speed = $json -> wind -> speed;//On récupére la vitesse du vent
 </script>
 <!--End Avis Clients-->
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <?php include("formulaireContact.php") ?>

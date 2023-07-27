@@ -277,7 +277,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha mt-2 mb-3" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<div class="g-recaptcha mt-5" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
 <!-- Submit button -->
 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
@@ -288,7 +288,6 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </div>
         </fieldset>
 </form>
-
 <?php include("footer.php") ?>
 
 

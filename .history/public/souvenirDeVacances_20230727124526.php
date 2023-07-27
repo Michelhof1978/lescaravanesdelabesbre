@@ -1,30 +1,24 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-
-
-
+ 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
+    <meta name="description" content="Informations d'arrivée et de sortie Camping Le Pal Dompierre Sur Besbre Allier">
     <meta name="google-site-verification" content="TN5Z1jlnBqKrTXXUwTE4EKfAVepwE9MnH218KsAHNB8" />
     
-    <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
+    <title>Informations Camping Le Pal Dompierre Sur Besbre</title>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    
 
     <link href="../css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   
+    
     <link rel="icon" type="image/x-icon" href="../images/logo.ico">
 
-    
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -37,6 +31,34 @@
 <!-- Google tag (gtag.js) -->
 
 
+ <!-- Google Tag Manager -->
+ <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-59DVV3P');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', '32-930029-2', 'auto');//Id du site par rapport à google analytics, bien mettre à ce format
+ga('send', 'pageview');
+</script>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', '32-930029-2', 'auto');//id du site par rapport à google, toujours le mettre à ce format 
+ga('send', 'pageview');
+</script>
+
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<!-- End Google Analytics -->
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -137,7 +159,6 @@ ga('send', 'pageview');
 </script>
 
 <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -147,154 +168,79 @@ ga('send', 'pageview');
   gtag('config', 'G-69SWVM55LB');
 </script>
 
+
 </head>
+
 <?php include("header.php") ?>
 
-<?php
-// Clé privée reCAPTCHA 
-$secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
+<h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Souvenirs De Vacance</h1>
 
-if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
-    // Vérifier le CAPTCHA
-    $captchaResponse = $_POST['g-recaptcha-response'];
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
-    $data = array(
-        'secret' => $secretKey,
-        'response' => $captchaResponse,
-        'remoteip' => $ip
-    );
-    $options = array(
-        'http' => array(
-            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method' => 'POST',
-            'content' => http_build_query($data)
-        )
-    );
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $response = json_decode($result, true);
-
-    if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
-        $message = "Message envoyé de :\n" .
-            "Nom : " . $_POST["firstName"] . "\n" .
-            "Prénom : " . $_POST["lastName"] . "\n" .
-            "Téléphone : " . $_POST["phoneNumber"] . "\n" .
-            "Email : " . $_POST["email"] . "\n" .
-            "Objet : " . $_POST["objet"] . "\n" .
-            "Message : " . $_POST["message"];
-
-        $retour = mail("isabelle.deschins@sfr.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
-
-        if ($retour) {
-            // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactResa.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
-            exit();
-        } else {
-            echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-        }
-    } else {
-        // Le CAPTCHA est invalide, affichez un message d'erreur
-        echo "CAPTCHA invalide, veuillez réessayer.";
-    }
-}
-?>
-
-
-<!-- Le reste de votre code HTML -->
-
-
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
-
-<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
-    <fieldset class="mb-5 ms-2 me-2">
-
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
-
-<!-- 2 column grid layout with text inputs for the first and last names -->
-<div class="row mb-4">
-
-    <div class="col">
-        <div class="form-outline">
-            <input name="firstName" type="text" id="firstName" class="form-control"placeholder="Prénom" required/>
-            <label for="firstName" class="form-label"></label>
-        <div class="invalid-feedback">
-            Veuillez saisir votre prénom.
+        <div class=" mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-3">
+                <h3>Vous avez des souvenirs de vacance à partager ?</h3> 
+            <p class=" lead">
+                 Des vidéos, des images ou un petit message que vous souhaitez
+                 faire passer ? Nous serions ravis de les recevoir ! Vos contributions permettront à nos utilisateurs d'être 
+                 guidés dans leurs futures escapades et de découvrir quelques balades secrètes à faire. N'oubliez pas :
+                 profitez de la vie à fond et partagez ces moments magiques avec la communauté ! Ensemble, créons des 
+                 souvenirs inoubliables et inspirons-nous mutuellement pour nos prochaines aventures. Merci de partager vos 
+                 merveilleuses expériences de vacances avec nous !
+             </p>
         </div>
-        </div>
-</div>
-
-<div class="col">
-    <div class="form-outline">
-        <input name="lastName" type="text" id="lastName" class="form-control"placeholder="Nom" required/>
-            <label for="lastName" class="form-label"></label>
-                <div class="invalid-feedback">
-                    Veuillez saisir votre nom.
-                </div>
-    </div>
-</div>
-
-<div class="col">
-    <div class="form-outline">
-        <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required/>
-            <label for="phoneNumber" class="form-label"></label>
-                <div class="invalid-feedback">
-                     Veuillez saisir votre téléphone.
-                </div>
-    </div>
-</div>
-
-</div>
-
-<!-- Email input -->
-<div class="form-outline mb-4">
-    <div class="input-group has-validation">
-        <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input name="email" type="email" id="email" class="form-control " placeholder="Email" required/>
-                </div>
-                    <label for="email" class="form-label"></label>
-                        <div class="invalid-feedback">
-                            Veuillez saisir votre Email.
-                        </div>
-                </div>
-
-<div class="form-outline mb-4">
-    <label class="form-label round" for="objet">Objet :</label>
-        <select class="form-label" name="objet" id="objet">
-            <option>Renseignements</option>
-            <option>Résérvation</option>
-        </select>
-</div>
 
 
-<div class="form-floating ">
-    <textarea name="message" class="form-control " id="message" required></textarea>
-        <label for="message">Message</label>
-            <div class="invalid-feedback">
-                Veuillez saisir votre message.
+
+        <div class="d-flex align-items-center justify-content-center ">
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <!-- Bloc festi1 - à gauche -->
+        <div class=" col-lg-6 mb-3">
+            <div class="text-center">
+                <img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-75 text-center mb-3" />
+                <img src="../images/festi01.webp" alt="img concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 img-fluid mb-5 text-center w-75" />
             </div>
-</div>
+            <div class="videoPal embed-responsive embed-responsive-4by3">
+                <video controls class="embed-responsive-item videoPal1" src="../videos/festi01.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+            <div class="videoPal embed-responsive embed-responsive-4by3 mt-5">
+                <video controls class="embed-responsive-item videoPal1" src="../videos/festi04.mp4" frameborder="0" allowfullscreen></video>
+            </div>
+        </div>
 
-<div class="g-recaptcha mt-2 mb-3" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+        <!-- Bloc festi2 - à droite -->
+        <div class="col-lg-6">
+            <div class="">
+                <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-lg-5" />
+            </div>
+            <div class="lead mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
+                <p>
+                    «On n’avait jamais vu ça, sourit Séverine Villette, l’une des présidentes de l’association,
+                    avec en point d’orgue la soirée du samedi soir qui a accueilli à un moment près de 2.000 personnes !
+                    À un moment, on n’avait plus rien à proposer à manger au public ! Même le dimanche après-midi qui
+                    est d’habitude plus calme a été un vrai succès avec pas loin de 400 spectateurs, là aussi un record.
+                    On espère que le public sera de nouveau au rendez-vous l’année prochaine pour la 10e édition du
+                    festival ! Un anniversaire que l’on veut inoubliable ! »
+                </p>
+            </div>
+            <div class="ms-lg-5">
+                <img src="../images/festi03.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
+                <img src="../images/festi02.webp" alt="concert festiDomp" class="videoPal embed-responsive embed-responsive-16by9 ms-5 img-fluid mb-5 text-center w-75" />
+            </div>
 
-<!-- Submit button -->
-<button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
-    Envoyez
-</button>
-
-</div>
+            <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
+                <p>
+                   Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
+                </p>
+            </div>
+        </div>
     </div>
-        </fieldset>
-</form>
+</div>
+        </div>
+
+
+<div class="mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-3">
+        <p class="lead">
+                 A bientôt Pour De Nouvelles Aventures Avec <strong>LesCaravanesDeLaBesbre.fr</strong> 
+        </p>
+</div>
 
 <?php include("footer.php") ?>
-
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
-
-
-

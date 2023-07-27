@@ -148,7 +148,6 @@ ga('send', 'pageview');
 </script>
 
 </head>
-<?php include("header.php") ?>
 
 <?php
 // Clé privée reCAPTCHA 
@@ -189,7 +188,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactResa.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactResa.php.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -277,7 +276,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha mt-2 mb-3" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<div class="g-recaptcha" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
 <!-- Submit button -->
 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
@@ -288,9 +287,6 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </div>
         </fieldset>
 </form>
-
-<?php include("footer.php") ?>
-
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 

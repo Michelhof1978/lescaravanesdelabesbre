@@ -1,5 +1,5 @@
 <?php
-// Clé privée reCAPTCHA 
+// Clé privée reCAPTCHA (remplacez par votre clé privée)
 $secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
 
 if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
@@ -24,7 +24,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     $response = json_decode($result, true);
 
     if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
+        // Le CAPTCHA est valide, continuez avec le traitement du formulaire
         $message = "Message envoyé de :\n" .
             "Nom : " . $_POST["firstName"] . "\n" .
             "Prénom : " . $_POST["lastName"] . "\n" .
@@ -37,7 +37,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -125,7 +125,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<div class="g-recaptcha m-2" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
 <!-- Submit button -->
 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">

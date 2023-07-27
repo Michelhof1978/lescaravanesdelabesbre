@@ -24,7 +24,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     $response = json_decode($result, true);
 
     if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
+        // Le CAPTCHA est valide, continuez avec le traitement du formulaire
         $message = "Message envoyé de :\n" .
             "Nom : " . $_POST["firstName"] . "\n" .
             "Prénom : " . $_POST["lastName"] . "\n" .
@@ -37,7 +37,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';//Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
