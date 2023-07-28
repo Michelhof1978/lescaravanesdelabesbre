@@ -125,7 +125,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<div class="g-recaptcha m-" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
 <!-- Submit button -->
 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">

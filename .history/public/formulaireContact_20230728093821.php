@@ -33,7 +33,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             "Objet : " . $_POST["objet"] . "\n" .
             "Message : " . $_POST["message"];
 
-        $retour = mail("postmaster@lescaravanesdelabesbre.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
+        $retour = mail("contact@Lescaravanesdelabesbre.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
@@ -125,7 +125,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
             </div>
 </div>
 
-<div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
+<div class="g-recaptcha" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
 <!-- Submit button -->
 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
