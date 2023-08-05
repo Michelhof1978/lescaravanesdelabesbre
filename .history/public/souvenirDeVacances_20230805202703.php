@@ -173,7 +173,7 @@ ga('send', 'pageview');
 
 <?php include("header.php") ?>
 
-<h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Souvenirs De Vacances</h1>
+<h1 class="pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white mt-5">Souvenirs De Vacance</h1>
 
         <div class=" mt-5 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-3">
                 <h3>Vous avez des souvenirs de vacances à partager ?</h3> 

@@ -46,7 +46,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="https://www.lepal.com/">Billets Le Pal</a>
+          <a class="nav-link" href="https://www.lepal.com/">Billets LeP</a>
         </li>
 
         <li class="nav-item">
@@ -54,7 +54,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="souvenirDeVacances.php">Souvenirs De Vacances</a>
+          <a class="nav-link" href="souvenirDeVacances.php">Souvenirs De Vacance</a>
         </li>
 
         <li class="nav-item">
