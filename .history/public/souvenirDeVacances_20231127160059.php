@@ -334,6 +334,6 @@
   </p>
 </div>
 
-<?php include("formulaireContact.php") ?>
+
 
 <?php include("footer.php") ?>
