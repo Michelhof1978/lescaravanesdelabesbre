@@ -1,4 +1,5 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <footer class="container-fluid">
   <div class="row">
@@ -70,107 +71,106 @@
     // Appeler la fonction afficherDate toutes les secondes
     setInterval(afficherDate, 1000);
   </script> <span id="date">Copyright:</span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital Droits réservés</a>
+  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">MH DIGITAL Droits réservés</a>
 </div>
 <!-- fIN Copyright -->
 
-<!-- COMPTEUR -->
-<div class="text-center mt-3">
-  <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" border="0" /></a>
-</div>
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'G-M3CJ6F224B');
-</script>
-<!-- Google tag (gtag.js) -->
 
 
 
-<!-- Google Tag Manager -->
-<script>
-  (function(w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-      'gtm.start': new Date().getTime(),
-      event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-      j = d.createElement(s),
-      dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
-</script>
-<!-- End Google Tag Manager -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<!-- Google Analytics -->
-<script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-M3CJ6F224B');
+  </script>
+  <!-- Google tag (gtag.js) -->
 
-  ga('create', '32-930029-2', 'auto'); //Id du site par rapport à google analytics, bien mettre à ce format
-  ga('send', 'pageview');
-</script>
 
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  };
-  ga.l = +new Date;
-  ga('create', '32-930029-2', 'auto'); //id du site par rapport à google, toujours le mettre à ce format 
-  ga('send', 'pageview');
-</script>
 
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
+  </script>
+  <!-- End Google Tag Manager -->
 
-<!-- End Google Analytics -->
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Les Caravanes De La Besbre .",
-    "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
-    "telephone": "06 86 41 31 71"
-  }
-</script>
+    ga('create', '32-930029-2', 'auto'); //Id du site par rapport à google analytics, bien mettre à ce format
+    ga('send', 'pageview');
+  </script>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+  <script>
+    window.ga = window.ga || function() {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
+    ga('create', '32-930029-2', 'auto'); //id du site par rapport à google, toujours le mettre à ce format 
+    ga('send', 'pageview');
+  </script>
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-  gtag('config', 'G-69SWVM55LB');
-</script>
+  <!-- End Google Analytics -->
+
+  <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Les Caravanes De La Besbre .",
+      "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
+      "telephone": "06 86 41 31 71"
+    }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-69SWVM55LB');
+  </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <!-- Google Tag Manager (noscript) -->
