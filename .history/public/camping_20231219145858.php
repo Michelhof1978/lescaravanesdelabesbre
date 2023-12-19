@@ -11,9 +11,14 @@
 
 
 
+   
+
+</head>
 <?php include("header.php") ?>
 
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <h4 class="m-5 text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>Camping Dompierre Sur Besbre Proche Du Pal</strong></h4>
 
 <!-- Destination Start -->
@@ -125,10 +130,6 @@
 
 
 <?php include("footer.php") ?>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
  <!-- Google tag (gtag.js) -->
  <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>

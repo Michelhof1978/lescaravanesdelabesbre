@@ -13,7 +13,6 @@
 
     <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
     <link href="../css/style.css" rel="stylesheet">
@@ -218,146 +217,117 @@
 </head>
 <?php include("header.php") ?>
 
-<?php
-// Clé privée reCAPTCHA 
-$secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<h4 class="m-5 text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>Camping Dompierre Sur Besbre Proche Du Pal</strong></h4>
 
-if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
-    // Vérifier le CAPTCHA
-    $captchaResponse = $_POST['g-recaptcha-response'];
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $url = 'https://www.google.com/recaptcha/api/siteverify';
-    $data = array(
-        'secret' => $secretKey,
-        'response' => $captchaResponse,
-        'remoteip' => $ip
-    );
-    $options = array(
-        'http' => array(
-            'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-            'method' => 'POST',
-            'content' => http_build_query($data)
-        )
-    );
-    $context = stream_context_create($options);
-    $result = file_get_contents($url, false, $context);
-    $response = json_decode($result, true);
+<!-- Destination Start -->
+<div class="container-fluid ">
+    <div class="container pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Destination Nature</h6>
+            <h1>Camping De Dompierre Sur Besbre</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class=" position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="../images/camping6.webp" alt="Camping Le Pal">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class=" position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="../images/camping7.webp" alt="Camping Dompierre sur Besbre">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class=" position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="../images/camping8.webp" alt="Camping Auvergne">
+                </div>
+            </div>
 
-    if ($response['success']) {
-        // Le CAPTCHA est valide = traitement du formulaire
-        $message = "Message envoyé de :\n" .
-            "Nom : " . $_POST["firstName"] . "\n" .
-            "Prénom : " . $_POST["lastName"] . "\n" .
-            "Téléphone : " . $_POST["phoneNumber"] . "\n" .
-            "Email : " . $_POST["email"] . "\n" .
-            "Objet : " . $_POST["objet"] . "\n" .
-            "Message : " . $_POST["message"];
+        </div>
 
-        $retour = mail("postmaster@lescaravanesdelabesbre.fr", $_POST["objet"], $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . $_POST["email"]);
+    </div>
+</div>
+</div>
+<!-- Destination Start -->
 
-        if ($retour) {
-            // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactResa.php");</script>'; //Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
-            exit();
-        } else {
-            echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-        }
-    } else {
-        // Le CAPTCHA est invalide, affichez un message d'erreur
-        echo "CAPTCHA invalide, veuillez réessayer.";
-    }
-}
-?>
+<h4 class=" text-center border border-3 rounded  text-white p-2 display-6 h4Index"><strong>NOS CARAVANES</strong></h4>
 
 
-<!-- Le reste de votre code HTML -->
+<!-- About Start -->
+<div class="container-fluid py-5 sectionTourime">
+    <div class="container ">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="position-relative h-100 pt-5">
+                    <img class=" w-100" src="../images/affiche.webp" alt="Affiche camping le pal" style="object-fit: cover;">
+                    <img class=" w-100 pt-5" src="../images/oli.webp" alt="mascotte camping Dompierre sur besbre" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 pb-lg-5">
+                <div class="about-text bg-white p-lg-5 my-lg-5">
+                    <h6 class="text-primary text-uppercase pt-3" style="letter-spacing: 5px;">A LOUER</h6>
+                    <h3 class="mb-3">Possibilité de louer plusieurs caravanes pour familles nombreuses</h3>
+
+                    <p class="lead">Vous êtes une famille nombreuse ou un groupe de 8 à 12 personnes et vous cherchez un endroit confortable pour votre séjour au <strong><a href="https://www.lepal.com/">Parc d'Attractions Le Pal </a></strong>? Nous avons la solution pour vous!
+                        Nous proposons la location de trois caravanes adjacentes pour répondre à vos besoins.
+                        Avec notre équipe à votre disposition, nous ferons tout notre possible pour que votre séjour soit une réussite.</p>
 
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
+                    <div class="row mb-4">
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping.webp" alt="Caravanes Camping Dompierre sur besbre">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping1.webp" alt="aravane Camping Dompierre sur besbre">
+                        </div>
+                        <hr>
 
-<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
-    <fieldset class="mb-5 ms-2 me-2">
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping2.webp" alt="Caravanes Camping Le Pal">
+                        </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping12.webp" alt="Location Camping Dompierre sur besbre">
+                        </div>
+                        <hr>
 
-                <!-- 2 column grid layout with text inputs for the first and last names -->
-                <div class="row mb-4">
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping4.webp" alt="Hébergement le pal">
+                        </div>
 
-                    <div class="col">
-                        <div class="form-outline">
-                            <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
-                            <label for="firstName" class="form-label"></label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir votre prénom.
-                            </div>
+                        <div class="col-6">
+                            <img class="img-fluid" src="../images/camping5.webp" alt="Location Le pal">
+                        </div>
+
+                        <div class="col-6 pt-3">
+                            <img class="img-fluid" src="../images/camping9.webp" alt="Hébergement le pal">
+                        </div>
+
+                        <div class="col-6 p-3">
+                            <img class="img-fluid" src="../images/camping10.webp" alt="Location Le pal">
+                        </div>
+
+                        <div class="col-6 pt-3">
+                            <img class="img-fluid" src="../images/camping11.webp" alt="Hébergement le pal">
+                        </div>
+
+                        <div class="col-6 p-3">
+                            <img class="img-fluid" src="../images/camping3.webp" alt="Location Le pal">
                         </div>
                     </div>
 
-                    <div class="col">
-                        <div class="form-outline">
-                            <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
-                            <label for="lastName" class="form-label"></label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir votre nom.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-outline">
-                            <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required />
-                            <label for="phoneNumber" class="form-label"></label>
-                            <div class="invalid-feedback">
-                                Veuillez saisir votre téléphone.
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                    <div class="input-group has-validation">
-                        
-                        <input name="email" type="email" id="email" class="form-control " placeholder="Email" required />
-                    </div>
-                    <label for="email" class="form-label"></label>
-                    <div class="invalid-feedback">
-                        Veuillez saisir votre Email.
-                    </div>
-                </div>
-
-                <div class="form-outline mb-4">
-                    <label class="form-label round" for="objet">Objet :</label>
-                    <select class="form-label" name="objet" id="objet">
-                        <option>Renseignements</option>
-                        <option>Résérvation</option>
-                    </select>
-                </div>
-
-
-                <div class="form-floating ">
-                    <textarea name="message" class="form-control " id="message" required></textarea>
-                    <label for="message">Message</label>
-                    <div class="invalid-feedback">
-                        Veuillez saisir votre message.
-                    </div>
-                </div>
-
-                <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
-
-                <!-- Submit button -->
-                <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
-                    Envoyez
-                </button>
-
             </div>
         </div>
-    </fieldset>
-</form>
+    </div>
+</div>
+<!-- About End -->
+
+
+<?php include("formulaireContact.php") ?>
+
 
 <?php include("footer.php") ?>
-
-
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+<head></head>
 <?php include("head.php") ?>
-</head>
 
 <body>
 

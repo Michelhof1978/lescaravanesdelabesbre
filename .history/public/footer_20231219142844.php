@@ -70,7 +70,7 @@
     // Appeler la fonction afficherDate toutes les secondes
     setInterval(afficherDate, 1000);
   </script> <span id="date">Copyright:</span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
+  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony DigitalDroits réservés</a>
 </div>
 <!-- fIN Copyright -->
 

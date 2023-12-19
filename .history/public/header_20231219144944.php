@@ -4,7 +4,6 @@
 <head>
 <?php include("head.php") ?>
 </head>
-
 <body>
 
   <div id="mainNavigation">

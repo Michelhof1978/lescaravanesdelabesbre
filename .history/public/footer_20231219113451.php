@@ -6,7 +6,7 @@
 
     <div class="img3 col-12 pt-3">
       <img class="img2" src="../images/logo.webp" />
-      <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann - Harmony Digital</strong> </a></p>
+      <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann</strong> </a></p>
 
       <section class="mb-4">
         <!-- Facebook -->
@@ -58,6 +58,7 @@
 
 <!-- Copyright -->
 <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
+
   © <script>
     function afficherDate() {
       // Récupérer la date et l'heure actuelles
@@ -70,7 +71,7 @@
     // Appeler la fonction afficherDate toutes les secondes
     setInterval(afficherDate, 1000);
   </script> <span id="date">Copyright:</span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
+  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital Droits réservés</a>
 </div>
 <!-- fIN Copyright -->
 
