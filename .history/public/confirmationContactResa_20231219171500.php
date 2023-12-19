@@ -2,29 +2,38 @@
 <html lang="fr">
 
 <head>
-  <?php include("head.php") ?>
+<?php include("head.php") ?>
   <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
   <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
 </head>
 
-  <?php include("header.php") ?>
+<?php include("header.php") ?>
 
-  <section class="confirmation mb-5">
+<section class="confirmation">
+  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>MERCI</strong></h4>
 
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>MESSAGE ENVOYE</strong></h4>
-  
   <div class="text-center">
+
+    <img src="./images/logo.png" alt="Le Pal" class="img-fluid  text-center w-25" />
+
+
     <div class="lead text-success display-4 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
       <p>
         Nous avons bien reçu votre message et nous vous confirmons que votre demande est en cours de traitement.
       </p>
     </div>
+    </div>
 
   </div>
-
-  </section>
+</section>
 
   <?php include("footer.php") ?>
+
+  <style>
+        .mb-5 {
+            margin-bottom: 5rem !important; 
+        }
+    </style>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -214,7 +223,3 @@
 
     gtag('config', 'G-69SWVM55LB');
   </script>
-
-</body>
-
-</html>

@@ -492,7 +492,28 @@
   // openPopup();
 </script>
 
+© <script>
+    function afficherDate() {
+      // Récupérer la date et l'heure actuelles
+      var date = new Date().getFullYear();
 
+      // Mettre à jour le texte dans le code HTML
+      document.getElementById("date").innerHTML = date.toLocaleString(); //Mettre une date en local
+    }
+    
+
+    // Appeler la fonction afficherDate toutes les secondes
+    setInterval(afficherDate, 1000);
+  </script> <span id="date">Copyright:</span>
+  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
+</div>
+<!-- fIN Copyright -->
+
+
+<!-- COMPTEUR -->
+<div class="text-center mt-3">
+  <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" border="0" /></a>
+</div>
 
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <!-- Google tag (gtag.js) -->
