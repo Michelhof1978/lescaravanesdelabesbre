@@ -87,7 +87,7 @@
   <!-- FIN PROPOSITION LOGEMENTS-->
 
   <!--ARTICLE JOURNAL-->
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS SOMMES PASSES DANS LE JOURNAL !</strong></h4>
+
   <div class="text-center">
       <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5">
     </div>
@@ -122,7 +122,7 @@
 
   ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>INFOS LES CARAVANES DE LA BESBRE</strong></h4>
+
   <div class="container-fluid mt-5">
     <div class="row ">
 
@@ -136,7 +136,7 @@
       </div>
 
       <div class="col-xl-4 col-md-4 mt-3 mb-5">
-        <a href="https://m.facebook.com/festi.domp.3"><img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-100"></a>
+        <a href="https://m.facebook.com/festi.domp.3"><img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-100" ></a>
       </div>
 
 
@@ -226,8 +226,8 @@
 
         <div class="textLogo50">
           <h2>
-            <?php echo $temp; ?> °C <br>
-            <?php echo $speed; ?> Km/h <br>
+            <?php echo $temp; ?> °C <br />
+            <?php echo $speed; ?> Km/h <br />
             <?php echo $desc; ?>
           </h2>
         </div>
@@ -265,24 +265,23 @@
 
 <!--Section: Content VIDEO PAL-->
 <section class="text-center mt-4 m-2">
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>VISITE AU PARC LE PAL</strong></h4>
   <div class="container">
     <div class="row g-0">
 
       <div class=" col">
         <div class="videoPal  embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/s77ml0_4XUA" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s77ml0_4XUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class=" col text-center d-none d-md-block align-self-center">
         <h2 class="billeterie text-dark display-6">Billeterie </h2>
-        <a href="https://www.lepal.com/"><img src="../images/lePal.webp" alt="Logo le pal" class="logoPal img-fluid "></a>
+        <a href="https://www.lepal.com/"><img src="../images/lePal.webp" alt="Logo le pal" class="logoPal img-fluid " /></a>
       </div>
 
       <div class=" col d-none d-xl-block">
         <div class="videoPal embed-responsive embed-responsive-16by9 ">
-          <iframe class="embed-responsive-item videoPal1" src="https://www.youtube.com/embed/m7PrIAN_Krs"  allowfullscreen></iframe>
+          <iframe class="embed-responsive-item videoPal1" src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -347,7 +346,7 @@
 <!--EndCarousel-->
 
 <!--AvisClients-->
-<<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>AVIS DE NOS CLIENTS</strong></h4>
+
 <section class="container-fluid avisClients mt-5">
 
   <div class="row align-items-center justify-content-center h-100 ">
@@ -364,7 +363,7 @@
       </div>
 
       <div id="nouveau" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase">
-        Cliquez Pour Visualiser Les Commentaires De Nos Clients !
+        Avis Clients
       </div>
     </div>
 

@@ -122,7 +122,7 @@
 
   ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>INFOS LES CARAVANES DE LA BESBRE</strong></h4>
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>I</strong></h4>
   <div class="container-fluid mt-5">
     <div class="row ">
 

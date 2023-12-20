@@ -57,25 +57,23 @@
 <!-- Copyright -->
 <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
 
-  <script>
-    function afficherDate() {
-      // Récupérer la date et l'année actuelles
-      var date = new Date().getFullYear();
+<script>
+  function afficherDate() {
+    // Retrieve the current date and year
+    var date = new Date().getFullYear();
 
-      // Mettre à jour le contenu de l'élément avec la date actuelle
-      document.getElementById("date").textContent = date; // Mettre à jour le contenu directement
-    }
+    // Update the content of the element with the current date
+    document.getElementById("date").textContent = date; // Update the content directly
+  }
 
-    // Appeler la fonction afficherDate toutes les secondes
-    setInterval(afficherDate, 1000);
-  </script>
+  // Call the afficherDate function every second
+  setInterval(afficherDate, 1000);
+</script>
 
-  <p class="color-weight" style="color: white;">© <span id="date"></span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
-  </p>
+© <span id="date"></span>
+<a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
 </div>
 <!-- FIN Copyright -->
-
 
 
 
@@ -83,7 +81,6 @@
 <div class="text-center mt-3">
   <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" alt="nombre de visites"></a>
 </div>
-
   
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 

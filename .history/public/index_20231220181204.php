@@ -87,7 +87,7 @@
   <!-- FIN PROPOSITION LOGEMENTS-->
 
   <!--ARTICLE JOURNAL-->
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS SOMMES PASSES DANS LE JOURNAL !</strong></h4>
+  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS SOMMES PASSES DANS LE </strong></h4>
   <div class="text-center">
       <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5">
     </div>
@@ -122,7 +122,7 @@
 
   ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>INFOS LES CARAVANES DE LA BESBRE</strong></h4>
+
   <div class="container-fluid mt-5">
     <div class="row ">
 

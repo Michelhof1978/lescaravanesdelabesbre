@@ -87,7 +87,7 @@
   <!-- FIN PROPOSITION LOGEMENTS-->
 
   <!--ARTICLE JOURNAL-->
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS SOMMES PASSES DANS LE JOURNAL !</strong></h4>
+
   <div class="text-center">
       <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5">
     </div>
@@ -122,7 +122,7 @@
 
   ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>INFOS LES CARAVANES DE LA BESBRE</strong></h4>
+
   <div class="container-fluid mt-5">
     <div class="row ">
 
@@ -265,7 +265,7 @@
 
 <!--Section: Content VIDEO PAL-->
 <section class="text-center mt-4 m-2">
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>VISITE AU PARC LE PAL</strong></h4>
+  <h3>Visite au Parc Le Pal</h3>
   <div class="container">
     <div class="row g-0">
 
@@ -347,7 +347,7 @@
 <!--EndCarousel-->
 
 <!--AvisClients-->
-<<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>AVIS DE NOS CLIENTS</strong></h4>
+<<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>Avis De Nos Clients</strong></h4>
 <section class="container-fluid avisClients mt-5">
 
   <div class="row align-items-center justify-content-center h-100 ">

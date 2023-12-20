@@ -83,7 +83,6 @@
 <div class="text-center mt-3">
   <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" alt="nombre de visites"></a>
 </div>
-
   
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 

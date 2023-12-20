@@ -11,7 +11,7 @@
       <div class="col-lg-4 col-md-12 mb-4 ">
         <div class="card ">
           <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
-            <img src="../images/caravane1.webp" alt="camping le pal" class="img-fluid ">
+            <img src="../images/caravane1.webp" alt="camping le pal" class="img-fluid " />
             <a href="#">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
@@ -36,7 +36,7 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/caravane2.webp" alt="Hébergements le pal" class="img-fluid">
+            <img src="../images/caravane2.webp" alt="Hébergements le pal" class="img-fluid" />
             <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810214_%2BUv5dalb9N5%2FDer5">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
@@ -60,7 +60,7 @@
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-            <img src="../images/caravane3.webp" alt="hôtel le pal" class="img-fluid">
+            <img src="../images/caravane3.webp" alt="hôtel le pal" class="img-fluid" />
             <a href="#!">
               <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
             </a>
@@ -83,17 +83,19 @@
         </div>
       </div>
     </div>
+        
+
   </section>
   <!-- FIN PROPOSITION LOGEMENTS-->
 
   <!--ARTICLE JOURNAL-->
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS SOMMES PASSES DANS LE JOURNAL !</strong></h4>
+
   <div class="text-center">
-      <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5">
+      <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
     </div>
 
     <div class="text-center mb-5">
-      <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75">
+      <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75" />
     </div>
     
   <!-- FIN ARTICLE JOURNAL-->
@@ -122,13 +124,13 @@
 
   ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>INFOS LES CARAVANES DE LA BESBRE</strong></h4>
+
   <div class="container-fluid mt-5">
     <div class="row ">
 
       <div class="planPal col-xl-4 col-md-4 text-center mt-5">
         <a href="../images/planPal.pdf " download>
-          <img src="../images/pal50Ans.webp" alt="Plan le pal" title="Plan du Pal" class="logoPal50 img-fluid h-50">
+          <img src="../images/pal50Ans.webp" alt="Plan le pal" title="Plan du Pal" class="logoPal50 img-fluid h-50" />
         </a>
 
         <h3 class="m-3 ps-4 textLogo50">Téléchargez le plan !</h3>
@@ -136,7 +138,7 @@
       </div>
 
       <div class="col-xl-4 col-md-4 mt-3 mb-5">
-        <a href="https://m.facebook.com/festi.domp.3"><img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-100"></a>
+        <a href="https://m.facebook.com/festi.domp.3"><img src="../images/festiDomp.webp" alt="logo fest domp" class="img-fluid w-100" /></a>
       </div>
 
 
@@ -226,8 +228,8 @@
 
         <div class="textLogo50">
           <h2>
-            <?php echo $temp; ?> °C <br>
-            <?php echo $speed; ?> Km/h <br>
+            <?php echo $temp; ?> °C <br />
+            <?php echo $speed; ?> Km/h <br />
             <?php echo $desc; ?>
           </h2>
         </div>
@@ -242,7 +244,7 @@
     <div class="row ">
 
       <div class="col-sm-12 col-xl-6 ">
-        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid">
+        <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
       </div>
 
       <div class="col-sm-12 col-xl-6 ">
@@ -265,24 +267,23 @@
 
 <!--Section: Content VIDEO PAL-->
 <section class="text-center mt-4 m-2">
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>VISITE AU PARC LE PAL</strong></h4>
   <div class="container">
     <div class="row g-0">
 
       <div class=" col">
         <div class="videoPal  embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/s77ml0_4XUA" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/s77ml0_4XUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
       <div class=" col text-center d-none d-md-block align-self-center">
         <h2 class="billeterie text-dark display-6">Billeterie </h2>
-        <a href="https://www.lepal.com/"><img src="../images/lePal.webp" alt="Logo le pal" class="logoPal img-fluid "></a>
+        <a href="https://www.lepal.com/"><img src="../images/lePal.webp" alt="Logo le pal" class="logoPal img-fluid " /></a>
       </div>
 
       <div class=" col d-none d-xl-block">
         <div class="videoPal embed-responsive embed-responsive-16by9 ">
-          <iframe class="embed-responsive-item videoPal1" src="https://www.youtube.com/embed/m7PrIAN_Krs"  allowfullscreen></iframe>
+          <iframe class="embed-responsive-item videoPal1" src="https://www.youtube.com/embed/m7PrIAN_Krs" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -347,7 +348,7 @@
 <!--EndCarousel-->
 
 <!--AvisClients-->
-<<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>AVIS DE NOS CLIENTS</strong></h4>
+
 <section class="container-fluid avisClients mt-5">
 
   <div class="row align-items-center justify-content-center h-100 ">
@@ -364,7 +365,7 @@
       </div>
 
       <div id="nouveau" class="mt-2 text-center p-3 text-white font-weight-bold text-uppercase">
-        Cliquez Pour Visualiser Les Commentaires De Nos Clients !
+        Avis Clients
       </div>
     </div>
 

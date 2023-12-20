@@ -70,9 +70,8 @@
     setInterval(afficherDate, 1000);
   </script>
 
-  <p class="color-weight" style="color: white;">© <span id="date"></span>
+  <p class="color-weight" style="color: white;">© <span id="date"></span></p>
   <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
-  </p>
 </div>
 <!-- FIN Copyright -->
 
@@ -83,7 +82,6 @@
 <div class="text-center mt-3">
   <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" alt="nombre de visites"></a>
 </div>
-
   
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
