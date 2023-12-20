@@ -4,7 +4,7 @@
 <head>
 <?php include("head.php") ?>
 <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
-     <title>Location Le Pal</title>
+     <title>Location Pal</title>
 </head>
 
 <?php include("header.php") ?>
@@ -235,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- End Google Tag Manager -->
 
     <!-- Google Analytics -->
-    <!-- <script>
+    <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
@@ -261,7 +261,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ga('send', 'pageview');
     </script>
 
-    <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     <!-- End Google Analytics -->
 

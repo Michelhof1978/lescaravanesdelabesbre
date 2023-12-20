@@ -1,13 +1,16 @@
 <?php include("header.php") ?>
 
 <section class="index mt-5">
-    <h1 class="pb-2 text-center border border-3 rounded h1Index pt-1 text-white"><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong></h1>
 
-    <!-- PROPOSITION LOGEMENTS -->
-    <section class="text-center clear mt-4 ms-2 me-2">
-      <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
 
-      <div class="row locationIndex">
+
+  <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
+
+  <!--PROPOSITION LOGEMENTS-->
+  <section class="text-center clear mt-4 ms-2 me-2">
+    <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
+
+    <div class="row locationIndex">
       <div class="col-lg-4 col-md-12 mb-4 ">
         <div class="card ">
           <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
@@ -89,13 +92,16 @@
   <!--ARTICLE JOURNAL-->
 
   <div class="text-center">
-      <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
-    </div>
+    <img src="../images/laMontagne.webp" alt="logo journal la montagne" class=" img-fluid mb-5" />
+  </div>
 
-    <div class="text-center mb-5">
-      <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75" />
-    </div>
-    
+
+  <div class="text-center mb-5">
+    <img src="../images/articleLaMontagne.webp" alt="Article journal" class=" img-fluid videoPal w-75" />
+  </div>
+
+  </div>
+  </div>
   <!-- FIN ARTICLE JOURNAL-->
 
   <!-- Météo + logoPal50-->
@@ -245,7 +251,7 @@
       </div>
 
       <div class="col-sm-12 col-xl-6 ">
-      <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1"></p>
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
           Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
 
@@ -608,7 +614,3 @@
 </html>
 
 
-
-
-
-  

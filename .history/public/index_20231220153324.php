@@ -95,7 +95,6 @@
     <div class="text-center mb-5">
       <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75" />
     </div>
-    
   <!-- FIN ARTICLE JOURNAL-->
 
   <!-- Météo + logoPal50-->
@@ -245,7 +244,7 @@
       </div>
 
       <div class="col-sm-12 col-xl-6 ">
-      <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1"></p>
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
           Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
 
@@ -610,5 +609,36 @@
 
 
 
-
   
+        <!-- ... Votre contenu vidéo ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CAROUSEL -->
+  <h4 class="mb-4 border border-3 rounded p-2 display-6 m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+  <div class="container d-flex justify-content-center">
+    <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex">
+      <!-- ... Votre contenu du carousel ... -->
+    </div>
+  </div>
+  <!-- End Carousel -->
+
+  <!-- Avis Clients -->
+  <section class="container-fluid avisClients mt-4">
+
+    <!-- ... Votre contenu d'avis clients ... -->
+
+  </section>
+  <!-- Fin Avis Clients -->
+
+  <!-- Footer -->
+  <?php include("footer.php"); ?>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

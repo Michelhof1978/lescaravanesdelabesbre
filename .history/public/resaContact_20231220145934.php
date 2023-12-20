@@ -235,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- End Google Tag Manager -->
 
     <!-- Google Analytics -->
-    <!-- <script>
+    <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function() {
@@ -261,7 +261,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ga('send', 'pageview');
     </script>
 
-    <script async src='https://www.google-analytics.com/analytics.js'></script> -->
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     <!-- End Google Analytics -->
 

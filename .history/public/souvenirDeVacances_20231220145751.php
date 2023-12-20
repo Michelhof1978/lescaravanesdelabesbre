@@ -3,7 +3,7 @@
 
 <head>
 <?php include("head.php") ?>
-  <meta name="description" content="Vacance en Auvergne">
+  <meta name="description" content="Vacance en AUVERGNE">
   <title>Tourisme auvergne Dompierre sur besbre</title>
 </head>
 

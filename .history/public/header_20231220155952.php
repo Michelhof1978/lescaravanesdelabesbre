@@ -46,9 +46,8 @@
             </li>
 
             <li class="nav-item">
-  <a class="nav-link" href="https://www.lepal.com/" target="_blank">Billets Le Pal</a>
-</li>
-
+            <a class="nav-link" href="https://www.lepal.com/" target="_blank">Billets Le Pal</a>
+        </li>
 
             <li class="nav-item">
               <a class="nav-link" href="camping.php">Le Camping</a>

@@ -245,7 +245,7 @@
       </div>
 
       <div class="col-sm-12 col-xl-6 ">
-      <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1"></p>
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
           Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
 
@@ -606,7 +606,6 @@
 </body>
 
 </html>
-
 
 
 

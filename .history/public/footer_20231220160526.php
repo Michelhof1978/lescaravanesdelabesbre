@@ -45,35 +45,33 @@
           </svg></a>
       </section>
 
-    </div>
-    
-    <section class="text-center mb-5">
+      <section class="mb-2">
         <p class="" style="color: white;"><strong>Les Caravanes De La Besbre - <a href="https://camping.mairie-dsb.fr/"> Camping "Les Bords De Besbre" </a>- 03 290 Dompierre Sur Besbre</strong></p>
       </section>
 
+    </div>
   </div>
 </footer>
 
 <!-- Copyright -->
 <div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.2)">
 
- <script>
+© <script>
   function afficherDate() {
-  // Récupérer la date et l'année actuelles
-  var date = new Date().getFullYear();
+    // Récupérer la date et l'année actuelles
+    var date = new Date().getFullYear();
 
-  // Mettre à jour le contenu de l'élément avec la date actuelle
-  document.getElementById('date').textContent = date;
-}
+    // Mettre à jour le contenu de l'élément avec la date actuelle
+    document.getElementById("date").textContent = date; // Mettre à jour le contenu directement
+  }
 
   // Appeler la fonction afficherDate toutes les secondes
   setInterval(afficherDate, 1000);
 </script>
 
-<p class="" style="color: white;">© <span id="date"></span>
+© <span id="date"></span>
 <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
-</p>
-
+</div>
 <!-- fIN Copyright -->
 
 

@@ -1,13 +1,16 @@
 <?php include("header.php") ?>
 
 <section class="index mt-5">
-    <h1 class="pb-2 text-center border border-3 rounded h1Index pt-1 text-white"><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong></h1>
 
-    <!-- PROPOSITION LOGEMENTS -->
-    <section class="text-center clear mt-4 ms-2 me-2">
-      <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
 
-      <div class="row locationIndex">
+
+  <h1 class=" pb-2 text-center  border border-3 rounded  h1Index pt-1 text-white "><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong> </h1>
+
+  <!--PROPOSITION LOGEMENTS-->
+  <section class="text-center clear mt-4 ms-2 me-2">
+    <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
+
+    <div class="row locationIndex">
       <div class="col-lg-4 col-md-12 mb-4 ">
         <div class="card ">
           <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
@@ -89,13 +92,16 @@
   <!--ARTICLE JOURNAL-->
 
   <div class="text-center">
-      <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
-    </div>
+    <img src="../images/laMontagne.webp" alt="logo journal la montagne" class=" img-fluid mb-5" />
+  </div>
 
-    <div class="text-center mb-5">
-      <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75" />
-    </div>
-    
+
+  <div class="text-center mb-5">
+    <img src="../images/articleLaMontagne.webp" alt="Article journal" class=" img-fluid videoPal w-75" />
+  </div>
+
+  </div>
+  </div>
   <!-- FIN ARTICLE JOURNAL-->
 
   <!-- Météo + logoPal50-->
@@ -245,7 +251,7 @@
       </div>
 
       <div class="col-sm-12 col-xl-6 ">
-      <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1"></p>
+        <p class="textIntro lead bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 ">
           Profitez d'une expérience de camping unique au <strong> <a href="https://camping.mairie-dsb.fr/">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="https://www.lepal.com/">Le-Pal</a></strong>.
           Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
 
@@ -610,5 +616,98 @@
 
 
 
+  <?php include("header.php"); ?>
 
-  
+  <section class="index mt-5">
+    <h1 class="pb-2 text-center border border-3 rounded h1Index pt-1 text-white"><strong>Camping Le Pal : Profitez d'une expérience inoubliable au cœur de la nature !</strong></h1>
+
+    <!-- PROPOSITION LOGEMENTS -->
+    <section class="text-center clear mt-4 ms-2 me-2">
+      <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 79,00€ / NUIT</strong></h4>
+
+      <div class="row locationIndex">
+        <!-- ... Vos cartes de logement ... -->
+      </div>
+    </section>
+    <!-- FIN PROPOSITION LOGEMENTS -->
+
+    <!-- ARTICLE JOURNAL -->
+    <div class="text-center">
+      <img src="../images/laMontagne.webp" alt="logo journal la montagne" class="img-fluid mb-5" />
+    </div>
+
+    <div class="text-center mb-5">
+      <img src="../images/articleLaMontagne.webp" alt="Article journal" class="img-fluid videoPal w-75" />
+    </div>
+    <!-- FIN ARTICLE JOURNAL -->
+
+    <!-- Météo + logoPal50 -->
+    <?php
+    $url = "https://api.openweathermap.org/data/2.5/weather?q=dompierre-sur-besbre&lang=fr&units=metric&appid=a2c110c02e86989d65348566c3ad09ff";
+    $raw = file_get_contents($url);
+    $json = json_decode($raw);
+    $name = $json->name;
+    $weather = $json->weather[0]->main;
+    $desc =  $json->weather[0]->description;
+    $temp = $json->main->temp;
+    $speed = $json->wind->speed;
+    ?>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-white mb-4">Météo à <?php echo $name; ?></h5>
+          <p class="text-white mb-2"><?php echo $weather; ?> - <?php echo $desc; ?></p>
+          <p class="text-white mb-2"><?php echo $temp; ?>°C</p>
+          <p class="text-white mb-2">Vent: <?php echo $speed; ?> m/s</p>
+        </div>
+        <div class="col-md-8">
+          <img src="../images/logoPal50.webp" alt="Logo Pal 50" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- Fin Météo + logoPal50 -->
+
+    <div class="container">
+      <!-- Section INTRO -->
+      <div class="row">
+        <!-- ... Votre contenu de l'introduction ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Content VIDEO PAL -->
+  <section class="text-center mt-4 m-2">
+    <div class="container">
+      <div class="row g-0">
+        <!-- ... Votre contenu vidéo ... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CAROUSEL -->
+  <h4 class="mb-4 border border-3 rounded p-2 display-6 m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+  <div class="container d-flex justify-content-center">
+    <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex">
+      <!-- ... Votre contenu du carousel ... -->
+    </div>
+  </div>
+  <!-- End Carousel -->
+
+  <!-- Avis Clients -->
+  <section class="container-fluid avisClients mt-4">
+
+    <!-- ... Votre contenu d'avis clients ... -->
+
+  </section>
+  <!-- Fin Avis Clients -->
+
+  <!-- Footer -->
+  <?php include("footer.php"); ?>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

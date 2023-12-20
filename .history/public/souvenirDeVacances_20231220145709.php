@@ -3,8 +3,8 @@
 
 <head>
 <?php include("head.php") ?>
-  <meta name="description" content="Vacance en Auvergne">
-  <title>Tourisme auvergne Dompierre sur besbre</title>
+  <meta name="description" content="Informations d'arrivée et de sortie Camping Le Pal Dompierre Sur Besbre Allier">
+  <title>Tourisme auvergne Dompierre</title>
 </head>
 
 <?php include("header.php") ?>
