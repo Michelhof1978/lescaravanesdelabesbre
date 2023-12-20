@@ -65,6 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+<!-- Le reste de votre code HTML reste inchangé -->
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 

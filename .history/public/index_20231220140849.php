@@ -250,6 +250,7 @@
 
     <div class="row ">
 
+
       <div class="col-sm-12 col-xl-6 ">
         <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
       </div>

@@ -245,10 +245,12 @@
   </div>
   <!-- fin Météo + logoPal50-->
 
+
   <div class="container ">
     <!--Section INTRO-->
 
     <div class="row ">
+
 
       <div class="col-sm-12 col-xl-6 ">
         <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />

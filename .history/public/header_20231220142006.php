@@ -8,7 +8,7 @@
 <body>              
 
 <header>
-  
+  <div >
     <nav id="mainNavigation">
       <div class="pt-2 text-center border-bottom ">
 
@@ -69,7 +69,7 @@
 
 
   </nav>
- 
+  </div>
 
   <div class="container-fluid text-center m-0 ">
     <img src="../images/banner3.webp" alt="Banner les caravanes de la besbre" class="banner ">

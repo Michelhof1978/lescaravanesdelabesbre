@@ -245,10 +245,17 @@
   </div>
   <!-- fin Météo + logoPal50-->
 
+
+
+
+
+
+
   <div class="container ">
     <!--Section INTRO-->
 
     <div class="row ">
+
 
       <div class="col-sm-12 col-xl-6 ">
         <img src="../images/bannerIntro.webp" alt="Le Pal" class="img-fluid" />
@@ -538,16 +545,16 @@
   ga('send', 'pageview');
 </script>
 
-<script>
+<!-- <script>
   window.ga = window.ga || function() {
     (ga.q = ga.q || []).push(arguments)
   };
   ga.l = +new Date;
   ga('create', '32-930029-2', 'auto'); //id du site par rapport à google, toujours le mettre à ce format 
   ga('send', 'pageview');
-</script>
+</script> -->
 
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- <script async src='https://www.google-analytics.com/analytics.js'></script> -->
 
 <!-- End Google Analytics -->
 
@@ -575,7 +582,7 @@
   gtag('config', 'G-69SWVM55LB');
 </script>
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 

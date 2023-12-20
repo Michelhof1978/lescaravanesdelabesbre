@@ -8,8 +8,8 @@
 <body>              
 
 <header>
-  
-    <nav id="mainNavigation">
+  <div >
+    <nav>
       <div class="pt-2 text-center border-bottom ">
 
         <img id="logo" src="../images/logo.webp" alt="Logo Les caravanes De La Besbre" style="height:160px " class="img-fluid logo ">
@@ -69,7 +69,7 @@
 
 
   </nav>
- 
+  </div>
 
   <div class="container-fluid text-center m-0 ">
     <img src="../images/banner3.webp" alt="Banner les caravanes de la besbre" class="banner ">
