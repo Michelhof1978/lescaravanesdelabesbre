@@ -347,7 +347,7 @@
 <!--EndCarousel-->
 
 <!--AvisClients-->
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index"><strong>AVIS DE NOS CLIENTS</strong></h4>
+<<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index"><strong>AVIS DE NOS CLIENTS</strong></h4>
 <section class="container-fluid avisClients mt-5">
 
   <div class="row align-items-center justify-content-center h-100 ">
