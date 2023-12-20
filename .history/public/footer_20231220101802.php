@@ -8,7 +8,7 @@
       <img class="img2" src="../images/logo.webp" />
       <p class="copyright">Site réalisé par <a href="https://cvmichel-hoffmann.fr/"><strong>Michel Hoffmann - Harmony Digital</strong> </a></p>
 
-      <section class="mb-2">
+      <section class="mb-4">
         <!-- Facebook -->
         <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/lescaravanesdelabesbre/" role="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
@@ -44,16 +44,20 @@
           </svg></a>
       </section>
 
-      <section class="mb-2">
+      <section>
         <p class="" style="color: white;"><strong>Les Caravanes De La Besbre - <a href="https://camping.mairie-dsb.fr/"> Camping "Les Bords De Besbre" </a>- 03 290 Dompierre Sur Besbre</strong></p>
       </section>
 
+
+
+
     </div>
+
   </div>
 </footer>
 
 <!-- Copyright -->
-<div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.2)">
+<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
 
 © <script>
     function afficherDate() {
@@ -68,9 +72,7 @@
     // Appeler la fonction afficherDate toutes les secondes
     setInterval(afficherDate, 1000);
   </script>
-  
   <span id="date">Copyright:</span>
-
   <a class="text-dark" href="https://cvmichel-hoffmann.fr/">Harmony Digital-Droits réservés</a>
 </div>
 <!-- fIN Copyright -->
@@ -81,4 +83,3 @@
   <a href="http://www.mon-compteur.fr"><img src="http://www.mon-compteur.fr/html_c01genv2-237765-2" border="0" /></a>
 </div>
   
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>

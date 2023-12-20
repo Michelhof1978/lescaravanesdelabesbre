@@ -44,7 +44,7 @@
           </svg></a>
       </section>
 
-      <section class="mb-2">
+      <section class="">
         <p class="" style="color: white;"><strong>Les Caravanes De La Besbre - <a href="https://camping.mairie-dsb.fr/"> Camping "Les Bords De Besbre" </a>- 03 290 Dompierre Sur Besbre</strong></p>
       </section>
 
@@ -53,7 +53,7 @@
 </footer>
 
 <!-- Copyright -->
-<div class="text-center p-2 " style="background-color: rgba(0, 0, 0, 0.2)">
+<div class="text-center p-2 mt-5" style="background-color: rgba(0, 0, 0, 0.2)">
 
 © <script>
     function afficherDate() {

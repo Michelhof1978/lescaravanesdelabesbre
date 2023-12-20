@@ -320,6 +320,4 @@
         gtag('config', 'G-69SWVM55LB');
     </script>
 
-</body>
-
-</html>
+    

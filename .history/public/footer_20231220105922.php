@@ -44,7 +44,7 @@
           </svg></a>
       </section>
 
-      <section class="mb-2">
+      <section class="mt-">
         <p class="" style="color: white;"><strong>Les Caravanes De La Besbre - <a href="https://camping.mairie-dsb.fr/"> Camping "Les Bords De Besbre" </a>- 03 290 Dompierre Sur Besbre</strong></p>
       </section>
 

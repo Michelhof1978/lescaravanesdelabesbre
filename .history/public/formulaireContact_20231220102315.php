@@ -52,6 +52,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 }
 ?>
 
+
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
@@ -136,3 +137,4 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </fieldset>
 </form>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

@@ -1,9 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+<?php include("head.php") ?>
+</head>
+
+
+
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
+     <title>Camping Dompierre Sur Besbre Proche Du Pal</title>
+
+    
+
+</head>
+<?php include("header.php") ?>
+
 <?php
 // Clé privée reCAPTCHA 
-$config = include('./config/config.php');
-
-// Utiliser la clé secrète reCAPTCHA
-$secretKey = $config['recaptcha_secret_key'];
+$secretKey = "6Ld72FwnAAAAAOU6O1IpTRr1yVRvmLrv9T0tYZSJ";
 
 if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     // Vérifier le CAPTCHA
@@ -40,7 +54,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
 
         if ($retour) {
             // Redirection vers une page de confirmation après la soumission du formulaire
-            echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; //Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
+            echo '<script>window.location.replace("confirmationContactResa.php");</script>'; //Obligé de le faire en js car en php, il ne revnvoi pas a la page de confirmation
             exit();
         } else {
             echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -51,6 +65,10 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     }
 }
 ?>
+
+
+<!-- Le reste de votre code HTML -->
+
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
@@ -110,7 +128,6 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
                 <div class="form-outline mb-4">
                     <label class="form-label round" for="objet">Objet :</label>
                     <select class="form-label" name="objet" id="objet">
-                        <option>Renseignements</option>
                         <option>Résérvation</option>
                     </select>
                 </div>
@@ -136,3 +153,7 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </fieldset>
 </form>
 
+<?php include("footer.php") ?>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

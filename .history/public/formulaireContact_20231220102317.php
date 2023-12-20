@@ -136,3 +136,4 @@ if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
     </fieldset>
 </form>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
