@@ -2,6 +2,8 @@
 <html lang="fr">
 
 <head>
+    <!-- Linking BoxIcon for Icon -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="../images/logo.ico">
-    <style>
-        .erreur-message {
-            color: red;
-            text-align: center;
-            margin-top: 10px;
-        }
-    </style>
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
     <title>Réservation hébergements - Le Pal</title>
 </head>
+
+<style>
+    .erreur-message {
+        color: red;
+        text-align: center;
+        margin-top: 10px; /* Espace entre le message et les champs du formulaire */
+    }
+</style>
 
 <?php include("header.php") ?>
 
@@ -46,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (!empty($champsManquants)) {
-        echo "<div class='erreur-message'>Veuillez remplir tous les champs du formulaire. Les champs manquants sont : " . implode(', ', $champsManquants) . "</div>";
+        echo "Veuillez remplir tous les champs du formulaire. Les champs manquants sont : " . implode(', ', $champsManquants);
     } else {
         // Validation du CAPTCHA
         $captchaResponse = $_POST['g-recaptcha-response'];
@@ -83,16 +87,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
 
             $retour = mail("michel.hof@hotmail.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            // postmaster@lescaravanesdelabesbre.fr
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
                 header('Location: confirmationContactResa.php');
                 exit();
             } else {
-                echo "<div class='erreur-message'>Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.</div>";
+                echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
             }
         } else {
             // Le CAPTCHA est invalide, afficher un message d'erreur
-            echo "<div class='erreur-message'>CAPTCHA invalide, veuillez réessayer.</div>";
+            echo "CAPTCHA invalide, veuillez réessayer.";
         }
     }
 }

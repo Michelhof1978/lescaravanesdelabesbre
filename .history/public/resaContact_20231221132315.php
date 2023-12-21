@@ -100,6 +100,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
+
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
+
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
 

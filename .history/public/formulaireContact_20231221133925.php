@@ -50,7 +50,7 @@
                     "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                     "Message : " . htmlspecialchars($_POST["message"]);
 
-                $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
                 // postmaster@lescaravanesdelabesbre.fr
                 if ($retour) {
                     // Redirection vers une page de confirmation après la soumission du formulaire

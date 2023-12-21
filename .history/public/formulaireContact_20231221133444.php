@@ -50,8 +50,8 @@
                     "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                     "Message : " . htmlspecialchars($_POST["message"]);
 
-                $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                // postmaster@lescaravanesdelabesbre.fr
+                $retour = mail("postmaster@lescaravanesdelabesbre.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+
                 if ($retour) {
                     // Redirection vers une page de confirmation après la soumission du formulaire
                     echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
@@ -65,7 +65,6 @@
             }
         }
     }
-    ?>
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
