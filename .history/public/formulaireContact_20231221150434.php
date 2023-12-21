@@ -9,10 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
         // Validation du CAPTCHA
         $captchaResponse = $_POST['g-recaptcha-response'];
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $url = 'https://www.google.com/recaptcha/api/siteverify';
-        $data = array(
-            'secret' => $secretKey,
+        $ip = $_SERVER['RE
+        $url = 'https://www.google.com/recaptcha/a
+        $data = array
+            'secret' => $secretKey
             'response' => $captchaResponse,
             'remoteip' => $ip
         );
@@ -110,9 +110,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-                <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="objet" id="renseignements" value="Renseignements" checked>
-        <label class="form-check-label" for="renseignements">Renseignements</label>
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="objet">Objet :</label>
+                    <select class="form-label" name="objet" id="objet">
+                        <option>Résérvation</option>
+                    </select>
+                </div>
 
 
                 <div class="form-floating ">

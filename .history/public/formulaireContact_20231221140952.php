@@ -110,9 +110,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-                <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="objet" id="renseignements" value="Renseignements" checked>
-        <label class="form-check-label" for="renseignements">Renseignements</label>
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="objet">Objet :</label>
+                    <select class="form-label" name="objet" id="objet">
+                        <option>Résérvation</option>
+                    </select>
+                </div>
 
 
                 <div class="form-floating ">

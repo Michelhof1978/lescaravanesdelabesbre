@@ -37,8 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
 
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-
+            $retour = mail("michel", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            // postmaster@lescaravanesdelabesbre.fr
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                            <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
+                            <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required>
                             <label for="firstName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.
@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                            <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
+                            <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required>
                             <label for="lastName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre nom.
@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                            <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required />
+                            <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required>
                             <label for="phoneNumber" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre téléphone.
@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-outline mb-4">
                     <div class="input-group has-validation">
                        
-                        <input name="email" type="email" id="email" class="form-control " placeholder="Email" required />
+                        <input name="email" type="email" id="email" class="form-control " placeholder="Email" required>
                     </div>
                     <label for="email" class="form-label"></label>
                     <div class="invalid-feedback">
@@ -110,9 +110,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-                <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="objet" id="renseignements" value="Renseignements" checked>
-        <label class="form-check-label" for="renseignements">Renseignements</label>
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="objet">Objet :</label>
+                    <select class="form-label" name="objet" id="objet">
+                        <option>Renseignements</option>
+                     
+                    </select>
+                </div>
 
 
                 <div class="form-floating ">
