@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
+                "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
 
             $retour = mail("postmaster@lescaravanesdelabesbre.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
@@ -110,12 +110,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-                <!-- <div class="form-outline mb-4">
+                <div class="form-outline mb-4">
                     <label class="form-label round" for="objet">Objet :</label>
                     <select class="form-label" name="objet" id="objet">
                         <option>Renseignements</option>
+
                     </select>
-                </div> -->
+                </div>
 
 
                 <div class="form-floating ">

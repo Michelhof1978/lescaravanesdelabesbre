@@ -17,6 +17,8 @@
     <title>Réservation hébergements - Le Pal</title>
 </head>
 
+<body>
+
     <?php include("header.php") ?>
 
     <?php
@@ -81,7 +83,6 @@
                     "Message : " . htmlspecialchars($_POST["message"]);
 
                 $retour = mail("michel.hof@hotmail.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                  // postmaster@lescaravanesdelabesbre.fr
                 if ($retour) {
                     // Redirection vers une page de confirmation après la soumission du formulaire
                     header('Location: confirmationContactResa.php');

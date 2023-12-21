@@ -17,6 +17,8 @@
     <title>Réservation hébergements - Le Pal</title>
 </head>
 
+<body>
+
     <?php include("header.php") ?>
 
     <?php

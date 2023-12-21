@@ -1,3 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Linking BoxIcon for Icon -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
+    <title>Réservation de Caravanes - Le Pal</title>
+    
+</head>
+
+<?php include("header.php") ?>
+
 <?php
 // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
@@ -29,19 +51,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Message envoyé de :\n" .
+            $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
+                "Nombre de personnes : " . htmlspecialchars($_POST["nombrePersonnes"]) . "\n" .
+                "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
+                "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
 
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
+                echo '<script>window.location.replace("confirmationReservation.php");</script>';
                 exit();
             } else {
                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -54,8 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
@@ -63,9 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
 
-                <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
-
                     <div class="col">
                         <div class="form-outline">
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required>
@@ -95,13 +116,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Email input -->
                 <div class="form-outline mb-4">
                     <div class="input-group has-validation">
-                       
                         <input name="email" type="email" id="email" class="form-control " placeholder="Email" required>
                     </div>
                     <label for="email" class="form-label"></label>
@@ -110,13 +128,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
-                <!-- <div class="form-outline mb-4">
-                    <label class="form-label round" for="objet">Objet :</label>
-                    <select class="form-label" name="objet" id="objet">
-                        <option>Renseignements</option>
-                    </select>
-                </div> -->
+                 <div class="form-outline mb-4">
+                    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+                    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Nombre d'adultes" required>
+                    <label for="nombreAdultes" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez saisir le nombre d'adultes.
+                    </div>
+                </div>
 
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+                    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
+                    <label for="nombreEnfants" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez saisir le nombre d'enfants.
+                    </div>
+                </div>
+
+                <div id="containerDatesNaissance" class="mb-4">
+                <div class="mb-4">
+                    <h5 class="form-label round">Informations sur les enfants :</h5>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
+                            <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                        </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="dateArrivee">Date d'arrivée :</label>
+                    <input name="dateArrivee" type="date" id="dateArrivee" class="form-control" required>
+                    <label for="dateArrivee" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez sélectionner la date d'arrivée.
+                    </div>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label round" for="dateDepart">Date de départ :</label>
+                    <input name="dateDepart" type="date" id="dateDepart" class="form-control" required>
+                    <label for="dateDepart" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez sélectionner la date de départ.
+                    </div>
+                </div>
 
                 <div class="form-floating ">
                     <textarea name="message" class="form-control " id="message" required></textarea>
@@ -128,13 +183,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
-                <!-- Submit button -->
-                <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">
+                <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4">
                     Envoyez
                 </button>
-
             </div>
         </div>
     </fieldset>
 </form>
 
+<?php include("footer.php") ?>
+
+
+
+</body>
+
+</html>

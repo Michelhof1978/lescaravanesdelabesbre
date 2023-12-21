@@ -17,108 +17,81 @@
     <title>Réservation hébergements - Le Pal</title>
 </head>
 
-    <?php include("header.php") ?>
 
-    <?php
-    // Gestion de l'affichage des erreurs
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
+  <?php include("header.php") ?>
 
-    // Clé privée reCAPTCHA 
-    $config = include('./config/config.php');
+  <h4 class="m-5 text-center border border-3 rounded text-white bg-primary p-2">RÉSERVATION DE CARAVANES</h4>
 
-    // Utilisation de la clé secrète reCAPTCHA
-    $secretKey = $config['recaptcha_secret_key'];
+  <?php
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // Vérifier que tous les champs sont remplis
-        if (
-            isset($_POST["firstName"]) &&
-            isset($_POST["lastName"]) &&
-            isset($_POST["phoneNumber"]) &&
-            isset($_POST["email"]) &&
-            isset($_POST["nombreAdultes"]) &&
-            isset($_POST["nombreEnfants"]) &&
-            isset($_POST["dateNaissanceEnfant1"]) &&
-            isset($_POST["dateArrivee"]) &&
-            isset($_POST["dateDepart"]) &&
-            isset($_POST["message"]) &&
-            isset($_POST['g-recaptcha-response'])
-        ) {
-            // Validation du CAPTCHA
-            $captchaResponse = $_POST['g-recaptcha-response'];
-            $ip = $_SERVER['REMOTE_ADDR'];
-            $url = 'https://www.google.com/recaptcha/api/siteverify';
-            $data = array(
-                'secret' => $secretKey,
-                'response' => $captchaResponse,
-                'remoteip' => $ip
-            );
-            $options = array(
-                'http' => array(
-                    'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'method' => 'POST',
-                    'content' => http_build_query($data)
-                )
-            );
-            $context = stream_context_create($options);
-            $result = file_get_contents($url, false, $context);
-            $response = json_decode($result, true);
+  // Gestion de l'affichage des erreurs
 
-            if ($response['success']) {
-                // Le CAPTCHA est valide = traitement du formulaire
-                $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
-                    "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-                    "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-                    "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-                    "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                    "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
-                    "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
-                    "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
-                    "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
-                    "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
-                    "Message : " . htmlspecialchars($_POST["message"]);
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-                $retour = mail("michel.hof@hotmail.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                  // postmaster@lescaravanesdelabesbre.fr
-                if ($retour) {
-                    // Redirection vers une page de confirmation après la soumission du formulaire
-                    header('Location: confirmationContactResa.php');
-                    exit();
-                } else {
-                    echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-                }
-            } else {
-                // Le CAPTCHA est invalide, afficher un message d'erreur
-                echo "CAPTCHA invalide, veuillez réessayer.";
-            }
-        } else {
-            echo "Veuillez remplir tous les champs du formulaire. Les champs manquants sont : ";
+    // Vérification du Captcha
 
-            // Afficher les champs manquants
-            $champsManquants = array(
-                "firstName",
-                "lastName",
-                "phoneNumber",
-                "email",
-                "nombreAdultes",
-                "nombreEnfants",
-                "dateNaissanceEnfant1",
-                "dateArrivee",
-                "dateDepart",
-                "message",
-                "g-recaptcha-response"
-            );
+    $secret = "6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR";
+    $response = $_POST["g-recaptcha-response"];
+    $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response");
+    $json = json_decode($verify);
 
-            foreach ($champsManquants as $champ) {
-                if (!isset($_POST[$champ])) {
-                    echo $champ . " ";
-                }
-            }
-        }
+    if ($json->success) {
+
+      // Traitement des données du formulaire
+
+      $firstName = $_POST["firstName"];
+      $lastName = $_POST["lastName"];
+      $phoneNumber = $_POST["phoneNumber"];
+      $email = $_POST["email"];
+      $numberOfAdults = $_POST["numberOfAdults"];
+      $numberOfChildren = $_POST["numberOfChildren"];
+      $dateArrival = $_POST["dateArrival"];
+      $dateDeparture = $_POST["dateDeparture"];
+      $message = $_POST["message"];
+
+      // Envoi du mail
+
+      $to = "michel.hof@hotmail.fr";
+      $subject = "Réservation de caravanes - Le Pal";
+      $message = "
+Bonjour,
+
+Un formulaire de réservation de caravanes a été soumis sur votre site.
+
+Voici les informations du formulaire :
+
+* Prénom : $firstName
+* Nom : $lastName
+* Téléphone : $phoneNumber
+* Email : $email
+* Nombre d'adultes : $numberOfAdults
+* Nombre d'enfants : $numberOfChildren
+* Date d'arrivée : $dateArrival
+* Date de départ : $dateDeparture
+* Message : $message
+
+Cordialement,
+
+Le formulaire de réservation
+";
+
+      mail($to, $subject, $message);
+
+      // Redirection vers la page de confirmation
+
+      header("Location: confirmation.php");
+
+    } else {
+
+      // Affichage d'un message d'erreur
+
+      echo "Le Captcha n'a pas été validé. Veuillez réessayer.";
+
     }
-    ?>
+
+  }
+
+  ?>
 
     <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 

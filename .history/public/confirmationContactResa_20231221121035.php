@@ -29,7 +29,7 @@
 
     <div class="lead text-success display-4 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
       <p>
-        Nous avons bien reçu votre demande de réservation et nous vous confirmons qu'elle est en cours de traitement.
+        Nous avons bien reçu votre demande de  et nous vous confirmons que votre demande est en cours de traitement.
       </p>
     </div>
     </div>
