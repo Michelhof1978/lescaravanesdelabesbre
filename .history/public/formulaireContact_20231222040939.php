@@ -4,11 +4,29 @@
 // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
 
-// Utiliser la clé secrète reCAPTCHA
+// Utilisation de la clé secrète reCAPTCHA
 $secretKey = $config['recaptcha_secret_key'];
 
+// Section pour les messages d'erreur
+$error_message = '';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
+    $champsManquants = array();
+
+    // Vérifier que tous les champs sont remplis
+    if (
+        isset($_POST["firstName"]) &&
+        isset($_POST["lastName"]) &&
+        isset($_POST["phoneNumber"]) &&
+        isset($_POST["email"]) &&
+        isset($_POST["nombreAdultes"]) &&
+        isset($_POST["nombreEnfants"]) &&
+        isset($_POST["dateNaissanceEnfant1"]) &&
+        isset($_POST["dateArrivee"]) &&
+        isset($_POST["dateDepart"]) &&
+        isset($_POST["message"]) &&
+        isset($_POST['g-recaptcha-response'])
+    ) {
         // Validation du CAPTCHA
         $captchaResponse = $_POST['g-recaptcha-response'];
         $ip = $_SERVER['REMOTE_ADDR'];
@@ -31,27 +49,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Message envoyé de :\n" .
+            $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
+                "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+                "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
+                "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
+                "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
+                "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
 
-            $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
+                header('Location: confirmationContactResa.php');
                 exit();
             } else {
-                echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+                $error_message = "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
             }
         } else {
-            // Le CAPTCHA est invalide, affichez un message d'erreur
-            echo "CAPTCHA invalide, veuillez réessayer.";
+            // Le CAPTCHA est invalide, afficher un message d'erreur
+            $error_message = "CAPTCHA invalide, veuillez réessayer.";
         }
+    } else {
+        // Les champs sont manquants, afficher un message d'erreur
+        $champsManquants = array(
+            "firstName",
+            "lastName",
+            "phoneNumber",
+            "email",
+            "nombreAdultes",
+            "nombreEnfants",
+            "dateNaissanceEnfant1",
+            "dateArrivee",
+            "dateDepart",
+            "message",
+            "g-recaptcha-response"
+        );
+
+        $error_message = "Veuillez remplir tous les champs du formulaire. Les champs manquants sont : " . implode(", ", $champsManquants);
     }
 }
 ?>
@@ -70,8 +109,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="firstName" class="form-label">Prénom</label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
+                            <label for="firstName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.
                             </div>
@@ -80,7 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="lastName" class="form-label">Nom</label>
                             <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
                             <label for="lastName" class="form-label"></label>
                             <div class="invalid-feedback">
@@ -90,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col">
-                        <div class="form-outline">
+                        <<div class="form-outline">
     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
     <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{10,}" required>
     <div class="invalid-feedback">
@@ -127,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
-                
+
                 <!-- Section pour les messages d'erreur -->
                 <div id="error-message" class="text-center text-danger mb-4"></div>
 

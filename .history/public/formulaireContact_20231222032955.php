@@ -70,8 +70,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="firstName" class="form-label">Prénom</label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
+                            <label for="firstName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.
                             </div>
@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="lastName" class="form-label">Nom</label>
                             <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
                             <label for="lastName" class="form-label"></label>
                             <div class="invalid-feedback">
@@ -91,27 +90,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-    <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
-    <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{10,}" required>
-    <div class="invalid-feedback">
-        Veuillez saisir un numéro de téléphone valide (au moins 10 chiffres).
-    </div>
-</div>
-
+                            <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required />
+                            <label for="phoneNumber" class="form-label"></label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre téléphone.
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-    <label for="email" class="form-label">Adresse Email</label>
-    <div class="input-group has-validation">
-        <input name="email" type="email" id="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <div class="invalid-feedback">
-            Veuillez saisir une adresse email valide.
-        </div>
-    </div>
-</div>
+                    <div class="input-group has-validation">
+                       
+                        <input name="email" type="email" id="email" class="form-control " placeholder="Email" required />
+                    </div>
+                    <label for="email" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre Email.
+                    </div>
+                </div>
 
                 <!-- <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="objet" id="renseignements" value="Renseignements" checked>
@@ -127,10 +126,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
-                
-                <!-- Section pour les messages d'erreur -->
-                <div id="error-message" class="text-center text-danger mb-4"></div>
-
 
                 <!-- Submit button -->
                 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">

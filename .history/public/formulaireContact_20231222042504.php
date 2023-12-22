@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="firstName" class="form-label">Prénom</label>
+                        <label for="firstName" class="form-label"></label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.

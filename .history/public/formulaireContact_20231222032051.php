@@ -1,3 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Linking BoxIcon for Icon -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+    <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
+    <title>Réservation hébergements - Le Pal</title>
+</head>
+
+    <?php include("header.php") ?>
 
 
 <?php
@@ -39,11 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
 
-            $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("postmaster@lescaravanesdelabesbre.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
+                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
                 exit();
             } else {
                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -70,8 +90,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="firstName" class="form-label">Prénom</label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
+                            <label for="firstName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.
                             </div>
@@ -80,7 +100,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="lastName" class="form-label">Nom</label>
                             <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
                             <label for="lastName" class="form-label"></label>
                             <div class="invalid-feedback">
@@ -91,27 +110,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-    <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
-    <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{10,}" required>
-    <div class="invalid-feedback">
-        Veuillez saisir un numéro de téléphone valide (au moins 10 chiffres).
-    </div>
-</div>
-
+                            <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" required />
+                            <label for="phoneNumber" class="form-label"></label>
+                            <div class="invalid-feedback">
+                                Veuillez saisir votre téléphone.
+                            </div>
+                        </div>
                     </div>
 
                 </div>
 
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-    <label for="email" class="form-label">Adresse Email</label>
-    <div class="input-group has-validation">
-        <input name="email" type="email" id="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-        <div class="invalid-feedback">
-            Veuillez saisir une adresse email valide.
-        </div>
-    </div>
-</div>
+                    <div class="input-group has-validation">
+                       
+                        <input name="email" type="email" id="email" class="form-control " placeholder="Email" required />
+                    </div>
+                    <label for="email" class="form-label"></label>
+                    <div class="invalid-feedback">
+                        Veuillez saisir votre Email.
+                    </div>
+                </div>
 
                 <!-- <div class="form-check form-check-inline">
         <input class="form-check-input" type="radio" name="objet" id="renseignements" value="Renseignements" checked>
@@ -127,10 +146,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
-                
-                <!-- Section pour les messages d'erreur -->
-                <div id="error-message" class="text-center text-danger mb-4"></div>
-
 
                 <!-- Submit button -->
                 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">

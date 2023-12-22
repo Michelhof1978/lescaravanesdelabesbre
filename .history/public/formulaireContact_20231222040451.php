@@ -70,8 +70,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="firstName" class="form-label">Prénom</label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required />
+                            <label for="firstName" class="form-label"></label>
                             <div class="invalid-feedback">
                                 Veuillez saisir votre prénom.
                             </div>
@@ -80,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="col">
                         <div class="form-outline">
-                        <label for="lastName" class="form-label">Nom</label>
                             <input name="lastName" type="text" id="lastName" class="form-control" placeholder="Nom" required />
                             <label for="lastName" class="form-label"></label>
                             <div class="invalid-feedback">
@@ -90,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col">
-                        <div class="form-outline">
+                        <<div class="form-outline">
     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
     <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{10,}" required>
     <div class="invalid-feedback">
@@ -128,9 +127,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
                 
-                <!-- Section pour les messages d'erreur -->
-                <div id="error-message" class="text-center text-danger mb-4"></div>
-
 
                 <!-- Submit button -->
                 <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4 ">

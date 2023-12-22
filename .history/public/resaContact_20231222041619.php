@@ -19,8 +19,7 @@
 
     <?php include("header.php") ?>
 
-    <?php
-  // Clé privée reCAPTCHA 
+    // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
 
 // Utiliser la clé secrète reCAPTCHA
@@ -50,17 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
-                    "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-                    "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-                    "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-                    "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                    "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
-                    "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
-                    "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
-                    "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
-                    "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
-                    "Message : " . htmlspecialchars($_POST["message"]);
+            $message = "Message envoyé de :\n" .
+                "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
+                "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
+                "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+                "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
+                // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
+                "Message : " . htmlspecialchars($_POST["message"]);
 
             $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
@@ -79,8 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-    
- 
+
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">

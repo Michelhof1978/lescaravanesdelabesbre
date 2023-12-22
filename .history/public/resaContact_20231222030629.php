@@ -20,37 +20,56 @@
     <?php include("header.php") ?>
 
     <?php
-  // Clé privée reCAPTCHA 
-$config = include('./config/config.php');
+    // Gestion de l'affichage des erreurs
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
-// Utiliser la clé secrète reCAPTCHA
-$secretKey = $config['recaptcha_secret_key'];
+    // Clé privée reCAPTCHA 
+    $config = include('./config/config.php');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
-        // Validation du CAPTCHA
-        $captchaResponse = $_POST['g-recaptcha-response'];
-        $ip = $_SERVER['REMOTE_ADDR'];
-        $url = 'https://www.google.com/recaptcha/api/siteverify';
-        $data = array(
-            'secret' => $secretKey,
-            'response' => $captchaResponse,
-            'remoteip' => $ip
-        );
-        $options = array(
-            'http' => array(
-                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                'method' => 'POST',
-                'content' => http_build_query($data)
-            )
-        );
-        $context = stream_context_create($options);
-        $result = file_get_contents($url, false, $context);
-        $response = json_decode($result, true);
+    // Utilisation de la clé secrète reCAPTCHA
+    $secretKey = $config['recaptcha_secret_key'];
+    
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $champsManquants = array();
+        // Vérifier que tous les champs sont remplis
+        if (
+            isset($_POST["firstName"]) &&
+            isset($_POST["lastName"]) &&
+            isset($_POST["phoneNumber"]) &&
+            isset($_POST["email"]) &&
+            isset($_POST["nombreAdultes"]) &&
+            isset($_POST["nombreEnfants"]) &&
+            isset($_POST["dateNaissanceEnfant1"]) &&
+            isset($_POST["dateArrivee"]) &&
+            isset($_POST["dateDepart"]) &&
+            isset($_POST["message"]) &&
+            isset($_POST['g-recaptcha-response'])
+        ) {
+            // Validation du CAPTCHA
+            $captchaResponse = $_POST['g-recaptcha-response'];
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $url = 'https://www.google.com/recaptcha/api/siteverify';
+            $data = array(
+                'secret' => $secretKey,
+                'response' => $captchaResponse,
+                'remoteip' => $ip
+            );
+            $options = array(
+                'http' => array(
+                    'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                    'method' => 'POST',
+                    'content' => http_build_query($data)
+                )
+            );
+            $context = stream_context_create($options);
+            $result = file_get_contents($url, false, $context);
+            $response = json_decode($result, true);
 
-        if ($response['success']) {
-            // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
+            if ($response['success']) {
+                // Le CAPTCHA est valide = traitement du formulaire
+                $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
                     "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                     "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                     "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
@@ -62,25 +81,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
                     "Message : " . htmlspecialchars($_POST["message"]);
 
-            $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-
-            if ($retour) {
-                // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
-                exit();
+                $retour = mail("michel.hof@hotmail.fr", "Réservation de caravanes - Le Pal", $message, "From: contact@lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                  // postmaster@lescaravanesdelabesbre.fr
+                if ($retour) {
+                    // Redirection vers une page de confirmation après la soumission du formulaire
+                    header('Location: confirmationContactResa.php');
+                    exit();
+                } else {
+                    echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+                }
             } else {
-                echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+                // Le CAPTCHA est invalide, afficher un message d'erreur
+                echo "CAPTCHA invalide, veuillez réessayer.";
             }
         } else {
-            // Le CAPTCHA est invalide, affichez un message d'erreur
-            echo "CAPTCHA invalide, veuillez réessayer.";
+            echo "Veuillez remplir tous les champs du formulaire. Les champs manquants sont : ";
+
+            // Afficher les champs manquants
+            $champsManquants = array(
+                "firstName",
+                "lastName",
+                "phoneNumber",
+                "email",
+                "nombreAdultes",
+                "nombreEnfants",
+                "dateNaissanceEnfant1",
+                "dateArrivee",
+                "dateDepart",
+                "message",
+                "g-recaptcha-response"
+            );
+
+            foreach ($champsManquants as $champ) {
+                if (!isset($_POST[$champ])) {
+                    echo $champ . " ";
+                }
+            }
         }
     }
-}
-?>
+    ?>
 
-    
- 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
 <form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
@@ -131,6 +171,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
 
+                    <div class="form-outline mb-4">
+                        <label for="email" class="form-label">Adresse Email</label>
+                        <div class="input-group has-validation">
+                            <input name="email" type="email" id="email" class="form-control" placeholder="Email" required>
+                        </div>
+
+                        <div class="invalid-feedback">
+                            Veuillez saisir votre Email.
+                        </div>
+                    </div>
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
@@ -154,9 +204,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="col">
                                 <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
                                 <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
-                                <div class="invalid-feedback">
-                                    Veuillez saisir la date de naissance de l'enfant.
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -184,6 +231,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             Veuillez saisir votre message.
                         </div>
                     </div>
+
                     <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
                     <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4">
@@ -193,7 +241,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </fieldset>
     </form>
-
 
     <?php include("footer.php") ?>
 
