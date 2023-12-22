@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
                
                 $object = "Nouvelle reservation";
-                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -103,8 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
-<form class="needs-validation" id="formulaire" novalidate action="#" method="POST" onsubmit="return validateForm();">
-
+<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
@@ -132,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col">
-                    <div class="form-outline mb-4">
+                    <div class="form-outline">
     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
     <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{15,}" required>
     <div class="invalid-feedback">
@@ -144,31 +143,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-outline mb-4">
     <label for="email" class="form-label">Adresse Email</label>
     <div class="input-group has-validation">
-        <input name="email" type="email" id="email" class="form-control" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr)$">
+        <input name="email" type="email" id="email" class="form-control" placeholder="Email" requiredpattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+>
         <div class="invalid-feedback">
-            Veuillez saisir une adresse email valide avec un domaine .com ou .fr.
+            Veuillez saisir une adresse email valide.
         </div>
     </div>
 </div>
 
 
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'adultes.
+                        </div>
+                    </div>
 
-<div class="form-outline mb-4">
-    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
-    <div class="invalid-feedback">
-        Veuillez saisir un nombre d'adultes valide.
-    </div>
-</div>
-
-<div class="form-outline mb-4">
-    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required min="0" onchange="ajouterChampsDateNaissance()">
-    <div class="invalid-feedback">
-        Veuillez saisir un nombre d'enfants valide.
-    </div>
-</div>
-
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'enfants.
+                        </div>
+                    </div>
 
                     <div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
@@ -303,40 +301,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         formulaire.submit();
     });
-</script>
-
-<!-- //restriction champs formulaire -->
-<script>
-    function validateForm() {
-        // Validation de l'adresse e-mail
-        var emailInput = document.getElementById('email');
-        var emailValue = emailInput.value.trim();
-        // Expression régulière pour valider l'adresse e-mail avec plusieurs domaines
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr|net|org|eur)$/;
-
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide avec un domaine .com, .fr, .net, .org, ou .eur.');
-            emailInput.focus();
-            return false;
-        }
-
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById('phoneNumber');
-        var phoneNumberValue = phoneNumberInput.value.trim();
-
-        // Expression régulière pour valider le numéro de téléphone (chiffres uniquement, maximum 10 chiffres)
-        var phoneRegex = /^[0-9]{1,15}$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert('Veuillez saisir un numéro de téléphone valide (chiffres uniquement, maximum 15 chiffres).');
-            phoneNumberInput.focus();
-            return false;
-        }
-
-        
-
-        return true;
-    }
 </script>
 
 </body>

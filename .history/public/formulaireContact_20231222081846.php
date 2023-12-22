@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
 
                 $object = "Renseignements";
-                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignement", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
             if 
             ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire

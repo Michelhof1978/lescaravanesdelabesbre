@@ -79,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
                
                 $object = "Nouvelle reservation";
-                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -308,32 +308,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- //restriction champs formulaire -->
 <script>
     function validateForm() {
-        // Validation de l'adresse e-mail
         var emailInput = document.getElementById('email');
         var emailValue = emailInput.value.trim();
-        // Expression régulière pour valider l'adresse e-mail avec plusieurs domaines
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr|net|org|eur)$/;
 
+        // Expression régulière pour valider l'adresse e-mail
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr)$/;
+
+        // Validation de l'adresse e-mail
         if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide avec un domaine .com, .fr, .net, .org, ou .eur.');
+            alert('Veuillez saisir une adresse email valide avec un domaine .com ou .fr.');
             emailInput.focus();
             return false;
         }
 
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById('phoneNumber');
-        var phoneNumberValue = phoneNumberInput.value.trim();
-
-        // Expression régulière pour valider le numéro de téléphone (chiffres uniquement, maximum 10 chiffres)
-        var phoneRegex = /^[0-9]{1,15}$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert('Veuillez saisir un numéro de téléphone valide (chiffres uniquement, maximum 15 chiffres).');
-            phoneNumberInput.focus();
-            return false;
-        }
-
-        
+        // Autres validations si nécessaire...
 
         return true;
     }

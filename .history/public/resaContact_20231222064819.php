@@ -77,9 +77,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
                 "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
-               
-                $object = "Nouvelle reservation";
-                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+
+            $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -103,8 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
-<form class="needs-validation" id="formulaire" novalidate action="#" method="POST" onsubmit="return validateForm();">
-
+<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
@@ -132,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                     <div class="col">
-                    <div class="form-outline mb-4">
+                    <div class="form-outline">
     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
     <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{15,}" required>
     <div class="invalid-feedback">
@@ -144,31 +142,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="form-outline mb-4">
     <label for="email" class="form-label">Adresse Email</label>
     <div class="input-group has-validation">
-        <input name="email" type="email" id="email" class="form-control" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr)$">
+        <input name="email" type="email" id="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
         <div class="invalid-feedback">
-            Veuillez saisir une adresse email valide avec un domaine .com ou .fr.
+            Veuillez saisir une adresse email valide.
         </div>
     </div>
 </div>
 
 
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'adultes.
+                        </div>
+                    </div>
 
-<div class="form-outline mb-4">
-    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
-    <div class="invalid-feedback">
-        Veuillez saisir un nombre d'adultes valide.
-    </div>
-</div>
-
-<div class="form-outline mb-4">
-    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required min="0" onchange="ajouterChampsDateNaissance()">
-    <div class="invalid-feedback">
-        Veuillez saisir un nombre d'enfants valide.
-    </div>
-</div>
-
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'enfants.
+                        </div>
+                    </div>
 
                     <div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
@@ -223,40 +219,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <script>
         // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
         function ajouterChampsDateNaissance() {
-            const nombreEnfants = document.getElementById('nombreEnfants').value;
-            const containerDatesNaissance = document.getElementById('containerDatesNaissance');
+  const nombreEnfants = document.getElementById('nombreEnfants').value;
+  const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
-            // Supprime les champs de date de naissance existants
-            containerDatesNaissance.innerHTML = '';
+  // Supprime les champs de date de naissance existants
+  containerDatesNaissance.innerHTML = '';
 
-            // Ajoute les nouveaux champs en fonction du nombre d'enfants
-            for (let i = 1; i <= nombreEnfants; i++) {
-                const divRow = document.createElement('div');
-                divRow.className = 'row mb-4';
+  // Ajoute les nouveaux champs en fonction du nombre d'enfants
+  for (let i = 1; i <= nombreEnfants; i++) {
+    const divRow = document.createElement('div');
+    divRow.className = 'row mb-4';
 
-                const divCol = document.createElement('div');
-                divCol.className = 'col';
+    const divCol = document.createElement('div');
+    divCol.className = 'col';
 
-                const label = document.createElement('label');
-                label.className = 'form-label';
-                label.setAttribute('for', 'dateNaissanceEnfant' + i);
-                label.innerText = 'Date de naissance enfant ' + i + ' :';
+    const label = document.createElement('label');
+    label.className = 'form-label';
+    label.setAttribute('for', 'dateNaissanceEnfant' + i);
+    label.innerText = 'Date de naissance enfant ' + i + ' :';
 
-                const inputDate = document.createElement('input');
-                inputDate.name = 'dateNaissanceEnfant' + i;
-                inputDate.type = 'date';
-                inputDate.id = 'dateNaissanceEnfant' + i;
-                inputDate.className = 'form-control';
-                inputDate.required = true;
+    const inputDate = document.createElement('input');
+    inputDate.name = 'dateNaissanceEnfant' + i;
+    inputDate.type = 'date';
+    inputDate.id = 'dateNaissanceEnfant' + i;
+    inputDate.className = 'form-control';
 
-                divCol.appendChild(label);
-                divCol.appendChild(inputDate);
-                divRow.appendChild(divCol);
+    // Vérifie si la date est valide avant de l'ajouter au formulaire
+    if (!isValidDate(inputDate.value)) {
+      inputDate.value = '';
+      alert('Veuillez saisir une date valide AAAA-MM-JJ.');
+      continue;
+    }
 
-                containerDatesNaissance.appendChild(divRow);
-            }
-        }
-    </script>
+    const dateEuropeenne = convertToEuropeanDate(inputDate.value);
+    inputDate.value = dateEuropeenne;
+
+    inputDate.required = true;
+
+    divCol.appendChild(label);
+    divCol.appendChild(inputDate);
+    divRow.appendChild(divCol);
+
+    containerDatesNaissance.appendChild(divRow);
+  }
+}
+<
 
 <script>
     const formulaire = document.getElementById('formulaire');
@@ -274,69 +281,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     function isValidDate(dateString) {
+        // Utiliser une expression régulière pour vérifier le format de la date
         const regex = /^\d{4}-\d{2}-\d{2}$/;
         return regex.test(dateString);
     }
 
-    // function checkDates() {
-    //     for (const champ of document.querySelectorAll('input[pattern]')) {
-    //         if (!isValidDate(champ.value)) {
-    //             event.preventDefault();
-    //             champ.focus();
-    //             alert('Veuillez saisir une date valide.');
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-    // }
+    function convertToEuropeanDate(dateString) {
+        // Convertir la date au format européen (AAAA-MM-JJ -> JJ/MM/AAAA)
+        const [year, month, day] = dateString.split('-');
+        return `${day}/${month}/${year}`;
+    }
+
+    function isValidBirthDate(dateString) {
+        // Vous pouvez ajouter des vérifications spécifiques pour la date de naissance ici
+        // Dans l'exemple, nous vérifions simplement si la date est valide
+        return isValidDate(dateString);
+    }
+
+    function checkDates() {
+        for (const champ of document.querySelectorAll('input[pattern]')) {
+            if (champ.id === 'dateNaissanceEnfant1' && !isValidBirthDate(champ.value)) {
+                event.preventDefault();
+                champ.focus();
+                alert('Veuillez saisir une date de naissance valide.');
+                return false;
+            }
+
+            // Convertir la date au format européen pour la vérification
+            const europeanDate = convertToEuropeanDate(champ.value);
+            if (!isValidDate(europeanDate)) {
+                event.preventDefault();
+                champ.focus();
+                alert('Veuillez saisir une date valide.');
+                return false;
+            }
+        }
+        return true;
+    }
 
     formulaire.addEventListener('submit', function () {
         if (!checkRequiredFields() || !checkDates()) {
             return;
         }
 
-        for (const champ of document.querySelectorAll('input[pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"]')) {
-            const date = new Date(champ.value);
-            const formattedDate = date.toISOString().split('T')[0];
-            champ.value = formattedDate;
-        }
-
+        // Soumettre le formulaire si tout est valide
         formulaire.submit();
     });
-</script>
-
-<!-- //restriction champs formulaire -->
-<script>
-    function validateForm() {
-        // Validation de l'adresse e-mail
-        var emailInput = document.getElementById('email');
-        var emailValue = emailInput.value.trim();
-        // Expression régulière pour valider l'adresse e-mail avec plusieurs domaines
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr|net|org|eur)$/;
-
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide avec un domaine .com, .fr, .net, .org, ou .eur.');
-            emailInput.focus();
-            return false;
-        }
-
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById('phoneNumber');
-        var phoneNumberValue = phoneNumberInput.value.trim();
-
-        // Expression régulière pour valider le numéro de téléphone (chiffres uniquement, maximum 10 chiffres)
-        var phoneRegex = /^[0-9]{1,15}$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert('Veuillez saisir un numéro de téléphone valide (chiffres uniquement, maximum 15 chiffres).');
-            phoneNumberInput.focus();
-            return false;
-        }
-
-        
-
-        return true;
-    }
 </script>
 
 </body>

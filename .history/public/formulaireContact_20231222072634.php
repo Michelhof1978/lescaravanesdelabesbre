@@ -40,9 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
 
                 $object = "Renseignements";
-                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            if 
-            ($retour) {
+                $retour = mail("michel.hof@hotmail.fr", "Nouvelle réservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
                 exit();
