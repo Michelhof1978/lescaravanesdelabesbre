@@ -19,7 +19,7 @@
 
     <?php include("header.php") ?>
 
-   <?php
+    <?php
 // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
 
@@ -97,6 +97,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
 
     
  
@@ -215,7 +216,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include("footer.php") ?>
 
-    <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
     <script>
         // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
         function ajouterChampsDateNaissance() {
@@ -252,43 +252,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
-    </script>
 
-    <script>
-        const formulaire = document.getElementById('formulaire');
-
-formulaire.addEventListener('submit', function() {
-  // Vérifier que tous les champs obligatoires sont remplis
-  for (const champ of document.querySelectorAll('input[required]')) {
-    if (champ.value === '') {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez remplir tous les champs obligatoires.');
-      return;
-    }
-  }
-
-  // Vérifier que les dates sont au bon format
-  for (const champ of document.querySelectorAll('input[pattern]')) {
-    // Créer une expression régulière à partir de l'attribut `pattern` du champ.
-    const regex = new RegExp(champ.getAttribute('pattern'));
-    if (!regex.test(champ.value)) {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez saisir une date valide.');
-      return;
-    }
-  }
-
-  // Le formulaire est valide, il peut être soumis.
-  formulaire.submit();
-});
-    </script>
-
-    <script>
-        
+        // Fonction pour valider le formulaire côté client
+        function validerFormulaire() {
+            // Vérifier si tous les champs obligatoires sont remplis
+            const formulaire = document.getElementById('formulaire');
+            if (formulaire.checkValidity()) {
+                // Si les champs sont valides, soumettre le formulaire
+                formulaire.submit();
+            } else {
+                // Afficher un message d'erreur
+                document.getElementById('error-message').innerHTML = 'Veuillez remplir tous les champs correctement.';
+            }
+        }
     </script>
 </body>
 

@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col">
                         <div class="form-outline">
     <label for="phoneNumber" class="form-label">Numéro de Téléphone</label>
-    <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{15,}" required>
+    <input name="phoneNumber" type="tel" id="phoneNumber" class="form-control" placeholder="Téléphone" pattern="[0-9]{1(,}" required>
     <div class="invalid-feedback">
         Veuillez saisir un numéro de téléphone valide (au moins 10 chiffres).
     </div>

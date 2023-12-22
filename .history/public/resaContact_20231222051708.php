@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="row">
                             <div class="col">
                                 <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
-                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}>
                                 <div class="invalid-feedback">
                                     Veuillez saisir la date de naissance de l'enfant.
                                 </div>
@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="dateArrivee">Date d'arrivée :</label>
-                        <input name="dateArrivee" type="date" id="dateArrivee" class="form-control" required>
+                        <input name="dateArrivee" type="date" id="dateArrivee" class="form-control" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}>
                         <div class="invalid-feedback">
                             Veuillez sélectionner la date d'arrivée.
                         </div>
@@ -189,7 +189,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="dateDepart">Date de départ :</label>
-                        <input name="dateDepart" type="date" id="dateDepart" class="form-control" required>
+                        <input name="dateDepart" type="date" id="dateDepart" class="form-control" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}>
                         <div class="invalid-feedback">
                             Veuillez sélectionner la date de départ.
                         </div>
@@ -252,34 +252,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
+
     </script>
 
     <script>
-        const formulaire = document.getElementById('formulaire');
+      const formulaire = document.getElementById('formulaire');
 
-formulaire.addEventListener('submit', function() {
-  // Vérifier que tous les champs obligatoires sont remplis
+// Vérifier que tous les champs obligatoires sont remplis
+function checkRequiredFields() {
   for (const champ of document.querySelectorAll('input[required]')) {
     if (champ.value === '') {
-      // L'événement est empêché, et une alerte est affichée.
+      // La date est invalide.
       event.preventDefault();
       champ.focus();
       alert('Veuillez remplir tous les champs obligatoires.');
-      return;
+      return false;
     }
   }
 
-  // Vérifier que les dates sont au bon format
-  for (const champ of document.querySelectorAll('input[pattern]')) {
-    // Créer une expression régulière à partir de l'attribut `pattern` du champ.
-    const regex = new RegExp(champ.getAttribute('pattern'));
-    if (!regex.test(champ.value)) {
-      // L'événement est empêché, et une alerte est affichée.
+  return true;
+}
+
+// Vérifier que les dates sont au bon format
+function checkDates() {
+  const dateRegex = new RegExp(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/);
+
+  for (const champ of document.querySelectorAll('input[pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"]')) {
+    if (!dateRegex.test(champ.value)) {
+      // La date est invalide.
       event.preventDefault();
       champ.focus();
       alert('Veuillez saisir une date valide.');
-      return;
+      return false;
     }
+  }
+
+  return true;
+}
+
+formulaire.addEventListener('submit', function() {
+  // Vérifier les champs obligatoires.
+  if (!checkRequiredFields()) {
+    return;
+  }
+
+  // Vérifier les dates.
+  if (!checkDates()) {
+    return;
   }
 
   // Le formulaire est valide, il peut être soumis.
@@ -288,7 +307,49 @@ formulaire.addEventListener('submit', function() {
     </script>
 
     <script>
-        
+        const formulaire = document.getElementById('formulaire');
+const recaptcha = document.getElementById('g-recaptcha-response');
+
+formulaire.addEventListener('submit', function() {
+  // Obtenir la réponse du CAPTCHA.
+  const captchaResponse = recaptcha.value;
+  if (captchaResponse === '') {
+    // L'événement est empêché, et une alerte est affichée.
+    event.preventDefault();
+    alert('Veuillez valider le CAPTCHA.');
+    return;
+  }
+
+  // Vérifier la réponse du CAPTCHA.
+  // Utiliser la bibliothèque jQuery pour effectuer une requête AJAX.
+  $.ajax({
+    // L'URL du service reCAPTCHA.
+    url: 'https://www.google.com/recaptcha/api/siteverify',
+    // Les données à envoyer à la requête.
+    data: {
+      // La clé secrète reCAPTCHA.
+      secret: '6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR',
+      // La réponse du CAPTCHA.
+      response: captchaResponse
+    },
+    // La méthode de la requête.
+    method: 'POST',
+    // Le type de données attendu en réponse.
+    dataType: 'json',
+    // La fonction à exécuter en cas de succès.
+    success: function(response) {
+      // Si la réponse n'est pas valide, l'événement est empêché, et une alerte est affichée.
+      if (!response.success) {
+        event.preventDefault();
+        alert('CAPTCHA invalide, veuillez réessayer.');
+        return;
+      }
+
+      // La réponse est valide, le formulaire peut être soumis.
+      this.form.submit();
+    }.bind(this)
+  });
+});
     </script>
 </body>
 

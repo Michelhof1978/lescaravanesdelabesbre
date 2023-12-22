@@ -171,7 +171,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="row">
                             <div class="col">
                                 <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
-                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}>
                                 <div class="invalid-feedback">
                                     Veuillez saisir la date de naissance de l'enfant.
                                 </div>
@@ -215,7 +215,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include("footer.php") ?>
 
-    <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
     <script>
         // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
         function ajouterChampsDateNaissance() {
@@ -252,43 +251,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
-    </script>
-
-    <script>
-        const formulaire = document.getElementById('formulaire');
-
-formulaire.addEventListener('submit', function() {
-  // Vérifier que tous les champs obligatoires sont remplis
-  for (const champ of document.querySelectorAll('input[required]')) {
-    if (champ.value === '') {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez remplir tous les champs obligatoires.');
-      return;
-    }
-  }
-
-  // Vérifier que les dates sont au bon format
-  for (const champ of document.querySelectorAll('input[pattern]')) {
-    // Créer une expression régulière à partir de l'attribut `pattern` du champ.
-    const regex = new RegExp(champ.getAttribute('pattern'));
-    if (!regex.test(champ.value)) {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez saisir une date valide.');
-      return;
-    }
-  }
-
-  // Le formulaire est valide, il peut être soumis.
-  formulaire.submit();
-});
-    </script>
-
-    <script>
-        
     </script>
 </body>
 

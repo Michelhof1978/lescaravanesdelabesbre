@@ -287,9 +287,7 @@ formulaire.addEventListener('submit', function() {
 });
     </script>
 
-    <script>
-        
-    </script>
+    <script
 </body>
 
 </html>

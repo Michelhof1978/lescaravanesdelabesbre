@@ -286,10 +286,6 @@ formulaire.addEventListener('submit', function() {
   formulaire.submit();
 });
     </script>
-
-    <script>
-        
-    </script>
 </body>
 
 </html>

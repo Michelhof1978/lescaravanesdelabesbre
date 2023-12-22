@@ -19,31 +19,15 @@
 
     <?php include("header.php") ?>
 
-   <?php
-// Clé privée reCAPTCHA 
+    <?php
+  // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
 
 // Utiliser la clé secrète reCAPTCHA
 $secretKey = $config['recaptcha_secret_key'];
 
-// Initialiser le message d'erreur
-$error_message = '';
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Vérifier que tous les champs sont remplis
-    if (
-        isset($_POST["firstName"]) &&
-        isset($_POST["lastName"]) &&
-        isset($_POST["phoneNumber"]) &&
-        isset($_POST["email"]) &&
-        isset($_POST["nombreAdultes"]) &&
-        isset($_POST["nombreEnfants"]) &&
-        isset($_POST["dateNaissanceEnfant1"]) &&
-        isset($_POST["dateArrivee"]) &&
-        isset($_POST["dateDepart"]) &&
-        isset($_POST["message"]) &&
-        isset($_POST['g-recaptcha-response'])
-    ) {
+    if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
         // Validation du CAPTCHA
         $captchaResponse = $_POST['g-recaptcha-response'];
         $ip = $_SERVER['REMOTE_ADDR'];
@@ -67,33 +51,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
             $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
-                "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-                "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-                "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-                "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
-                "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
-                "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
-                "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
-                "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
-                "Message : " . htmlspecialchars($_POST["message"]);
+                    "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
+                    "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
+                    "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+                    "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
+                    "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+                    "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
+                    "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
+                    "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
+                    "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
+                    "Message : " . htmlspecialchars($_POST["message"]);
 
             $retour = mail("michel.hof@hotmail.fr", htmlspecialchars($_POST["objet"]), $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
+                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
                 exit();
             } else {
-                $error_message = "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+                echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
             }
         } else {
             // Le CAPTCHA est invalide, affichez un message d'erreur
-            $error_message = "CAPTCHA invalide, veuillez réessayer.";
+            echo "CAPTCHA invalide, veuillez réessayer.";
         }
-    } else {
-        // Les champs sont manquants, afficher un message d'erreur
-        $error_message = "Veuillez remplir tous les champs du formulaire.";
     }
 }
 ?>
@@ -215,8 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include("footer.php") ?>
 
-    <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
-    <script>
+    <!-- <script>
         // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
         function ajouterChampsDateNaissance() {
             const nombreEnfants = document.getElementById('nombreEnfants').value;
@@ -253,43 +233,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
     </script>
-
-    <script>
-        const formulaire = document.getElementById('formulaire');
-
-formulaire.addEventListener('submit', function() {
-  // Vérifier que tous les champs obligatoires sont remplis
-  for (const champ of document.querySelectorAll('input[required]')) {
-    if (champ.value === '') {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez remplir tous les champs obligatoires.');
-      return;
-    }
-  }
-
-  // Vérifier que les dates sont au bon format
-  for (const champ of document.querySelectorAll('input[pattern]')) {
-    // Créer une expression régulière à partir de l'attribut `pattern` du champ.
-    const regex = new RegExp(champ.getAttribute('pattern'));
-    if (!regex.test(champ.value)) {
-      // L'événement est empêché, et une alerte est affichée.
-      event.preventDefault();
-      champ.focus();
-      alert('Veuillez saisir une date valide.');
-      return;
-    }
-  }
-
-  // Le formulaire est valide, il peut être soumis.
-  formulaire.submit();
-});
-    </script>
-
-    <script>
-        
-    </script>
 </body>
 
-</html>
+</html> -->

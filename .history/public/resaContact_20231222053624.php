@@ -288,7 +288,49 @@ formulaire.addEventListener('submit', function() {
     </script>
 
     <script>
-        
+        const formulaire = document.getElementById('formulaire');
+const recaptcha = document.getElementById('g-recaptcha-response');
+
+formulaire.addEventListener('submit', function() {
+  // Obtenir la réponse du CAPTCHA.
+  const captchaResponse = recaptcha.value;
+  if (captchaResponse === '') {
+    // L'événement est empêché, et une alerte est affichée.
+    event.preventDefault();
+    alert('Veuillez valider le CAPTCHA.');
+    return;
+  }
+
+  // Vérifier la réponse du CAPTCHA.
+  // Utiliser la bibliothèque jQuery pour effectuer une requête AJAX.
+  $.ajax({
+    // L'URL du service reCAPTCHA.
+    url: 'https://www.google.com/recaptcha/api/siteverify',
+    // Les données à envoyer à la requête.
+    data: {
+      // La clé secrète reCAPTCHA.
+      secret: '6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR',
+      // La réponse du CAPTCHA.
+      response: captchaResponse
+    },
+    // La méthode de la requête.
+    method: 'POST',
+    // Le type de données attendu en réponse.
+    dataType: 'json',
+    // La fonction à exécuter en cas de succès.
+    success: function(response) {
+      // Si la réponse n'est pas valide, l'événement est empêché, et une alerte est affichée.
+      if (!response.success) {
+        event.preventDefault();
+        alert('CAPTCHA invalide, veuillez réessayer.');
+        return;
+      }
+
+      // La réponse est valide, le formulaire peut être soumis.
+      this.form.submit();
+    }.bind(this)
+  });
+});
     </script>
 </body>
 
