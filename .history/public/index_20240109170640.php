@@ -377,6 +377,236 @@
 
 <?php include("footer.php") ?>
 
+<script>
+  let nouveau = document.querySelector('#nouveau');
+  let avi = document.querySelector('#avi');
+  let auteur = document.querySelector('#auteur');
+  let dernier = 0;
+  let nombreAleatoire = 0;
+  let avis = [
+    ["Notre séjour chez Isabelle a été super ! L'hôte était très accueillant et la caravane était propre, confortable et bien situé. Nous avons vraiment apprécié notre séjour et nous recommandons vivement cet endroit !", "Carole"],
+    ["Isabelle était très attentionnée et serviable, nous donnant des conseils sur les meilleurs endroits à visiter dans le coin. Nous avons adoré notre séjour ici et nous y retournerons certainement !", "Bastien"],
+    ["Nous avons passé un excellent séjour au caravanes de la besbre! Logement confortable, l'hôte était très serviable et sympathique. Nous avons adoré l'emplacement, qui était proche du PAL. Nous recommandons vivement cet endroit.", "Pauline"],
+    ["Nous avons passé un excellent séjour au camping. Tout était parfait, de la propreté de la caravane aux équipements fournis. La communication avec l'hôte était également excellente. Nous recommandons vivement cet endroit !", "Manu"],
+    ["Nous avons été très impressionnés par la qualité du logement et l'hospitalité de l'hôte. Tout était propre et bien entretenu, et l'hôte était très sympathique et serviable. Nous le recommandons vivement.", "Marc"],
+
+  ];
+
+  // Fonction permettant de générer un nombre aléatoire
+  function genererNombreEntier(max) {
+    return Math.floor(Math.random() * Math.floor(max)); //Random donne entre 0 et 1 et floor pour arrondir au plus prêt
+  }
+
+  //Création evenement clic souris
+  nouveau.addEventListener('click', () => {
+    do {
+      nombreAleatoire = genererNombreEntier(avis.length);
+    } while (nombreAleatoire == dernier)
+
+    avi.textContent = avis[nombreAleatoire][0]; //La propriété .textContent en JavaScript retourne ou définit le contenu textuel d'un élément HTML. Par exemple, si vous avez un élément de paragraphe avec du texte à l'intérieur, vous pouvez utiliser .textContent pour récupérer ce texte ou pour le remplacer par un nouveau texte.
+    auteur.textContent = avis[nombreAleatoire][1];
+    dernier = nombreAleatoire;
+  }); //Ce code utilise un événement "click" sur un élément HTML avec l'id "nouveau". Lorsque l'événement est déclenché, le code génère un nombre aléatoire entier en utilisant la fonction "genererNombreEntier()" avec la longueur de l'array "avis". 
+
+  //Ensuite, une boucle "do while" vérifie si le nombre aléatoire généré est différent de la dernière valeur stockée dans la variable "dernier". Si les deux valeurs sont égales, le code génère un nouveau nombre aléatoire jusqu'à ce qu'il obtienne une valeur différente.
+
+  //Une fois que le code a obtenu un nombre aléatoire différent de la dernière valeur, il utilise ce nombre pour accéder à un élément spécifique de l'array "avis" et met à jour le contenu des éléments HTML avec les valeurs correspondantes en utilisant ".textContent".
+
+  //Enfin, le code stocke la valeur aléatoire générée dans la variable "dernier", afin de s'assurer que la prochaine fois que l'événement "click" sera déclenché, le code ne répétera pas l'affichage du même élément que le précédent.                                    
+</script>
+<!--End Avis Clients-->
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+  // //CREATION POPUP UNIQUEMENT EN JS 
+  // // Création de la div pour afficher l'image + position
+  // var imgDiv = document.createElement("div");
+  // imgDiv.style.position = "fixed";
+  // imgDiv.style.top = "57%";
+  // imgDiv.style.left = "50%";
+  // imgDiv.style.transform = "translate(-50%, -50%)";
+  // imgDiv.style.zIndex = "9999" //Pour afficher au dessus de tout élément
+
+
+  // // Création de l'image à afficher
+  // var img = document.createElement("img");
+  // img.src = "../images/pal50.webp";
+  // img.style.height = '450px';
+  // img.style.Width = '60 %';
+
+  // // Ajout de l'image à la div
+  // imgDiv.appendChild(img);
+
+  // // Ajout de la div au body de la page
+  // document.body.appendChild(imgDiv);
+
+  // // Affichage de l'alerte après 3 secondes
+  // setTimeout(function() {
+  //   alert("Le Pal fête ses 50 Ans !");
+
+  //   // Suppression de la div contenant l'image
+  //   document.body.removeChild(imgDiv);
+  // }, 2000);
+
+  // -------------------------------------------------------------------------------------------------------
+  //POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité 
+  // function openPopup() {
+  //   // Spécifiez l'URL de la page à ouvrir dans la popup
+  //   var popupUrl = "../images/pal50.png";
+
+  //   // Spécifiez les dimensions de la popup
+  //   var popupWidth = 270;
+  //   var popupHeight = 380;
+
+  //   // Calculez la position du centre de la fenêtre
+  //   var leftPosition = (window.screen.width - popupWidth) / 2;
+  //   var topPosition = (window.screen.height - popupHeight) / 2;
+
+  //   // Ouvrir la popup
+  //   window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
+  // }
+
+  // // Appelez la fonction pour ouvrir la popup
+  // openPopup();
+</script>
+
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-M3CJ6F224B');
+</script>
+<!-- Google tag (gtag.js) -->
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics -->
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', '32-930029-2', 'auto'); //Id du site par rapport à google analytics, bien mettre à ce format
+  ga('send', 'pageview');
+</script>
+
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  };
+  ga.l = +new Date;
+  ga('create', '32-930029-2', 'auto'); //id du site par rapport à google, toujours le mettre à ce format 
+  ga('send', 'pageview');
+</script>
+
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<!-- End Google Analytics -->
+
+<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Les Caravanes De La Besbre .",
+    "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
+    "telephone": "06 86 41 31 71"
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-69SWVM55LB');
+</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Jquery et JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+
+<!-- BOOTSTRAP JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google capcha formulaire -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+
+
 
 
   
