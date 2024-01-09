@@ -18,7 +18,7 @@
 <style>
     @media only screen and (max-width: 767px) {
       .text-center p {
-        font-size: 9px; /* Ajustez la taille de police selon vos préférences */
+        font-size: 1px; /* Ajustez la taille de police selon vos préférences */
       }
     }
   </style>

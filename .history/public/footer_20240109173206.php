@@ -49,7 +49,7 @@
     </div>
     
     <div class="text-center mb-5">
-    <p class="text-center" style="color: white;">
+    <p class="text-center text-sm" style="color: white;">
   <strong>Les Caravanes De La Besbre - <a href="https://camping.mairie-dsb.fr/" target="_blank">Camping "Les Bords De Besbre"</a> - 03 290 Dompierre Sur Besbre</strong>
 </p>
 
@@ -62,7 +62,7 @@
 <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
 
   <p class="color-weight" style="color: white;">© <span id="date"></span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/" target="_blank">Harmony Digital-Droits réservés</a>
+  <a class="text-dark text-sm" href="https://cvmichel-hoffmann.fr/" target="_blank">Harmony Digital-Droits réservés</a>
   </p>
 </div>
 <!-- FIN Copyright -->

@@ -678,6 +678,11 @@ footer{
     background: rgba(230, 122, 22, 0.883);   
 }
 
+@media (max-width: 767px) {
+    .textFooter p {
+      font-size: 5px; /* Ajustez la taille de police selon vos préférences */
+    }
+  }
 
 .copyright{
     text-align: center;

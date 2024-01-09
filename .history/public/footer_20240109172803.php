@@ -62,7 +62,7 @@
 <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
 
   <p class="color-weight" style="color: white;">© <span id="date"></span>
-  <a class="text-dark" href="https://cvmichel-hoffmann.fr/" target="_blank">Harmony Digital-Droits réservés</a>
+  <a class="text-dark text-sm" href="https://cvmichel-hoffmann.fr/" target="_blank">Harmony Digital-Droits réservés</a>
   </p>
 </div>
 <!-- FIN Copyright -->
