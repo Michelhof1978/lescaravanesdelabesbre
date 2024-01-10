@@ -1,4 +1,4 @@
-<body>    
+<
 <header>
     <nav id="mainNavigation">
       <div class="pt-2 text-center border-bottom ">

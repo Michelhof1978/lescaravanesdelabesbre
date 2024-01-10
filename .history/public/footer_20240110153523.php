@@ -40,13 +40,10 @@
 
           </a>
         <!-- Github -->
-        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="https://github.com/Michelhof1978/" target="_blank" role="button">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-        <path d="M9.742 14.742a15.978 15.978 0 0 1-5.032.814c-1.88 0-3.698-.348-5.328-1.032a1 1 0 0 0-1.168 1.622 8.003 8.003 0 0 0 5.33 1.86c2.92 0 5.535-1.26 7.354-3.261a1 1 0 1 0-1.276-1.532 6.378 6.378 0 0 1-2.682 1.454 6.4 6.4 0 0 1-2.39-.06c-1.86-.482-3.607-1.26-5.22-2.261a1 1 0 1 0-1.118 1.664c1.033.74 2.22 1.317 3.498 1.732a13.745 13.745 0 0 0 2.746.276c.314-.007.633-.014.958-.02-.005.09-.02.18-.02.273 0 4.417 2.685 8.142 6.542 9.712a1 1 0 1 0 1.066-1.705 18.042 18.042 0 0 1-5.166-1.776zM3 0a1 1 0 0 0-.844 1.54 17.883 17.883 0 0 0 3.704 4.295 18.037 18.037 0 0 0 3.216 2.049 9.05 9.05 0 0 0 2.09 1.113c.153-.385.31-.777.468-1.176a1 1 0 1 0-1.734-.92c-.126.222-.255.44-.384.653-.37.598-.75 1.182-1.125 1.746-.07.107-.142.213-.214.32a12.8 12.8 0 0 0-.397.575 12.827 12.827 0 0 0-.338.56 15.93 15.93 0 0 0-1.06 1.991 1 1 0 1 0 1.828.92c.03-.066.06-.132.088-.198a11.975 11.975 0 0 1 2.222-3.028c.41-.422.835-.828 1.269-1.225.333-.295.67-.58 1.01-.86.248-.203.496-.4.745-.592a1 1 0 0 0-.342-1.701 18.06 18.06 0 0 0-3.917-1.047A20.414 20.414 0 0 0 3 0z" />
-    </svg>
-</a>
-
-
+        <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="https://cvmichel-hoffmann.fr/" target="_blank" role="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-person" viewBox="0 0 16 16">
+            <path d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          </svg></a>
 </div>
 
     </div>
@@ -75,84 +72,86 @@
   <a href="https://www.mon-compteur.fr"><img src="https://www.mon-compteur.fr/html_c01genv2-237765-2" loading="lazy" alt="nombre de visites"></a>
 </div>
 
-  <!-- Google Tag Manager (noscript) -->
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
+ <!-- Google Tag Manager (noscript) -->
+ <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<!-- D'autres balises body... -->
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-<!-- Scripts JavaScript -->
-<!-- Jquery et JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="./js/main.js"></script>
+        ga('create', '32-930029-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
 
-<!-- BOOTSTRAP JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Les Caravanes De La Besbre .",
+            "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
+            "telephone": "06 86 41 31 71"
+        }
+    </script>
 
-<!-- Google capcha formulaire -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Les Caravanes De La Besbre",
-        "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
-        "telephone": "06 86 41 31 71"
-    }
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-69SWVM55LB');
+    </script>
+    <!-- End Google tag (gtag.js) -->
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-M3CJ6F224B');
-</script>
+    <!-- Jquery et JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
 
-<!-- Google Analytics -->
-<script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <!-- BOOTSTRAP JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
-    ga('create', '32-930029-2', 'auto');
-    ga('send', 'pageview');
-</script>
+    <!-- Google capcha formulaire -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- End Google Analytics -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
+    </script>
+    <!-- End Google Tag Manager -->
 
-<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Les Caravanes De La Besbre",
-        "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
-        "telephone": "06 86 41 31 71"
-    }
-</script>
+</body>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-69SWVM55LB');
-</script>
-<!-- End Google tag (gtag.js) -->
-
-<!-- End Google Tag Manager -->
+</html>
