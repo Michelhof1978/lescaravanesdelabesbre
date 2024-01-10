@@ -407,13 +407,13 @@
     var img = document.createElement("img");
     img.src = "../images/lePal2024.png";
     img.style.height = '400px';
-    img.style.width = '100%';
+    img.style.width = '60%';
 
     // Ajout de l'image à la div
     popupDiv.appendChild(img);
 
     // Ajout du message à la div
-    var message = document.createTextNode("");
+    var message = document.createTextNode("Le Pal a 50 Ans !");
     popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
     popupDiv.appendChild(message);
 

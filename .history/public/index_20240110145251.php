@@ -2,6 +2,28 @@
 <?php include("head.php") ?>
 <meta name="description" content="Nous vous proposons des hébergements dans un camping à Dompierre sur Besbre dans le département de l'Allier à 5 km du parc d'attractions le Pal.">
 <title>Accueil Camping Le Pal </title>
+<style>
+    /* Style de la fenêtre contextuelle */
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        text-align: center;
+        background: white;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    /* Style pour l'image dans la fenêtre contextuelle */
+    #popup img {
+        height: 450px;
+        width: 60%;
+    }
+</style>
 </head>
 
 <?php include("header.php") ?>
@@ -405,15 +427,15 @@
 
     // Création de l'image à afficher
     var img = document.createElement("img");
-    img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
+    img.src = "../images/pal50.webp";
+    img.style.height = '450px';
+    img.style.width = '60%';
 
     // Ajout de l'image à la div
     popupDiv.appendChild(img);
 
     // Ajout du message à la div
-    var message = document.createTextNode("");
+    var message = document.createTextNode("Le Pal fête ses 50 Ans !");
     popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
     popupDiv.appendChild(message);
 
@@ -423,5 +445,5 @@
     // Suppression de la div contenant l'image et le message après 3 secondes
     setTimeout(function () {
         document.body.removeChild(popupDiv);
-    }, 5000);
+    }, 3000);
 </script>

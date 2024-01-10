@@ -388,40 +388,59 @@
 
 <?php include("footer.php") ?>
 
-<!-- Affichage Popup en JS-->
 <script>
-    // Création de la div pour afficher l'image + message + position
-    var popupDiv = document.createElement("div");
-    popupDiv.style.position = "fixed";
-    popupDiv.style.top = "50%";
-    popupDiv.style.left = "50%";
-    popupDiv.style.transform = "translate(-50%, -50%)";
-    popupDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
-    popupDiv.style.textAlign = "center";
-    popupDiv.style.background = "white";
-    popupDiv.style.padding = "20px";
-    popupDiv.style.border = "1px solid #ccc";
-    popupDiv.style.borderRadius = "8px";
+  // CREATION POPUP UNIQUEMENT EN JS 
+  // Création de la div pour afficher l'image + position
+  var imgDiv = document.createElement("div");
+  imgDiv.style.position = "fixed";
+  imgDiv.style.top = "57%";
+  imgDiv.style.left = "50%";
+  imgDiv.style.transform = "translate(-50%, -50%)";
+  imgDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
 
-    // Création de l'image à afficher
-    var img = document.createElement("img");
-    img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
+  // Création de l'image à afficher
+  var img = document.createElement("img");
+  img.src = "../images/pal50.webp";
+  img.style.height = '450px';
+  img.style.width = '60%'; // Correction ici, "width" au lieu de "Width"
 
-    // Ajout de l'image à la div
-    popupDiv.appendChild(img);
+  // Ajout de l'image à la div
+  imgDiv.appendChild(img);
 
-    // Ajout du message à la div
-    var message = document.createTextNode("");
-    popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
-    popupDiv.appendChild(message);
+  // Ajout de la div au body de la page
+  document.body.appendChild(imgDiv);
 
-    // Ajout de la div au body de la page
-    document.body.appendChild(popupDiv);
+  // Affichage de l'alerte après 3 secondes
+  setTimeout(function () {
+    alert("Le Pal fête ses 50 Ans!");
 
-    // Suppression de la div contenant l'image et le message après 3 secondes
-    setTimeout(function () {
-        document.body.removeChild(popupDiv);
-    }, 5000);
+    // Suppression de la div contenant l'image
+    document.body.removeChild(imgDiv);
+  }, 2000);
+
+  // POPUP = Problème de blocage des éditeurs modernes pour raison de sécurité
+  function openPopup() {
+    // Spécifiez l'URL de la page à ouvrir dans la popup
+    var popupUrl = "../images/pal50.png";
+
+    // Spécifiez les dimensions de la popup
+    var popupWidth = 270;
+    var popupHeight = 380;
+
+    // Calculez la position du centre de la fenêtre
+    var leftPosition = (window.screen.width - popupWidth) / 2;
+    var topPosition = (window.screen.height - popupHeight) / 2;
+
+    // Ouvrir la popup
+    window.open(popupUrl, "Le Pal fête ses 50 ans", "width=" + popupWidth + ",height=" + popupHeight + ",left=" + leftPosition + ",top=" + topPosition);
+  }
+
+  // Appelez la fonction pour ouvrir la popup
+  openPopup();
 </script>
+
+
+
+
+
+  

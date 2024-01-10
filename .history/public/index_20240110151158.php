@@ -2,6 +2,18 @@
 <?php include("head.php") ?>
 <meta name="description" content="Nous vous proposons des hébergements dans un camping à Dompierre sur Besbre dans le département de l'Allier à 5 km du parc d'attractions le Pal.">
 <title>Accueil Camping Le Pal </title>
+<style>
+        /* Style pour centrer le popup */
+        #popup {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <?php include("header.php") ?>
@@ -389,39 +401,21 @@
 <?php include("footer.php") ?>
 
 <!-- Affichage Popup en JS-->
+<div id="popup">
+    <img src="url_de_votre_image.jpg" alt="Image">
+    <button onclick="fermerPopup()">Fermer</button>
+</div>
+
 <script>
-    // Création de la div pour afficher l'image + message + position
-    var popupDiv = document.createElement("div");
-    popupDiv.style.position = "fixed";
-    popupDiv.style.top = "50%";
-    popupDiv.style.left = "50%";
-    popupDiv.style.transform = "translate(-50%, -50%)";
-    popupDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
-    popupDiv.style.textAlign = "center";
-    popupDiv.style.background = "white";
-    popupDiv.style.padding = "20px";
-    popupDiv.style.border = "1px solid #ccc";
-    popupDiv.style.borderRadius = "8px";
+    // Fonction pour afficher le popup
+    function afficherPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+    }
 
-    // Création de l'image à afficher
-    var img = document.createElement("img");
-    img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
-
-    // Ajout de l'image à la div
-    popupDiv.appendChild(img);
-
-    // Ajout du message à la div
-    var message = document.createTextNode("");
-    popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
-    popupDiv.appendChild(message);
-
-    // Ajout de la div au body de la page
-    document.body.appendChild(popupDiv);
-
-    // Suppression de la div contenant l'image et le message après 3 secondes
-    setTimeout(function () {
-        document.body.removeChild(popupDiv);
-    }, 5000);
+    // Fonction pour fermer le popup
+    function fermerPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
 </script>

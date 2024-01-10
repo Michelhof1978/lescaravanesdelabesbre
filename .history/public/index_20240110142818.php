@@ -388,40 +388,64 @@
 
 <?php include("footer.php") ?>
 
-<!-- Affichage Popup en JS-->
+//
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-rFjS16ZW9n1NBZl4U5+tP5js2oiHJ7rQpWypZOZbmyUqL8qgADyh3Ae5XFbb5l9S" crossorigin="anonymous"></script>
 <script>
-    // Création de la div pour afficher l'image + message + position
-    var popupDiv = document.createElement("div");
-    popupDiv.style.position = "fixed";
-    popupDiv.style.top = "50%";
-    popupDiv.style.left = "50%";
-    popupDiv.style.transform = "translate(-50%, -50%)";
-    popupDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
-    popupDiv.style.textAlign = "center";
-    popupDiv.style.background = "white";
-    popupDiv.style.padding = "20px";
-    popupDiv.style.border = "1px solid #ccc";
-    popupDiv.style.borderRadius = "8px";
+  // CREATION POPUP UNIQUEMENT EN JS 
+  // Création de la div pour afficher l'image + position
+  var imgDiv = document.createElement("div");
+  imgDiv.style.position = "fixed";
+  imgDiv.style.top = "50%";
+  imgDiv.style.left = "50%";
+  imgDiv.style.transform = "translate(-50%, -50%)";
+  imgDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
 
-    // Création de l'image à afficher
-    var img = document.createElement("img");
-    img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
+  // Création de l'image à afficher
+  var img = document.createElement("img");
+  img.src = "../images/pal50.webp";
+  img.style.height = '450px';
+  img.style.width = '60%'; // Correction ici, "width" au lieu de "Width"
 
-    // Ajout de l'image à la div
-    popupDiv.appendChild(img);
+  // Ajout de l'image à la div
+  imgDiv.appendChild(img);
 
-    // Ajout du message à la div
-    var message = document.createTextNode("");
-    popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
-    popupDiv.appendChild(message);
+  // Ajout de la div au body de la page
+  document.body.appendChild(imgDiv);
 
-    // Ajout de la div au body de la page
-    document.body.appendChild(popupDiv);
+  // Affichage de l'alerte après 3 secondes
+  setTimeout(function () {
+    // Suppression de la div contenant l'image
+    document.body.removeChild(imgDiv);
 
-    // Suppression de la div contenant l'image et le message après 3 secondes
-    setTimeout(function () {
-        document.body.removeChild(popupDiv);
-    }, 5000);
+    // Utilisation de la boîte modale de Bootstrap
+    var modal = new bootstrap.Modal(document.createElement('div'), {
+      backdrop: 'static',
+      keyboard: false
+    });
+
+    // Contenu de la boîte modale
+    modal._element.innerHTML = `
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Le Pal fête ses 50 Ans!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../images/lePal2024.png" alt="Le Pal fête ses 50 ans" style="max-width: 100%;">
+          </div>
+        </div>
+      </div>
+    `;
+
+    // Afficher la boîte modale
+    modal.show();
+  }, 2000);
 </script>
+
+
+
+
+
+
+  

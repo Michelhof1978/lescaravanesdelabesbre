@@ -390,38 +390,32 @@
 
 <!-- Affichage Popup en JS-->
 <script>
-    // Création de la div pour afficher l'image + message + position
-    var popupDiv = document.createElement("div");
-    popupDiv.style.position = "fixed";
-    popupDiv.style.top = "50%";
-    popupDiv.style.left = "50%";
-    popupDiv.style.transform = "translate(-50%, -50%)";
-    popupDiv.style.zIndex = "9999"; // Pour afficher au-dessus de tout élément
-    popupDiv.style.textAlign = "center";
-    popupDiv.style.background = "white";
-    popupDiv.style.padding = "20px";
-    popupDiv.style.border = "1px solid #ccc";
-    popupDiv.style.borderRadius = "8px";
+    // Création de la div pour afficher l'image + position
+    var imgDiv = document.createElement("div");
+    imgDiv.style.position = "fixed";
+    imgDiv.style.top = "50%";
+    imgDiv.style.left = "50%";
+    imgDiv.style.transform = "translate(-50%, -50%)";
+    imgDiv.style.zIndex = "9999"; //Pour afficher au-dessus de tout élément
 
     // Création de l'image à afficher
     var img = document.createElement("img");
-    img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
+    img.src = "../images/pal50.webp";
+    img.style.height = '450px';
+    img.style.width = '60%';
 
     // Ajout de l'image à la div
-    popupDiv.appendChild(img);
+    imgDiv.appendChild(img);
 
     // Ajout du message à la div
-    var message = document.createTextNode("");
-    popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
-    popupDiv.appendChild(message);
+    var message = document.createTextNode("Le Pal fête ses 50 Ans !");
+    imgDiv.appendChild(message);
 
     // Ajout de la div au body de la page
-    document.body.appendChild(popupDiv);
+    document.body.appendChild(imgDiv);
 
     // Suppression de la div contenant l'image et le message après 3 secondes
     setTimeout(function () {
-        document.body.removeChild(popupDiv);
-    }, 5000);
+        document.body.removeChild(imgDiv);
+    }, 3000);
 </script>

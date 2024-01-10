@@ -406,8 +406,8 @@
     // Création de l'image à afficher
     var img = document.createElement("img");
     img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
-    img.style.width = '100%';
+    img.style.height = '350px';
+    img.style.width = '1000%';
 
     // Ajout de l'image à la div
     popupDiv.appendChild(img);

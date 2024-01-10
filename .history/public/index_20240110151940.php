@@ -406,7 +406,7 @@
     // Création de l'image à afficher
     var img = document.createElement("img");
     img.src = "../images/lePal2024.png";
-    img.style.height = '400px';
+    img.style.height = 'px';
     img.style.width = '100%';
 
     // Ajout de l'image à la div
