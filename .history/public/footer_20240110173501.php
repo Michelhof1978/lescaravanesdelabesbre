@@ -84,14 +84,15 @@
 <!-- D'autres balises body... -->
 
 <!-- Scripts JavaScript -->
-<!-- jQuery et JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="./js/main.js"></script>
+<!-- Jquery et JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" async></script>
+<script src="./js/main.js" async></script>
+
 
 <!-- BOOTSTRAP JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
-<!-- Google reCAPTCHA formulaire -->
+<!-- Google capcha formulaire -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
@@ -104,25 +105,6 @@
         "telephone": "06 86 41 31 71"
     }
 </script>
-<!-- FIN Scripts JavaScript -->
-
-<!-- Google Tag Manager -->
-<script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-59DVV3P');
-</script>
-<!-- End Google Tag Manager -->
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -137,7 +119,7 @@
 <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
+        i[r] = i[r] || function() {
             (i[r].q = i[r].q || []).push(arguments)
         }, i[r].l = 1 * new Date();
         a = s.createElement(o),
@@ -147,7 +129,31 @@
         m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-32-930029-2', 'auto');
+    ga('create', '32-930029-2', 'auto');
     ga('send', 'pageview');
 </script>
+
 <!-- End Google Analytics -->
+
+<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Les Caravanes De La Besbre",
+        "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
+        "telephone": "06 86 41 31 71"
+    }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-69SWVM55LB"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-69SWVM55LB');
+</script>
+<!-- End Google tag (gtag.js) -->
+
+<!-- End Google Tag Manager -->

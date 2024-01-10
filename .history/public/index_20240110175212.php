@@ -18,6 +18,8 @@
             <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                     <img src="../images/caravane1.webp" alt="Caravane BIG - Hébergement pour 4 personnes" loading="lazy" class="img-fluid">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
                 </div>
           <div class="card-body">
             <h5 class="card-title">Caravane BIG </h5>
@@ -40,6 +42,9 @@
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             <img src="../images/caravane2.webp" alt="Hébergements le pal" loading="lazy" class="img-fluid">
+            <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810214_%2BUv5dalb9N5%2FDer5" target="_blank">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
           </div>
           <div class="card-body">
             <h5 class="card-title">Caravane FLO</h5>
@@ -77,7 +82,7 @@
 
             <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <br><br>
             <p><strong>OU</strong></p>
-            <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
+            <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN"  class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
 
           </div>
         </div>

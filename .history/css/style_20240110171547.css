@@ -10,7 +10,6 @@ body {
     padding: 20px;
 }
 
-
 html{
 	font-size: 14px;
 	margin: 0;
@@ -18,14 +17,6 @@ html{
 	
 }
 	
-/*body*/
-body {
-	font-family: 'Roboto Slab', serif;
-    background-color: rgba(245, 245, 245, 0.767);
-    margin: 0;
-	padding: 20px;
-
-  }
   body:before, body:after {
 	content: "";
 	position: relative;

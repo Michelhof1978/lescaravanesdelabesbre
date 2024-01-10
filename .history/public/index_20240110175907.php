@@ -52,7 +52,7 @@
             </p>
             <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <br><br>
             <p><strong>OU</strong></p>
-            <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
+            <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810303_FnHo0G0d1awJpqSg" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@
 
             <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <br><br>
             <p><strong>OU</strong></p>
-            <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
+            <a href="https://www.airbnb.fr/rooms/33922569?guests=1&adults=1&s=13&unique_share_id=dedc2c3e-e938-44ad-9f3d-ce705e5c250f&source_impression_id=p3_1673797473_hQe7qv%2BRa82qaxPN" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
 
           </div>
         </div>

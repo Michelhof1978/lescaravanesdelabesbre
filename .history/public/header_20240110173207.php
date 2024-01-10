@@ -60,8 +60,8 @@
   </nav>
  
 
-  <div class="container-fluid text-center m-0">
-      <img src="../images/banner3.webp" loading="lazy" alt="Banner les caravanes de la besbre" class="banner">
-    </div>
+  <div class="container-fluid text-center m-0 ">
+    <img src="../images/banner3.webp" loading="lazy" alt="Banner les caravanes de la besbre" class="banner ">
+  </div>
 
   </header>

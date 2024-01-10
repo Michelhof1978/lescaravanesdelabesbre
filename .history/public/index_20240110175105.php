@@ -18,6 +18,8 @@
             <div class="card">
                 <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                     <img src="../images/caravane1.webp" alt="Caravane BIG - Hébergement pour 4 personnes" loading="lazy" class="img-fluid">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
                 </div>
           <div class="card-body">
             <h5 class="card-title">Caravane BIG </h5>
@@ -40,6 +42,9 @@
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             <img src="../images/caravane2.webp" alt="Hébergements le pal" loading="lazy" class="img-fluid">
+            <a href="https://www.airbnb.fr/rooms/34376099?check_in=2023-07-07&check_out=2023-07-09&guests=1&adults=2&s=13&unique_share_id=0e8b24e2-1835-49a1-a4a3-18082f186b0a&source_impression_id=p3_1673810214_%2BUv5dalb9N5%2FDer5" target="_blank">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+            </a>
           </div>
           <div class="card-body">
             <h5 class="card-title">Caravane FLO</h5>
