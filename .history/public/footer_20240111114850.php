@@ -165,13 +165,4 @@
     }
 </script>
 
-<script>
-  function afficherDate() {
-  // Récupérer la date et l'année actuelles
-  var date = new Date().getFullYear();
-  // Mettre à jour le contenu de l'élément avec la date actuelle
-  document.getElementById('date').textContent = date;
-}
-  // Appeler la fonction afficherDate toutes les secondes
-  setInterval(afficherDate, 1000);
-</script>
+
