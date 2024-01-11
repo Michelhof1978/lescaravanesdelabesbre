@@ -73,7 +73,7 @@ define('VICHY_URL', 'https://www.ville-vichy.fr/ott');
             </li>
 
             <li class="nav-item">
-              <a class="nav-link " href="formulaireDeContact.php">Contact</a>
+              <a class="nav-link " href="formulaire">Contact</a>
             </li>
 
           </ul>

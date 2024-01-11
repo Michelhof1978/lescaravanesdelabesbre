@@ -65,12 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Message : " . htmlspecialchars($_POST["message"]);
                
                 $object = "Nouvelle reservation";
-                //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                // $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactResa.php");</script>';
+                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
                 exit();
             } else {
                 $error_message = "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -86,9 +86,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+
     
  
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
+<!-- HTML -->
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
 <form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
 
@@ -136,47 +138,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'adultes.
-                        </div>
-                    </div>
-
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'enfants.
-                        </div>
-                    </div>
-
-                    <div id="containerDatesNaissance" class="mb-4">
-                        <h5 class="form-label round">Informations sur les enfants :</h5>
-                        <div class="row">
-                            <div class="col">
-                                <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
-                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="dateArrivee">Date d'arrivée :</label>
-                        <input name="dateArrivee" type="date" id="dateArrivee" class="form-control" required>
-                        <div class="invalid-feedback">
-                            Veuillez sélectionner la date d'arrivée.
-                        </div>
-                    </div>
-
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="dateDepart">Date de départ :</label>
-                        <input name="dateDepart" type="date" id="dateDepart" class="form-control" required>
-                        <div class="invalid-feedback">
-                            Veuillez sélectionner la date de départ.
-                        </div>
-                    </div>
 
                     <div class="form-floating ">
                         <textarea name="message" class="form-control " id="message" required></textarea>
@@ -206,6 +167,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </fieldset>
     </form>
+
 
 
     <?php include("footer.php") ?>

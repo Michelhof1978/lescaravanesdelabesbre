@@ -5,20 +5,25 @@
 
 <?php include("header.php") ?>
 
-<section class="confirmation mb-5">
 
-  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>MESSAGE ENVOYE</strong></h4>
-  
+<section class="confirmation">
+  <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>MERCI</strong></h4>
+
   <div class="text-center">
+
+    <img src="./images/logo.png" alt="Le Pal" loading="lazy" class="img-fluid  text-center w-25" />
+
+
     <div class="lead text-success display-4 text-center bg-light rounded shadow p-4 pb-5 bg-white rounded ms-1 me-1 mb-5">
-    <p>Nous vous remercions sincèrement d'avoir choisi Les Caravanes De La Besbre pour votre prochaine réservation.<br>
-        Nous vous confirmons qu'elle est en cours de traitement.
+      <p>Nous vous remercions sincèrement d'avoir choisi Les Caravanes De La Besbre pour votre prochaine réservation.<br>
+        Nous avons bien reçu votre demande et nous vous confirmons qu'elle est en cours de traitement.
       </p>
     </div>
 
   </div>
+</section>
 
-  </section>
+
 
   <?php include("footer.php") ?>
 

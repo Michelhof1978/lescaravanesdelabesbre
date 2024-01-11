@@ -39,7 +39,9 @@ $secretKey = $config['recaptcha_secret_key'];
 
                  $object = "Renseignements";
                  $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-             if 
+                 $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+
+                 if 
             ($retour) {
                  // Redirection vers une page de confirmation après la soumission du formulaire
                  echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
@@ -58,7 +60,7 @@ $secretKey = $config['recaptcha_secret_key'];
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
-    <form class="needs-validation" id="formulaire" novalidate action="#" method="POST" onsubmit="return validateForm();">
+<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
         <fieldset class="mb-5 ms-2 me-2">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6">

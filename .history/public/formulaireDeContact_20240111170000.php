@@ -22,11 +22,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         isset($_POST["lastName"]) &&
         isset($_POST["phoneNumber"]) &&
         isset($_POST["email"]) &&
-        isset($_POST["nombreAdultes"]) &&
-        isset($_POST["nombreEnfants"]) &&
-        isset($_POST["dateNaissanceEnfant1"]) &&
-        isset($_POST["dateArrivee"]) &&
-        isset($_POST["dateDepart"]) &&
         isset($_POST["message"]) &&
         isset($_POST['g-recaptcha-response'])
     ) {
@@ -57,20 +52,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
-                "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
-                "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
-                "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
-                "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
                
-                $object = "Nouvelle reservation";
-                //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $object = "Vous avez un nouveau Message d'un client";
+                //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactResa.php");</script>';
+                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
                 exit();
             } else {
                 $error_message = "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -88,7 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     
  
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
+<!-- HTML -->
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
 <form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
 
@@ -206,6 +197,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </fieldset>
     </form>
+
 
 
     <?php include("footer.php") ?>

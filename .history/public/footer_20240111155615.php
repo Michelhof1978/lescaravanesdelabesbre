@@ -176,8 +176,6 @@
   setInterval(afficherDate, 1000);
 </script>
 
-
-<!-- FORMULAIRE DE CONTACT + RESA -->
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
 <!-- //restriction champs formulaire -->
 <script>  
@@ -274,30 +272,4 @@ function ajouterChampsDateNaissance() {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
-</script>
-
-<script>
-    // function validateForm() {
-
-
-    //     // Validation du RGPD
-    //     let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-    //     let rgpdError = document.getElementById('rgpdError');
-
-    //     if (!rgpdCheckbox.checked) {
-    //         rgpdError.style.display = 'block'; // Afficher le message d'erreur
-    //         return false;
-    //     } else {
-    //         rgpdError.style.display = 'none'; // Masquer le message d'erreur si la case est cochée
-    //     }
-
-    //     // Validation du reCAPTCHA
-    //     let recaptchaResponse = grecaptcha.getResponse();
-    //     if (recaptchaResponse.length == 0) {
-    //         alert('Veuillez cocher le reCAPTCHA.');
-    //         return false;
-    //     }
-
-    //     return true;
-    // }
 </script>
