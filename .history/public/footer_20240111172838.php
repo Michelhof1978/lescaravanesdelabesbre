@@ -181,30 +181,31 @@
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
 <!-- //restriction champs formulaire -->
 <script>  
- function validateForm() {
-        // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+function validateForm() {
+    // Validation de l'adresse e-mail
+    let emailInput = document.getElementById('email');
+    let emailValue = emailInput.value.trim();
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
-            return false;
-        }
+    if (!emailRegex.test(emailValue)) {
+        alert('Veuillez saisir une adresse email valide.');
+        emailInput.focus();
+        return false;
+    }
 
-        // Validation du numéro de téléphone
+    // Validation du numéro de téléphone
+    function validateForm() {
         var phoneNumberInput = document.getElementById("phoneNumber");
         var phoneNumberValue = phoneNumberInput.value;
 
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        var phoneRegex = /^[0-9]+$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
+        // Vérifier si la valeur du numéro de téléphone est un nombre
+        if (isNaN(phoneNumberValue)) {
             alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
             return false;
         }
 
+        return true;
+    }
 
     // Validation des dates d'arrivée et de départ
     let dateArriveeInput = document.getElementById('dateArrivee');

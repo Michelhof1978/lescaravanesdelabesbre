@@ -177,33 +177,39 @@
 </script>
 
 
-<!-- FORMULAIRE DE CONTACT + FORMULAIRE RESA -->
+<!-- FORMULAIRE DE CONTACT + RESA -->
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
 <!-- //restriction champs formulaire -->
 <script>  
- function validateForm() {
-        // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+function validateForm() {
+    // Validation de l'adresse e-mail
+    let emailInput = document.getElementById('email');
+    let emailValue = emailInput.value.trim();
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
-            return false;
-        }
+    if (!emailRegex.test(emailValue)) {
+        alert('Veuillez saisir une adresse email valide.');
+        emailInput.focus();
+        return false;
+    }
 
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById("phoneNumber");
-        var phoneNumberValue = phoneNumberInput.value;
+    // Validation du numéro de téléphone
+   // Supposons que 'form' est votre formulaire
+let form = document.getElementById('yourFormId');
 
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        var phoneRegex = /^[0-9]+$/;
+form.addEventListener('submit', function(event) {
+    // Validation du numéro de téléphone
+    let phoneNumberInput = document.getElementById('phoneNumber');
+    let phoneNumberValue = phoneNumberInput.value.trim();
+    let phoneRegex = /^[0-9]{10,15}$/;
 
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-            return false;
-        }
+    if (!phoneRegex.test(phoneNumberValue)) {
+        alert('Veuillez saisir un numéro de téléphone valide (au moins 10 chiffres, chiffres uniquement).');
+        phoneNumberInput.focus();
+        event.preventDefault(); // Empêche la soumission du formulaire
+        return false;
+    }
+});
 
 
     // Validation des dates d'arrivée et de départ
