@@ -165,7 +165,6 @@
     }
 </script>
 
-<!-- DATE COPYRITH FOOTER -->
 <script>
   function afficherDate() {
   // Récupérer la date et l'année actuelles
@@ -183,29 +182,28 @@
 <!-- //restriction champs formulaire -->
 <script>  
  function validateForm() {
-        // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // Validation de l'adresse e-mail
+    let emailInput = document.getElementById('email');
+    let emailValue = emailInput.value.trim();
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
-            return false;
-        }
+    if (!emailRegex.test(emailValue)) {
+        alert('Veuillez saisir une adresse email valide.');
+        emailInput.focus();
+        return false;
+    }
 
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById("phoneNumber");
-        var phoneNumberValue = phoneNumberInput.value;
+    // Validation du numéro de téléphone
+    let phoneNumberInput = document.getElementById("phoneNumber");
+    let phoneNumberValue = phoneNumberInput.value;
 
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        var phoneRegex = /^[0-9]+$/;
+    // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+    let phoneRegex = /^[0-9]+$/;
 
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-            return false;
-        }
-
+    if (!phoneRegex.test(phoneNumberValue)) {
+        alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+        return false;
+    }
 
     // Validation des dates d'arrivée et de départ
     let dateArriveeInput = document.getElementById('dateArrivee');
@@ -232,15 +230,16 @@
         return false;
     }
 
-    // Validation du reCAPTCHA
-    let recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length == 0) {
+     // Validation du reCAPTCHA
+     let recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length === 0) {
         alert('Veuillez cocher le reCAPTCHA.');
         return false;
     }
 
     return true;
 }
+
 
 // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
 function ajouterChampsDateNaissance() {
@@ -279,47 +278,3 @@ function ajouterChampsDateNaissance() {
         }
 </script>
 
-<!-- FORMULAIRE DE CONTACT -->
-<script>
-function validateContactForm() {
-        // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
-            return false;
-        }
-
-        // Validation du numéro de téléphone
-        var phoneNumberInput = document.getElementById("phoneNumber");
-        var phoneNumberValue = phoneNumberInput.value;
-
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        var phoneRegex = /^[0-9]+$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-            return false;
-        }
-
-    // Validation du RGPD
-    let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-    if (!rgpdCheckbox.checked) {
-        alert('Vous devez accepter la politique de confidentialité.');
-        rgpdCheckbox.focus();
-        return false;
-    }
-
-    // Validation du reCAPTCHA
-    let recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length == 0) {
-        alert('Veuillez cocher le reCAPTCHA.');
-        return false;
-    }
-
-    return true;
-}
-</script>

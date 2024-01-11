@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
                
-                $object = "Demande de renseignements";
+                $object = "Nouvelle reservation";
                 //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
                 $retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
@@ -78,9 +78,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     
  
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
-<form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
+<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">

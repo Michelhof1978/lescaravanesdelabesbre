@@ -305,6 +305,8 @@ function validateContactForm() {
             return false;
         }
 
+
+
     // Validation du RGPD
     let rgpdCheckbox = document.getElementById('rgpdCheckbox');
     if (!rgpdCheckbox.checked) {

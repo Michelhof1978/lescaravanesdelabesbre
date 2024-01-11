@@ -1,6 +1,6 @@
 <?php include("head.php") ?>
     <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
-    <title>Formulaire de Contact - Hébergement Le Pal</title>
+    <title>Réservation hébergements - Le Pal</title>
 </head>
 
 <?php include("header.php") ?>
@@ -47,15 +47,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Demande de renseignements :\n" .
+            $message = "Vous avez un nouveau message :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
                
-                $object = "Demande de renseignements";
-                //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $object = "Nouveau Message";
+               // $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
                 $retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
@@ -76,11 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-    
- 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
+<!-- HTML -->
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
-<form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
+<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
@@ -126,6 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
+
                     <div class="form-floating ">
                         <textarea name="message" class="form-control " id="message" required></textarea>
                         <label for="message">Message</label>
@@ -156,7 +156,119 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
 
+
     <?php include("footer.php") ?>
+    <!-- FORMULAIRE DE CONTACT + FORMULAIRE RESA -->
+<!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
+<!-- //restriction champs formulaire -->
+<script>  
+ function validateForm() {
+    // Validation de l'adresse e-mail
+    let emailInput = document.getElementById('email');
+    let emailValue = emailInput.value.trim();
+    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (!emailRegex.test(emailValue)) {
+        alert('Veuillez saisir une adresse email valide.');
+        emailInput.focus();
+        return false;
+    }
+
+    // Validation du numéro de téléphone
+    let phoneNumberInput = document.getElementById("phoneNumber");
+    let phoneNumberValue = phoneNumberInput.value;
+
+    // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+    let phoneRegex = /^[0-9]+$/;
+
+    if (!phoneRegex.test(phoneNumberValue)) {
+        alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+        return false;
+    }
+
+    // Validation des dates d'arrivée et de départ
+    let dateArriveeInput = document.getElementById('dateArrivee');
+    let dateDepartInput = document.getElementById('dateDepart');
+    let dateArriveeValue = dateArriveeInput.value.trim();
+    let dateDepartValue = dateDepartInput.value.trim();
+
+    if (dateArriveeValue === '' || dateDepartValue === '') {
+        alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
+        return false;
+    }
+
+    if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
+        alert('La date de départ doit être ultérieure à la date d\'arrivée.');
+        dateDepartInput.focus();
+        return false;
+    }
+
+    // Validation du RGPD
+    let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+    if (!rgpdCheckbox.checked) {
+        alert('Vous devez accepter la politique de confidentialité.');
+        rgpdCheckbox.focus();
+        return false;
+    }
+
+    // Validation du reCAPTCHA
+    let recaptchaResponse = grecaptcha.getResponse();
+    if (recaptchaResponse.length == 0) {
+        alert('Veuillez cocher le reCAPTCHA.');
+        return false;
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+        if (!validateForm()) {
+            e.preventDefault();
+        }
+    });
+});
+
+
+    return true;
+}
+
+
+// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
+function ajouterChampsDateNaissance() {
+            const nombreEnfants = document.getElementById('nombreEnfants').value;
+            const containerDatesNaissance = document.getElementById('containerDatesNaissance');
+
+            // Supprime les champs de date de naissance existants
+            containerDatesNaissance.innerHTML = '';
+
+            // Ajoute les nouveaux champs en fonction du nombre d'enfants
+            for (let i = 1; i <= nombreEnfants; i++) {
+                const divRow = document.createElement('div');
+                divRow.className = 'row mb-4';
+
+                const divCol = document.createElement('div');
+                divCol.className = 'col';
+
+                const label = document.createElement('label');
+                label.className = 'form-label';
+                label.setAttribute('for', 'dateNaissanceEnfant' + i);
+                label.innerText = 'Date de naissance enfant ' + i + ' :';
+
+                const inputDate = document.createElement('input');
+                inputDate.name = 'dateNaissanceEnfant' + i;
+                inputDate.type = 'date';
+                inputDate.id = 'dateNaissanceEnfant' + i;
+                inputDate.className = 'form-control';
+                inputDate.required = true;
+
+                divCol.appendChild(label);
+                divCol.appendChild(inputDate);
+                divRow.appendChild(divCol);
+
+                containerDatesNaissance.appendChild(divRow);
+            }
+        }
+</script>
+
+
 
 </body>
 

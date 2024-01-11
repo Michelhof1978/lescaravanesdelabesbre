@@ -305,6 +305,24 @@ function validateContactForm() {
             return false;
         }
 
+
+    // Validation des dates d'arrivée et de départ
+    let dateArriveeInput = document.getElementById('dateArrivee');
+    let dateDepartInput = document.getElementById('dateDepart');
+    let dateArriveeValue = dateArriveeInput.value.trim();
+    let dateDepartValue = dateDepartInput.value.trim();
+
+    if (dateArriveeValue === '' || dateDepartValue === '') {
+        alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
+        return false;
+    }
+
+    if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
+        alert('La date de départ doit être ultérieure à la date d\'arrivée.');
+        dateDepartInput.focus();
+        return false;
+    }
+
     // Validation du RGPD
     let rgpdCheckbox = document.getElementById('rgpdCheckbox');
     if (!rgpdCheckbox.checked) {

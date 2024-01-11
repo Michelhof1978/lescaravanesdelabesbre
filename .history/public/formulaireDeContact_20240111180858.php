@@ -1,6 +1,6 @@
 <?php include("head.php") ?>
     <meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
-    <title>Formulaire de Contact - Hébergement Le Pal</title>
+    <title>Réservation hébergements - Le Pal</title>
 </head>
 
 <?php include("header.php") ?>
@@ -47,15 +47,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            $message = "Demande de renseignements :\n" .
+            $message = "Vous avez un nouveau message :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                 "Message : " . htmlspecialchars($_POST["message"]);
                
-                $object = "Demande de renseignements";
-                //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                $object = "Nouveau Message";
+               // $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
                 $retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
@@ -76,11 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-    
- 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
+<!-- HTML -->
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
-<form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
+<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
@@ -126,6 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
+
                     <div class="form-floating ">
                         <textarea name="message" class="form-control " id="message" required></textarea>
                         <label for="message">Message</label>
@@ -156,7 +156,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
 
+
     <?php include("footer.php") ?>
+    
 
 </body>
 
