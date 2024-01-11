@@ -1,3 +1,5 @@
+
+
 <?php
 // Clé privée reCAPTCHA 
 $config = include('./config/config.php');
@@ -5,63 +7,64 @@ $config = include('./config/config.php');
 // Utiliser la clé secrète reCAPTCHA
 $secretKey = $config['recaptcha_secret_key'];
 
- if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-     if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
-         // Validation du CAPTCHA
-         $captchaResponse = $_POST['g-recaptcha-response'];
-         $ip = $_SERVER['REMOTE_ADDR'];
-         $url = 'https://www.google.com/recaptcha/api/siteverify';
-         $data = array(
-             'secret' => $secretKey,
-             'response' => $captchaResponse,
-             'remoteip' => $ip
-         );
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST["message"]) && isset($_POST['g-recaptcha-response'])) {
+        // Validation du CAPTCHA
+        $captchaResponse = $_POST['g-recaptcha-response'];
+        $ip = $_SERVER['REMOTE_ADDR'];
+        $url = 'https://www.google.com/recaptcha/api/siteverify';
+        $data = array(
+            'secret' => $secretKey,
+            'response' => $captchaResponse,
+            'remoteip' => $ip
+        );
         $options = array(
             'http' => array(
-                 'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                 'method' => 'POST',
-                 'content' => http_build_query($data)
-             )
-         );
-         $context = stream_context_create($options);
-         $result = file_get_contents($url, false, $context);
-         $response = json_decode($result, true);
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method' => 'POST',
+                'content' => http_build_query($data)
+            )
+        );
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, false, $context);
+        $response = json_decode($result, true);
 
-         if ($response['success']) {
+        if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-             $message = "Message envoyé de :\n" .
-                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                 "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
-                 "Message : " . htmlspecialchars($_POST["message"]);
+            $message = "Message envoyé de :\n" .
+                "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
+                "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
+                "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+                "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
+                // "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
+                "Message : " . htmlspecialchars($_POST["message"]);
 
-                 $object = "Renseignements";
-                 $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-             if 
+                $object = "Renseignements";
+                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            if 
             ($retour) {
-                 // Redirection vers une page de confirmation après la soumission du formulaire
-                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
-                 exit();
-             } else {
-                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-             }
-         } else {
-             // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+                // Redirection vers une page de confirmation après la soumission du formulaire
+                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
+                exit();
+            } else {
+                echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+            }
+        } else {
+            // Le CAPTCHA est invalide, affichez un message d'erreur
+            echo "CAPTCHA invalide, veuillez réessayer.";
+        }
+    }
+}
 ?>
 
 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>NOUS CONTACTER</strong></h4>
 
-    <form class="needs-validation" id="formulaire" novalidate action="#" method="POST" onsubmit="return validateForm();">
-        <fieldset class="mb-5 ms-2 me-2">
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
+<form class="needs-validation" id="formulaire" novalidate action="#" method="POST">
+    <fieldset class="mb-5 ms-2 me-2">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
 
                 <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row mb-4">
@@ -125,15 +128,15 @@ $secretKey = $config['recaptcha_secret_key'];
                 </div>
 
                   <!-- Case à cocher RGPD -->
-                  <div class="form-check mb-4 mt-3">
-                        <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox" required>
-                        <label class="form-check-label" for="rgpdCheckbox">
-                            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
-                        </label>
-                        <div class="invalid-feedback" id="rgpdError" style="display: none;">
-                            Vous devez accepter la politique de confidentialité.
-                        </div>
-                    </div>
+                  <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="rgpdCheckbox" required>
+        <label class="form-check-label" for="rgpdCheckbox">
+            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
+        </label>
+        <div class="invalid-feedback" id="rgpdError" style="display: none;">
+            Vous devez accepter la politique de confidentialité.
+        </div>
+    </div>
 
                 <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
                 

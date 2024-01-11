@@ -176,3 +176,86 @@
   setInterval(afficherDate, 1000);
 </script>
 
+<!-- RESA CONTACT-->
+
+<script>
+    const formulaire = document.getElementById('formulaire');
+
+    function checkRequiredFields() {
+        for (const champ of document.querySelectorAll('input[required]')) {
+            if (champ.value.trim() === '') {
+                champ.focus();
+                alert('Veuillez remplir tous les champs obligatoires.');
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function isValidDate(dateString) {
+        const regex = /^\d{4}-\d{2}-\d{2}$/;
+        return regex.test(dateString);
+    }
+
+    function checkDates() {
+        for (const champ of document.querySelectorAll('input[type="date"]')) {
+            if (!isValidDate(champ.value)) {
+                champ.focus();
+                alert('Veuillez saisir une date valide.');
+                return false;
+            }
+        }
+        return true;
+    }
+
+    formulaire.addEventListener('submit', function (event) {
+        if (!checkRequiredFields() || !checkDates() || !validateForm()) {
+            event.preventDefault();
+            return;
+        }
+
+        for (const champ of document.querySelectorAll('input[pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"]')) {
+            const date = new Date(champ.value);
+            const formattedDate = date.toISOString().split('T')[0];
+            champ.value = formattedDate;
+        }
+
+        formulaire.submit();
+    });
+
+    function validateForm() {
+        // Validation de l'adresse e-mail
+        var emailInput = document.getElementById('email');
+        var emailValue = emailInput.value.trim();
+        // Expression régulière pour valider l'adresse e-mail avec plusieurs domaines
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr|net|org|eur)$/;
+
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide avec un domaine .com, .fr, .net, .org, ou .eur.');
+            emailInput.focus();
+            return false;
+        }
+
+        // Validation du numéro de téléphone
+        var phoneNumberInput = document.getElementById('phoneNumber');
+        var phoneNumberValue = phoneNumberInput.value.trim();
+
+        // Expression régulière pour valider le numéro de téléphone (chiffres uniquement, maximum 15 chiffres)
+        var phoneRegex = /^[0-9]{1,15}$/;
+
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert('Veuillez saisir un numéro de téléphone valide (chiffres uniquement, maximum 15 chiffres).');
+            phoneNumberInput.focus();
+            return false;
+        }
+
+        // Validation du RGPD
+        var rgpdCheckbox = document.getElementById('rgpdCheckbox');
+        if (!rgpdCheckbox.checked) {
+            alert('Vous devez accepter la politique de confidentialité.');
+            return false;
+        }
+
+        return true;
+    }
+</script>

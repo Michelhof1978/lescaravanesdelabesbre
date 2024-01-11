@@ -52,7 +52,7 @@ $secretKey = $config['recaptcha_secret_key'];
              echo "CAPTCHA invalide, veuillez réessayer.";
          }
      }
- }
+// }
 ?>
 
 

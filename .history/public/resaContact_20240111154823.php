@@ -136,21 +136,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'adultes.
-                        </div>
-                    </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'enfants.
-                        </div>
-                    </div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'adultes valide.
+    </div>
+</div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required min="0" onchange="ajouterChampsDateNaissance()">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'enfants valide.
+    </div>
+</div>
+
 
                     <div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
@@ -269,11 +272,8 @@ function validateForm() {
         return false;
     }
 
-    return true;
-}
-
-// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-function ajouterChampsDateNaissance() {
+      // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
+      function ajouterChampsDateNaissance() {
             const nombreEnfants = document.getElementById('nombreEnfants').value;
             const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
@@ -307,6 +307,9 @@ function ajouterChampsDateNaissance() {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
+
+    return true;
+}
 </script>
 
 </body>

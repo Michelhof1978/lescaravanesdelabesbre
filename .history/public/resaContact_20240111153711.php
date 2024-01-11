@@ -136,21 +136,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'adultes.
-                        </div>
-                    </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'enfants.
-                        </div>
-                    </div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'adultes valide.
+    </div>
+</div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required min="0" onchange="ajouterChampsDateNaissance()">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'enfants valide.
+    </div>
+</div>
+
 
                     <div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
@@ -158,6 +161,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="col">
                                 <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
                                 <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir la date de naissance de l'enfant.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,10 +244,10 @@ function validateForm() {
     }
 
     // Validation des dates d'arrivée et de départ
-    let dateArriveeInput = document.getElementById('dateArrivee');
-    let dateDepartInput = document.getElementById('dateDepart');
-    let dateArriveeValue = dateArriveeInput.value.trim();
-    let dateDepartValue = dateDepartInput.value.trim();
+    var dateArriveeInput = document.getElementById('dateArrivee');
+    var dateDepartInput = document.getElementById('dateDepart');
+    var dateArriveeValue = dateArriveeInput.value.trim();
+    var dateDepartValue = dateDepartInput.value.trim();
 
     if (dateArriveeValue === '' || dateDepartValue === '') {
         alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
@@ -255,7 +261,7 @@ function validateForm() {
     }
 
     // Validation du RGPD
-    let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+    var rgpdCheckbox = document.getElementById('rgpdCheckbox');
     if (!rgpdCheckbox.checked) {
         alert('Vous devez accepter la politique de confidentialité.');
         rgpdCheckbox.focus();
@@ -263,7 +269,7 @@ function validateForm() {
     }
 
     // Validation du reCAPTCHA
-    let recaptchaResponse = grecaptcha.getResponse();
+    var recaptchaResponse = grecaptcha.getResponse();
     if (recaptchaResponse.length == 0) {
         alert('Veuillez cocher le reCAPTCHA.');
         return false;
@@ -271,42 +277,6 @@ function validateForm() {
 
     return true;
 }
-
-// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-function ajouterChampsDateNaissance() {
-            const nombreEnfants = document.getElementById('nombreEnfants').value;
-            const containerDatesNaissance = document.getElementById('containerDatesNaissance');
-
-            // Supprime les champs de date de naissance existants
-            containerDatesNaissance.innerHTML = '';
-
-            // Ajoute les nouveaux champs en fonction du nombre d'enfants
-            for (let i = 1; i <= nombreEnfants; i++) {
-                const divRow = document.createElement('div');
-                divRow.className = 'row mb-4';
-
-                const divCol = document.createElement('div');
-                divCol.className = 'col';
-
-                const label = document.createElement('label');
-                label.className = 'form-label';
-                label.setAttribute('for', 'dateNaissanceEnfant' + i);
-                label.innerText = 'Date de naissance enfant ' + i + ' :';
-
-                const inputDate = document.createElement('input');
-                inputDate.name = 'dateNaissanceEnfant' + i;
-                inputDate.type = 'date';
-                inputDate.id = 'dateNaissanceEnfant' + i;
-                inputDate.className = 'form-control';
-                inputDate.required = true;
-
-                divCol.appendChild(label);
-                divCol.appendChild(inputDate);
-                divRow.appendChild(divCol);
-
-                containerDatesNaissance.appendChild(divRow);
-            }
-        }
 </script>
 
 </body>

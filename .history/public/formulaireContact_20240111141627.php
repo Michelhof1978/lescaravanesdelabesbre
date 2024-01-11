@@ -40,19 +40,19 @@ $secretKey = $config['recaptcha_secret_key'];
                  $object = "Renseignements";
                  $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
              if 
-            ($retour) {
-                 // Redirection vers une page de confirmation après la soumission du formulaire
-                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
-                 exit();
-             } else {
-                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-             }
-         } else {
-             // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+//             ($retour) {
+//                 // Redirection vers une page de confirmation après la soumission du formulaire
+//                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
+//                 exit();
+//             } else {
+//                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+//             }
+//         } else {
+//             // Le CAPTCHA est invalide, affichez un message d'erreur
+//             echo "CAPTCHA invalide, veuillez réessayer.";
+//         }
+//     }
+// }
 ?>
 
 

@@ -269,11 +269,8 @@ function validateForm() {
         return false;
     }
 
-    return true;
-}
-
-// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-function ajouterChampsDateNaissance() {
+      // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
+      function ajouterChampsDateNaissance() {
             const nombreEnfants = document.getElementById('nombreEnfants').value;
             const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
@@ -307,6 +304,9 @@ function ajouterChampsDateNaissance() {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
+
+    return true;
+}
 </script>
 
 </body>

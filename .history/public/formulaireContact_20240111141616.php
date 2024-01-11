@@ -35,24 +35,24 @@ $secretKey = $config['recaptcha_secret_key'];
                  "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                  "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
                  "Objet : " . htmlspecialchars($_POST["objet"]) . "\n" .
-                 "Message : " . htmlspecialchars($_POST["message"]);
+/               "Message : " . htmlspecialchars($_POST["message"]);
 
-                 $object = "Renseignements";
-                 $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-             if 
-            ($retour) {
-                 // Redirection vers une page de confirmation après la soumission du formulaire
-                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
-                 exit();
-             } else {
-                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-             }
-         } else {
-             // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+//                 $object = "Renseignements";
+//                 $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Renseignements", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+//             if 
+//             ($retour) {
+//                 // Redirection vers une page de confirmation après la soumission du formulaire
+//                 echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
+//                 exit();
+//             } else {
+//                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+//             }
+//         } else {
+//             // Le CAPTCHA est invalide, affichez un message d'erreur
+//             echo "CAPTCHA invalide, veuillez réessayer.";
+//         }
+//     }
+// }
 ?>
 
 

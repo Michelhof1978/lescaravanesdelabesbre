@@ -43,16 +43,16 @@ $secretKey = $config['recaptcha_secret_key'];
             ($retour) {
                  // Redirection vers une page de confirmation après la soumission du formulaire
                  echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>'; 
-                 exit();
-             } else {
-                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-             }
-         } else {
-             // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+//                 exit();
+//             } else {
+//                 echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
+//             }
+//         } else {
+//             // Le CAPTCHA est invalide, affichez un message d'erreur
+//             echo "CAPTCHA invalide, veuillez réessayer.";
+//         }
+//     }
+// }
 ?>
 
 

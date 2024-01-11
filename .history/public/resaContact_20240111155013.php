@@ -136,6 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
+
 <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
                         <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
@@ -269,11 +270,8 @@ function validateForm() {
         return false;
     }
 
-    return true;
-}
-
-// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-function ajouterChampsDateNaissance() {
+      // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
+      function ajouterChampsDateNaissance() {
             const nombreEnfants = document.getElementById('nombreEnfants').value;
             const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
@@ -307,6 +305,9 @@ function ajouterChampsDateNaissance() {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
+
+    return true;
+}
 </script>
 
 </body>

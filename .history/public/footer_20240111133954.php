@@ -176,3 +176,18 @@
   setInterval(afficherDate, 1000);
 </script>
 
+<!-- Validation RGPD formulaire -->
+<script>
+    function validateForm() {
+        // Vérifiez si la case à cocher RGPD est cochée
+        if (!document.getElementById('rgpdCheckbox').checked) {
+            // Affichez un message d'erreur
+            document.getElementById('rgpdError').style.display = 'block';
+            return false; // Empêche l'envoi du formulaire
+        }
+
+        // Si la case est cochée, réinitialisez le message d'erreur
+        document.getElementById('rgpdError').style.display = 'none';
+        return true; // Permet la soumission du formulaire
+    }
+</script>

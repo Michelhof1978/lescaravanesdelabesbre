@@ -49,10 +49,10 @@ $secretKey = $config['recaptcha_secret_key'];
              }
          } else {
              // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+//             echo "CAPTCHA invalide, veuillez réessayer.";
+//         }
+//     }
+// }
 ?>
 
 

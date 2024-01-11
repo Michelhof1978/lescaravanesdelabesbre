@@ -46,13 +46,13 @@ $secretKey = $config['recaptcha_secret_key'];
                  exit();
              } else {
                  echo "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
-             }
-         } else {
-             // Le CAPTCHA est invalide, affichez un message d'erreur
-             echo "CAPTCHA invalide, veuillez réessayer.";
-         }
-     }
- }
+//             }
+//         } else {
+//             // Le CAPTCHA est invalide, affichez un message d'erreur
+//             echo "CAPTCHA invalide, veuillez réessayer.";
+//         }
+//     }
+// }
 ?>
 
 

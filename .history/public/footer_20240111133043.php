@@ -174,5 +174,22 @@
 }
   // Appeler la fonction afficherDate toutes les secondes
   setInterval(afficherDate, 1000);
-</script>
+</scrlidaipt>
 
+//Va
+<script>
+    function validateForm() {
+        // Vérifiez si la case à cocher RGPD est cochée
+        if (!document.getElementById('rgpdCheckbox').checked) {
+            // Affichez un message d'erreur
+            document.getElementById('rgpdError').style.display = 'block';
+            return false; // Empêche l'envoi du formulaire
+        }
+
+        // Si la case est cochée, réinitialisez le message d'erreur (au cas où l'utilisateur avait précédemment soumis un formulaire non valide)
+        document.getElementById('rgpdError').style.display = 'none';
+
+        // Continuez avec la soumission du formulaire
+        return true;
+    }
+</script>

@@ -66,7 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                
                 $object = "Nouvelle reservation";
                 $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-                // $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -90,7 +89,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
  
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
 
-<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
+<form class="needs-validation" id="formulaire" novalidate action="#" method="POST" onsubmit="return validateForm();">
+
+    <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
@@ -136,21 +137,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'adultes.
-                        </div>
-                    </div>
 
-                    <div class="form-outline mb-4">
-                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
-                        <div class="invalid-feedback">
-                            Veuillez saisir le nombre d'enfants.
-                        </div>
-                    </div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+    <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'adultes valide.
+    </div>
+</div>
+
+<div class="form-outline mb-4">
+    <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+    <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required min="0" onchange="ajouterChampsDateNaissance()">
+    <div class="invalid-feedback">
+        Veuillez saisir un nombre d'enfants valide.
+    </div>
+</div>
+
 
                     <div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
@@ -158,6 +162,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="col">
                                 <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
                                 <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    Veuillez saisir la date de naissance de l'enfant.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -187,7 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
 
                      <!-- Case à cocher RGPD -->
-    <div class="form-check mb-4 mt-3">
+    <div class="form-check mb-4 ">
         <input class="form-check-input" type="checkbox" id="rgpdCheckbox">
         <label class="form-check-label" for="rgpdCheckbox">
             J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
@@ -210,70 +217,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php include("footer.php") ?>
 
-  
- <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
-<!-- //restriction champs formulaire -->
-<script>  
-function validateForm() {
-    // Validation de l'adresse e-mail
-    let emailInput = document.getElementById('email');
-    let emailValue = emailInput.value.trim();
-    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-    if (!emailRegex.test(emailValue)) {
-        alert('Veuillez saisir une adresse email valide.');
-        emailInput.focus();
-        return false;
-    }
-
-    // Validation du numéro de téléphone
-    let phoneNumberInput = document.getElementById('phoneNumber');
-    let phoneNumberValue = phoneNumberInput.value.trim();
-    let phoneRegex = /^[0-9]{10,15}$/;
-
-    if (!phoneRegex.test(phoneNumberValue)) {
-        alert('Veuillez saisir un numéro de téléphone valide (au moins 10 chiffres, chiffres uniquement).');
-        phoneNumberInput.focus();
-        return false;
-    }
-
-    // Validation des dates d'arrivée et de départ
-    let dateArriveeInput = document.getElementById('dateArrivee');
-    let dateDepartInput = document.getElementById('dateDepart');
-    let dateArriveeValue = dateArriveeInput.value.trim();
-    let dateDepartValue = dateDepartInput.value.trim();
-
-    if (dateArriveeValue === '' || dateDepartValue === '') {
-        alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
-        return false;
-    }
-
-    if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
-        alert('La date de départ doit être ultérieure à la date d\'arrivée.');
-        dateDepartInput.focus();
-        return false;
-    }
-
-    // Validation du RGPD
-    let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-    if (!rgpdCheckbox.checked) {
-        alert('Vous devez accepter la politique de confidentialité.');
-        rgpdCheckbox.focus();
-        return false;
-    }
-
-    // Validation du reCAPTCHA
-    let recaptchaResponse = grecaptcha.getResponse();
-    if (recaptchaResponse.length == 0) {
-        alert('Veuillez cocher le reCAPTCHA.');
-        return false;
-    }
-
-    return true;
-}
-
-// Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-function ajouterChampsDateNaissance() {
+    <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
+    <script>
+        // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
+        function ajouterChampsDateNaissance() {
             const nombreEnfants = document.getElementById('nombreEnfants').value;
             const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
@@ -307,6 +254,87 @@ function ajouterChampsDateNaissance() {
                 containerDatesNaissance.appendChild(divRow);
             }
         }
+    </script>
+
+<script>
+    const formulaire = document.getElementById('formulaire');
+
+    function checkRequiredFields() {
+        for (const champ of document.querySelectorAll('input[required]')) {
+            if (champ.value.trim() === '') {
+                event.preventDefault();
+                champ.focus();
+                alert('Veuillez remplir tous les champs obligatoires.');
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function isValidDate(dateString) {
+        const regex = /^\d{4}-\d{2}-\d{2}$/;
+        return regex.test(dateString);
+    }
+
+    // function checkDates() {
+    //     for (const champ of document.querySelectorAll('input[pattern]')) {
+    //         if (!isValidDate(champ.value)) {
+    //             event.preventDefault();
+    //             champ.focus();
+    //             alert('Veuillez saisir une date valide.');
+    //             return false;
+    //         }
+    //     }
+    //     return true;
+    // }
+
+    formulaire.addEventListener('submit', function () {
+        if (!checkRequiredFields() || !checkDates()) {
+            return;
+        }
+
+        for (const champ of document.querySelectorAll('input[pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"]')) {
+            const date = new Date(champ.value);
+            const formattedDate = date.toISOString().split('T')[0];
+            champ.value = formattedDate;
+        }
+
+        formulaire.submit();
+    });
+</script>
+
+<!-- //restriction champs formulaire -->
+<script>
+    function validateForm() {
+        // Validation de l'adresse e-mail
+        var emailInput = document.getElementById('email');
+        var emailValue = emailInput.value.trim();
+        // Expression régulière pour valider l'adresse e-mail avec plusieurs domaines
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|fr|net|org|eur)$/;
+
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide avec un domaine .com, .fr, .net, .org, ou .eur.');
+            emailInput.focus();
+            return false;
+        }
+
+        // Validation du numéro de téléphone
+        var phoneNumberInput = document.getElementById('phoneNumber');
+        var phoneNumberValue = phoneNumberInput.value.trim();
+
+        // Expression régulière pour valider le numéro de téléphone (chiffres uniquement, maximum 10 chiffres)
+        var phoneRegex = /^[0-9]{1,15}$/;
+
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert('Veuillez saisir un numéro de téléphone valide (chiffres uniquement, maximum 15 chiffres).');
+            phoneNumberInput.focus();
+            return false;
+        }
+
+        
+
+        return true;
+    }
 </script>
 
 </body>
