@@ -324,4 +324,3 @@ function validateContactForm() {
 }
 </script>
 
-<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto" type="text/javascript"></script>

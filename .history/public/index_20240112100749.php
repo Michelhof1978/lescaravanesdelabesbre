@@ -410,8 +410,8 @@
         // Création de l'image à afficher
         var img = document.createElement("img");
         img.src = "../images/lePal2024.png";
-        img.style.height = '50%';
-        img.style.width = '50%';
+        img.style.height = '%';
+        img.style.width = '100%';
 
         // Ajout de l'image à la div
         popupDiv.appendChild(img);
@@ -429,7 +429,7 @@
             document.body.removeChild(popupDiv);
             // Définir le cookie pour indiquer que le popup a été affiché
             setPopupShown();
-        }, 5000);
+        }, 4000);
     }
 </script>
 

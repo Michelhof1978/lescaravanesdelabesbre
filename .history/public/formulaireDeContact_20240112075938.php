@@ -66,7 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $object = "Demande de renseignements";
             $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -86,6 +85,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+
+    
+ 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
 
 <form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
@@ -146,15 +148,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
                      <!-- Case à cocher RGPD -->
-                     <div class="form-check mb-4 mt-3">
-    <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox">
-    <label class="form-check-label" for="rgpdCheckbox">
-        J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
-    </label>
-    <div class="invalid-feedback" id="rgpdError" style="display: none;">
-        Vous devez accepter la politique de confidentialité.
+    <div class="form-check mb-4 mt-3">
+        <input class="form-check-input" type="checkbox" id="rgpdCheckbox">
+        <label class="form-check-label" for="rgpdCheckbox">
+            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
+        </label>
+        <div class="invalid-feedback" id="rgpdError" style="display: none;">
+            Vous devez accepter la politique de confidentialité.
+        </div>
     </div>
-</div>
 
                     <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 

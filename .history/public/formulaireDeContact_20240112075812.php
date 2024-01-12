@@ -15,8 +15,6 @@ $secretKey = $config['recaptcha_secret_key'];
 // Initialiser le message d'erreur
 $error_message = '';
 
-$rgpdAccepted = false;
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérifier que tous les champs sont remplis
     if (
@@ -25,8 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         isset($_POST["phoneNumber"]) &&
         isset($_POST["email"]) &&
         isset($_POST["message"]) &&
-        isset($_POST['g-recaptcha-response']) &&
-        isset($_POST['rgpdCheckbox'])
+        isset($_POST['g-recaptcha-response'])
     ) {
         // Validation du CAPTCHA
         $captchaResponse = $_POST['g-recaptcha-response'];
@@ -50,23 +47,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if ($response['success']) {
             // Le CAPTCHA est valide = traitement du formulaire
-            // Validation du RGPD
-            if ($_POST['rgpdCheckbox'] === 'on') {
-                $rgpdAccepted = true;
-            }
-
-            // Modifier le message pour inclure l'information sur l'acceptation des RGPD
             $message = "Demande de renseignements :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
                 "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
                 "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
                 "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                "Message : " . htmlspecialchars($_POST["message"]) . "\n" .
-                "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non');
-
-            $object = "Demande de renseignements";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                "Message : " . htmlspecialchars($_POST["message"]);
+               
+                $object = "Demande de renseignements";
+                $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+                //$retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -84,8 +74,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error_message = "Veuillez remplir tous les champs du formulaire.";
     }
 }
+
+$rgpdAccepted = false;
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Vérifier que tous les champs sont remplis
+    if (
+        // ... (votre code existant)
+        isset($_POST['rgpdCheckbox'])
+    ) {
+        // Validation du RGPD
+        if ($_POST['rgpdCheckbox'] === 'on') {
+            $rgpdAccepted = true;
+        }
 ?>
 
+    
+ 
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
 
 <form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">    <fieldset class="mb-5 ms-2 me-2">
@@ -146,15 +151,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
                      <!-- Case à cocher RGPD -->
-                     <div class="form-check mb-4 mt-3">
-    <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox">
-    <label class="form-check-label" for="rgpdCheckbox">
-        J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
-    </label>
-    <div class="invalid-feedback" id="rgpdError" style="display: none;">
-        Vous devez accepter la politique de confidentialité.
+    <div class="form-check mb-4 mt-3">
+        <input class="form-check-input" type="checkbox" id="rgpdCheckbox">
+        <label class="form-check-label" for="rgpdCheckbox">
+            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
+        </label>
+        <div class="invalid-feedback" id="rgpdError" style="display: none;">
+            Vous devez accepter la politique de confidentialité.
+        </div>
     </div>
-</div>
 
                     <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 
