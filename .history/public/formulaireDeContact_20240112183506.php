@@ -1,5 +1,5 @@
 <?php include("head.php") ?>
-<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal et vous avez besoins de renseignements complémentaires.">
+<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal et .">
 <title>Formulaire de Contact - Hébergement Le Pal</title>
 </head>
 
@@ -171,4 +171,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php include("footer.php") ?>
 
 </body>
-    </html>
+
+</html>

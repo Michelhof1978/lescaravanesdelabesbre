@@ -20,7 +20,6 @@
   define('TOURISME_URL', 'https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237');
   define('VICHY_URL', 'https://www.ville-vichy.fr/ott');
   ?>
-  
   <header>
     <nav id="mainNavigation">
       <div class="pt-2 text-center border-bottom ">

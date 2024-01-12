@@ -380,19 +380,19 @@
 
 <!-- Affichage Popup -->
 <script>
-// Fonction pour vérifier si le popup a déjà été affiché
+  // Fonction pour vérifier si le popup a déjà été affiché
   function isPopupShown() {
     return document.cookie.indexOf("popupShown=true") !== -1;
   }
 
-// Fonction pour définir le cookie indiquant que le popup a été affiché
+  // Fonction pour définir le cookie indiquant que le popup a été affiché
   function setPopupShown() {
     document.cookie = "popupShown=true; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/";
   }
 
-// Vérifier si le popup a déjà été affiché
+  // Vérifier si le popup a déjà été affiché
   if (!isPopupShown()) {
-// Création de la div pour afficher l'image + message + position
+  // Création de la div pour afficher l'image + message + position
     let popupDiv = document.createElement("div");
     popupDiv.style.position = "fixed";
     popupDiv.style.top = "50%";
@@ -430,10 +430,7 @@
     }, 5000);
   }
 </script>
-
 <!-- ------------------------------------------------------------------------------------------ -->
-
-<!-- AFFICHAGE AVIS -->
 <script>
 // Sélectionne l'élément HTML avec l'id "nouveau" et le stocke dans la variable nouveau
   let nouveau = document.querySelector('#nouveau');
@@ -482,4 +479,5 @@
 <!--End Avis Clients-->
 
 </body>
-  </html>
+
+</html>

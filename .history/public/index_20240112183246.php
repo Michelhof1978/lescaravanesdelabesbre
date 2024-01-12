@@ -433,7 +433,7 @@
 
 <!-- ------------------------------------------------------------------------------------------ -->
 
-<!-- AFFICHAGE AVIS -->
+
 <script>
 // Sélectionne l'élément HTML avec l'id "nouveau" et le stocke dans la variable nouveau
   let nouveau = document.querySelector('#nouveau');
@@ -482,4 +482,5 @@
 <!--End Avis Clients-->
 
 </body>
-  </html>
+
+</html>

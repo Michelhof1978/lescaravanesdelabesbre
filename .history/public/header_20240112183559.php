@@ -19,8 +19,8 @@
   define('METEOAPI_URL', 'https://api.openweathermap.org/data/2.5/weather?q=dompierre-sur-besbre&lang=fr&units=metric&appid=a2c110c02e86989d65348566c3ad09ff');
   define('TOURISME_URL', 'https://www.allier-auvergne-tourisme.com/commerce-et-service/dompierre-sur-besbre/office-de-tourisme-entr-allier-besbre-et-loire-site-de-dompierre-sur-besbre/4906237');
   define('VICHY_URL', 'https://www.ville-vichy.fr/ott');
+
   ?>
-  
   <header>
     <nav id="mainNavigation">
       <div class="pt-2 text-center border-bottom ">

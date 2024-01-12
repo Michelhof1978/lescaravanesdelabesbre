@@ -380,7 +380,7 @@
 
 <!-- Affichage Popup -->
 <script>
-// Fonction pour vérifier si le popup a déjà été affiché
+  // Fonction pour vérifier si le popup a déjà été affiché
   function isPopupShown() {
     return document.cookie.indexOf("popupShown=true") !== -1;
   }
@@ -430,10 +430,7 @@
     }, 5000);
   }
 </script>
-
 <!-- ------------------------------------------------------------------------------------------ -->
-
-<!-- AFFICHAGE AVIS -->
 <script>
 // Sélectionne l'élément HTML avec l'id "nouveau" et le stocke dans la variable nouveau
   let nouveau = document.querySelector('#nouveau');
@@ -482,4 +479,5 @@
 <!--End Avis Clients-->
 
 </body>
-  </html>
+
+</html>
