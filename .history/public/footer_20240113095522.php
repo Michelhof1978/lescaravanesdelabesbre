@@ -104,7 +104,7 @@
 <!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<!-- En utilisant ce balisage, les moteurs de recherche et d'autres agents intelligents peuvent mieux comprendre et interpréter les informations liées à l'entreprise sur la page web. -->
+
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",

@@ -104,7 +104,6 @@
 <!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<!-- En utilisant ce balisage, les moteurs de recherche et d'autres agents intelligents peuvent mieux comprendre et interpréter les informations liées à l'entreprise sur la page web. -->
 <script type="application/ld+json">
     {
         "@context": "http://schema.org",
@@ -112,14 +111,24 @@
         "name": "Les Caravanes De La Besbre",
         "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
         "telephone": "06 86 41 31 71",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Camping Les bords de Besbre",
-            "addressLocality": "Dompierre sur besbre",
-            "postalCode": "03 290",
-            "addressCountry": "France"
-        },
-        "priceRange": "Abordable"  
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Adresse du premier emplacement",
+                "addressLocality": "Ville 1",
+                "postalCode": "Code postal 1",
+                "addressCountry": "Pays 1"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "Adresse du deuxième emplacement",
+                "addressLocality": "Ville 2",
+                "postalCode": "Code postal 2",
+                "addressCountry": "Pays 2"
+            }
+            // Ajoutez d'autres adresses au besoin
+        ],
+        "priceRange": "Prix moyen"  // Ajoutez la fourchette de prix souhaitée
     }
 </script>
 
