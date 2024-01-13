@@ -10,9 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="icon" type="image/x-icon" href="../images/logo.ico">
-  <meta property="og:title" content="Les Caravanes De La Besbre" />
-  <meta property="og:description" content="Propositions d'hébergements proche du Pal" />
-  <meta property="og:image" content="../images/logo.png" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="Description de votre site" />
+  <meta property="og:image" content="URL_de_votre_image" />
 
   <!-- Ajout du style ds le head car ds fichier css, impossible d'appliquer le style -->
   <style>

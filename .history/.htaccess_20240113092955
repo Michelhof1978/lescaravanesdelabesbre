@@ -54,4 +54,4 @@ RewriteRule ^mentionsLegales/?$ mentionsLegales.php [L]
 RewriteCond %{THE_REQUEST} \s/politiquedeConfidentialite\.php [NC]
 RewriteRule ^ /politiquedeConfidentialite [R=301,L]
 # Réécriture de /politiquedeConfidentialite vers /politiquedeConfidentialite.php
-RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
+RewriteRule ^mentionsLegales/?$ politiquedeConfidentialite.php [L]

@@ -113,8 +113,8 @@
         "telephone": "06 86 41 31 71",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Camping Les bords de Besbre",
-            "addressLocality": "Dompierre sur besbre",
+            "streetAddress": "Votre rue",
+            "addressLocality": "Dompierre ",
             "postalCode": "03 290",
             "addressCountry": "France"
         }

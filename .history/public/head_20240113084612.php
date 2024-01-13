@@ -12,7 +12,7 @@
   <link rel="icon" type="image/x-icon" href="../images/logo.ico">
   <meta property="og:title" content="Les Caravanes De La Besbre" />
   <meta property="og:description" content="Propositions d'hébergements proche du Pal" />
-  <meta property="og:image" content="../images/logo.png" />
+  <meta property="og:image" content="URL_de_votre_image" />
 
   <!-- Ajout du style ds le head car ds fichier css, impossible d'appliquer le style -->
   <style>

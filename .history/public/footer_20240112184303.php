@@ -110,21 +110,12 @@
         "@type": "LocalBusiness",
         "name": "Les Caravanes De La Besbre",
         "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
-        "telephone": "06 86 41 31 71",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Camping Les bords de Besbre",
-            "addressLocality": "Dompierre sur besbre",
-            "postalCode": "03 290",
-            "addressCountry": "France"
-        }
+        "telephone": "06 86 41 31 71"
     }
 </script>
-
 <!-- FIN Scripts JavaScript -->
 
 <!-- ------------------------------------------------------------------------------------------ -->
-
 <!-- Google Tag Manager -->
 <script>
     (function(w, d, s, l, i) {
@@ -180,7 +171,7 @@
 
 <!-- ------------------------------------------------------------------------------------------ -->
 
-<!--ZOOM SURVOL SOURIS SUR IMAGE-->
+<!--ZOOM SURVOL SOURIS PHOTOS-->
 <script>
     function zoomIn(img) {
         img.style.transform = "scale(1.5)"; // agrandir l'image 1.5 fois

@@ -12,7 +12,7 @@ RewriteBase /
 RewriteCond %{THE_REQUEST} \s/index\.php [NC]
 RewriteRule ^ /pageaccueil [R=301,L]
 # Réécriture de /pageaccueil vers /index.php
-RewriteRule ^pageaccueil/?$ index.php [L]
+RewriteRule ^pageAccueil/?$ index.php [L]
 
 # Redirection de /informations.php vers /informations
 RewriteCond %{THE_REQUEST} \s/informations\.php [NC]
