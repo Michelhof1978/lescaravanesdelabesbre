@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="icon" type="image/x-icon" href="../images/logo.ico">
   <meta property="og:title" content="Les Caravanes De La Besbre">
-  <meta property="og:description" content="Propositions d'hébergements proche du Pal">
-  <meta property="og:image" content="../images/logo.png">
+  <meta property="og:description" content="Propositions d'hébergements proche du Pal" />
+  <meta property="og:image" content="../images/logo.png" />
 
   <!-- Ajout du style ds le head car ds fichier css, impossible d'appliquer le style -->
   <style>

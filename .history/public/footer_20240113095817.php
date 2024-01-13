@@ -77,58 +77,56 @@
     <a href="https://www.mon-compteur.fr"><img src="https://www.mon-compteur.fr/html_c01genv2-237765-2" loading="lazy" alt="nombre de visites"></a>
 </div>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 <!-- Google Tag Manager (noscript) -->
 <!-- <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59DVV3P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript> -->
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Scripts JavaScript -->
 <!-- jQuery et JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" async></script>
 <script src="./js/main.js" async></script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- BOOTSTRAP JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" async></script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Google reCAPTCHA formulaire -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
-<!-- En utilisant ce balisage, les moteurs de recherche et d'autres agents intelligents peuvent mieux comprendre et interpréter les informations liées à l'entreprise sur la page web. -->
-<script type="application/ld+json">
+<!-- <script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "LocalBusiness",
         "name": "Les Caravanes De La Besbre",
-        "image": "https://lescaravanesdelabesbre.fr/images/logo.webp",
+        "image": "https://lescaravanesdelabesbre.fr/images/banner3.png",
         "telephone": "06 86 41 31 71",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Camping Les bords de Besbre",
             "addressLocality": "Dompierre sur besbre",
-            "addressRegion": "Auvergne-Rhône-Alpes", 
-            "postalCode": "03290",
-            "addressCountry": "FR"
-        },
+            "postalCode": "03 290",
+            "addressCountry": "France"
+        },En utilisant ce balisage, les moteurs de recherche et d'autres agents intelligents peuvent mieux comprendre et interpréter les informations liées à l'entreprise sur la page web. -->
+
         "priceRange": "Abordable"  
     }
 </script>
 
 
-
 <!-- FIN Scripts JavaScript -->
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Google Tag Manager -->
 <script>
@@ -148,7 +146,7 @@
 </script>
 <!-- End Google Tag Manager -->
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M3CJ6F224B"></script>
@@ -162,7 +160,7 @@
     gtag('config', 'G-M3CJ6F224B');
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- Google Analytics -->
 <script>
@@ -183,7 +181,7 @@
 </script>
 <!-- End Google Analytics -->
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!--ZOOM SURVOL SOURIS SUR IMAGE-->
 <script>
@@ -198,7 +196,7 @@
     }
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- DATE MISE A JOUR AUTO COPYRIGHT FOOTER -->
 <script>
@@ -212,7 +210,7 @@
     setInterval(afficherDate, 1000);
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- FORMULAIRE RESA -->
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
@@ -315,7 +313,7 @@
     }
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- FORMULAIRE DE CONTACT -->
 <script>
@@ -362,7 +360,7 @@
     }
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- COOKIES -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script>

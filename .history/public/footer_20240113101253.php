@@ -91,7 +91,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js" async></script>
 <script src="./js/main.js" async></script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- BOOTSTRAP JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" async></script>
@@ -212,7 +212,7 @@
     setInterval(afficherDate, 1000);
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- FORMULAIRE RESA -->
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
@@ -315,7 +315,7 @@
     }
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- FORMULAIRE DE CONTACT -->
 <script>
@@ -362,7 +362,7 @@
     }
 </script>
 
-<!-- _____________________________________________________________________________________ -->
+<!-- ------------------------------------------------------------------------------------------ -->
 
 <!-- COOKIES -->
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script>
