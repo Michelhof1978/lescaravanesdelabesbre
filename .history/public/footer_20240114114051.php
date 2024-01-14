@@ -226,8 +226,8 @@
 
 //Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. 
         if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');//Affichage d'une alerte si la validation échoue
-            emailInput.focus();//éplace automatiquement le focus vers le champ d'adresse e-mail, attirant l'attention de l'utilisateur en cas d'échec de la validation.
+            alert('Veuillez saisir une adresse email valide.');
+            emailInput.focus();
             return false;
         }
 
@@ -274,10 +274,10 @@
         }
 
 // Vérification si la réponse reCAPTCHA n'est pas vide
-        let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
-        if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
-            alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
-            return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
+        let recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
         }
 // Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
         return true;

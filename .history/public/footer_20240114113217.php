@@ -224,10 +224,10 @@
         let emailValue = emailInput.value.trim();//Obtention de la valeur de l'adresse e-mail avec les espaces blancs supprimés
         let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définition d'une expression régulière pour valider l'adresse e-mail.
 
-//Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. 
+//Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. Affichage d'une alerte si la validation échoue
         if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');//Affichage d'une alerte si la validation échoue
-            emailInput.focus();//éplace automatiquement le focus vers le champ d'adresse e-mail, attirant l'attention de l'utilisateur en cas d'échec de la validation.
+            alert('Veuillez saisir une adresse email valide.');
+            emailInput.focus();
             return false;
         }
 
@@ -245,24 +245,20 @@
 
 
 // Validation des dates d'arrivée et de départ
-        let dateArriveeInput = document.getElementById('dateArrivee');//Obtient l'élément HTML avec l'ID "dateArrivee" (champ de date d'arrivée).
-        let dateDepartInput = document.getElementById('dateDepart');//Obtient l'élément HTML avec l'ID "dateDepart" (champ de date de départ).
-        let dateArriveeValue = dateArriveeInput.value.trim();//Obtient la valeur du champ de date d'arrivée avec les espaces blancs supprimés.
-        let dateDepartValue = dateDepartInput.value.trim();//Obtient la valeur du champ de date de départ avec les espaces blancs supprimés.
+        let dateArriveeInput = document.getElementById('dateArrivee');
+        let dateDepartInput = document.getElementById('dateDepart');
+        let dateArriveeValue = dateArriveeInput.value.trim();
+        let dateDepartValue = dateDepartInput.value.trim();
 
-//Vérifie si l'une des dates (d'arrivée ou de départ) est vide.
-//Si l'une des dates est vide, affiche une alerte indiquant que les dates d'arrivée et de départ ne peuvent pas être vides.
-//Renvoie false, indiquant que la validation a échoué.
         if (dateArriveeValue === '' || dateDepartValue === '') {
             alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
             return false;
         }
-//Vérifie si la date de départ est ultérieure à la date d'arrivée.
-//Si la date de départ est antérieure ou égale à la date d'arrivée, affiche une alerte indiquant que la date de départ doit être ultérieure à la date d'arrivée.
+//Vérifications sur la validité des dates, si elles sont vides, et si la date de départ est ultérieure à la date d'arrivée.
         if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
             alert('La date de départ doit être ultérieure à la date d\'arrivée.');
-            dateDepartInput.focus();//Place le focus sur le champ de date de départ (dateDepartInput.focus()) pour attirer l'attention de l'utilisateur sur ce champ
-            return false;//Renvoie false, indiquant que la validation a échoué
+            dateDepartInput.focus();
+            return false;
         }
 
 // Vérification si la case du consentement RGPD est cochée
@@ -274,10 +270,10 @@
         }
 
 // Vérification si la réponse reCAPTCHA n'est pas vide
-        let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
-        if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
-            alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
-            return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
+        let recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
         }
 // Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
         return true;
@@ -349,7 +345,7 @@
             return false;
         }
 
-// Obtient l'élément HTML avec l'ID "rgpdCheckbox" (case à cocher RGPD).
+        // Validation du RGPD
         let rgpdCheckbox = document.getElementById('rgpdCheckbox');
         if (!rgpdCheckbox.checked) {
             alert('Vous devez accepter la politique de confidentialité.');
@@ -357,14 +353,13 @@
             return false;
         }
 
-// Obtient la réponse du reCAPTCHA.
+        // Validation du reCAPTCHA
         let recaptchaResponse = grecaptcha.getResponse();
-//Vérifie si la réponse reCAPTCHA est vide. Affiche une alerte si la validation échoue.
         if (recaptchaResponse.length == 0) {
             alert('Veuillez cocher le reCAPTCHA.');
             return false;
         }
-// Si toutes les validations précédentes sont réussies, la fonction renvoie true, indiquant que le formulaire est valide.
+
         return true;
     }
 </script>

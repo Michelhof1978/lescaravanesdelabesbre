@@ -277,7 +277,7 @@
         let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
         if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
             alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
-            return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
+            return false;//
         }
 // Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
         return true;
