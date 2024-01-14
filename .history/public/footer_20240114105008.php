@@ -231,11 +231,11 @@
         }
 
         // Validation du numéro de téléphone
-        let phoneNumberInput = document.getElementById("phoneNumber");
-        let phoneNumberValue = phoneNumberInput.value;
+         phoneNumberInput = document.getElementById("phoneNumber");
+        var phoneNumberValue = phoneNumberInput.value;
 
         // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        let phoneRegex = /^[0-9]+$/;
+        var phoneRegex = /^[0-9]+$/;
 
         if (!phoneRegex.test(phoneNumberValue)) {
             alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
@@ -332,11 +332,11 @@
         }
 
         // Validation du numéro de téléphone
-        let phoneNumberInput = document.getElementById("phoneNumber");
-        let phoneNumberValue = phoneNumberInput.value;
+        var phoneNumberInput = document.getElementById("phoneNumber");
+        var phoneNumberValue = phoneNumberInput.value;
 
         // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        let phoneRegex = /^[0-9]+$/;
+        var phoneRegex = /^[0-9]+$/;
 
         if (!phoneRegex.test(phoneNumberValue)) {
             alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
