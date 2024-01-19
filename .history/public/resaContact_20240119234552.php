@@ -60,29 +60,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $rgpdAccepted = true;
             }
 
-          // Modifier le message pour inclure l'information sur l'acceptation des RGPD
-$message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
-"Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-"Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-"Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-"Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-"Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
-"Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
-
-// Récupérer le nombre d'enfants
-$nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
-
-// Ajouter les dates de naissance de chaque enfant dans le message
-for ($i = 1; $i <= $nombreEnfants; $i++) {
-$fieldName = "dateNaissanceEnfant" . $i;
-$message .= "Date de naissance enfant " . $i . " : " . htmlspecialchars($_POST[$fieldName]) . "\n";
-}
-
-$message .= "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
-"Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
-"Message : " . htmlspecialchars($_POST["message"]) . "\n" .
-"RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non');
-
+            // Modifier le message pour inclure l'information sur l'acceptation des RGPD
+            $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
+                "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
+                "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
+                "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+                "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
+                "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+                "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n" .
+                "Date de naissance : " . htmlspecialchars($_POST["dateNaissanceEnfant1"]) . "\n" .
+                "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
+                "Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
+                "Message : " . htmlspecialchars($_POST["message"]) . "\n" .
+                "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non');
 
             $object = "Nouvelle reservation";
             //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
@@ -235,106 +225,106 @@ $message .= "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n
 
 
 <script>
-//     function validateForm() {
-//         // Validation de l'adresse e-mail
-//         let emailInput = document.getElementById('email');//Obtention de l'élément HTML avec l'ID "email" (champ d'adresse e-mail).
-//         let emailValue = emailInput.value.trim();//Obtention de la valeur de l'adresse e-mail avec les espaces blancs supprimés
-//         let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définition d'une expression régulière pour valider l'adresse e-mail.
+    function validateForm() {
+        // Validation de l'adresse e-mail
+        let emailInput = document.getElementById('email');//Obtention de l'élément HTML avec l'ID "email" (champ d'adresse e-mail).
+        let emailValue = emailInput.value.trim();//Obtention de la valeur de l'adresse e-mail avec les espaces blancs supprimés
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définition d'une expression régulière pour valider l'adresse e-mail.
 
-// //Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. 
-//         if (!emailRegex.test(emailValue)) {
-//             alert('Veuillez saisir une adresse email valide.');//Affichage d'une alerte si la validation échoue
-//             emailInput.focus();//éplace automatiquement le focus vers le champ d'adresse e-mail, attirant l'attention de l'utilisateur en cas d'échec de la validation.
-//             return false;
-//         }
+//Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. 
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide.');//Affichage d'une alerte si la validation échoue
+            emailInput.focus();//éplace automatiquement le focus vers le champ d'adresse e-mail, attirant l'attention de l'utilisateur en cas d'échec de la validation.
+            return false;
+        }
 
-// // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
-//         let phoneNumberInput = document.getElementById("phoneNumber");
-//         let phoneNumberValue = phoneNumberInput.value;//Obtention de la valeur du numéro de téléphone.
+// Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
+        let phoneNumberInput = document.getElementById("phoneNumber");
+        let phoneNumberValue = phoneNumberInput.value;//Obtention de la valeur du numéro de téléphone.
 
-// // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-//         let phoneRegex = /^[0-9]+$/;
-// //Vérification si la valeur du numéro de téléphone correspond à l'expression régulière. Affichage d'une alerte si la validation échoue.
-//         if (!phoneRegex.test(phoneNumberValue)) {
-//             alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-//             return false;
-//         }
+// Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+        let phoneRegex = /^[0-9]+$/;
+//Vérification si la valeur du numéro de téléphone correspond à l'expression régulière. Affichage d'une alerte si la validation échoue.
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+            return false;
+        }
 
 
-// // Validation des dates d'arrivée et de départ
-//         let dateArriveeInput = document.getElementById('dateArrivee');//Obtient l'élément HTML avec l'ID "dateArrivee" (champ de date d'arrivée).
-//         let dateDepartInput = document.getElementById('dateDepart');//Obtient l'élément HTML avec l'ID "dateDepart" (champ de date de départ).
-//         let dateArriveeValue = dateArriveeInput.value.trim();//Obtient la valeur du champ de date d'arrivée avec les espaces blancs supprimés.
-//         let dateDepartValue = dateDepartInput.value.trim();//Obtient la valeur du champ de date de départ avec les espaces blancs supprimés.
+// Validation des dates d'arrivée et de départ
+        let dateArriveeInput = document.getElementById('dateArrivee');//Obtient l'élément HTML avec l'ID "dateArrivee" (champ de date d'arrivée).
+        let dateDepartInput = document.getElementById('dateDepart');//Obtient l'élément HTML avec l'ID "dateDepart" (champ de date de départ).
+        let dateArriveeValue = dateArriveeInput.value.trim();//Obtient la valeur du champ de date d'arrivée avec les espaces blancs supprimés.
+        let dateDepartValue = dateDepartInput.value.trim();//Obtient la valeur du champ de date de départ avec les espaces blancs supprimés.
 
-// //Vérifie si l'une des dates (d'arrivée ou de départ) est vide.
-// //Si l'une des dates est vide, affiche une alerte indiquant que les dates d'arrivée et de départ ne peuvent pas être vides.
-// //Renvoie false, indiquant que la validation a échoué.
-//         if (dateArriveeValue === '' || dateDepartValue === '') {
-//             alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
-//             return false;
-//         }
-// //Vérifie si la date de départ est ultérieure à la date d'arrivée.
-// //Si la date de départ est antérieure ou égale à la date d'arrivée, affiche une alerte indiquant que la date de départ doit être ultérieure à la date d'arrivée.
-//         if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
-//             alert('La date de départ doit être ultérieure à la date d\'arrivée.');
-//             dateDepartInput.focus();//Place le focus sur le champ de date de départ (dateDepartInput.focus()) pour attirer l'attention de l'utilisateur sur ce champ
-//             return false;//Renvoie false, indiquant que la validation a échoué
-//         }
+//Vérifie si l'une des dates (d'arrivée ou de départ) est vide.
+//Si l'une des dates est vide, affiche une alerte indiquant que les dates d'arrivée et de départ ne peuvent pas être vides.
+//Renvoie false, indiquant que la validation a échoué.
+        if (dateArriveeValue === '' || dateDepartValue === '') {
+            alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
+            return false;
+        }
+//Vérifie si la date de départ est ultérieure à la date d'arrivée.
+//Si la date de départ est antérieure ou égale à la date d'arrivée, affiche une alerte indiquant que la date de départ doit être ultérieure à la date d'arrivée.
+        if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
+            alert('La date de départ doit être ultérieure à la date d\'arrivée.');
+            dateDepartInput.focus();//Place le focus sur le champ de date de départ (dateDepartInput.focus()) pour attirer l'attention de l'utilisateur sur ce champ
+            return false;//Renvoie false, indiquant que la validation a échoué
+        }
 
-// // Vérification si la case du consentement RGPD est cochée
-//         let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-//         if (!rgpdCheckbox.checked) {
-//             alert('Vous devez accepter la politique de confidentialité.');
-//             rgpdCheckbox.focus();
-//             return false;
-//         }
+// Vérification si la case du consentement RGPD est cochée
+        let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+        if (!rgpdCheckbox.checked) {
+            alert('Vous devez accepter la politique de confidentialité.');
+            rgpdCheckbox.focus();
+            return false;
+        }
 
-// // Vérification si la réponse reCAPTCHA n'est pas vide
-//         let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
-//         if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
-//             alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
-//             return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
-//         }
-// // Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
-//         return true;
-//     }
+// Vérification si la réponse reCAPTCHA n'est pas vide
+        let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
+        if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
+            alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
+            return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
+        }
+// Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
+        return true;
+    }
 
-// // Fonction pour ajouter dynamiquement les champs de date de naissance des enfantsDéclaration de la fonction pour ajouter dynamiquement des champs de date de naissance en fonction du nombre d'enfants.
-//     function ajouterChampsDateNaissance() {
-//         const nombreEnfants = document.getElementById('nombreEnfants').value;//Obtention de la valeur du champ indiquant le nombre d'enfants
-//         const containerDatesNaissance = document.getElementById('containerDatesNaissance'); //Obtention de l'élément conteneur pour les champs de date de naissance.
+// Fonction pour ajouter dynamiquement les champs de date de naissance des enfantsDéclaration de la fonction pour ajouter dynamiquement des champs de date de naissance en fonction du nombre d'enfants.
+    function ajouterChampsDateNaissance() {
+        const nombreEnfants = document.getElementById('nombreEnfants').value;//Obtention de la valeur du champ indiquant le nombre d'enfants
+        const containerDatesNaissance = document.getElementById('containerDatesNaissance'); //Obtention de l'élément conteneur pour les champs de date de naissance.
 
-// // Supprime les champs de date de naissance existants
-//         containerDatesNaissance.innerHTML = '';
+// Supprime les champs de date de naissance existants
+        containerDatesNaissance.innerHTML = '';
 
-// // Ajout dynamique de nouveaux champs de date de naissance en fonction du nombre d'enfants, utilisant une boucle for pour créer les éléments HTML nécessaires.
-//         for (let i = 1; i <= nombreEnfants; i++) {
-//             const divRow = document.createElement('div');//Crée un nouvel élément HTML de type <div> qui servira de ligne dans la disposition.
-//             divRow.className = 'row mb-4';
+// Ajout dynamique de nouveaux champs de date de naissance en fonction du nombre d'enfants, utilisant une boucle for pour créer les éléments HTML nécessaires.
+        for (let i = 1; i <= nombreEnfants; i++) {
+            const divRow = document.createElement('div');//Crée un nouvel élément HTML de type <div> qui servira de ligne dans la disposition.
+            divRow.className = 'row mb-4';
 
-//             const divCol = document.createElement('div');// Crée un nouvel élément HTML de type <div> qui servira de colonne dans la disposition.
-//             divCol.className = 'col';
+            const divCol = document.createElement('div');// Crée un nouvel élément HTML de type <div> qui servira de colonne dans la disposition.
+            divCol.className = 'col';
 
-//             const label = document.createElement('label');//Crée un nouvel élément HTML de type <label>.
-//             label.className = 'form-label';//Définit la classe CSS du label comme "form-label", ce qui pourrait être une classe spécifique à votre formulaire pour le styliser.
-//             label.setAttribute('for', 'dateNaissanceEnfant' + i);//Ajoute un attribut for au label, indiquant l'ID du champ associé. L'ID est généré dynamiquement en fonction de la valeur de i.
-//             label.innerText = 'Date de naissance enfant ' + i + ' :';//Définit le texte à afficher dans le label, indiquant le numéro de l'enfant.
+            const label = document.createElement('label');//Crée un nouvel élément HTML de type <label>.
+            label.className = 'form-label';//Définit la classe CSS du label comme "form-label", ce qui pourrait être une classe spécifique à votre formulaire pour le styliser.
+            label.setAttribute('for', 'dateNaissanceEnfant' + i);//Ajoute un attribut for au label, indiquant l'ID du champ associé. L'ID est généré dynamiquement en fonction de la valeur de i.
+            label.innerText = 'Date de naissance enfant ' + i + ' :';//Définit le texte à afficher dans le label, indiquant le numéro de l'enfant.
 
-//             const inputDate = document.createElement('input');//Crée un nouvel élément HTML de type <input>.
-//             inputDate.name = 'dateNaissanceEnfant' + i;//Définit le nom du champ d'entrée (input) pour le soumettre correctement avec le formulaire.
-//             inputDate.type = 'date';//Définit le type de champ d'entrée comme "date", indiquant que l'utilisateur doit entrer une date
-//             inputDate.id = 'dateNaissanceEnfant' + i;//Définit l'ID du champ d'entrée, ce qui est important pour l'association avec le label.
-//             inputDate.className = 'form-control';//Définit la classe CSS du champ d'entrée comme "form-control", ce qui pourrait être une classe Bootstrap pour le styliser.
-//             inputDate.required = true;//Définit que le champ d'entrée est requis, ce qui signifie que l'utilisateur doit entrer une valeur.
+            const inputDate = document.createElement('input');//Crée un nouvel élément HTML de type <input>.
+            inputDate.name = 'dateNaissanceEnfant' + i;//Définit le nom du champ d'entrée (input) pour le soumettre correctement avec le formulaire.
+            inputDate.type = 'date';//Définit le type de champ d'entrée comme "date", indiquant que l'utilisateur doit entrer une date
+            inputDate.id = 'dateNaissanceEnfant' + i;//Définit l'ID du champ d'entrée, ce qui est important pour l'association avec le label.
+            inputDate.className = 'form-control';//Définit la classe CSS du champ d'entrée comme "form-control", ce qui pourrait être une classe Bootstrap pour le styliser.
+            inputDate.required = true;//Définit que le champ d'entrée est requis, ce qui signifie que l'utilisateur doit entrer une valeur.
 
-//             divCol.appendChild(label);//Ajoute le label en tant qu'enfant de la colonne
-//             divCol.appendChild(inputDate);//Ajoute le champ d'entrée en tant qu'enfant de la colonne.
-//             divRow.appendChild(divCol);//Ajoute la colonne en tant qu'enfant de la ligne.
-// //Ajoute la ligne (contenant le label et le champ d'entrée) en tant qu'enfant du conteneur spécifié pour les dates de naissance des enfants.
-//             containerDatesNaissance.appendChild(divRow);
-//         }
-//     }
+            divCol.appendChild(label);//Ajoute le label en tant qu'enfant de la colonne
+            divCol.appendChild(inputDate);//Ajoute le champ d'entrée en tant qu'enfant de la colonne.
+            divRow.appendChild(divCol);//Ajoute la colonne en tant qu'enfant de la ligne.
+//Ajoute la ligne (contenant le label et le champ d'entrée) en tant qu'enfant du conteneur spécifié pour les dates de naissance des enfants.
+            containerDatesNaissance.appendChild(divRow);
+        }
+    }
 </script>
 
 </body>
