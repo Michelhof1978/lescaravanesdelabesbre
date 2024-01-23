@@ -21,9 +21,7 @@
         <div class="card-body">
           <h5 class="card-title">Caravane BIG </h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.<br>
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-          </p>
+          <p class="card-text">
            
 
             <a href="resaContact.php" class="btn btn-primary">Réserver !</a>
@@ -41,9 +39,7 @@
           <h5 class="card-title">Caravane FLO</h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-
+           
           </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
           
@@ -63,13 +59,12 @@
           <h5 class="card-title">Caravane OLI</h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-
-        </p>
+           
+          </p>
 
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
-          
+          <p><strong>OU</strong></p>
+          <a href="<?php echo AIRBNB3_URL; ?>" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
 
         </div>
       </div>
@@ -246,7 +241,6 @@
           En outre, une épicerie de base est fournie, comprenant café, sucre, sel, poivre, huile, etc.
 
           Notre équipe, dirigée par Isabelle, se fera un plaisir de vous aider à rendre votre séjour inoubliable. N'hésitez pas à nous contacter pour plus d'informations ou pour réserver votre séjour dès maintenant.
-        <strong>Le linge de lit n'est pas inclus</strong>
         </p>
       </div>
     </div>

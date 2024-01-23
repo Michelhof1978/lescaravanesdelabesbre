@@ -21,9 +21,7 @@
         <div class="card-body">
           <h5 class="card-title">Caravane BIG </h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.<br>
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-          </p>
+          <p class="card-text">
            
 
             <a href="resaContact.php" class="btn btn-primary">Réserver !</a>
@@ -41,12 +39,11 @@
           <h5 class="card-title">Caravane FLO</h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-
+           
           </p>
-          <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
-          
+          <a href="resaContact.php" class="btn btn-primary">Réserve!</a> <br><br>
+          <p><strong>OU</strong></p>
+          <a href="<?php echo AIRBNB2_URL; ?>" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
         </div>
       </div>
     </div>
@@ -63,13 +60,15 @@
           <h5 class="card-title">Caravane OLI</h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
+            Nous vous proposons une caravane tout confort équipée pour 4 personnes (2 adultes et 2 enfants), avec un auvent, sur un emplacement du <strong>Camping "Les Bords de la Besbre"</strong> à Dompierre-sur-Besbre.
+            Le camping est situé à proximité du <strong>parc d'attractions Le Pal </strong> ainsi que de toutes les commodités. Nous fournissons une épicerie de base comprenant du café, du sucre, de l'huile, du sel, etc. Le lit parental dispose d'un matelas de qualité avec des lattes de 140/190 et il y a également un lit convertible d'environ 110/140.
+            Veuillez noter que les draps ne sont pas fournis, prévoyez donc 2 parures de lit en 140. <br>
+            <strong>En réservant sur notre site lescaravanesdelabesbre.fr ou par téléphone au 06 86 41 31 71, vous pouvez bénéficier d'un tarif réduit par rapport à une réservation Airbnb.</strong>
+          </p>
 
-        </p>
-
-          <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
-          
+          <a href="resaContact.php" class="btn btn-primary">Réservez Directement Sur Le Site !</a> <br><br>
+          <p><strong>OU</strong></p>
+          <a href="<?php echo AIRBNB3_URL; ?>" target="_blank" class="btn btn-primary">Réservez Sur Airbnb (Tarifs Majorés de 20%) !</a>
 
         </div>
       </div>
@@ -246,7 +245,6 @@
           En outre, une épicerie de base est fournie, comprenant café, sucre, sel, poivre, huile, etc.
 
           Notre équipe, dirigée par Isabelle, se fera un plaisir de vous aider à rendre votre séjour inoubliable. N'hésitez pas à nous contacter pour plus d'informations ou pour réserver votre séjour dès maintenant.
-        <strong>Le linge de lit n'est pas inclus</strong>
         </p>
       </div>
     </div>

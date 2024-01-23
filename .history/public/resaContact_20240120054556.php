@@ -234,5 +234,7 @@ $message .= "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n
 <?php include("footer.php") ?>
 
 
+
+
 </body>
   </html>

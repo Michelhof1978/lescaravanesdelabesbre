@@ -21,9 +21,7 @@
         <div class="card-body">
           <h5 class="card-title">Caravane BIG </h5>
           <p class="tarifs"><strong>79,00 €</strong></p>
-          Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.<br>
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-          </p>
+          <p class="card-text">
            
 
             <a href="resaContact.php" class="btn btn-primary">Réserver !</a>
@@ -42,7 +40,6 @@
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
 
           </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
@@ -64,9 +61,7 @@
           <p class="tarifs"><strong>79,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
-
-        </p>
+          </p>
 
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
           
