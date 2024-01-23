@@ -20,7 +20,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Caravane BIG </h5>
-          <p class="tarifs"><strong>82,00 €</strong></p>
+          <p class="tarifs"><strong>,00 €</strong></p>
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.<br>
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
           </p>
