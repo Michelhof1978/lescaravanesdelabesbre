@@ -8,7 +8,7 @@
 <h1 class="pb-2 mt-5 text-center border border-3 rounded h1Index pt-1 text-white"><strong>Conditions générales de vente - Les Caravanes De La Besbre</strong></h1>
 
 <p class="lead fs mt-3 mb-5">
-En cours de rédaction
+En cours
 
 </p>
    

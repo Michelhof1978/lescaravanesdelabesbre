@@ -67,7 +67,7 @@
           <p class="tarifs"><strong>82,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-         <br>
+         
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br>
           Linge de lit non inclus
         </p>

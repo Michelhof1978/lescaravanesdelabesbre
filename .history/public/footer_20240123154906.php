@@ -56,7 +56,7 @@
             <p>
                 <a href="mentionsLegales.php">Mentions Légales</a> &nbsp;&nbsp;&nbsp;
                 <a href="politiquedeConfidentialite.php">Politique De Confidentialité</a>&nbsp;&nbsp;&nbsp;
-                <a href="conditionsGeneralesDeVente.php">CGV</a>
+                <a href="conditionsGeneralesDeVente.php">C</a>
             </p>
 
         </div>

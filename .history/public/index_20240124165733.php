@@ -22,10 +22,9 @@
           <h5 class="card-title">Caravane BIG </h5>
           <p class="tarifs"><strong>82,00 €</strong></p>
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.<br>
-         
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong><br>
-          Linge de lit non inclus
-        </p>
+          Linge de lit non inclus<br>
+          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
+          </p>
            
 
             <a href="resaContact.php" class="btn btn-primary">Réserver !</a>
@@ -44,9 +43,9 @@
           <p class="tarifs"><strong>82,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-          <br>
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong><br>
-          Linge de lit non inclus 
+          Linge de lit non inclus <br>
+          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong>
+
           </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
           
@@ -67,8 +66,8 @@
           <p class="tarifs"><strong>82,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
-         <br>
-          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br>
+         
+          <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br
           Linge de lit non inclus
         </p>
 
