@@ -25,12 +25,18 @@
   </style>
 
 <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
         #cookie-banner {
             display: none;
             position: fixed;
             bottom: 0;
-            left: 0;
-            width: 100%;
+            right: 0;
+            width: 300px;
             background: #3498db;
             color: #fff;
             padding: 10px;

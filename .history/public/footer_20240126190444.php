@@ -78,13 +78,6 @@
     <a href="https://www.mon-compteur.fr"><img src="https://www.mon-compteur.fr/html_c01genv2-237765-2" loading="lazy" alt="nombre de visites"></a>
 </div>
 
-<!-- COOKIES -->
-<div id="cookie-banner">
-    <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Acceptez-vous l'utilisation des cookies ?</p>
-    <button onclick="acceptCookies()">Accepter</button>
-    <button onclick="refuseCookies()">Refuser</button>
-</div>
-
 <!-- _____________________________________________________________________________________ -->
 <!-- Google Tag Manager (noscript) -->
 <!-- <noscript>
@@ -378,22 +371,32 @@ function ajouterChampsDateNaissance() {
 <!-- _____________________________________________________________________________________ -->
 
 <!-- COOKIES -->
-<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script> -->
+<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script> -->  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
 <script>
-    // Fonction appelée lorsqu'un utilisateur accepte les cookies
-    function acceptCookies() {
-        // Ajoutez ici le code pour définir les cookies ou effectuer d'autres actions nécessaires
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Fonction appelée lorsqu'un utilisateur refuse les cookies
-    function refuseCookies() {
-        // Ajoutez ici le code pour gérer le refus des cookies
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Affiche la bannière de consentement après un délai (par exemple, 2 secondes)
-    setTimeout(function() {
-        document.getElementById('cookie-banner').style.display = 'block';
-    }, 2000);
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#237afc"
+                },
+                "button": {
+                    "background": "#fff",
+                    "text": "#237afc"
+                }
+            },
+            "theme": "classic",
+            "content": {
+                "message": "Ce site utilise des cookies pour garantir la meilleure expérience sur notre site.",
+                "dismiss": "Refuser",
+                "allow": "Accepter",
+                "link": "En savoir plus",
+                "href": "/politique-cookies" // Mettez ici le lien vers votre page de politique de cookies
+            },
+            "elements": {
+                "allow": '<span style="cursor:pointer;">Accepter</span>',
+                "dismiss": '<span style="cursor:pointer;">Refuser</span>'
+            }
+        });
+    });
 </script>

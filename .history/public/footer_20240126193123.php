@@ -78,13 +78,6 @@
     <a href="https://www.mon-compteur.fr"><img src="https://www.mon-compteur.fr/html_c01genv2-237765-2" loading="lazy" alt="nombre de visites"></a>
 </div>
 
-<!-- COOKIES -->
-<div id="cookie-banner">
-    <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Acceptez-vous l'utilisation des cookies ?</p>
-    <button onclick="acceptCookies()">Accepter</button>
-    <button onclick="refuseCookies()">Refuser</button>
-</div>
-
 <!-- _____________________________________________________________________________________ -->
 <!-- Google Tag Manager (noscript) -->
 <!-- <noscript>
@@ -378,22 +371,38 @@ function ajouterChampsDateNaissance() {
 <!-- _____________________________________________________________________________________ -->
 
 <!-- COOKIES -->
-<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script> -->
+<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script> -->  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js"></script>
+<!-- 
+    
+<!-- Ajoutez vos scripts JavaScript en bas du corps du document -->
 <script>
-    // Fonction appelée lorsqu'un utilisateur accepte les cookies
-    function acceptCookies() {
-        // Ajoutez ici le code pour définir les cookies ou effectuer d'autres actions nécessaires
-        document.getElementById('cookie-banner').style.display = 'none';
+    // Fonction pour masquer la bannière de consentement des cookies et enregistrer le consentement
+    function accepterCookies() {
+        // Vous pouvez ajouter ici du code pour enregistrer le consentement, par exemple en utilisant des cookies
+        document.getElementById('cookieConsent').style.display = 'none';
+        // Ajoutez ici le code pour initialiser Google Analytics
+        initialiserGoogleAnalytics();
     }
 
-    // Fonction appelée lorsqu'un utilisateur refuse les cookies
-    function refuseCookies() {
-        // Ajoutez ici le code pour gérer le refus des cookies
-        document.getElementById('cookie-banner').style.display = 'none';
+    // Vérifie si le consentement a déjà été donné
+    function checkConsent() {
+        // Ajoutez ici le code pour vérifier si le consentement a déjà été donné (par exemple, en vérifiant un cookie)
+        // Si le consentement a déjà été donné, masquez la bannière
+        // Sinon, laissez la bannière visible
+        var consentGiven = false; // Remplacez par votre logique de vérification de consentement
+        if (!consentGiven) {
+            document.getElementById('cookieConsent').style.display = 'block';
+        }
     }
 
-    // Affiche la bannière de consentement après un délai (par exemple, 2 secondes)
-    setTimeout(function() {
-        document.getElementById('cookie-banner').style.display = 'block';
-    }, 2000);
+    // Exécutez la fonction de vérification du consentement au chargement de la page
+    window.onload = checkConsent;
+
+    // Fonction pour initialiser Google Analytics
+    function initialiserGoogleAnalytics() {
+        // Remplacez 'UA-XXXXXXXXX-X' par votre ID de suivi Google Analytics
+        var idSuivi = 'UA-XXXXXXXXX-X';
+        // Ajoutez ici le code de configuration de Google Analytics
+        // (consultez la documentation de Google Analytics pour plus d'informations)
+    }
 </script>

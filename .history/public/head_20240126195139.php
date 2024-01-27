@@ -14,7 +14,42 @@
   <meta property="og:description" content="Propositions d'hébergements proche du Pal">
   <meta property="og:image" content="../images/logo.ico">
 
+<!-- COOKIES -->
+<!-- <script>
+  // Fonction pour charger Google Analytics si les cookies sont acceptés
+  function chargerGoogleAnalytics() {
+    // Vérifier si l'utilisateur a accepté les cookies
+    let cookies = document.cookie.split(';');
+    let cookiesAccepted = cookies.some(function(cookie) {
+      return cookie.trim().startsWith("cookiesAccepted=");
+    });
 
+    // Charger Google Analytics uniquement si les cookies sont acceptés
+    if (cookiesAccepted) {
+      // Remplacez 'UA-XXXXXXXXX' par votre ID Google Analytics
+      let gaTrackingCode = 'UA-32-930029-2';
+      let gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaTrackingCode;
+      document.head.appendChild(gaScript);
+
+      gaScript.onload = function () {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', gaTrackingCode);
+      };
+    }
+  }
+
+  // Appeler la fonction pour charger Google Analytics au chargement de la page
+  window.onload = function() {
+    checkCookiesAccepted();
+    chargerGoogleAnalytics();
+  };
+</script>  
 <!-- Ajout du style ds le head car ds fichier css, impossible d'appliquer le style -->
   <style>
     @media only screen and (max-width: 767px) {
@@ -23,35 +58,6 @@
       }
     }
   </style>
-
-<style>
-        #cookie-banner {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: #3498db;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #cookie-banner p {
-            margin: 0 0 10px;
-        }
-
-        #cookie-banner button {
-            margin: 5px;
-            cursor: pointer;
-            background: #fff;
-            color: #3498db;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-        }
-    </style>
 
   <!-- Google Tag Manager OBLIGATOIRE DE LE METTRE DANS LE HEAD-->
   <script>

@@ -79,7 +79,7 @@
 </div>
 
 <!-- COOKIES -->
-<div id="cookie-banner">
+<div id="cookie-banner" style="display: none;">
     <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Acceptez-vous l'utilisation des cookies ?</p>
     <button onclick="acceptCookies()">Accepter</button>
     <button onclick="refuseCookies()">Refuser</button>
@@ -378,22 +378,4 @@ function ajouterChampsDateNaissance() {
 <!-- _____________________________________________________________________________________ -->
 
 <!-- COOKIES -->
-<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script> -->
-<script>
-    // Fonction appelée lorsqu'un utilisateur accepte les cookies
-    function acceptCookies() {
-        // Ajoutez ici le code pour définir les cookies ou effectuer d'autres actions nécessaires
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Fonction appelée lorsqu'un utilisateur refuse les cookies
-    function refuseCookies() {
-        // Ajoutez ici le code pour gérer le refus des cookies
-        document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Affiche la bannière de consentement après un délai (par exemple, 2 secondes)
-    setTimeout(function() {
-        document.getElementById('cookie-banner').style.display = 'block';
-    }, 2000);
-</script>
+//<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5a985220-5058-4f9d-b1ef-1207735e1f55" data-blockingmode="auto"></script>

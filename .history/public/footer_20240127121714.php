@@ -79,7 +79,7 @@
 </div>
 
 <!-- COOKIES -->
-<div id="cookie-banner">
+<div id="cookie-banner" style="display: none;">
     <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Acceptez-vous l'utilisation des cookies ?</p>
     <button onclick="acceptCookies()">Accepter</button>
     <button onclick="refuseCookies()">Refuser</button>

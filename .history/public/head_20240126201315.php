@@ -14,7 +14,44 @@
   <meta property="og:description" content="Propositions d'hébergements proche du Pal">
   <meta property="og:image" content="../images/logo.ico">
 
+<!-- COOKIES -->
+<script>
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
 
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var user = getCookie("username");
+            if (user != "") {
+                alert("Welcome again " + user);
+            } else {
+                user = prompt("Please enter your name:", "");
+                if (user != "" && user != null) {
+                    setCookie("username", user, 365);
+                }
+            }
+        }
+    </script>
+  
 <!-- Ajout du style ds le head car ds fichier css, impossible d'appliquer le style -->
   <style>
     @media only screen and (max-width: 767px) {
@@ -23,35 +60,6 @@
       }
     }
   </style>
-
-<style>
-        #cookie-banner {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: #3498db;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #cookie-banner p {
-            margin: 0 0 10px;
-        }
-
-        #cookie-banner button {
-            margin: 5px;
-            cursor: pointer;
-            background: #fff;
-            color: #3498db;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 3px;
-        }
-    </style>
 
   <!-- Google Tag Manager OBLIGATOIRE DE LE METTRE DANS LE HEAD-->
   <script>
