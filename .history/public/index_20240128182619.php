@@ -288,7 +288,7 @@
 
         <div class="col d-none d-md-block">
             <div class="videoPal embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="<?php echo YOUTUBE2_URL; ?>" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="<?php echo YOUTUBE2_URL; ?>"title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="video-description">Visite du Pal</div>
             </div>
         </div>

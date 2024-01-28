@@ -501,7 +501,7 @@ video{
 	position: relative;
     top: -75px;
 	transition: transform .8s;/*zoom survol souris*/
-
+margin-bottom: 20px;
 
  }
  .logoPal:hover{/*zoom survol souris*/

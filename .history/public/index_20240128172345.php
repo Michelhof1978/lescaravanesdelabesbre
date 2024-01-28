@@ -265,38 +265,36 @@
 <section class="text-center mt-4 m-2">
   <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index"><strong>VISITE AU PARC LE PAL</strong></h4>
   
-  <div class="text-center">
-    <h2 class="mb-4">Nouvelle Attraction 2024 </h2>
-    <img src="../images/attraction2024.jpg" alt="Nouvelle attraction le pal 2024" loading="lazy" class="img-fluid w-75 w-md-50 rounded-2 mb-5">
-</div>
-
+  <div class=" col text-center d-none d-md-block align-self-center">
+        <h2 class="text-dark display-6">Nouvelle Attraction 2024 </h2>
+        <img src="../images/attraction2024.jpg" alt="Nouvelle attraction le pal 2024" loading="lazy" class="img-fluid w-50 border-2 mb">
+      </div>
   
-      <div class="container">
-    <div class="row g-0 flex-column flex-md-row">
+  <div class="container">
+    <div class="row g-0">
 
-        <div class="col">
-            <div class="videoPal embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="<?php echo YOUTUBE1_URL; ?>" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <div class="video-description">Bande Annonce Du Pal</div>
-            </div>
+      <div class="col">
+        <div class="videoPal embed-responsive embed-responsive-16by9">
+          <iframe width="560" height="315" src="<?php echo YOUTUBE1_URL; ?>" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <div class="video-description">Bande Annonce Du Pal</div>
         </div>
+      </div>
 
-        <div class="col text-center align-self-center">
-            <h2 class="billeterie text-dark display-6">Billeterie </h2>
-            <a href="<?php echo PAL_URL; ?>"><img src="../images/lePal.webp" alt="Logo le pal" loading="lazy" class="logoPal img-fluid "></a>
-        </div>
 
-        <div class="col d-none d-md-block">
-            <div class="videoPal embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="<?php echo YOUTUBE2_URL; ?>" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <div class="video-description">Visite du Pal</div>
-            </div>
+      <div class=" col text-center d-none d-md-block align-self-center">
+        <h2 class="billeterie text-dark display-6">Billeterie </h2>
+        <a href="<?php echo PAL_URL; ?>"><img src="../images/lePal.webp" alt="Logo le pal" loading="lazy" class="logoPal img-fluid "></a>
+      </div>
+
+      <div class="col d-none d-xl-block">
+        <div class="videoPal embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item videoPal1" src="<?php echo YOUTUBE2_URL; ?>" allowfullscreen></iframe>
+          <div class="video-description">Visite du Pal</div>
         </div>
+      </div>
 
     </div>
-</div>
-
-
+  </div>
 </section>
 
 
