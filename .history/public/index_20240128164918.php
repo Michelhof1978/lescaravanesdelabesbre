@@ -10,7 +10,7 @@
 <!-- PROPOSITION LOGEMENTS -->
 <section class="index text-center clear mt-4 ms-2 me-2">
 
-  <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES 82,00€ / NUIT</strong></h4>
+  <h4 class="mb-5 border border-3 rounded display-6 p-2 col m-2 h4Index text-white"><strong>LOCATION POUR 4 PERSONNES ,00€ / NUIT</strong></h4>
 
   <div class="row locationIndex">
     <div class="col-lg-4 col-md-12 mb-4">
