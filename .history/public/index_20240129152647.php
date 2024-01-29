@@ -462,7 +462,7 @@
       document.body.removeChild(popupDiv);
       // Définir le cookie pour indiquer que le popup a été affiché
       setPopupShown();
-    }, 15000);
+    }, 20 000);
   }
 </script>
 

@@ -283,7 +283,6 @@ function ajouterChampsDateNaissance() {
         containerDatesNaissance.appendChild(divRow);
     }
 }
-
 // Validation des dates d'arrivée et de départ
         let dateArriveeInput = document.getElementById('dateArrivee');//Obtient l'élément HTML avec l'ID "dateArrivee" (champ de date d'arrivée).
         let dateDepartInput = document.getElementById('dateDepart');//Obtient l'élément HTML avec l'ID "dateDepart" (champ de date de départ).
