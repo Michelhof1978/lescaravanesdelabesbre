@@ -59,8 +59,8 @@ RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
 # Redirection de /conditionsGeneralesDeVente.php vers /conditionsGeneralesDeVente
 RewriteCond %{THE_REQUEST} \s/conditionsGeneralesDeVente\.php [NC]
 RewriteRule ^ /conditionsGeneralesDeVente [R=301,L]
-# Réécriture de /conditionsGeneralesDeVente vers /conditionsGeneralesDeVente.php
-RewriteRule ^conditionsGeneralesDeVente/?$ conditionsGeneralesDeVente.php [L]
+# Réécriture de /conditionsGeneralesDeVente vers /politiquedeConfidentialite.php
+RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
 
 # Redirection de /resaContact.php vers /resaContact
 RewriteCond %{THE_REQUEST} \s/resaContact\.php [NC]
