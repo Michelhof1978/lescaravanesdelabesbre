@@ -386,21 +386,20 @@
 <!-- _____________________________________________________________________________________ -->
 
 <!-- Affichage Popup -->
-<!-- Affichage Popup -->
 <script>
-  // Fonction pour vérifier si le popup a déjà été affiché
+// Fonction pour vérifier si le popup a déjà été affiché
   function isPopupShown() {
     return document.cookie.indexOf("popupShown=true") !== -1;
   }
 
-  // Fonction pour définir le cookie indiquant que le popup a été affiché
+// Fonction pour définir le cookie indiquant que le popup a été affiché
   function setPopupShown() {
     document.cookie = "popupShown=true; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/";
   }
 
-  // Vérifier si le popup a déjà été affiché
+// Vérifier si le popup a déjà été affiché
   if (!isPopupShown()) {
-    // Création de la div pour afficher l'image + message + position
+// Création de la div pour afficher l'image + message + position
     let popupDiv = document.createElement("div");
     popupDiv.style.position = "fixed";
     popupDiv.style.top = "50%";
@@ -413,60 +412,31 @@
     popupDiv.style.border = "1px solid #ccc";
     popupDiv.style.borderRadius = "8px";
 
-    // Création de l'image à afficher
+// Création de l'image à afficher
     let img = document.createElement("img");
     img.src = "../images/lePal2024.png";
+    img.style.height = '50%';
+    img.style.width = '50%';
 
-    // Vérifier si la largeur de l'écran est inférieure à 600 pixels (ajustez selon vos besoins)
-    if (window.innerWidth < 600) {
-      img.style.height = '80%';
-      img.style.width = '80%';
-    } else {
-      img.style.height = '60%';
-      img.style.width = '60%';
-    }
-
-    // Ajout de l'image à la div
+// Ajout de l'image à la div
     popupDiv.appendChild(img);
 
-    // Ajout d'un bouton de fermeture (croix)
-    let closeButton = document.createElement("button");
-    closeButton.innerHTML = "X";
-    closeButton.style.position = "absolute";
-    closeButton.style.top = "10px";
-    closeButton.style.right = "10px";
-    closeButton.style.cursor = "pointer";
-    closeButton.style.border = "none";
-    closeButton.style.background = "transparent";
-    closeButton.style.fontSize = "16px";
-
-    // Ajouter un gestionnaire d'événements pour fermer le popup lorsqu'on clique sur le bouton
-    closeButton.addEventListener("click", function () {
-      document.body.removeChild(popupDiv);
-      setPopupShown();
-    });
-
-    // Ajouter le bouton de fermeture à la div
-    popupDiv.appendChild(closeButton);
-
-    // Ajout du message à la div
+// Ajout du message à la div
     let message = document.createTextNode("");
     popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
     popupDiv.appendChild(message);
 
-    // Ajout de la div au body de la page
+// Ajout de la div au body de la page
     document.body.appendChild(popupDiv);
 
-    // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
+// Suppression de la div contenant l'image et le message après 3 secondes
     setTimeout(function() {
       document.body.removeChild(popupDiv);
-      // Définir le cookie pour indiquer que le popup a été affiché
+// Définir le cookie pour indiquer que le popup a été affiché
       setPopupShown();
-    }, 8000);
+    }, 000);
   }
 </script>
-
-
 
 <!-- _____________________________________________________________________________________ -->
 

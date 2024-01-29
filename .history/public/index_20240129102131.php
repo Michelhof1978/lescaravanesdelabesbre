@@ -386,7 +386,6 @@
 <!-- _____________________________________________________________________________________ -->
 
 <!-- Affichage Popup -->
-<!-- Affichage Popup -->
 <script>
   // Fonction pour vérifier si le popup a déjà été affiché
   function isPopupShown() {
@@ -416,15 +415,8 @@
     // Création de l'image à afficher
     let img = document.createElement("img");
     img.src = "../images/lePal2024.png";
-
-    // Vérifier si la largeur de l'écran est inférieure à 600 pixels (ajustez selon vos besoins)
-    if (window.innerWidth < 600) {
-      img.style.height = '80%';
-      img.style.width = '80%';
-    } else {
-      img.style.height = '60%';
-      img.style.width = '60%';
-    }
+    img.style.height = '60%';
+    img.style.width = '60%';
 
     // Ajout de l'image à la div
     popupDiv.appendChild(img);
@@ -465,7 +457,6 @@
     }, 8000);
   }
 </script>
-
 
 
 <!-- _____________________________________________________________________________________ -->

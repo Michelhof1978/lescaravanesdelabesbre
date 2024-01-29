@@ -386,7 +386,6 @@
 <!-- _____________________________________________________________________________________ -->
 
 <!-- Affichage Popup -->
-<!-- Affichage Popup -->
 <script>
   // Fonction pour vérifier si le popup a déjà été affiché
   function isPopupShown() {
@@ -413,41 +412,29 @@
     popupDiv.style.border = "1px solid #ccc";
     popupDiv.style.borderRadius = "8px";
 
+    // Ajuster la taille du popup en pourcentage de la largeur et hauteur de l'écran
+    let popupWidthPercentage = 70;
+    let popupHeightPercentage = 70;
+
+    // Calculer la largeur et la hauteur en fonction des pourcentages
+    let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    let screenHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+    let popupWidth = (screenWidth * popupWidthPercentage) / 100;
+    let popupHeight = (screenHeight * popupHeightPercentage) / 100;
+
+    // Appliquer la taille à la div popup
+    popupDiv.style.width = popupWidth + "px";
+    popupDiv.style.height = popupHeight + "px";
+
     // Création de l'image à afficher
     let img = document.createElement("img");
     img.src = "../images/lePal2024.png";
-
-    // Vérifier si la largeur de l'écran est inférieure à 600 pixels (ajustez selon vos besoins)
-    if (window.innerWidth < 600) {
-      img.style.height = '80%';
-      img.style.width = '80%';
-    } else {
-      img.style.height = '60%';
-      img.style.width = '60%';
-    }
+    img.style.height = '50%';
+    img.style.width = '50%';
 
     // Ajout de l'image à la div
     popupDiv.appendChild(img);
-
-    // Ajout d'un bouton de fermeture (croix)
-    let closeButton = document.createElement("button");
-    closeButton.innerHTML = "X";
-    closeButton.style.position = "absolute";
-    closeButton.style.top = "10px";
-    closeButton.style.right = "10px";
-    closeButton.style.cursor = "pointer";
-    closeButton.style.border = "none";
-    closeButton.style.background = "transparent";
-    closeButton.style.fontSize = "16px";
-
-    // Ajouter un gestionnaire d'événements pour fermer le popup lorsqu'on clique sur le bouton
-    closeButton.addEventListener("click", function () {
-      document.body.removeChild(popupDiv);
-      setPopupShown();
-    });
-
-    // Ajouter le bouton de fermeture à la div
-    popupDiv.appendChild(closeButton);
 
     // Ajout du message à la div
     let message = document.createTextNode("");
@@ -457,15 +444,14 @@
     // Ajout de la div au body de la page
     document.body.appendChild(popupDiv);
 
-    // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
+    // Suppression de la div contenant l'image et le message après 3 secondes
     setTimeout(function() {
       document.body.removeChild(popupDiv);
       // Définir le cookie pour indiquer que le popup a été affiché
       setPopupShown();
-    }, 8000);
+    }, 5000);
   }
 </script>
-
 
 
 <!-- _____________________________________________________________________________________ -->
