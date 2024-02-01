@@ -228,7 +228,7 @@ $message .= "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n
                 </div>
                 
             </div>
-            </div>
+            
     </fieldset>
 </form>
 
