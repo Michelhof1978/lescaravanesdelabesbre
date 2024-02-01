@@ -1,6 +1,6 @@
 <?php include("head.php") ?>
-<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal et vous avez besoins de renseignements complémentaires.">
-<title>Formulaire de Contact - Hébergement Le Pal</title>
+<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal à plusieurs, possibilité de louer nos 3 caravanes placées côte à côte.">
+<title>Réservation hébergements - Le Pal</title>
 </head>
 
 <?php include("header.php") ?>
@@ -24,6 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         isset($_POST["lastName"]) &&
         isset($_POST["phoneNumber"]) &&
         isset($_POST["email"]) &&
+        isset($_POST["nombreAdultes"]) &&
+        isset($_POST["nombreEnfants"]) &&
+        isset($_POST["dateNaissanceEnfant1"]) &&
+        isset($_POST["dateArrivee"]) &&
+        isset($_POST["dateDepart"]) &&
         isset($_POST["message"]) &&
         isset($_POST['g-recaptcha-response']) &&
         isset($_POST['rgpdCheckbox'])
@@ -55,22 +60,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $rgpdAccepted = true;
             }
 
-            // Modifier le message pour inclure l'information sur l'acceptation des RGPD
-            $message = "Demande de renseignements :\n" .
-                "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
-                "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
-                "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
-                "Email : " . htmlspecialchars($_POST["email"]) . "\n" .
-                "Message : " . htmlspecialchars($_POST["message"]) . "\n" .
-                "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non');
+          // Modifier le message pour inclure l'information sur l'acceptation des RGPD
+$message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
+"Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
+"Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n" .
+"Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+"Email : " . htmlspecialchars($_POST["email"]) . "\n" .
+"Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+"Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
 
-            $object = "Demande de renseignements";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouveau Message", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+// Récupérer le nombre d'enfants
+$nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
+
+// Ajouter les dates de naissance de chaque enfant dans le message
+for ($i = 1; $i <= $nombreEnfants; $i++) {
+$fieldName = "dateNaissanceEnfant" . $i;
+$message .= "Date de naissance enfant " . $i . " : " . htmlspecialchars($_POST[$fieldName]) . "\n";
+}
+
+$message .= "Date d'arrivée : " . htmlspecialchars($_POST["dateArrivee"]) . "\n" .
+"Date de départ : " . htmlspecialchars($_POST["dateDepart"]) . "\n" .
+"Message : " . htmlspecialchars($_POST["message"]) . "\n" .
+"RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non');
+
+
+            $object = "Nouvelle reservation";
+            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+             //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
-                echo '<script>window.location.replace("confirmationContactRenseignements.php");</script>';
+                echo '<script>window.location.replace("confirmationContactResa.php");</script>';
                 exit();
             } else {
                 $error_message = "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer.";
@@ -86,9 +106,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
 
-<form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">
+<h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>RÉSERVATION DE CARAVANES</strong></h4>
+
+<form class="needs-validation" id="myForm" onsubmit="return validateForm()" novalidate action="#" method="POST">
     <fieldset class="mb-5 ms-2 me-2">
 
         <div class="row d-flex justify-content-center">
@@ -135,6 +156,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </div>
                     </div>
 
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'adultes.
+                        </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
+                        <div class="invalid-feedback">
+                            Veuillez saisir le nombre d'enfants.
+                        </div>
+                    </div>
+
+                    <div id="containerDatesNaissance" class="mb-4">
+                        <h5 class="form-label round">Informations sur les enfants :</h5>
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label" for="dateNaissanceEnfant1">Date de naissance enfant 1 :</label>
+                                <input name="dateNaissanceEnfant1" type="date" id="dateNaissanceEnfant1" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="dateArrivee">Date d'arrivée :</label>
+                        <input name="dateArrivee" type="date" id="dateArrivee" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Veuillez sélectionner la date d'arrivée.
+                        </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <label class="form-label round" for="dateDepart">Date de départ :</label>
+                        <input name="dateDepart" type="date" id="dateDepart" class="form-control" required>
+                        <div class="invalid-feedback">
+                            Veuillez sélectionner la date de départ.
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label for="message" class="mb-2">Message</label>
                         <div class="form-floating">
@@ -170,5 +233,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?php include("footer.php") ?>
 
+
 </body>
-    </html>
+  </html>
