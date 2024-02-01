@@ -140,7 +140,7 @@
 
      <!--Bouton logo -->
      <div class=" text-center mt-5">
-         <a href="<?php echo TOURISME_URL; ?>" target="_blank"><img src="../images/officeTourismeLogo.webp" alt="logo office du tourisme" class="logoPal img-fluid w-25"></a>
+         <a href="<?php echo TOURISME_URL; ?> "target="_blank"><img src="../images/officeTourismeLogo.webp" alt="logo office du tourisme" class="logoPal img-fluid w-25"></a>
      </div>
 
      <div class="mt-5"><img class="img-fluid imgTourismeLogo" loading="lazy" src="../images/logoTourisme.webp" alt="Office du tourisme entre allier besbre et loire site de dompierre sur besbre"></div>
@@ -154,17 +154,14 @@
 
  <!--SlideShow-->
  <div class="container w-75 mb-5">
-    <div class="slideShow row">
-        <figure class="col">
-            <video controls>
-                <source src="../videos/besbre.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture de la vidéo.
-            </video>
-            <figcaption class="video-description text-center">L'Allier En Vidéo</figcaption>
-        </figure>
-    </div>
-</div>
-
+     <div class="slideShow row">
+         <video class="col" controls alt="L'Allier En Vidéo">
+             <source src="../videos/besbre.mp4" type="video/mp4">
+             Votre navigateur ne prend pas en charge la lecture de la vidéo.
+         </video>
+         <div class="video-description text-center">L'Allier En Vidéo</div>
+     </div>
+ </div>
 
 
  <!--EndSlideShow-->

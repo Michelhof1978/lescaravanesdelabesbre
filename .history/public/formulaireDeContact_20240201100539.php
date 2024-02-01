@@ -134,9 +134,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <button type="submit" value="Valider" id="send-data" class="btn btn-primary btn-block mb-4">
                         Envoyez
                     </button>
-                </div>
-                </div>
-                </div>
+                
+               
 </fieldset>
 </form>
 

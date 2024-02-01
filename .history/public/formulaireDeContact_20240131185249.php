@@ -57,7 +57,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
-
 <h4 class="m-5 text-center border border-3 rounded text-white p-2 display-6 h4Index" id="contact"><strong>DEMANDE DE RENSEIGNEMENTS</strong></h4>
 
 <form class="needs-validation" id="myForm" onsubmit="return validateContactForm()" novalidate action="#" method="POST">
@@ -135,11 +134,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         Envoyez
                     </button>
                 </div>
-                </div>
-                </div>
-</fieldset>
+            </div>
+    </fieldset>
 </form>
-
 
 
 <?php include("footer.php") ?>

@@ -31,7 +31,6 @@
           <img src="../images/festi01.webp" alt="image concert festiDomp" loading="lazy" class="videoPal embed-responsive embed-responsive-16by9 img-fluid mb-5 text-center w-75 rounded-2">
         </div>
         <div class="videoPal embed-responsive embed-responsive-4by3">
-          
     <figure>
         <video controls class="embed-responsive-item videoPal1" src="../videos/festi01.mp4">
             Votre navigateur ne prend pas en charge la lecture de la vidéo.

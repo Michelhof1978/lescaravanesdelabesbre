@@ -136,7 +136,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </button>
                 </div>
                 </div>
-                </div>
+                
 </fieldset>
 </form>
 

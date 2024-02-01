@@ -154,17 +154,14 @@
 
  <!--SlideShow-->
  <div class="container w-75 mb-5">
-    <div class="slideShow row">
-        <figure class="col">
-            <video controls>
-                <source src="../videos/besbre.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la lecture de la vidéo.
-            </video>
-            <figcaption class="video-description text-center">L'Allier En Vidéo</figcaption>
-        </figure>
-    </div>
-</div>
-
+     <div class="slideShow row">
+         <video class="col" controls alt="L'Allier En Vidéo">
+             <source src="../videos/besbre.mp4" type="video/mp4">
+             Votre navigateur ne prend pas en charge la lecture de la vidéo.
+         </video>
+         <div class="video-description text-center">L'Allier En Vidéo</div>
+     </div>
+ </div>
 
 
  <!--EndSlideShow-->
