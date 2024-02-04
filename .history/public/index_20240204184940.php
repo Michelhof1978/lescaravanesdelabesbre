@@ -1,21 +1,6 @@
 <?php include("head.php") ?>
 <meta name="description" content="Nous vous proposons des hébergements dans un camping à Dompierre sur Besbre dans le département de l'Allier à 5 km du parc d'attractions le Pal.">
 <title>Accueil Camping Le Pal </title>
-<style>
-    @keyframes infiniteBlink {
-        0%, 100% {
-            opacity: 1;
-        }
-        50% {
-            opacity: 0;
-        }
-    }
-
-    .custom-animation {
-        animation: infiniteBlink 2s infinite; /* 2s est la durée de l'animation, et "infinite" indique une répétition infinie */
-    }
-</style>
-
 </head>
 
 <?php include("header.php") ?>
@@ -42,7 +27,7 @@
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong><br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 120/190</strong>.<br>
           Tarifs <strong>82,00 €</strong> en semaine / <strong>89,00 €</strong> week-end, jours fériés et ponts.
-         <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong></p>
+         <br> <p> </p>
          <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
            
@@ -67,7 +52,6 @@
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong><br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
           <br>Tarifs <strong>82,00 €</strong> en semaine / <strong>89,00 €</strong> week-end, jours fériés et ponts.
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong></p>
           <br> <p>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).</p>
         </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
@@ -93,7 +77,6 @@
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
           <br>Tarifs <strong>82,00 €</strong> en semaine / <strong>89,00 €</strong> week-end, jours fériés et ponts.
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong></p>
           <br> <p>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong>  par personne (matelas non fournis, veuillez prévoir).</p>
         </p>
 

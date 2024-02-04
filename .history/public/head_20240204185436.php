@@ -13,8 +13,7 @@
   <meta property="og:title" content="Les Caravanes De La Besbre">
   <meta property="og:description" content="Propositions d'hébergements proche du Pal">
   <meta property="og:image" content="../images/logo.ico">
-
-  <!-- bibliothèque animate.css pour texte clignotant-->
+  <!-- Assurez-vous d'inclure la bibliothèque animate.css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
