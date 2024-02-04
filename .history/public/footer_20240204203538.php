@@ -228,79 +228,84 @@
 <script>
     function validateForm() {
         // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        let emailInput = document.getElementById('email');//Obtention de l'élément HTML avec l'ID "email" (champ d'adresse e-mail).
+        let emailValue = emailInput.value.trim();//Obtention de la valeur de l'adresse e-mail avec les espaces blancs supprimés
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définition d'une expression régulière pour valider l'adresse e-mail.
 
+//Vérification si la valeur de l'adresse e-mail correspond à l'expression régulière. 
         if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
+            alert('Veuillez saisir une adresse email valide.');//Affichage d'une alerte si la validation échoue
+            emailInput.focus();//éplace automatiquement le focus vers le champ d'adresse e-mail, attirant l'attention de l'utilisateur en cas d'échec de la validation.
             return false;
         }
 
-        // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
+// Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
         let phoneNumberInput = document.getElementById("phoneNumber");
-        let phoneNumberValue = phoneNumberInput.value;
+        let phoneNumberValue = phoneNumberInput.value;//Obtention de la valeur du numéro de téléphone.
 
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+// Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
         let phoneRegex = /^[0-9]+$/;
-
+//Vérification si la valeur du numéro de téléphone correspond à l'expression régulière. Affichage d'une alerte si la validation échoue.
         if (!phoneRegex.test(phoneNumberValue)) {
             alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
             return false;
         }
 
-        // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-        function ajouterChampsDateNaissance() {
-            const nombreEnfants = document.getElementById('nombreEnfants').value;
-            const containerDatesNaissance = document.getElementById('containerDatesNaissance');
+// Fonction pour ajouter dynamiquement les champs de date de naissance des enfantsDéclaration de la fonction pour ajouter dynamiquement des champs de date de naissance en fonction du nombre d'enfants.
+function ajouterChampsDateNaissance() {
+    const nombreEnfants = document.getElementById('nombreEnfants').value;
+    const containerDatesNaissance = document.getElementById('containerDatesNaissance');
 
-            containerDatesNaissance.innerHTML = ''; // Supprime les champs de date de naissance existants
+    containerDatesNaissance.innerHTML = ''; // Supprime les champs de date de naissance existants
 
-            for (let i = 1; i <= nombreEnfants; i++) {
-                const divRow = document.createElement('div');
-                divRow.className = 'row mb-4';
+    for (let i = 1; i <= nombreEnfants; i++) {
+        const divRow = document.createElement('div');
+        divRow.className = 'row mb-4';
 
-                const divCol = document.createElement('div');
-                divCol.className = 'col';
+        const divCol = document.createElement('div');
+        divCol.className = 'col';
 
-                const label = document.createElement('label');
-                label.className = 'form-label';
-                label.setAttribute('for', 'dateNaissanceEnfant' + i);
-                label.innerText = 'Date de naissance enfant ' + i + ' :';
+        const label = document.createElement('label');
+        label.className = 'form-label';
+        label.setAttribute('for', 'dateNaissanceEnfant' + i);
+        label.innerText = 'Date de naissance enfant ' + i + ' :';
 
-                const inputDate = document.createElement('input');
-                inputDate.name = 'dateNaissanceEnfant' + i;
-                inputDate.type = 'date';
-                inputDate.id = 'dateNaissanceEnfant' + i;
-                inputDate.className = 'form-control';
-                inputDate.required = true;
+        const inputDate = document.createElement('input');
+        inputDate.name = 'dateNaissanceEnfant' + i;
+        inputDate.type = 'date';
+        inputDate.id = 'dateNaissanceEnfant' + i;
+        inputDate.className = 'form-control';
+        inputDate.required = true;
 
-                divCol.appendChild(label);
-                divCol.appendChild(inputDate);
-                divRow.appendChild(divCol);
-                containerDatesNaissance.appendChild(divRow);
-            }
-        }
+        divCol.appendChild(label);
+        divCol.appendChild(inputDate);
+        divRow.appendChild(divCol);
+        containerDatesNaissance.appendChild(divRow);
+    }
+}
 
-        // Validation des dates d'arrivée et de départ
-        let dateArriveeInput = document.getElementById('dateArrivee');
-        let dateDepartInput = document.getElementById('dateDepart');
-        let dateArriveeValue = dateArriveeInput.value.trim();
-        let dateDepartValue = dateDepartInput.value.trim();
+// Validation des dates d'arrivée et de départ
+        let dateArriveeInput = document.getElementById('dateArrivee');//Obtient l'élément HTML avec l'ID "dateArrivee" (champ de date d'arrivée).
+        let dateDepartInput = document.getElementById('dateDepart');//Obtient l'élément HTML avec l'ID "dateDepart" (champ de date de départ).
+        let dateArriveeValue = dateArriveeInput.value.trim();//Obtient la valeur du champ de date d'arrivée avec les espaces blancs supprimés.
+        let dateDepartValue = dateDepartInput.value.trim();//Obtient la valeur du champ de date de départ avec les espaces blancs supprimés.
 
+//Vérifie si l'une des dates (d'arrivée ou de départ) est vide.
+//Si l'une des dates est vide, affiche une alerte indiquant que les dates d'arrivée et de départ ne peuvent pas être vides.
+//Renvoie false, indiquant que la validation a échoué.
         if (dateArriveeValue === '' || dateDepartValue === '') {
             alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
             return false;
         }
-
+//Vérifie si la date de départ est ultérieure à la date d'arrivée.
+//Si la date de départ est antérieure ou égale à la date d'arrivée, affiche une alerte indiquant que la date de départ doit être ultérieure à la date d'arrivée.
         if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
             alert('La date de départ doit être ultérieure à la date d\'arrivée.');
-            dateDepartInput.focus();
-            return false;
+            dateDepartInput.focus();//Place le focus sur le champ de date de départ (dateDepartInput.focus()) pour attirer l'attention de l'utilisateur sur ce champ
+            return false;//Renvoie false, indiquant que la validation a échoué
         }
 
-        // Vérification si la case du consentement RGPD est cochée
+// Vérification si la case du consentement RGPD est cochée
         let rgpdCheckbox = document.getElementById('rgpdCheckbox');
         if (!rgpdCheckbox.checked) {
             alert('Vous devez accepter la politique de confidentialité.');
@@ -308,24 +313,18 @@
             return false;
         }
 
-        // Vérification si la case du consentement CGV est cochée
-        let cgvCheckbox = document.getElementById('cgvCheckbox');
-        if (!cgvCheckbox.checked) {
-            alert('Vous devez accepter les Conditions Générales de Vente.');
-            cgvCheckbox.focus();
-            return false;
+// Vérification si la réponse reCAPTCHA n'est pas vide
+        let recaptchaResponse = grecaptcha.getResponse();//Obtient la réponse du reCAPTCHA, en utilisant la bibliothèque reCAPTCHA API (grecaptcha).
+        if (recaptchaResponse.length == 0) {//Vérifie si la réponse reCAPTCHA est vide (non cochée).
+            alert('Veuillez cocher le reCAPTCHA.');//Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA.
+            return false;//indiquant que la validation a échoué en raison de la non-cochage du reCAPTCHA.
         }
-
-        // Vérification si la réponse reCAPTCHA n'est pas vide
-        let recaptchaResponse = grecaptcha.getResponse();
-        if (recaptchaResponse.length == 0) {
-            alert('Veuillez cocher le reCAPTCHA.');
-            return false;
-        }
-
+// Si toutes les validations précédentes sont réussies, la fonction renvoie true indiquant que le formulaire est valide.
         return true;
     }
+
 </script>
+
 <!-- _____________________________________________________________________________________ -->
 
 <!-- FORMULAIRE DE CONTACT -->

@@ -92,7 +92,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $object = "Nouvelle reservation";
             $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -225,17 +224,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             Vous devez accepter la politique de confidentialité.
                         </div>
                     </div>
-
-                    <!-- Case à cocher CGV -->
-                <div class="form-check mb-4 mt-3">
-                    <input class="form-check-input" type="checkbox" id="cgvCheckbox" name="cgvCheckbox">
-                    <label class="form-check-label" for="cgvCheckbox">
-                        J'accepte les Conditions Générales de Vente.
-                    </label>
-                    <div class="invalid-feedback" id="cgvError" style="display: none;">
-                        Vous devez accepter les Conditions Générales de Vente.
-                    </div>
-                </div>
 
                     <div class="g-recaptcha m-4" data-sitekey="6Ld72FwnAAAAABXBamvH-_h6-dyX_phTGFlAWCgR"></div>
 

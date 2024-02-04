@@ -92,7 +92,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $object = "Nouvelle reservation";
             $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: michel.hof@hotmail.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
