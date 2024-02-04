@@ -43,7 +43,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 120/190</strong>.<br>
           Tarifs <strong>82,00 €</strong> en semaine / <strong>89,00 €</strong> week-end, jours fériés et ponts.
          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong></p>
-         <br><p>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).</p>
+         <br><p class="">Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).</p>
         </p>
            
 
