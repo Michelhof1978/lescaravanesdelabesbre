@@ -66,20 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $cgvAccepted = false;
             }
 
-            // Récupérer le nombre d'adultes
-$nombreAdultes = isset($_POST["nombreAdultes"]) ? intval($_POST["nombreAdultes"]) : 0;
-
-// Récupérer le nombre d'enfants
-$nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
-
-// Vérifier que le nombre d'adultes et le nombre d'enfants ne sont pas en dessous de 0
-if ($nombreAdultes < 0) {
-    $nombreAdultes = 0;
-}
-
-if ($nombreEnfants < 0) {
-    $nombreEnfants = 0;
-}
             // Modifier le message pour inclure l'information sur l'acceptation des RGPD et des CGV
             $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
@@ -89,11 +75,6 @@ if ($nombreEnfants < 0) {
                 "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
                 "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
 
-                // Ajouter les dates de naissance de chaque enfant dans le message
-for ($i = 1; $i <= $nombreEnfants; $i++) {
-    $fieldName = "dateNaissanceEnfant" . $i;
-    $message .= "Date de naissance enfant " . $i . " : " . htmlspecialchars($_POST[$fieldName]) . "\n";
-}
             // Récupérer le nombre d'enfants
             $nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
 
@@ -183,7 +164,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'adultes.
                         </div>
@@ -191,7 +172,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()" min="0">
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'enfants.
                         </div>
@@ -271,111 +252,6 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
 <?php include("footer.php") ?>
 
-<!-- FORMULAIRE RESA -->
-<!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
-<!-- //restriction champs formulaire -->
-<script>
-    function validateForm() {
-        // Validation de l'adresse e-mail
-        let emailInput = document.getElementById('email');
-        let emailValue = emailInput.value.trim();
-        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-        if (!emailRegex.test(emailValue)) {
-            alert('Veuillez saisir une adresse email valide.');
-            emailInput.focus();
-            return false;
-        }
-
-        
-
-        // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
-        let phoneNumberInput = document.getElementById("phoneNumber");
-        let phoneNumberValue = phoneNumberInput.value;
-
-        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
-        let phoneRegex = /^[0-9]+$/;
-
-        if (!phoneRegex.test(phoneNumberValue)) {
-            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-            return false;
-        }
-
-        // Fonction pour ajouter dynamiquement les champs de date de naissance des enfants
-        function ajouterChampsDateNaissance() {
-            const nombreEnfants = document.getElementById('nombreEnfants').value;
-            const containerDatesNaissance = document.getElementById('containerDatesNaissance');
-
-            containerDatesNaissance.innerHTML = ''; // Supprime les champs de date de naissance existants
-
-            for (let i = 1; i <= nombreEnfants; i++) {
-                const divRow = document.createElement('div');
-                divRow.className = 'row mb-4';
-
-                const divCol = document.createElement('div');
-                divCol.className = 'col';
-
-                const label = document.createElement('label');
-                label.className = 'form-label';
-                label.setAttribute('for', 'dateNaissanceEnfant' + i);
-                label.innerText = 'Date de naissance enfant ' + i + ' :';
-
-                const inputDate = document.createElement('input');
-                inputDate.name = 'dateNaissanceEnfant' + i;
-                inputDate.type = 'date';
-                inputDate.id = 'dateNaissanceEnfant' + i;
-                inputDate.className = 'form-control';
-                inputDate.required = true;
-
-                divCol.appendChild(label);
-                divCol.appendChild(inputDate);
-                divRow.appendChild(divCol);
-                containerDatesNaissance.appendChild(divRow);
-            }
-        }
-
-        // Validation des dates d'arrivée et de départ
-        let dateArriveeInput = document.getElementById('dateArrivee');
-        let dateDepartInput = document.getElementById('dateDepart');
-        let dateArriveeValue = dateArriveeInput.value.trim();
-        let dateDepartValue = dateDepartInput.value.trim();
-
-        if (dateArriveeValue === '' || dateDepartValue === '') {
-            alert('Les dates d\'arrivée et de départ ne peuvent pas être vides.');
-            return false;
-        }
-
-        if (new Date(dateArriveeValue) > new Date(dateDepartValue)) {
-            alert('La date de départ doit être ultérieure à la date d\'arrivée.');
-            dateDepartInput.focus();
-            return false;
-        }
-
-        // Vérification si la case du consentement RGPD est cochée
-        let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-        if (!rgpdCheckbox.checked) {
-            alert('Vous devez accepter la politique de confidentialité.');
-            rgpdCheckbox.focus();
-            return false;
-        }
-
-        // Vérification si la case du consentement CGV est cochée
-        let cgvCheckbox = document.getElementById('cgvCheckbox');
-        if (!cgvCheckbox.checked) {
-            alert('Vous devez accepter les Conditions Générales de Vente.');
-            cgvCheckbox.focus();
-            return false;
-        }
-
-        // Vérification si la réponse reCAPTCHA n'est pas vide
-        let recaptchaResponse = grecaptcha.getResponse();
-        if (recaptchaResponse.length == 0) {
-            alert('Veuillez cocher le reCAPTCHA.');
-            return false;
-        }
-
-        return true;
-    }
-</script>
 </body>
   </html>

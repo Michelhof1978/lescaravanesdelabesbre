@@ -66,20 +66,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $cgvAccepted = false;
             }
 
-            // Récupérer le nombre d'adultes
-$nombreAdultes = isset($_POST["nombreAdultes"]) ? intval($_POST["nombreAdultes"]) : 0;
-
-// Récupérer le nombre d'enfants
-$nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
-
-// Vérifier que le nombre d'adultes et le nombre d'enfants ne sont pas en dessous de 0
-if ($nombreAdultes < 0) {
-    $nombreAdultes = 0;
-}
-
-if ($nombreEnfants < 0) {
-    $nombreEnfants = 0;
-}
             // Modifier le message pour inclure l'information sur l'acceptation des RGPD et des CGV
             $message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
                 "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n" .
@@ -89,11 +75,6 @@ if ($nombreEnfants < 0) {
                 "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
                 "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
 
-                // Ajouter les dates de naissance de chaque enfant dans le message
-for ($i = 1; $i <= $nombreEnfants; $i++) {
-    $fieldName = "dateNaissanceEnfant" . $i;
-    $message .= "Date de naissance enfant " . $i . " : " . htmlspecialchars($_POST[$fieldName]) . "\n";
-}
             // Récupérer le nombre d'enfants
             $nombreEnfants = isset($_POST["nombreEnfants"]) ? intval($_POST["nombreEnfants"]) : 0;
 
@@ -183,7 +164,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'adultes.
                         </div>
@@ -191,7 +172,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()" min="0">
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'enfants.
                         </div>
@@ -286,8 +267,6 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
             emailInput.focus();
             return false;
         }
-
-        
 
         // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
         let phoneNumberInput = document.getElementById("phoneNumber");

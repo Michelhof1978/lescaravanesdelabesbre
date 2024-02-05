@@ -183,7 +183,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'adultes.
                         </div>
@@ -191,7 +191,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreEnfants">Nombre d'enfants :</label>
-                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()" min="0">
+                        <input name="nombreEnfants" type="number" id="nombreEnfants" class="form-control" placeholder="Indiquez le nombre d'enfants" required onchange="ajouterChampsDateNaissance()">
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'enfants.
                         </div>
@@ -286,8 +286,6 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
             emailInput.focus();
             return false;
         }
-
-        
 
         // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
         let phoneNumberInput = document.getElementById("phoneNumber");

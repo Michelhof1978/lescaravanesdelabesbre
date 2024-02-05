@@ -183,7 +183,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
                     <div class="form-outline mb-4">
                         <label class="form-label round" for="nombreAdultes">Nombre d'adultes :</label>
-                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required min="0">
+                        <input name="nombreAdultes" type="number" id="nombreAdultes" class="form-control" placeholder="Indiquez le nombre d'adultes" required>
                         <div class="invalid-feedback">
                             Veuillez saisir le nombre d'adultes.
                         </div>

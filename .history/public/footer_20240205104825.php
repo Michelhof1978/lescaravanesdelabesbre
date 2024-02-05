@@ -223,4 +223,54 @@
 <!-- _____________________________________________________________________________________ -->
 
 
+<!-- _____________________________________________________________________________________ -->
+
+<!-- FORMULAIRE DE CONTACT -->
+<script>
+    function validateContactForm() {
+        // Validation de l'adresse e-mail
+        let emailInput = document.getElementById('email');//Obtient l'élément HTML avec l'ID "email" (champ d'adresse e-mail).
+        let emailValue = emailInput.value.trim();//Obtient la valeur de l'adresse e-mail avec les espaces blancs supprimés.
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définit une expression régulière pour valider l'adresse e-mail.
+
+//Vérifie si la valeur de l'adresse e-mail correspond à l'expression régulière. Affiche une alerte si la validation échoue.
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide.');
+            emailInput.focus();
+            return false;
+        }
+
+// Obtient l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone).
+        let phoneNumberInput = document.getElementById("phoneNumber");
+        let phoneNumberValue = phoneNumberInput.value;//Obtient la valeur du numéro de téléphone.
+
+// Définit une expression régulière pour valider que le numéro de téléphone ne contient que des chiffres.
+        let phoneRegex = /^[0-9]+$/;
+//Vérifie si la valeur du numéro de téléphone correspond à l'expression régulière. Affiche une alerte si la validation échoue.
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+            return false;
+        }
+
+// Obtient l'élément HTML avec l'ID "rgpdCheckbox" (case à cocher RGPD).
+        let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+        if (!rgpdCheckbox.checked) {
+            alert('Vous devez accepter la politique de confidentialité.');
+            rgpdCheckbox.focus();
+            return false;
+        }
+
+// Obtient la réponse du reCAPTCHA.
+        let recaptchaResponse = grecaptcha.getResponse();
+//Vérifie si la réponse reCAPTCHA est vide. Affiche une alerte si la validation échoue.
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
+        }
+// Si toutes les validations précédentes sont réussies, la fonction renvoie true, indiquant que le formulaire est valide.
+        return true;
+    }
+</script>
+
+<!-- _____________________________________________________________________________________ -->
 
