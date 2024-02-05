@@ -370,7 +370,6 @@ function ajouterChampsDateNaissance() {
         divRow.appendChild(divCol);
         containerDatesNaissance.appendChild(divRow);
     }
-}
 </script>
 </body>
   </html>

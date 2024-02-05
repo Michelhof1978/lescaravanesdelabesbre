@@ -338,39 +338,6 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
         return true;
     }
-
-    // Fonction pour ajouter dynamiquement les champs de date de naissance des enfantsDéclaration de la fonction pour ajouter dynamiquement des champs de date de naissance en fonction du nombre d'enfants.
-function ajouterChampsDateNaissance() {
-    const nombreEnfants = document.getElementById('nombreEnfants').value;
-    const containerDatesNaissance = document.getElementById('containerDatesNaissance');
-
-    containerDatesNaissance.innerHTML = ''; // Supprime les champs de date de naissance existants
-
-    for (let i = 1; i <= nombreEnfants; i++) {
-        const divRow = document.createElement('div');
-        divRow.className = 'row mb-4';
-
-        const divCol = document.createElement('div');
-        divCol.className = 'col';
-
-        const label = document.createElement('label');
-        label.className = 'form-label';
-        label.setAttribute('for', 'dateNaissanceEnfant' + i);
-        label.innerText = 'Date de naissance enfant ' + i + ' :';
-
-        const inputDate = document.createElement('input');
-        inputDate.name = 'dateNaissanceEnfant' + i;
-        inputDate.type = 'date';
-        inputDate.id = 'dateNaissanceEnfant' + i;
-        inputDate.className = 'form-control';
-        inputDate.required = true;
-
-        divCol.appendChild(label);
-        divCol.appendChild(inputDate);
-        divRow.appendChild(divCol);
-        containerDatesNaissance.appendChild(divRow);
-    }
-}
 </script>
 </body>
   </html>
