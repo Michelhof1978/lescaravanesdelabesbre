@@ -103,7 +103,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 
             $object = "Nouvelle reservation";
             $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
@@ -190,7 +190,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 </div>
 
 
-                  <div id="containerDatesNaissance" class="mb-4">
+<div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
                         <div class="row">
                             <div class="col">

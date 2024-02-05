@@ -190,7 +190,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
 </div>
 
 
-                  <div id="containerDatesNaissance" class="mb-4">
+<div id="containerDatesNaissance" class="mb-4">
                         <h5 class="form-label round">Informations sur les enfants :</h5>
                         <div class="row">
                             <div class="col">
