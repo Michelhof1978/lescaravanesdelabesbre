@@ -326,13 +326,12 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
                 divCol.appendChild(inputDate);
                 divRow.appendChild(divCol);
                 containerDatesNaissance.appendChild(divRow);
-                
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
+                document.addEventListener('DOMContentLoaded', function () {
     ajouterChampsDateNaissance();
 });
+
+            }
+        }
 
         // Validation des dates d'arrivée et de départ
         let dateArriveeInput = document.getElementById('dateArrivee');

@@ -330,10 +330,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
             }
         }
 
-        document.addEventListener('DOMContentLoaded', function () {
-    ajouterChampsDateNaissance();
-});
-
+        
         // Validation des dates d'arrivée et de départ
         let dateArriveeInput = document.getElementById('dateArrivee');
         let dateDepartInput = document.getElementById('dateDepart');
