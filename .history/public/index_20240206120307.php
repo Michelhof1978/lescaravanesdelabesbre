@@ -274,7 +274,7 @@
           Profitez d'une expérience de camping unique au <strong> <a href="<?php echo CAMPING_URL; ?>" target="_blank">Camping proche du Pal de Dompierre Sur Besbre</a>, situé à proximité du parc d'attractions <a href="<?php echo PAL_URL; ?>" target="_blank">Le-Pal</a></strong>.
           Niché dans un cadre naturel exceptionnel en bordure d'une rivière et à proximité des commerces, ce site paisible et verdoyant offre une atmosphère propice à la détente et au ressourcement.
 
-          Vous serez enchanté par l'ambiance caravane proposée par notre équipe. Des caravanes tout confort et entièrement équipées sont disponibles du <strong>01/07/2024 au 25/08/2024</strong> pour accueillir 4 personnes chacune (2 adultes et 2 enfants).
+          Vous serez enchanté par l'ambiance caravane proposée par notre équipe. Des caravanes tout confort et entièrement équipées sont disponibles du <strong>01/07/2024 au /09/2024</strong> pour accueillir 4 personnes chacune (2 adultes et 2 enfants).
           En outre, une épicerie de base est fournie, comprenant café, sucre, sel, poivre, huile, etc.
 
           Notre équipe, dirigée par Isabelle, se fera un plaisir de vous aider à rendre votre séjour inoubliable. N'hésitez pas à nous contacter pour plus d'informations ou pour réserver votre séjour dès maintenant.
