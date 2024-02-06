@@ -82,13 +82,13 @@ if ($nombreEnfants < 0) {
 }
 
 // Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message = "Une Nouvelle Réservation a été effectuée :\n \n" .
-    "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n \n" .
-    "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n \n" .
-    "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n \n" .
-    "Email : " . htmlspecialchars($_POST["email"]) . "\n \n" .
-    "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n \n" .
-    "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n \n";
+$message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
+    "**Nom :** " . htmlspecialchars($_POST["firstName"]) . "\n" .
+    "**Prénom :** " . htmlspecialchars($_POST["lastName"]) . "\n" .
+    "**Téléphone :** " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+    "**Email :** " . htmlspecialchars($_POST["email"]) . "\n" .
+    "**Nombre d'adultes :** " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+    "**Nombre Enfants :** " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
 
 // Ajout les dates de naissance de chaque enfant dans le message
 for ($i = 1; $i <= $nombreEnfants; $i++) {
@@ -103,7 +103,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
     $aujourdHui = new DateTime('today');
     $ageEnfant = $dateNaissanceEnfantObj->diff($aujourdHui)->y;
 
-    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n \n";
+    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n";
 }
 
 
@@ -115,16 +115,16 @@ $dateDepartFormattee = date('d/m/Y', strtotime($_POST["dateDepart"]));
 
 // Ajoute les dates formatées dans le message
 // Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n \n" .
-    "Date de départ : " . htmlspecialchars($dateDepartFormattee) . "\n \n" .
-    "Message : " . htmlspecialchars($_POST["message"]) . "\n \n" .
-    "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non') . "\n \n" .
-    "CGV acceptées : " . ($cgvAccepted ? 'Oui' : 'Non') . "\n \n";
+$message .= "**Date d'arrivée :** " . htmlspecialchars($dateArriveeFormattee) . "\n" .
+    "**Date de départ :** " . htmlspecialchars($dateDepartFormattee) . "\n" .
+    "**Message :** " . htmlspecialchars($_POST["message"]) . "\n" .
+    "**RGPD accepté :* " . ($rgpdAccepted ? 'Oui' : 'Non') . "\n" .
+    "*CGV acceptées :* " . ($cgvAccepted ? 'Oui' : 'Non') . "\n";
 
 
-            $object = "Nouvelle reservation";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $object = "Nouvelle reservation YOUPI";
+            //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire

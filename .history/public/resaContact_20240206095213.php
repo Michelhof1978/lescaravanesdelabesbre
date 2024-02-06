@@ -82,7 +82,7 @@ if ($nombreEnfants < 0) {
 }
 
 // Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message = "Une Nouvelle Réservation a été effectuée :\n \n" .
+$message = "Une Nouvelle Réservation YOUPI !! :\n \n" .
     "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n \n" .
     "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n \n" .
     "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n \n" .
@@ -122,9 +122,9 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
     "CGV acceptées : " . ($cgvAccepted ? 'Oui' : 'Non') . "\n \n";
 
 
-            $object = "Nouvelle reservation";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $object = "Nouvelle reservation YOUPI";
+            //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire

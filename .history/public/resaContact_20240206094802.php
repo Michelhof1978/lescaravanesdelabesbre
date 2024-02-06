@@ -82,7 +82,7 @@ if ($nombreEnfants < 0) {
 }
 
 // Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message = "Une Nouvelle Réservation a été effectuée :\n \n" .
+$message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n \n" .
     "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n \n" .
     "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n \n" .
     "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n \n" .
@@ -103,7 +103,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
     $aujourdHui = new DateTime('today');
     $ageEnfant = $dateNaissanceEnfantObj->diff($aujourdHui)->y;
 
-    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n \n";
+    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n";
 }
 
 
@@ -123,8 +123,8 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
 
 
             $object = "Nouvelle reservation";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire

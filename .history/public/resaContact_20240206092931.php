@@ -81,16 +81,16 @@ if ($nombreEnfants < 0) {
     $nombreEnfants = 0;
 }
 
-// Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message = "Une Nouvelle Réservation a été effectuée :\n \n" .
-    "Nom : " . htmlspecialchars($_POST["firstName"]) . "\n \n" .
-    "Prénom : " . htmlspecialchars($_POST["lastName"]) . "\n \n" .
-    "Téléphone : " . htmlspecialchars($_POST["phoneNumber"]) . "\n \n" .
-    "Email : " . htmlspecialchars($_POST["email"]) . "\n \n" .
-    "Nombre d'adultes : " . htmlspecialchars($_POST["nombreAdultes"]) . "\n \n" .
-    "Nombre Enfants : " . htmlspecialchars($_POST["nombreEnfants"]) . "\n \n";
+// Modifier le message pour inclure l'information sur l'acceptation des RGPD et des CGV
+$message = "Réservation de caravanes au Parc d'Attractions Le Pal :\n" .
+    "<strong>Nom :</strong> " . htmlspecialchars($_POST["firstName"]) . "\n" .
+    "<strong>Prénom :</strong> " . htmlspecialchars($_POST["lastName"]) . "\n" .
+    "<strong>Téléphone :</strong> " . htmlspecialchars($_POST["phoneNumber"]) . "\n" .
+    "<strong>Email :</strong> " . htmlspecialchars($_POST["email"]) . "\n" .
+    "<strong>Nombre d'adultes :</strong> " . htmlspecialchars($_POST["nombreAdultes"]) . "\n" .
+    "<strong>Nombre Enfants :</strong> " . htmlspecialchars($_POST["nombreEnfants"]) . "\n";
 
-// Ajout les dates de naissance de chaque enfant dans le message
+// Ajouter les dates de naissance de chaque enfant dans le message
 for ($i = 1; $i <= $nombreEnfants; $i++) {
     $fieldName = "dateNaissanceEnfant" . $i;
     $dateNaissanceEnfant = htmlspecialchars($_POST[$fieldName]);
@@ -103,7 +103,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
     $aujourdHui = new DateTime('today');
     $ageEnfant = $dateNaissanceEnfantObj->diff($aujourdHui)->y;
 
-    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n \n";
+    $message .= "Date de naissance enfant " . $i . " : " . $dateNaissanceEnfantFormat . " (Âge : " . $ageEnfant . " ans)\n";
 }
 
 
@@ -113,18 +113,16 @@ $dateArriveeFormattee = date('d/m/Y', strtotime($_POST["dateArrivee"]));
 // Convertir la date de départ au format européen
 $dateDepartFormattee = date('d/m/Y', strtotime($_POST["dateDepart"]));
 
-// Ajoute les dates formatées dans le message
-// Modifie le message pour inclure l'information sur l'acceptation des RGPD et des CGV
-$message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n \n" .
-    "Date de départ : " . htmlspecialchars($dateDepartFormattee) . "\n \n" .
-    "Message : " . htmlspecialchars($_POST["message"]) . "\n \n" .
-    "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non') . "\n \n" .
-    "CGV acceptées : " . ($cgvAccepted ? 'Oui' : 'Non') . "\n \n";
-
+// Ajouter les dates formatées dans le message
+$message .= "<strong>Date d'arrivée :</strong> " . htmlspecialchars($dateArriveeFormattee) . "\n" .
+    "<strong>Date de départ :</strong> " . htmlspecialchars($dateDepartFormattee) . "\n" .
+    "<strong>Message :</strong> " . htmlspecialchars($_POST["message"]) . "\n" .
+    "RGPD accepté : " . ($rgpdAccepted ? 'Oui' : 'Non') . "\n" .
+    "CGV acceptées : " . ($cgvAccepted ? 'Oui' : 'Non');
 
             $object = "Nouvelle reservation";
-            $retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
-            //$retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            //$retour = mail("postmaster@lescaravanesdelabesbre.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
+            $retour = mail("michel.hof@hotmail.fr", "Nouvelle reservation", $message, "From: contact@Lescaravanesdelabesbre.fr" . "\r\n" . "Reply-to: " . htmlspecialchars($_POST["email"]));
 
             if ($retour) {
                 // Redirection vers une page de confirmation après la soumission du formulaire
