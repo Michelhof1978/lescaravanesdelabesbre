@@ -14,7 +14,7 @@
 La réservation est considérée comme confirmée dès réception d'un acompte représentant 50 % du coût total de la location. Le solde du paiement doit être réglé le jour de l'arrivée.<br><br>
 
 <strong>2. Tarifs</strong><br>
-Les tarifs sont de 82 euros la nuit en semaine et 89 euros la nuit les week-ends, jours fériés et ponts.<br><br>
+Les tarifs sont de 82 euros la nuit en semaine et 89 euros la nuit les week-ends, jours fériés et ponts.<br>
 
 <strong>3. Annulation et Remboursement</strong><br>
 En cas d'annulation effectuée 10 jours avant la date d'arrivée, l'acompte sera remboursé à hauteur de 90 % (frais bancaires inclus). Aucun remboursement ne sera effectué pour les annulations survenant moins de 7 jours avant la date d'arrivée.<br><br>

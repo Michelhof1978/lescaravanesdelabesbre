@@ -14,13 +14,13 @@
 La réservation est considérée comme confirmée dès réception d'un acompte représentant 50 % du coût total de la location. Le solde du paiement doit être réglé le jour de l'arrivée.<br><br>
 
 <strong>2. Tarifs</strong><br>
-Les tarifs sont de 82 euros la nuit en semaine et 89 euros la nuit les week-ends, jours fériés et ponts.<br><br>
+Les tarifs sont de 82 euros la nuit en semaine et 89 euros la nuit les week-ends, jours fériés et ponts.<br>
 
 <strong>3. Annulation et Remboursement</strong><br>
 En cas d'annulation effectuée 10 jours avant la date d'arrivée, l'acompte sera remboursé à hauteur de 90 % (frais bancaires inclus). Aucun remboursement ne sera effectué pour les annulations survenant moins de 7 jours avant la date d'arrivée.<br><br>
 
 <strong>4. Caution</strong><br>
-Une caution de 300 € par chèque sera exigée à l'arrivée. Elle sera restituée le jour du départ, sous réserve d'aucun dommage constaté.<br><br>
+Une caution de 300 € par chèque sera exigée à l'arrivée. Elle sera restituée le jour du départ, sous réserve d'aucun dommage constaté.<br>
 
 <strong>5. Conditions d'Occupation</strong> <br>
 La caravane est conçue pour accueillir un nombre maximum de personnes. Tout dépassement pourra entraîner des frais supplémentaires. La possibilité d'occuper l'espace auvent est disponible au tarif de 12 € par personne supplémentaire. Les animaux de compagnie peuvent être autorisés sous réserve d'accord préalable.<br><br>
@@ -32,7 +32,7 @@ Le locataire est entièrement responsable de la caravane et de son contenu penda
 L'heure d'arrivée est fixée entre 11h30 et 12h00 ou entre 15h00 et 19h30. L'heure de départ est prévue à partir de 08h00 jusqu'à 10h00.<br><br>
 
 <strong>8. Modification de Réservation</strong> <br>
-Toute modification de réservation est soumise à disponibilité et peut entraîner des frais administratifs.<br><br>
+Toute modification de réservation est soumise à disponibilité et peut entraîner des frais administratifs.<br>
 
 <strong>9. Force Majeure</strong><br>
 Aucune responsabilité ne sera engagée en cas d'événements indépendants de notre volonté, tels que catastrophes naturelles, grèves, etc.<br><br>

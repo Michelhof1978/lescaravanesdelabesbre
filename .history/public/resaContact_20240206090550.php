@@ -232,7 +232,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
                     <div class="form-check mb-4 mt-3">
                         <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox">
                         <label class="form-check-label" for="rgpdCheckbox">
-                            J'accepte que mes données personnelles soient traitées conformément à <a href="politiquedeConfidentialite.php">Politique De Confidentialité</a>.
+                            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
                         </label>
                         <div class="invalid-feedback" id="rgpdError" style="display: none;">
                             Vous devez accepter la politique de confidentialité.
@@ -243,7 +243,7 @@ for ($i = 1; $i <= $nombreEnfants; $i++) {
                 <div class="form-check mb-4 mt-3">
                     <input class="form-check-input" type="checkbox" id="cgvCheckbox" name="cgvCheckbox">
                     <label class="form-check-label" for="cgvCheckbox">
-                        J'accepte les <a href="conditionsGeneralesDeVente.php">Conditions Générales de Vente</a>.
+                        J'accepte les <a href="conditionsGeneralesDeVente.php">CGV</a>.
                     </label>
                     <div class="invalid-feedback" id="cgvError" style="display: none;">
                         Vous devez accepter les Conditions Générales de Vente.
