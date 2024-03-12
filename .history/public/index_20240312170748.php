@@ -491,17 +491,11 @@ document.body.appendChild(popupDiv);
 
 
     // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
-  // Utilisation de setTimeout pour définir un délai
-setTimeout(function() {
-    // Cette fonction sera exécutée après le délai spécifié (15 000 millisecondes)
-
-    // Suppression de la div du popup du corps de la page
-    document.body.removeChild(popupDiv);
-    
-    // Définition du cookie indiquant que le popup a été affiché
-    setPopupShown();
-}, 15000); // Le délai est de 15 000 millisecondes (15 secondes)
-
+    setTimeout(function() {
+      document.body.removeChild(popupDiv);
+      // Définir le cookie pour indiquer que le popup a été affiché
+      setPopupShown();
+    }, 15000);
   }
 </script>
 

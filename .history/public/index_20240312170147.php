@@ -457,51 +457,40 @@ if (!isPopupShown()) {
     // Ajout de l'image à la div
     popupDiv.appendChild(img);
 
-    // Création d'un bouton de fermeture (croix)
-let closeButton = document.createElement("button");
-closeButton.innerHTML = "X"; // Contenu du bouton (texte "X")
-closeButton.style.position = "absolute"; // Position absolue
-closeButton.style.top = "10px"; // Distance de 10 pixels depuis le haut
-closeButton.style.right = "10px"; // Distance de 10 pixels depuis la droite
-closeButton.style.cursor = "pointer"; // Curseur de type pointeur au survol
-closeButton.style.border = "none"; // Pas de bordure
-closeButton.style.background = "transparent"; // Fond transparent
-closeButton.style.fontSize = "16px"; // Taille de police de 16 pixels
+    // Ajout d'un bouton de fermeture (croix)
+    let closeButton = document.createElement("button");
+    closeButton.innerHTML = "X";
+    closeButton.style.position = "absolute";
+    closeButton.style.top = "10px";
+    closeButton.style.right = "10px";
+    closeButton.style.cursor = "pointer";
+    closeButton.style.border = "none";
+    closeButton.style.background = "transparent";
+    closeButton.style.fontSize = "16px";
 
-// Ajout d'un gestionnaire d'événements pour fermer le popup lorsqu'on clique sur le bouton
-closeButton.addEventListener("click", function () {
-    // Suppression de la div du popup du corps de la page
-    document.body.removeChild(popupDiv);
-    // Définition du cookie indiquant que le popup a été affiché
-    setPopupShown();
-});
+    // Ajouter un gestionnaire d'événements pour fermer le popup lorsqu'on clique sur le bouton
+    closeButton.addEventListener("click", function () {
+      document.body.removeChild(popupDiv);
+      setPopupShown();
+    });
 
-// Ajout du bouton de fermeture à la div du popup
-popupDiv.appendChild(closeButton);
+    // Ajouter le bouton de fermeture à la div
+    popupDiv.appendChild(closeButton);
 
-// Création d'un message vide
-let message = document.createTextNode("");
-// Ajout d'un saut de ligne à la div du popup
-popupDiv.appendChild(document.createElement("br"));
-// Ajout du message à la div du popup
-popupDiv.appendChild(message);
+    // Ajout du message à la div
+    let message = document.createTextNode("");
+    popupDiv.appendChild(document.createElement("br")); // Ajout d'un saut de ligne
+    popupDiv.appendChild(message);
 
-// Ajout de la div du popup au corps de la page
-document.body.appendChild(popupDiv);
-
+    // Ajout de la div au body de la page
+    document.body.appendChild(popupDiv);
 
     // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
-  // Utilisation de setTimeout pour définir un délai
-setTimeout(function() {
-    // Cette fonction sera exécutée après le délai spécifié (15 000 millisecondes)
-
-    // Suppression de la div du popup du corps de la page
-    document.body.removeChild(popupDiv);
-    
-    // Définition du cookie indiquant que le popup a été affiché
-    setPopupShown();
-}, 15000); // Le délai est de 15 000 millisecondes (15 secondes)
-
+    setTimeout(function() {
+      document.body.removeChild(popupDiv);
+      // Définir le cookie pour indiquer que le popup a été affiché
+      setPopupShown();
+    }, 15000);
   }
 </script>
 

@@ -365,17 +365,11 @@ if (!cgvCheckbox.checked) {
 
 
         // Vérification si la réponse reCAPTCHA n'est pas vide
-// Récupère la réponse reCAPTCHA à l'aide de la fonction grecaptcha.getResponse()
-let recaptchaResponse = grecaptcha.getResponse();
-
-// Vérifie si la longueur de la réponse reCAPTCHA est égale à zéro, ce qui signifie qu'elle est vide
-if (recaptchaResponse.length == 0) {
-    // Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA
-    alert('Veuillez cocher le reCAPTCHA.');
-    // Arrête l'exécution de la fonction et empêche la soumission du formulaire
-    return false;
-}
-
+        let recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
+        }
 
         return true;
     }

@@ -377,9 +377,6 @@ if (recaptchaResponse.length == 0) {
 }
 
 
-        return true;
-    }
-
   // Fonction pour ajouter dynamiquement les champs de date de naissance des enfantsDéclaration de la fonction pour ajouter dynamiquement des champs de date de naissance en fonction du nombre d'enfants.
 function ajouterChampsDateNaissance() {
     // Récupère la valeur du nombre d'enfants depuis l'élément HTML avec l'ID "nombreEnfants"

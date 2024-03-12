@@ -334,48 +334,28 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
             return false;
         }
 
-       // Vérification si la case du consentement RGPD est cochée
-// Récupère l'élément HTML avec l'ID "rgpdCheckbox"
-let rgpdCheckbox = document.getElementById('rgpdCheckbox');
-
-// Vérifie si la case du consentement RGPD n'est pas cochée
-if (!rgpdCheckbox.checked) {
-    // Affiche une alerte indiquant que l'utilisateur doit accepter la politique de confidentialité
-    alert('Vous devez accepter la politique de confidentialité.');
-    // Place le focus sur la case à cocher RGPD pour que l'utilisateur puisse la sélectionner
-    rgpdCheckbox.focus();
-    // Arrête l'exécution de la fonction et empêche la soumission du formulaire
-    return false;
-}
-
+        // Vérification si la case du consentement RGPD est cochée
+        let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+        if (!rgpdCheckbox.checked) {
+            alert('Vous devez accepter la politique de confidentialité.');
+            rgpdCheckbox.focus();
+            return false;
+        }
 
         // Vérification si la case du consentement CGV est cochée
-// Récupère l'élément HTML avec l'ID "cgvCheckbox"
-let cgvCheckbox = document.getElementById('cgvCheckbox');
-
-// Vérifie si la case du consentement CGV n'est pas cochée
-if (!cgvCheckbox.checked) {
-    // Affiche une alerte indiquant que l'utilisateur doit accepter les Conditions Générales de Vente
-    alert('Vous devez accepter les Conditions Générales de Vente.');
-    // Place le focus sur la case à cocher CGV pour que l'utilisateur puisse la sélectionner
-    cgvCheckbox.focus();
-    // Arrête l'exécution de la fonction et empêche la soumission du formulaire
-    return false;
-}
-
+        let cgvCheckbox = document.getElementById('cgvCheckbox');
+        if (!cgvCheckbox.checked) {
+            alert('Vous devez accepter les Conditions Générales de Vente.');
+            cgvCheckbox.focus();
+            return false;
+        }
 
         // Vérification si la réponse reCAPTCHA n'est pas vide
-// Récupère la réponse reCAPTCHA à l'aide de la fonction grecaptcha.getResponse()
-let recaptchaResponse = grecaptcha.getResponse();
-
-// Vérifie si la longueur de la réponse reCAPTCHA est égale à zéro, ce qui signifie qu'elle est vide
-if (recaptchaResponse.length == 0) {
-    // Affiche une alerte indiquant à l'utilisateur de cocher le reCAPTCHA
-    alert('Veuillez cocher le reCAPTCHA.');
-    // Arrête l'exécution de la fonction et empêche la soumission du formulaire
-    return false;
-}
-
+        let recaptchaResponse = grecaptcha.getResponse();
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
+        }
 
         return true;
     }
