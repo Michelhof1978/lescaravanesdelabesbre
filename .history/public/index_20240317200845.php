@@ -61,14 +61,13 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Caravane FLO</h5>
-          <p class="tarifs"><strong>Tarif 89,00 €</strong></p>
+          <p class="tarifs"><strong>A partir de 82,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max (2 adultes avec 2 enfants) avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
           <br>
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong><br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
-          <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
-          <br> <br><strong class="text-success">PROMO</strong>
+          <br><br>Tarifs <strong>89,00 €</strong> la nuitée.          <br> <br><strong class="text-success">PROMO</strong>
           <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
@@ -88,13 +87,13 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Caravane OLI</h5>
-          <p class="tarifs"><strong>Tarif 89,00 €</strong></p>
+          <p class="tarifs"><strong>A partir de 82,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max (2 adultes avec 2 enfants) avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
          <br>
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
-          <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
+          <br><br>Tarifs <strong>82,00 €</strong> la nuitée en semaine / <strong>89,00 €</strong> la nuitée le week-end, jours fériés et ponts.
           <br> <br><strong class="text-success">PROMO</strong>
           <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong>  par personne (matelas non fournis, veuillez prévoir).
