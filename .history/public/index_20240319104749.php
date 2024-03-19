@@ -43,7 +43,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 120/190</strong>.<br>
           <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br><br> <strong class="text-success">PROMO</strong>
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
+         <br> <strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
          <br><br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
            
@@ -69,7 +69,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
           <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br> <br><strong class="text-success">PROMO</strong>
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
+          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
@@ -96,7 +96,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
           <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br> <br><strong class="text-success">PROMO</strong>
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
+          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong>  par personne (matelas non fournis, veuillez prévoir).
         </p>
 
