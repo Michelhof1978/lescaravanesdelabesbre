@@ -329,7 +329,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 mt-4 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 mt- border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <div class="container d-flex justify-content-center ">
   <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex ">
