@@ -6,7 +6,7 @@
 <?php include("header.php") ?>
 
 <?php
-// Clé privée reCAPTCHA Dossier .gitignore, pas besoins de mettre le nom du dossier 
+// Clé privée reCAPTCHA Dossier .gitignore, pas besoins
 $config = include('./config/config.php');
 
 // Utiliser la clé secrète reCAPTCHA
