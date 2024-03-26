@@ -294,12 +294,11 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
 function validateForm() {
     // Récupération de l'élément input de l'adresse e-mail à partir de son ID
     let emailInput = document.getElementById('email');
-
     // Récupération de la valeur saisie dans l'adresse e-mail, avec suppression des espaces avant et après
-    let emailValue = emailInput.value.trim();//trim = supprime les espaces blancs
-
+    let emailValue = emailInput.value.trim();
     // Expression régulière pour valider le format de l'adresse e-mail
     let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     // Vérification si la valeur saisie dans l'adresse e-mail correspond au format défini par l'expression régulière
     if (!emailRegex.test(emailValue)) {
         // Affichage d'une alerte si la valeur de l'adresse e-mail ne correspond pas au format requis
@@ -310,24 +309,19 @@ function validateForm() {
         return false;
     }
 
- // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
-// Récupération de l'élément input du numéro de téléphone à partir de son ID
-    let phoneNumberInput = document.getElementById("phoneNumber");//document.getElementById() est une fonction qui permet de récupérer un élément HTML à partir de son attribut id
 
-// Récupération de la valeur saisie dans le champ du numéro de téléphone
-    let phoneNumberValue = phoneNumberInput.value;
+        
+        // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
+        let phoneNumberInput = document.getElementById("phoneNumber");
+        let phoneNumberValue = phoneNumberInput.value;
 
-// Expression régulière pour vérifier si la valeur du numéro de téléphone ne contient que des chiffres
-    let phoneRegex = /^[0-9]+$/;
+        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+        let phoneRegex = /^[0-9]+$/;
 
-// Vérification si la valeur saisie dans le champ du numéro de téléphone satisfait à l'expression régulière
-    if (!phoneRegex.test(phoneNumberValue)) {
-        // Affichage d'une alerte si la valeur ne contient pas uniquement des chiffres
-        alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-        // Retourner false pour indiquer que la validation a échoué
-        return false;
-    }
-
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+            return false;
+        }
 
         
         // Validation des dates d'arrivée et de départ

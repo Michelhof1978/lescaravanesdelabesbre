@@ -159,7 +159,7 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
                             <label for="firstName" class="form-label">Prénom</label>
                             <input name="firstName" type="text" id="firstName" class="form-control" placeholder="Prénom" required>
                             <div class="invalid-feedback">
-                                Veuillez saisir votre prénom. 
+                                Veuillez saisir votre prénom. :hea
                             </div>
                         </div>
                     </div>
@@ -290,44 +290,31 @@ $message .= "Date d'arrivée : " . htmlspecialchars($dateArriveeFormattee) . "\n
 <!-- //Ajoute automatiquement date de naissance enfant à chaque fois que l'utilisateur ajoute un enfant -->
 <!-- //restriction champs formulaire -->
 <script>
-    // Définition de la fonction validateForm() utilisée pour valider le formulaire
-function validateForm() {
-    // Récupération de l'élément input de l'adresse e-mail à partir de son ID
-    let emailInput = document.getElementById('email');
+    function validateForm() {
+        // Validation de l'adresse e-mail
+        let emailInput = document.getElementById('email');
+        let emailValue = emailInput.value.trim();
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    // Récupération de la valeur saisie dans l'adresse e-mail, avec suppression des espaces avant et après
-    let emailValue = emailInput.value.trim();//trim = supprime les espaces blancs
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide.');
+            emailInput.focus();
+            return false;
+        }
 
-    // Expression régulière pour valider le format de l'adresse e-mail
-    let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    // Vérification si la valeur saisie dans l'adresse e-mail correspond au format défini par l'expression régulière
-    if (!emailRegex.test(emailValue)) {
-        // Affichage d'une alerte si la valeur de l'adresse e-mail ne correspond pas au format requis
-        alert('Veuillez saisir une adresse email valide.');
-        // Déplacement du curseur de saisie vers l'élément de l'adresse e-mail
-        emailInput.focus();
-        // Retourne false pour indiquer que la validation du formulaire a échoué
-        return false;
-    }
+        
 
- // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
-// Récupération de l'élément input du numéro de téléphone à partir de son ID
-    let phoneNumberInput = document.getElementById("phoneNumber");//document.getElementById() est une fonction qui permet de récupérer un élément HTML à partir de son attribut id
+        // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
+        let phoneNumberInput = document.getElementById("phoneNumber");
+        let phoneNumberValue = phoneNumberInput.value;
 
-// Récupération de la valeur saisie dans le champ du numéro de téléphone
-    let phoneNumberValue = phoneNumberInput.value;
+        // Vérifier si la valeur du numéro de téléphone contient uniquement des chiffres
+        let phoneRegex = /^[0-9]+$/;
 
-// Expression régulière pour vérifier si la valeur du numéro de téléphone ne contient que des chiffres
-    let phoneRegex = /^[0-9]+$/;
-
-// Vérification si la valeur saisie dans le champ du numéro de téléphone satisfait à l'expression régulière
-    if (!phoneRegex.test(phoneNumberValue)) {
-        // Affichage d'une alerte si la valeur ne contient pas uniquement des chiffres
-        alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-        // Retourner false pour indiquer que la validation a échoué
-        return false;
-    }
-
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+            return false;
+        }
 
         
         // Validation des dates d'arrivée et de départ

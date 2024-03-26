@@ -312,7 +312,7 @@ function validateForm() {
 
  // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
 // Récupération de l'élément input du numéro de téléphone à partir de son ID
-    let phoneNumberInput = document.getElementById("phoneNumber");//document.getElementById() est une fonction qui permet de récupérer un élément HTML à partir de son attribut id
+    let phoneNumberInput = document.getElementById("phoneNumber");
 
 // Récupération de la valeur saisie dans le champ du numéro de téléphone
     let phoneNumberValue = phoneNumberInput.value;

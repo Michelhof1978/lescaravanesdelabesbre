@@ -312,21 +312,21 @@ function validateForm() {
 
  // Obtention de l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone)
 // Récupération de l'élément input du numéro de téléphone à partir de son ID
-    let phoneNumberInput = document.getElementById("phoneNumber");//document.getElementById() est une fonction qui permet de récupérer un élément HTML à partir de son attribut id
+    let phoneNumberInput = document.getElementById("phoneNumber");
 
 // Récupération de la valeur saisie dans le champ du numéro de téléphone
-    let phoneNumberValue = phoneNumberInput.value;
+let phoneNumberValue = phoneNumberInput.value;
 
 // Expression régulière pour vérifier si la valeur du numéro de téléphone ne contient que des chiffres
-    let phoneRegex = /^[0-9]+$/;
+let phoneRegex = /^[0-9]+$/;
 
 // Vérification si la valeur saisie dans le champ du numéro de téléphone satisfait à l'expression régulière
-    if (!phoneRegex.test(phoneNumberValue)) {
-        // Affichage d'une alerte si la valeur ne contient pas uniquement des chiffres
-        alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
-        // Retourner false pour indiquer que la validation a échoué
-        return false;
-    }
+if (!phoneRegex.test(phoneNumberValue)) {
+    // Affichage d'une alerte si la valeur ne contient pas uniquement des chiffres
+    alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+    // Retourner false pour indiquer que la validation a échoué
+    return false;
+}
 
 
         
