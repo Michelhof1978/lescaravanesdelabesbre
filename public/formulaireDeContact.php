@@ -150,8 +150,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="form-check mb-4 mt-3">
                         <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox">
                         <label class="form-check-label" for="rgpdCheckbox">
-                            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
-                        </label>
+                        J'accepte que mes données personnelles soient traitées conformément à <a href="politiquedeConfidentialite.php">Politique De Confidentialité</a>.                        </label>
                         <div class="invalid-feedback" id="rgpdError" style="display: none;">
                             Vous devez accepter la politique de confidentialité.
                         </div>

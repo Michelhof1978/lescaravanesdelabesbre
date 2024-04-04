@@ -1,5 +1,5 @@
 <?php include("head.php") ?>
-<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal et .">
+<meta name="description" content="Vous souhaitez organiser un séjour au Parc d'Attractions le Pal et vous avez besoins de renseignements complémentaires.">
 <title>Formulaire de Contact - Hébergement Le Pal</title>
 </head>
 
@@ -150,8 +150,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="form-check mb-4 mt-3">
                         <input class="form-check-input" type="checkbox" id="rgpdCheckbox" name="rgpdCheckbox">
                         <label class="form-check-label" for="rgpdCheckbox">
-                            J'accepte que mes données personnelles soient traitées conformément à la politique de confidentialité.
-                        </label>
+                        J'accepte que mes données personnelles soient traitées conformément à <a href="politiquedeConfidentialite.php">Politique De Confidentialité</a>.                        </label>
                         <div class="invalid-feedback" id="rgpdError" style="display: none;">
                             Vous devez accepter la politique de confidentialité.
                         </div>
@@ -164,12 +163,58 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </button>
                 </div>
             </div>
+            </div>
     </fieldset>
 </form>
 
 
 <?php include("footer.php") ?>
 
-</body>
+<!-- FORMULAIRE DE CONTACT -->
+<script>
+    function validateContactForm() {
+        // Validation de l'adresse e-mail
+        let emailInput = document.getElementById('email');//Obtient l'élément HTML avec l'ID "email" (champ d'adresse e-mail).
+        let emailValue = emailInput.value.trim();//Obtient la valeur de l'adresse e-mail avec les espaces blancs supprimés.
+        let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;//Définit une expression régulière pour valider l'adresse e-mail.
 
-</html>
+//Vérifie si la valeur de l'adresse e-mail correspond à l'expression régulière. Affiche une alerte si la validation échoue.
+        if (!emailRegex.test(emailValue)) {
+            alert('Veuillez saisir une adresse email valide.');
+            emailInput.focus();
+            return false;
+        }
+
+// Obtient l'élément HTML avec l'ID "phoneNumber" (champ de numéro de téléphone).
+        let phoneNumberInput = document.getElementById("phoneNumber");
+        let phoneNumberValue = phoneNumberInput.value;//Obtient la valeur du numéro de téléphone.
+
+// Définit une expression régulière pour valider que le numéro de téléphone ne contient que des chiffres.
+        let phoneRegex = /^[0-9]+$/;
+//Vérifie si la valeur du numéro de téléphone correspond à l'expression régulière. Affiche une alerte si la validation échoue.
+        if (!phoneRegex.test(phoneNumberValue)) {
+            alert("Veuillez saisir uniquement des chiffres pour le numéro de téléphone.");
+            return false;
+        }
+
+// Obtient l'élément HTML avec l'ID "rgpdCheckbox" (case à cocher RGPD).
+        let rgpdCheckbox = document.getElementById('rgpdCheckbox');
+        if (!rgpdCheckbox.checked) {
+            alert('Vous devez accepter la politique de confidentialité.');
+            rgpdCheckbox.focus();
+            return false;
+        }
+
+// Obtient la réponse du reCAPTCHA.
+        let recaptchaResponse = grecaptcha.getResponse();
+//Vérifie si la réponse reCAPTCHA est vide. Affiche une alerte si la validation échoue.
+        if (recaptchaResponse.length == 0) {
+            alert('Veuillez cocher le reCAPTCHA.');
+            return false;
+        }
+// Si toutes les validations précédentes sont réussies, la fonction renvoie true, indiquant que le formulaire est valide.
+        return true;
+    }
+</script>
+</body>
+    </html>
