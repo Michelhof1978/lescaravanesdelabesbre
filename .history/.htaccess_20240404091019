@@ -8,11 +8,11 @@
 RewriteEngine On
 RewriteBase /
 
-# Redirection de /index.php vers /pageaccueil
+# Redirection de /index.php vers /
 RewriteCond %{THE_REQUEST} \s/index\.php [NC]
-RewriteRule ^ /pageaccueil [R=301,L]
+RewriteRule ^ / [R=301,L]
 # Réécriture de /pageaccueil vers /index.php
-RewriteRule ^pageaccueil/?$ index.php [L]
+RewriteRule ^p/?$ index.php [L]
 
 # Redirection de /informations.php vers /informations
 RewriteCond %{THE_REQUEST} \s/informations\.php [NC]
@@ -56,14 +56,14 @@ RewriteRule ^ /politiquedeConfidentialite [R=301,L]
 # Réécriture de /politiquedeConfidentialite vers /politiquedeConfidentialite.php
 RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
 
-# Redirection de /esaContact.php vers /esaContact
-RewriteCond %{THE_REQUEST} \s/resaContact\.php [NC]
-RewriteRule ^ /politiquedeConfidentialite [R=301,L]
-# Réécriture de /politiquedeConfidentialite vers /esaContact.php
-RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
+# Redirection de /conditionsGeneralesDeVente.php vers /conditionsGeneralesDeVente
+RewriteCond %{THE_REQUEST} \s/conditionsGeneralesDeVente\.php [NC]
+RewriteRule ^ /conditionsGeneralesDeVente [R=301,L]
+# Réécriture de /conditionsGeneralesDeVente vers /conditionsGeneralesDeVente.php
+RewriteRule ^conditionsGeneralesDeVente/?$ conditionsGeneralesDeVente.php [L]
 
-# Redirection de /politiquedeConfidentialite.php vers /politiquedeConfidentialite
-RewriteCond %{THE_REQUEST} \s/politiquedeConfidentialite\.php [NC]
-RewriteRule ^ /politiquedeConfidentialite [R=301,L]
-# Réécriture de /politiquedeConfidentialite vers /politiquedeConfidentialite.php
-RewriteRule ^politiquedeConfidentialite/?$ politiquedeConfidentialite.php [L]
+# Redirection de /resaContact.php vers /resaContact
+RewriteCond %{THE_REQUEST} \s/resaContact\.php [NC]
+RewriteRule ^ /resaContact [R=301,L]
+# Réécriture de /resaContact vers /resaContact.php
+RewriteRule ^resaContact/?$ resaContact.php [L]
