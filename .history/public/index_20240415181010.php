@@ -329,7 +329,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4 mt- border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 mt-4 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <div class="container d-flex justify-content-center ">
   <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex ">
@@ -490,7 +490,7 @@ popupDiv.appendChild(message);
 document.body.appendChild(popupDiv);
 
 
-    // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
+    // Suppression de la div contenant l'image et le message après 15 secondes (ajusté selon votre besoin)
   // Utilisation de setTimeout pour définir un délai
 setTimeout(function() {
     // Cette fonction sera exécutée après le délai spécifié (15 000 millisecondes)
@@ -500,7 +500,7 @@ setTimeout(function() {
     
     // Définition du cookie indiquant que le popup a été affiché
     setPopupShown();
-}, 15000); // Le délai est de 15 000 millisecondes (15 secondes)
+}, 30000); // Le délai est de 15 000 millisecondes (15 secondes)
 
   }
 </script>
@@ -600,9 +600,6 @@ setTimeout(function() {
         }, 2000);
     }
 </script>
-
-
-
 
 </body>
   </html>

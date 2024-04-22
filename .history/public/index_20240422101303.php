@@ -43,7 +43,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 120/190</strong>.<br>
           <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br><br> <strong class="text-success">PROMO</strong>
-         <br> <strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
+          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
          <br><br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
            
@@ -69,7 +69,7 @@
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
           <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br> <br><strong class="text-success">PROMO</strong>
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
+          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong> par personne (matelas non fournis, veuillez prévoir).
         </p>
           <a href="resaContact.php" class="btn btn-primary">Réserver !</a> <br><br>
@@ -88,15 +88,15 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Caravane OLI</h5>
-          <p class="tarifs"><strong>A partir de 89,00 €</strong></p>
+          <p class="tarifs"><strong>Tarif 89,00 €</strong></p>
           <p class="card-text">
           Tarif pour 4 personnes max (2 adultes avec 2 enfants) avec la possibilité de louer simultanément plusieurs caravanes pour accueillir des familles nombreuses.
          <br>
           <strong>Découvrez en détail et en images les caractéristiques des caravanes sur la page 'Camping'.</strong> <br>
           Linge de lit non inclus, prévoir des draps de dimensions <strong>140/190 et 100/180</strong>. 
-          <br><br>Tarifs <strong>82,00 €</strong> la nuitée en semaine / <strong>89,00 €</strong> la nuitée le week-end, jours fériés et ponts.
+          <br><br>Tarifs <strong>89,00 €</strong> la nuitée.
           <br> <br><strong class="text-success">PROMO</strong>
-          <br> <p><strong class="text-success custom-animation">Réduction de 10% à partir de la 3<sup>ème</sup> nuit</strong>
+          <br> <p><strong class="text-success custom-animation">Réduction de 10% sur la totalité du séjour à partir de la 3<sup>ème</sup> nuit réservée</strong>
           <br> <br>Option d'hébergement sous le auvent, permettant d'accueillir 2 personnes supplémentaires pour <strong>12,00 €</strong>  par personne (matelas non fournis, veuillez prévoir).
         </p>
 
@@ -329,7 +329,7 @@
 
 <!--Section CAROUSEL-->
 
-<h4 class="mb-4  border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
+<h4 class="mb-4 mt-4 border border-3 rounded p-2 display-6  m-2 text-center text-white h4Index">VENEZ DECOUVRIR LA BEAUTE DE LA CAMPAGNE</h4>
 
 <div class="container d-flex justify-content-center ">
   <div id="carouselExampleCaptions" class="carousel slide carousel carouselIndex ">
@@ -415,93 +415,50 @@
 
 <!-- Affichage Popup -->
 <script>
-  // Fonction pour vérifier si le popup a déjà été affiché
-  function isPopupShown() {
-    return document.cookie.indexOf("popupShown=true") !== -1;
+  // Fonction pour vérifier si le popup a déjà été affiché aujourd'hui
+  function isPopupShownToday() {
+    const cookieValue = document.cookie
+      .split('; ')
+      .find(row => row.startsWith('popupShown='))
+      ?.split('=')[1];
+    return cookieValue === new Date().toDateString();
   }
 
   // Fonction pour définir le cookie indiquant que le popup a été affiché
-  function setPopupShown() {
-    document.cookie = "popupShown=true; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/";
+  function setPopupShownToday() {
+    const expires = new Date();
+    expires.setHours(23, 59, 59, 999); // Expire à la fin de la journée
+    document.cookie = `popupShown=${new Date().toDateString()}; expires=${expires.toUTCString()}; path=/`;
   }
 
-  // Vérifie si le popup n'a pas déjà été montré
-if (!isPopupShown()) {
-    // Création de la div pour afficher l'image + message + position
+  // Vérifie si le popup n'a pas déjà été montré aujourd'hui
+  if (!isPopupShownToday()) {
     let popupDiv = document.createElement("div");
-    popupDiv.style.position = "fixed"; // Position fixe pour rester au même endroit lors du défilement
-    popupDiv.style.top = "50%"; // Position verticale centrée à 50% de la fenêtre
-    popupDiv.style.left = "50%"; // Position horizontale centrée à 50% de la fenêtre
-    popupDiv.style.transform = "translate(-50%, -50%)"; // Décalage de -50% pour centrer parfaitement la div
-    popupDiv.style.zIndex = "9999"; // Niveau de z-index élevé pour s'assurer que le popup est affiché au-dessus de tout
-    popupDiv.style.textAlign = "center"; // Alignement du texte au centre
-    popupDiv.style.background = "white"; // Fond blanc
-    popupDiv.style.padding = "20px"; // Espacement intérieur
-    popupDiv.style.border = "1px solid #ccc"; // Bordure grise
-    popupDiv.style.borderRadius = "8px"; // Coins arrondis
-
-    // Création de l'image à afficher
+    popupDiv.setAttribute("style", "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; text-align: center; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 8px;");
+    
     let img = document.createElement("img");
-    img.src = "../images/lePal2024.png"; // Chemin de l'image à afficher
-
-
-    // Vérifier si la largeur de l'écran est inférieure à 600 pixels (ajustez selon vos besoins)
-    if (window.innerWidth < 600) {
-      img.style.height = '80%';
-      img.style.width = '80%';
-    } else {
-      img.style.height = '60%';
-      img.style.width = '60%';
-    }
-
-    // Ajout de l'image à la div
+    img.src = "../images/lePal2024.png";
+    img.style.height = window.innerWidth < 600 ? '80%' : '60%';
+    img.style.width = window.innerWidth < 600 ? '80%' : '60%';
     popupDiv.appendChild(img);
 
-    // Création d'un bouton de fermeture (croix)
-let closeButton = document.createElement("button");
-closeButton.innerHTML = "X"; // Contenu du bouton (texte "X")
-closeButton.style.position = "absolute"; // Position absolue
-closeButton.style.top = "10px"; // Distance de 10 pixels depuis le haut
-closeButton.style.right = "10px"; // Distance de 10 pixels depuis la droite
-closeButton.style.cursor = "pointer"; // Curseur de type pointeur au survol
-closeButton.style.border = "none"; // Pas de bordure
-closeButton.style.background = "transparent"; // Fond transparent
-closeButton.style.fontSize = "16px"; // Taille de police de 16 pixels
+    let closeButton = document.createElement("button");
+    closeButton.innerHTML = "X";
+    closeButton.setAttribute("style", "position: absolute; top: 10px; right: 10px; cursor: pointer; border: none; background: transparent; font-size: 16px;");
+    closeButton.onclick = function () {
+      document.body.removeChild(popupDiv);
+      setPopupShownToday();
+    };
+    popupDiv.appendChild(closeButton);
 
-// Ajout d'un gestionnaire d'événements pour fermer le popup lorsqu'on clique sur le bouton
-closeButton.addEventListener("click", function () {
-    // Suppression de la div du popup du corps de la page
-    document.body.removeChild(popupDiv);
-    // Définition du cookie indiquant que le popup a été affiché
-    setPopupShown();
-});
+    document.body.appendChild(popupDiv);
 
-// Ajout du bouton de fermeture à la div du popup
-popupDiv.appendChild(closeButton);
-
-// Création d'un message vide
-let message = document.createTextNode("");
-// Ajout d'un saut de ligne à la div du popup
-popupDiv.appendChild(document.createElement("br"));
-// Ajout du message à la div du popup
-popupDiv.appendChild(message);
-
-// Ajout de la div du popup au corps de la page
-document.body.appendChild(popupDiv);
-
-
-    // Suppression de la div contenant l'image et le message après 8 secondes (ajusté selon votre besoin)
-  // Utilisation de setTimeout pour définir un délai
-setTimeout(function() {
-    // Cette fonction sera exécutée après le délai spécifié (15 000 millisecondes)
-
-    // Suppression de la div du popup du corps de la page
-    document.body.removeChild(popupDiv);
-    
-    // Définition du cookie indiquant que le popup a été affiché
-    setPopupShown();
-}, 15000); // Le délai est de 15 000 millisecondes (15 secondes)
-
+    setTimeout(function() {
+      if (document.body.contains(popupDiv)) {
+        document.body.removeChild(popupDiv);
+      }
+      setPopupShownToday();
+    }, 30000); // Auto-ferme le popup après 30 secondes
   }
 </script>
 
@@ -600,9 +557,6 @@ setTimeout(function() {
         }, 2000);
     }
 </script>
-
-
-
 
 </body>
   </html>
