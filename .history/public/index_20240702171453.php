@@ -459,8 +459,8 @@
      //   document.body.removeChild(popupDiv);
      // }
      // setPopupShown();
- //   }, 30000);
-  //}
+    }, 30000);
+  }
 </script>
 
 

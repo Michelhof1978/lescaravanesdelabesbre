@@ -432,35 +432,35 @@
  // }
 
   // Vérifie si le popup n'a pas déjà été montré aujourd'hui
-  //if (!isPopupShown()) {
-   // let popupDiv = document.createElement("div");
-   // popupDiv.style.cssText = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; text-align: center; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 8px;";
+  if (!isPopupShown()) {
+    let popupDiv = document.createElement("div");
+    popupDiv.style.cssText = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; text-align: center; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 8px;";
 
-   // let img = document.createElement("img");
-    //img.src = "../images/lePal2024.png"; 
-   // img.style.height = window.innerWidth < 600 ? '80%' : '60%';
-   // img.style.width = img.style.height;
-   // popupDiv.appendChild(img);
+    let img = document.createElement("img");
+    img.src = "../images/lePal2024.png"; 
+    img.style.height = window.innerWidth < 600 ? '80%' : '60%';
+    img.style.width = img.style.height;
+    popupDiv.appendChild(img);
 
-   // let closeButton = document.createElement("button");
-   // closeButton.textContent = "X";
-  //  closeButton.style.cssText = "position: absolute; top: 10px; right: 10px; cursor: pointer; border: none; background: transparent; font-size: 16px;";
-   // closeButton.onclick = function () {
-    //  document.body.removeChild(popupDiv);
-    //  setPopupShown();
-   // };
-    //popupDiv.appendChild(closeButton);
+    let closeButton = document.createElement("button");
+    closeButton.textContent = "X";
+    closeButton.style.cssText = "position: absolute; top: 10px; right: 10px; cursor: pointer; border: none; background: transparent; font-size: 16px;";
+    closeButton.onclick = function () {
+      document.body.removeChild(popupDiv);
+      setPopupShown();
+    };
+    popupDiv.appendChild(closeButton);
 
-   // document.body.appendChild(popupDiv);
+    document.body.appendChild(popupDiv);
 
     // Optionnel: fermeture automatique après 30 secondes
-    //setTimeout(function() {
-      //if (document.body.contains(popupDiv)) {
-     //   document.body.removeChild(popupDiv);
-     // }
-     // setPopupShown();
- //   }, 30000);
-  //}
+    setTimeout(function() {
+      if (document.body.contains(popupDiv)) {
+        document.body.removeChild(popupDiv);
+      }
+      setPopupShown();
+    }, 30000);
+  }
 </script>
 
 

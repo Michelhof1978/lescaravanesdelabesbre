@@ -444,23 +444,23 @@
 
    // let closeButton = document.createElement("button");
    // closeButton.textContent = "X";
-  //  closeButton.style.cssText = "position: absolute; top: 10px; right: 10px; cursor: pointer; border: none; background: transparent; font-size: 16px;";
-   // closeButton.onclick = function () {
-    //  document.body.removeChild(popupDiv);
-    //  setPopupShown();
-   // };
-    //popupDiv.appendChild(closeButton);
+    closeButton.style.cssText = "position: absolute; top: 10px; right: 10px; cursor: pointer; border: none; background: transparent; font-size: 16px;";
+    closeButton.onclick = function () {
+      document.body.removeChild(popupDiv);
+      setPopupShown();
+    };
+    popupDiv.appendChild(closeButton);
 
-   // document.body.appendChild(popupDiv);
+    document.body.appendChild(popupDiv);
 
     // Optionnel: fermeture automatique après 30 secondes
-    //setTimeout(function() {
-      //if (document.body.contains(popupDiv)) {
-     //   document.body.removeChild(popupDiv);
-     // }
-     // setPopupShown();
- //   }, 30000);
-  //}
+    setTimeout(function() {
+      if (document.body.contains(popupDiv)) {
+        document.body.removeChild(popupDiv);
+      }
+      setPopupShown();
+    }, 30000);
+  }
 </script>
 
 

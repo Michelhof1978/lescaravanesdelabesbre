@@ -454,13 +454,13 @@
    // document.body.appendChild(popupDiv);
 
     // Optionnel: fermeture automatique après 30 secondes
-    //setTimeout(function() {
-      //if (document.body.contains(popupDiv)) {
-     //   document.body.removeChild(popupDiv);
-     // }
-     // setPopupShown();
- //   }, 30000);
-  //}
+    setTimeout(function() {
+      if (document.body.contains(popupDiv)) {
+        document.body.removeChild(popupDiv);
+      }
+      setPopupShown();
+    }, 30000);
+  }
 </script>
 
 
