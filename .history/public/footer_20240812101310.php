@@ -65,20 +65,15 @@
 </footer>
 
 <!-- Copyright -->
-<div class="text-center p-2" style="background-color: #837e7c">
+<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
 
-<p class="color-weight" style="color: white; text-align: center;">
-    © 2022 - <span id="date"></span>
-    <br>
-    <a class="text-white" href="<?php echo AUTHOR_URL; ?>" target="_blank" style="display: block; margin-top: 10px;">
+<p class="color-weight" style="color: white;">
+    © <span id="date"></span>
+    <a class="text-dark" href="<?php echo AUTHOR_URL; ?>" target="_blank">
+        <img src="../images/logoharmony.png" alt="Logo" style="vertical-align: middle; margin-right: 10px; width: 70px; height: auto;">
         Harmony Digital - Droits réservés
-        <br>
-        <img src="../images/logoharmony.png" alt="Logo" style="margin-top: 5px; width: 150px; height: auto;">
     </a>
 </p>
-
-
-
 
 </div>
 <!-- FIN Copyright -->
