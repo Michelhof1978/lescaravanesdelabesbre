@@ -74,7 +74,7 @@
 
         <div class="lead mt-2 text-center bg-light rounded shadow p-2 pb-2 bg-white rounded ms-1 me-1">
           <p>
-            Et encore <strong>BRAVO</strong> à FestiDomp 2023 pour cette superbe soirée
+            Et encore <strong>BRAVO</strong> à FestiDomp pour cette superbe soirée
           </p>
         </div>
       </div>
